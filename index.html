@@ -8,10 +8,10 @@
   <meta name="keywords" content="coloring books, printable coloring pages, adult coloring books, digital coloring books, Etsy coloring pages, KDP coloring books, Bliss Fox Studio" />
   <meta property="og:title" content="Bliss Fox Studio | Coloring Books & Digital Downloads" />
   <meta property="og:description" content="Cozy, whimsical, spooky, fantasy, and relaxing coloring books — physical editions on Amazon and printable digital copies on Etsy." />
-  <meta property="og:image" content="/assets/bliss-fox-studio-logo.png" />
+  <meta property="og:image" content="/assets/generated/hero-fox-studio.webp" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="/assets/bliss-fox-studio-logo.png" />
+  <meta name="twitter:image" content="/assets/generated/hero-fox-studio.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -155,22 +155,45 @@
       align-items: center;
     }
 
-    .hero-logo-card {
+    .hero-art-card {
       display: block;
-      width: min(430px, 100%);
-      margin-bottom: 20px;
-      border-radius: 34px;
+      width: min(520px, 100%);
+      margin-bottom: 22px;
+      border-radius: 36px;
       overflow: hidden;
-      background: transparent;
-      border: 1px solid rgba(222, 222, 214, 0.9);
+      background: white;
+      border: 10px solid white;
       box-shadow: var(--shadow);
+      transform: rotate(-1.2deg);
     }
 
-    .hero-logo-card img {
+    .hero-art-card img {
       width: 100%;
       display: block;
       aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .hero-brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.82);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 22px rgba(33,25,34,.06);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .hero-brand-mark img {
+      width: 34px;
+      height: 34px;
       object-fit: contain;
+      border-radius: 11px;
     }
 
     .eyebrow {
@@ -347,17 +370,42 @@
       flex-direction: column;
       justify-content: space-between;
       box-shadow: 0 12px 35px rgba(33,25,34,.06);
+      position: relative;
+      overflow: hidden;
     }
 
+    .card:after {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      right: -52px;
+      top: -56px;
+      border-radius: 50%;
+      background: rgba(255,225,231,.72);
+      z-index: 0;
+    }
+
+    .card > div { position: relative; z-index: 1; }
+
     .icon {
-      width: 56px;
-      height: 56px;
+      width: 76px;
+      height: 76px;
       display: grid;
       place-items: center;
-      border-radius: 20px;
+      border-radius: 24px;
       background: var(--rose);
-      font-size: 28px;
       margin-bottom: 20px;
+      overflow: hidden;
+      border: 6px solid white;
+      box-shadow: 0 12px 28px rgba(33,25,34,.10);
+    }
+
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .card h3 { margin: 0 0 10px; font-size: 25px; letter-spacing: -1px; }
@@ -399,6 +447,20 @@
     .shop-box h3 { font-size: 34px; letter-spacing: -1.5px; margin: 8px 0 12px; }
     .shop-box p { color: var(--muted); font-size: 17px; margin: 0; max-width: 430px; }
     .shop-box .btn { margin-top: 25px; align-self: flex-start; position: relative; z-index: 1; }
+
+    .shop-art {
+      width: min(170px, 42%);
+      border-radius: 26px;
+      border: 7px solid white;
+      box-shadow: 0 18px 35px rgba(33,25,34,.13);
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      transform: rotate(4deg);
+      z-index: 0;
+    }
+
+    .shop-box.amazon .shop-art { transform: rotate(-4deg); }
 
     .featured-grid {
       display: grid;
@@ -488,10 +550,11 @@
     }
 
     .fox-card img {
-      width: min(390px, 100%);
+      width: min(430px, 100%);
       border-radius: 30px;
       box-shadow: 0 12px 35px rgba(33,25,34,.12);
       background: transparent;
+      border: 10px solid white;
     }
 
     .about-copy p { color: var(--muted); font-size: 18px; }
@@ -556,7 +619,8 @@
       .brand span { display: none; }
       .logo { width: 52px; height: 52px; border-radius: 16px; }
       .hero { padding-top: 44px; }
-      .hero-logo-card { border-radius: 20px; }
+      .hero-art-card { border-radius: 22px; }
+      .shop-art { display: none; }
       .hero-actions, .signup { flex-direction: column; align-items: stretch; }
       .btn { width: 100%; }
       .featured-grid { grid-template-columns: 1fr; }
@@ -585,9 +649,10 @@
     <header class="hero">
       <div class="container hero-grid">
         <div>
-          <a class="hero-logo-card" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener" aria-label="Visit Bliss Fox Studio Etsy shop">
-            <img src="/assets/bliss-fox-studio-logo.png" alt="Official Bliss Fox Studio logo" loading="eager">
+          <a class="hero-art-card" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener" aria-label="Visit Bliss Fox Studio Etsy shop">
+            <img src="/assets/generated/hero-fox-studio.webp" alt="Cozy fox coloring page illustration generated for Bliss Fox Studio" loading="eager">
           </a>
+          <div class="hero-brand-mark"><img src="/assets/bliss-fox-studio-logo.png" alt="" aria-hidden="true"> Official Bliss Fox Studio</div>
           <div class="eyebrow">🖍️ Printable pages + physical coloring books</div>
           <h1>Color your cozy, cute, and slightly spooky side.</h1>
           <p>Bliss Fox Studio creates whimsical coloring books and printable digital downloads for slow evenings, creative breaks, and screen-free relaxation — with paperbacks on Amazon KDP and digital copies on Etsy.</p>
@@ -632,21 +697,21 @@
         <div class="cards">
           <article class="card">
             <div>
-              <div class="icon">📚</div>
+              <div class="icon"><img src="/assets/generated/icon-physical-books.webp" alt="" loading="lazy"></div>
               <h3>Physical books</h3>
               <p>Paperback coloring books for your shelf, gifts, road trips, and offline creative time.</p>
             </div>
           </article>
           <article class="card">
             <div>
-              <div class="icon" style="background: var(--lavender);">🖨️</div>
+              <div class="icon" style="background: var(--lavender);"><img src="/assets/generated/icon-printable-pdfs.webp" alt="" loading="lazy"></div>
               <h3>Printable PDFs</h3>
               <p>Download, print, and color today. Great for trying a theme before buying the full physical edition.</p>
             </div>
           </article>
           <article class="card">
             <div>
-              <div class="icon" style="background: var(--sage);">🎁</div>
+              <div class="icon" style="background: var(--sage);"><img src="/assets/generated/icon-gift-themes.webp" alt="" loading="lazy"></div>
               <h3>Gift-friendly themes</h3>
               <p>Cozy, kawaii, fantasy, goth, seasonal, animals, mandalas, and pattern collections.</p>
             </div>
@@ -669,6 +734,7 @@
               <p>Browse printable coloring pages and digital coloring book PDFs from the official BlissFox Studio Etsy shop.</p>
               <p class="platform-note">Official Etsy shop: https://www.etsy.com/shop/BlissFoxStudio</p>
             </div>
+            <img class="shop-art" src="/assets/generated/icon-printable-pdfs.webp" alt="Printable coloring page illustration" loading="lazy">
             <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Visit Etsy Shop</a>
           </article>
           <article class="shop-box amazon">
@@ -678,6 +744,7 @@
               <p>Prefer a real paperback? Visit the Bliss Fox Studio Amazon KDP author page for current physical coloring book releases.</p>
               <p class="platform-note">Amazon author page: amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87</p>
             </div>
+            <img class="shop-art" src="/assets/generated/icon-physical-books.webp" alt="Stack of coloring books illustration" loading="lazy">
             <a class="btn btn-dark" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Visit Amazon KDP Author Page</a>
           </article>
         </div>
@@ -725,8 +792,8 @@
 
     <section id="about" class="about">
       <div class="container about-grid">
-        <div class="fox-card" aria-label="Bliss Fox Studio brand logo">
-          <img src="/assets/bliss-fox-studio-logo.png" alt="Official Bliss Fox Studio logo">
+        <div class="fox-card" aria-label="Cozy Bliss Fox Studio creative desk illustration">
+          <img src="/assets/generated/about-creative-pages.webp" alt="Cozy desk with coloring pages, pencils, coffee, and a tiny fox illustration" loading="eager">
         </div>
         <div class="about-copy">
           <div class="eyebrow">About the studio</div>
