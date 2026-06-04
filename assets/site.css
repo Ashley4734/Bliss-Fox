@@ -157,25 +157,43 @@ section { padding: 70px 0; }
 @keyframes rise { to { opacity: 1; transform: none; } }
 
 /* ---------- Home hero ---------- */
-.hero { position: relative; overflow: hidden; padding: 74px 0 34px; }
-.hero-grid { display: grid; grid-template-columns: 1.04fr .96fr; gap: 48px; align-items: center; }
-.hero-art-card {
-  display: block; width: min(520px, 100%); margin-bottom: 22px; border-radius: var(--radius-lg);
-  overflow: hidden; background: #fff; border: 10px solid #fff; box-shadow: var(--shadow);
-  transform: rotate(-1.2deg); transition: transform .3s ease;
+.hero { position: relative; overflow: hidden; }
+.hero-cover {
+  min-height: clamp(620px, 82vh, 860px);
+  display: grid;
+  align-items: end;
+  padding: clamp(120px, 16vh, 190px) 0 clamp(46px, 8vh, 82px);
+  isolation: isolate;
+  background: var(--plum);
 }
-.hero-art-card:hover { transform: rotate(-1.2deg) translateY(-4px) scale(1.01); }
-.hero-art-card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
-.hero-brand-mark {
-  display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; padding: 10px 14px;
-  border-radius: 999px; background: rgba(255, 255, 255, .82); border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm); color: var(--muted); font-size: 13px; font-weight: 800;
+.hero-cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: -2;
 }
-.hero-brand-mark img { width: 34px; height: 34px; object-fit: contain; border-radius: 11px; }
-.hero h1 { margin: 22px 0 18px; max-width: 760px; font-size: clamp(44px, 6.6vw, 78px); letter-spacing: -2.5px; line-height: .96; }
-.hero p { max-width: 610px; font-size: clamp(18px, 2vw, 22px); color: var(--muted); margin: 0 0 27px; }
+.hero-cover-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(32, 18, 28, .16) 0%, rgba(32, 18, 28, .36) 45%, rgba(32, 18, 28, .78) 100%),
+    linear-gradient(90deg, rgba(32, 18, 28, .72) 0%, rgba(32, 18, 28, .32) 48%, rgba(32, 18, 28, .08) 100%);
+}
+.hero-cover-content { position: relative; }
+.hero-copy-card {
+  width: min(760px, 100%);
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(32, 18, 28, .28);
+}
+.hero h1 { margin: 0 0 18px; max-width: 760px; font-size: clamp(44px, 6.6vw, 78px); letter-spacing: -2.5px; line-height: .96; }
+.hero p { max-width: 690px; font-size: clamp(18px, 2vw, 22px); color: rgba(255, 255, 255, .92); margin: 0 0 27px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.hero-cover .btn-secondary { background: rgba(255, 255, 255, .88); color: var(--plum); border-color: rgba(255, 255, 255, .74); }
+.hero-cover .btn-secondary:hover { background: #fff; }
 
 /* Cover collage */
 .cover-collage { columns: 3 140px; column-gap: 14px; }
@@ -345,7 +363,7 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .nav-links.open { opacity: 1; transform: none; pointer-events: auto; }
   .nav-links a { padding: 14px; font-size: 16px; border-radius: 14px; }
   .nav-cta { text-align: center; margin-top: 4px; }
-  .hero-grid, .shop-panel, .about-grid { grid-template-columns: 1fr; }
+  .shop-panel, .about-grid { grid-template-columns: 1fr; }
   .cover-collage { columns: 2 140px; }
   .cards, .inside-grid { grid-template-columns: 1fr; }
   .featured-grid, .catalog-grid { grid-template-columns: repeat(2, 1fr); }
@@ -357,7 +375,9 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .nav-inner { min-height: 68px; }
   .brand span { display: none; }
   .logo { width: 52px; height: 52px; border-radius: 16px; }
-  .hero { padding-top: 44px; }
+  .hero-cover { min-height: 680px; padding: 140px 0 42px; }
+  .hero h1 { font-size: clamp(38px, 13vw, 56px); letter-spacing: -1.8px; }
+  .hero p { font-size: 17px; }
   .shop-art { display: none; }
   .hero-actions, .signup, .format-row { flex-direction: column; align-items: stretch; }
   .hero-actions .btn, .signup .btn, .format-row .btn { width: 100%; }
