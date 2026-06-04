@@ -82,6 +82,7 @@ No database or environment variables are required.
 - The homepage now uses the official Etsy shop link.
 - The homepage now routes physical paperback CTAs to the Bliss Fox Studio Amazon KDP author page.
 - Featured book cards use externally loaded Amazon media URLs for live cover previews rather than storing Amazon images in this repository.
+- The site uses the official Bliss Fox Studio Etsy-hosted logo/banner URL in the navbar, hero section, about section, and social preview metadata.
 
 ## Recommended next edits
 

@@ -8,7 +8,10 @@
   <meta name="keywords" content="coloring books, printable coloring pages, adult coloring books, digital coloring books, Etsy coloring pages, KDP coloring books, Bliss Fox Studio" />
   <meta property="og:title" content="Bliss Fox Studio | Coloring Books & Digital Downloads" />
   <meta property="og:description" content="Cozy, whimsical, spooky, fantasy, and relaxing coloring books — physical editions on Amazon and printable digital copies on Etsy." />
+  <meta property="og:image" content="https://i.etsystatic.com/9660605/r/isbl/643af5/86377063/isbl_3360x840.86377063_t6adiqgr.jpg" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://i.etsystatic.com/9660605/r/isbl/643af5/86377063/isbl_3360x840.86377063_t6adiqgr.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -75,15 +78,22 @@
     }
 
     .logo {
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
-      background: radial-gradient(circle at 35% 25%, #fff 0 10%, #ffbbca 11% 28%, transparent 29%), linear-gradient(135deg, #ff6f91, #e60023 55%, #7e238b);
-      display: grid;
-      place-items: center;
-      color: white;
-      box-shadow: 0 10px 25px rgba(230, 0, 35, 0.2);
-      font-size: 25px;
+      width: 78px;
+      height: 50px;
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--warm);
+      border: 1px solid rgba(222, 222, 214, 0.9);
+      box-shadow: 0 10px 25px rgba(230, 118, 35, 0.12);
+      display: block;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
+      display: block;
     }
 
     .nav-links {
@@ -144,6 +154,24 @@
       grid-template-columns: 1.04fr .96fr;
       gap: 48px;
       align-items: center;
+    }
+
+    .hero-logo-card {
+      display: block;
+      max-width: 610px;
+      margin-bottom: 20px;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #f4efe7;
+      border: 1px solid rgba(222, 222, 214, 0.9);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-logo-card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 1;
+      object-fit: cover;
     }
 
     .eyebrow {
@@ -452,12 +480,18 @@
     .fox-card {
       min-height: 430px;
       border-radius: 40px;
-      background: radial-gradient(circle at 40% 30%, #fff 0 8%, transparent 9%), linear-gradient(155deg, #ffcad5, #e60023 52%, #211922);
+      background: linear-gradient(155deg, #fffaf2, #f7f3ec 56%, #ffe1e7);
       display: grid;
       place-items: center;
-      color: white;
-      font-size: 130px;
+      padding: 28px;
       box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .fox-card img {
+      width: 100%;
+      border-radius: 26px;
+      box-shadow: 0 12px 35px rgba(33,25,34,.08);
     }
 
     .about-copy p { color: var(--muted); font-size: 18px; }
@@ -520,7 +554,9 @@
     @media (max-width: 560px) {
       .nav-inner { min-height: 68px; }
       .brand span { display: none; }
+      .logo { width: 70px; height: 44px; }
       .hero { padding-top: 44px; }
+      .hero-logo-card { border-radius: 20px; }
       .hero-actions, .signup { flex-direction: column; align-items: stretch; }
       .btn { width: 100%; }
       .featured-grid { grid-template-columns: 1fr; }
@@ -532,7 +568,7 @@
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
       <a class="brand" href="#top" aria-label="Bliss Fox Studio home">
-        <div class="logo" aria-hidden="true">🦊</div>
+        <div class="logo" aria-hidden="true"><img src="https://i.etsystatic.com/9660605/r/isbl/643af5/86377063/isbl_3360x840.86377063_t6adiqgr.jpg" alt="" loading="eager"></div>
         <span>Bliss Fox Studio</span>
       </a>
       <div class="nav-links">
@@ -548,6 +584,9 @@
     <header class="hero">
       <div class="container hero-grid">
         <div>
+          <a class="hero-logo-card" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener" aria-label="Visit Bliss Fox Studio Etsy shop">
+            <img src="https://i.etsystatic.com/9660605/r/isbl/643af5/86377063/isbl_3360x840.86377063_t6adiqgr.jpg" alt="Bliss Fox Studio printable coloring books logo banner" loading="eager">
+          </a>
           <div class="eyebrow">🖍️ Printable pages + physical coloring books</div>
           <h1>Color your cozy, cute, and slightly spooky side.</h1>
           <p>Bliss Fox Studio creates whimsical coloring books and printable digital downloads for slow evenings, creative breaks, and screen-free relaxation — with paperbacks on Amazon KDP and digital copies on Etsy.</p>
@@ -685,7 +724,9 @@
 
     <section id="about" class="about">
       <div class="container about-grid">
-        <div class="fox-card" aria-hidden="true">🦊</div>
+        <div class="fox-card" aria-label="Bliss Fox Studio brand logo">
+          <img src="https://i.etsystatic.com/9660605/r/isbl/643af5/86377063/isbl_3360x840.86377063_t6adiqgr.jpg" alt="Bliss Fox Studio printable coloring books logo">
+        </div>
         <div class="about-copy">
           <div class="eyebrow">About the studio</div>
           <h2>Small creative studio. Big stack of coloring pages.</h2>
