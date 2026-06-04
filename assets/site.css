@@ -120,7 +120,11 @@ h3 { letter-spacing: -.5px; }
   border-bottom: 1px solid rgba(222, 222, 214, .65);
 }
 .nav-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.brand { display: flex; align-items: center; gap: 12px; font-family: var(--display); font-weight: 800; letter-spacing: -.5px; font-size: 22px; }
+.brand {
+  display: flex; align-items: center; gap: 12px; min-width: 0;
+  font-family: var(--display); font-weight: 800; letter-spacing: -.5px; font-size: 22px;
+}
+.brand > span:not(.logo) { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .logo {
   width: 56px; height: 56px; border-radius: 18px; overflow: hidden; flex: none; display: block;
   border: 1px solid rgba(222, 222, 214, .9); box-shadow: 0 10px 25px rgba(230, 118, 35, .16);
@@ -287,12 +291,20 @@ section { padding: 70px 0; }
 .book-card {
   background: #fff; border-radius: var(--radius); padding: 12px; border: 1px solid var(--line);
   overflow: hidden; transition: transform .25s ease, box-shadow .25s ease;
+  height: 100%; display: flex; flex-direction: column;
 }
 .book-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
 .book-card a { display: block; }
 .book-cover-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 18px; display: block; background: var(--sand); }
-.book-card h3 { margin: 12px 4px 4px; font-size: 16px; line-height: 1.15; letter-spacing: -.2px; }
-.book-card p { margin: 2px 4px 8px; color: var(--muted); font-size: 14px; font-weight: 700; }
+.book-card h3 {
+  margin: 12px 4px 4px; font-size: 16px; line-height: 1.15; letter-spacing: -.2px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  min-height: 2.3em;
+}
+.book-card p {
+  margin: 2px 4px 8px; color: var(--muted); font-size: 14px; font-weight: 700;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
 .book-card .tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 4px 6px; }
 
 /* Page hero (inner pages) */
@@ -390,6 +402,7 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .inside-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 860px) {
+  .brand { font-size: clamp(19px, 3.2vw, 22px); }
   .nav-toggle { display: inline-flex; }
   .nav-links {
     position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; gap: 6px;
@@ -416,9 +429,11 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
 }
 @media (max-width: 560px) {
   .nav-inner { min-height: 68px; }
-  .brand span { display: none; }
+  .brand { gap: 9px; font-size: clamp(18px, 5vw, 21px); }
+  .brand > span:not(.logo) { display: inline; max-width: calc(100vw - 132px); }
   .logo { width: 52px; height: 52px; border-radius: 16px; }
   .hero-cover { min-height: 680px; padding: 140px 0 42px; }
+  .hero-cover-image { object-position: 62% top; }
   .hero h1 { font-size: clamp(38px, 13vw, 56px); letter-spacing: -1.8px; }
   .hero p { font-size: 17px; }
   .shop-art { display: none; }
