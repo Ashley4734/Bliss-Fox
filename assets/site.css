@@ -211,16 +211,16 @@ section { padding: 70px 0; }
 
 /* Feature cards */
 .sessions-section { background: linear-gradient(180deg, rgba(255, 250, 242, .55), rgba(255, 225, 231, .24)); }
-.sessions-image-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+.sessions-image-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 26px; }
 .session-image-card {
-  background: rgba(255, 255, 255, .82); border: 1px solid rgba(222, 222, 214, .95); border-radius: var(--radius-lg);
-  overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease;
+  background: rgba(255, 255, 255, .82); border: 1px solid rgba(222, 222, 214, .95); border-radius: 22px;
+  overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; min-width: 0; transition: transform .25s ease, box-shadow .25s ease;
 }
-.session-image-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.session-image-card img { width: 100%; display: block; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; background: #fffaf2; }
-.session-image-card div { padding: 20px 20px 22px; }
-.session-image-card h3 { margin: 0 0 8px; font-size: 23px; }
-.session-image-card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+.session-image-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.session-image-card img { width: 100%; display: block; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; background: #fffaf2; }
+.session-image-card div { padding: 14px 15px 16px; }
+.session-image-card h3 { margin: 0 0 6px; font-size: clamp(18px, 2vw, 21px); }
+.session-image-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
 
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .card {
@@ -378,8 +378,9 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .nav-links a { padding: 14px; font-size: 16px; border-radius: 14px; }
   .nav-cta { text-align: center; margin-top: 4px; }
   .shop-panel, .about-grid { grid-template-columns: 1fr; }
-  .sessions-image-grid { grid-template-columns: 1fr; }
-  .session-image-card { display: grid; grid-template-columns: minmax(220px, .9fr) 1fr; align-items: center; }
+  .sessions-image-grid { gap: 10px; }
+  .session-image-card div { padding: 12px 12px 14px; }
+  .session-image-card p { font-size: 13.5px; }
   .cover-collage { columns: 2 140px; }
   .cards, .inside-grid { grid-template-columns: 1fr; }
   .featured-grid, .catalog-grid { grid-template-columns: repeat(2, 1fr); }
@@ -398,6 +399,7 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .hero-actions, .signup, .format-row { flex-direction: column; align-items: stretch; }
   .hero-actions .btn, .signup .btn, .format-row .btn { width: 100%; }
   .featured-grid, .catalog-grid { grid-template-columns: 1fr; }
+  .sessions-image-grid { grid-template-columns: 1fr; gap: 14px; }
   .session-image-card { display: flex; }
   .fox-card { min-height: 300px; }
 }
