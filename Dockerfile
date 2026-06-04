@@ -10,6 +10,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Website files and local brand assets. Explicit chmod matters because local generated files may be mode 600.
 COPY *.html /usr/share/nginx/html/
+COPY robots.txt sitemap.xml /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
 COPY books/ /usr/share/nginx/html/books/
 RUN chmod -R a+rX /usr/share/nginx/html
