@@ -7,6 +7,7 @@ This repo is ready to run on a VPS through **Coolify** using Dockerfile deployme
 ## Files
 
 - `index.html` — complete one-page website with inline CSS
+- `privacy.html` — standalone privacy policy page linked from the nav/footer
 - `Dockerfile` — production container using Nginx Alpine
 - `nginx.conf` — static-site Nginx config with `/healthz`
 - `docker-compose.yml` — optional local/VPS compose runner
@@ -83,6 +84,7 @@ No database or environment variables are required.
 - The homepage now routes physical paperback CTAs to the Bliss Fox Studio Amazon KDP author page.
 - Featured book cards use externally loaded Amazon media URLs for live cover previews rather than storing Amazon images in this repository.
 - The site uses the official Bliss Fox Studio Etsy-hosted logo/banner URL in the navbar, hero section, about section, and social preview metadata.
+- `/privacy.html` provides a basic privacy policy covering marketplace links, server logs, cookies/analytics status, and the current placeholder newsletter form.
 
 ## Recommended next edits
 

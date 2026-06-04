@@ -9,8 +9,8 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Website files. Explicit chmod matters because local generated files may be mode 600.
-COPY index.html /usr/share/nginx/html/index.html
-RUN chmod 644 /usr/share/nginx/html/index.html
+COPY *.html /usr/share/nginx/html/
+RUN chmod -R a+rX /usr/share/nginx/html
 
 # Lightweight healthcheck that Coolify/Docker can use
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
