@@ -165,7 +165,7 @@ section { padding: 70px 0; }
   transform: rotate(-1.2deg); transition: transform .3s ease;
 }
 .hero-art-card:hover { transform: rotate(-1.2deg) translateY(-4px) scale(1.01); }
-.hero-art-card img { width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover; }
+.hero-art-card img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
 .hero-brand-mark {
   display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; padding: 10px 14px;
   border-radius: 999px; background: rgba(255, 255, 255, .82); border: 1px solid var(--line);
