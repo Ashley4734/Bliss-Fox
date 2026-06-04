@@ -1,107 +1,33 @@
-# Bliss Fox Studio Website
+# Bliss Fox Studio — site
 
-A static landing page for Bliss Fox Studio — physical coloring books on Amazon KDP and digital copies on Etsy.
+Static, no build step. Drop the whole folder at your web root and it works.
 
-This repo is ready to run on a VPS through **Coolify** using Dockerfile deployment.
+## Structure
+- `index.html` — home / hub
+- `books.html` — full catalog with client-side theme filter
+- `books/*.html` — one page per title (generated, identical structure)
+- `privacy.html` — privacy + Amazon Associates + children's-privacy template
+- `404.html` — on-brand not-found
+- `assets/site.css` — single design system (change styling here once, applies everywhere)
+- `assets/site.js` — mobile nav, newsletter handler, catalog filter, footer year
+- `robots.txt`, `sitemap.xml`
 
-## Files
+## Assets you still provide (same paths as before)
+- `/assets/bliss-fox-studio-logo.png`
+- `/assets/generated/hero-fox-studio.webp`
+- `/assets/generated/about-creative-pages.webp`
+- `/assets/generated/icon-physical-books.webp`
+- `/assets/generated/icon-printable-pdfs.webp`
+- `/assets/generated/icon-gift-themes.webp`
+Book covers load from Amazon's CDN with an automatic fallback to the logo if a URL breaks.
 
-- `index.html` — complete one-page website with inline CSS
-- `privacy.html` — standalone privacy policy page linked from the nav/footer
-- `assets/bliss-fox-studio-logo.png` — official Bliss Fox Studio brand logo
-- `assets/generated/*.webp` — ComfyUI-generated brand illustrations and icon art used across the homepage
-- `Dockerfile` — production container using Nginx Alpine
-- `nginx.conf` — static-site Nginx config with `/healthz`
-- `docker-compose.yml` — optional local/VPS compose runner
-- `.dockerignore` — keeps build context clean
+## Before you publish (find/replace)
+1. `https://blissfoxstudio.com` — set to your real domain across all files (canonical, OG, JSON-LD, sitemap, robots).
+2. `privacy.html` — fill `[ADD DATE]`, `[NAME YOUR PROVIDER]`, `[NAME ANALYTICS TOOL IF USED]`, `[ADD CONTACT EMAIL]`.
+3. Book pages — the Etsy/Amazon buttons currently use search URLs. Swap each for the direct listing / ASIN product URL (marked with a comment in each book file).
 
-## Preview locally without Docker
+## Wire the newsletter
+In `assets/site.js`, the signup handler shows an inline confirmation and has a `// TODO`. POST `input.value` to your n8n webhook or paste a MailerLite/ConvertKit/Beehiiv embed.
 
-```bash
-cd /home/ashley-harris/blissfoxstudio-website
-python3 -m http.server 8765
-```
-
-Then open: <http://127.0.0.1:8765>
-
-## Run locally with Docker
-
-```bash
-cd /home/ashley-harris/blissfoxstudio-website
-docker build -t blissfoxstudio-website .
-docker run --rm -p 8080:80 blissfoxstudio-website
-```
-
-Then open: <http://127.0.0.1:8080>
-
-Health check:
-
-```bash
-curl http://127.0.0.1:8080/healthz
-```
-
-Expected output:
-
-```text
-ok
-```
-
-## Run locally with Docker Compose
-
-```bash
-docker compose up -d --build
-```
-
-Then open: <http://127.0.0.1:8080>
-
-Stop it:
-
-```bash
-docker compose down
-```
-
-## Deploy on Coolify
-
-1. In Coolify, create a new **Resource**.
-2. Choose **Public Repository** or connect your GitHub account.
-3. Repository: `https://github.com/Ashley4734/Bliss-Fox.git`
-4. Branch: `main`
-5. Build pack / deployment type: **Dockerfile**
-6. Dockerfile location: `/Dockerfile`
-7. Exposed port: `80`
-8. Health check path: `/healthz`
-9. Add your domain, for example: `blissfoxstudio.com`
-10. Deploy.
-
-No database or environment variables are required.
-
-## Current shop links
-
-- Etsy shop: https://www.etsy.com/shop/BlissFoxStudio
-- Amazon KDP author page: https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/
-
-## Content notes
-
-- The homepage now uses the official Etsy shop link.
-- The homepage now routes physical paperback CTAs to the Bliss Fox Studio Amazon KDP author page.
-- Featured book cards use externally loaded Amazon media URLs for live cover previews rather than storing Amazon images in this repository.
-- The homepage uses ComfyUI-generated WebP artwork for the hero illustration, feature icons, shop cards, and about section to make the brand feel warmer and more polished while keeping page weight low.
-- The site uses the official local Bliss Fox Studio logo asset at `assets/bliss-fox-studio-logo.png` in the navbar, privacy page, and brand badges/social metadata.
-- `/privacy.html` provides a basic privacy policy covering marketplace links, server logs, cookies/analytics status, and the current placeholder newsletter form.
-
-## Recommended next edits
-
-1. Add direct links for each individual Amazon book once you want product-specific landing cards.
-2. Add direct Etsy listing links for matching digital downloads.
-3. Connect the newsletter form to MailerLite, ConvertKit, Beehiiv, or another email tool.
-4. Point `blissfoxstudio.com` to the Coolify VPS and enable HTTPS in Coolify.
-
-
-## Book catalog page
-
-The site includes `/books.html`, an all-books catalog page for titles that have both buying paths:
-
-- physical paperback CTAs to Amazon product pages
-- digital copy CTAs to the BlissFoxStudio Etsy shop search for the matching title
-
-When exact Etsy listing URLs are available, replace the shop-search URLs with the direct listing URLs for better conversion.
+## Add a new book
+Copy any file in `books/`, or regenerate: the source generator builds all book pages from one data block so they never drift. Add a matching `.book-card` (with `data-themes`) to `books.html` and a `<url>` to `sitemap.xml`.

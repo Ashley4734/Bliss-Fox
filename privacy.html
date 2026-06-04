@@ -3,320 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fffaf2" />
   <link rel="icon" type="image/png" href="/assets/bliss-fox-studio-logo.png" />
+  <link rel="apple-touch-icon" href="/assets/bliss-fox-studio-logo.png" />
+  <link rel="canonical" href="https://blissfoxstudio.com/privacy.html" />
   <title>Privacy Policy | Bliss Fox Studio</title>
-  <meta name="description" content="Privacy policy for Bliss Fox Studio, a coloring book brand selling physical coloring books on Amazon KDP and digital downloads on Etsy." />
-  <meta property="og:title" content="Privacy Policy | Bliss Fox Studio" />
-  <meta property="og:description" content="How Bliss Fox Studio handles information, marketplace links, email signup placeholders, cookies, and third-party shop redirects." />
-  <meta property="og:image" content="/assets/bliss-fox-studio-logo.png" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="/assets/bliss-fox-studio-logo.png" />
+  <meta name="description" content="How Bliss Fox Studio handles your information, cookies, email signups, affiliate links, and children's privacy." />
+  <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --red: #e60023;
-      --plum: #211922;
-      --muted: #62625b;
-      --sand: #e5e5e0;
-      --warm: #f7f3ec;
-      --cream: #fffaf2;
-      --dark: #33332e;
-      --white: #ffffff;
-      --line: #deded6;
-      --shadow: 0 18px 55px rgba(33, 25, 34, 0.12);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      color: var(--plum);
-      background: var(--cream);
-      line-height: 1.65;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(960px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 250, 242, 0.88);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(222, 222, 214, 0.65);
-    }
-
-    .nav-inner {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 900;
-      letter-spacing: -0.8px;
-      font-size: 21px;
-    }
-
-    .logo {
-      width: 58px;
-      height: 58px;
-      border-radius: 18px;
-      overflow: hidden;
-      background: transparent;
-      border: 1px solid rgba(222, 222, 214, 0.9);
-      box-shadow: 0 10px 25px rgba(230, 118, 35, 0.16);
-      display: block;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--muted);
-    }
-
-    .nav-links a {
-      padding: 10px 12px;
-      border-radius: 16px;
-    }
-
-    .nav-links a:hover { background: var(--sand); color: var(--plum); }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: 0;
-      border-radius: 16px;
-      padding: 13px 18px;
-      font-weight: 900;
-      background: var(--red);
-      color: white;
-      box-shadow: 0 12px 28px rgba(230, 0, 35, .2);
-      transition: transform .18s ease;
-      white-space: nowrap;
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .hero {
-      padding: 74px 0 34px;
-      background:
-        radial-gradient(circle at top right, rgba(230,0,35,.14), transparent 38%),
-        linear-gradient(180deg, var(--cream), var(--warm));
-      border-bottom: 1px solid var(--line);
-    }
-
-    .hero-logo-card {
-      display: block;
-      width: min(430px, 100%);
-      margin-bottom: 22px;
-      border-radius: 34px;
-      overflow: hidden;
-      background: transparent;
-      border: 1px solid rgba(222, 222, 214, 0.9);
-      box-shadow: var(--shadow);
-    }
-
-    .hero-logo-card img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 1 / 1;
-      object-fit: contain;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: white;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      font-weight: 900;
-      font-size: 13px;
-      box-shadow: 0 8px 22px rgba(33,25,34,.06);
-    }
-
-    h1 {
-      margin: 22px 0 14px;
-      max-width: 760px;
-      font-size: clamp(42px, 7vw, 72px);
-      line-height: .95;
-      letter-spacing: -3px;
-    }
-
-    .hero p {
-      max-width: 720px;
-      font-size: clamp(18px, 2vw, 21px);
-      color: var(--muted);
-      margin: 0 0 24px;
-    }
-
-    main.policy {
-      padding: 54px 0 70px;
-    }
-
-    .policy-card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 30px;
-      padding: clamp(24px, 4vw, 46px);
-      box-shadow: var(--shadow);
-    }
-
-    .policy-card h2 {
-      margin: 34px 0 10px;
-      font-size: clamp(24px, 3vw, 34px);
-      letter-spacing: -1.3px;
-      line-height: 1.05;
-    }
-
-    .policy-card h2:first-child { margin-top: 0; }
-    .policy-card p, .policy-card li { color: var(--muted); }
-    .policy-card ul { padding-left: 22px; }
-    .policy-card a { color: var(--red); font-weight: 900; text-decoration: underline; text-underline-offset: 3px; }
-    .note { background: var(--warm); border: 1px solid var(--line); border-radius: 20px; padding: 16px 18px; }
-
-    footer {
-      background: var(--dark);
-      color: white;
-      padding: 44px 0;
-    }
-
-    .footer-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 28px;
-      flex-wrap: wrap;
-      color: #c8c8c1;
-      font-size: 14px;
-    }
-
-    .footer-grid strong { color: white; font-size: 18px; }
-    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
-
-    @media (max-width: 860px) {
-      .nav-links a:not(.nav-cta) { display: none; }
-      h1 { letter-spacing: -2.4px; }
-    }
-
-    @media (max-width: 560px) {
-      .nav-inner { min-height: 68px; }
-      .brand span { display: none; }
-      .logo { width: 52px; height: 52px; border-radius: 16px; }
-      .hero { padding-top: 44px; }
-      .hero-logo-card { border-radius: 20px; }
-      .btn { width: 100%; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a class="brand" href="/" aria-label="Bliss Fox Studio home">
-        <div class="logo" aria-hidden="true"><img src="/assets/bliss-fox-studio-logo.png" alt="" loading="eager"></div>
+      <a class="brand" href="/index.html" aria-label="Bliss Fox Studio home">
+        <span class="logo" aria-hidden="true"><img src="/assets/bliss-fox-studio-logo.png" alt="" loading="eager"></span>
         <span>Bliss Fox Studio</span>
       </a>
-      <div class="nav-links">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/index.html">Home</a>
         <a href="/books.html">All Books</a>
-        <a href="/#shop">Shop</a>
-        <a href="/#about">About</a>
-        <a href="/privacy.html">Privacy</a>
-        <a class="btn nav-cta" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Shop Etsy</a>
+        <a href="/index.html#shop">Shop</a>
+        <a href="/index.html#about">About</a>
+        <a href="/privacy.html" aria-current="page">Privacy</a>
+        <a class="btn btn-primary nav-cta" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Shop Etsy</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <a class="hero-logo-card" href="/" aria-label="Back to Bliss Fox Studio home">
-        <img src="/assets/bliss-fox-studio-logo.png" alt="Official Bliss Fox Studio logo" loading="eager">
-      </a>
-      <div class="eyebrow">Privacy Policy</div>
-      <h1>Privacy Policy</h1>
-      <p>How Bliss Fox Studio handles information on this brand website and when visitors click through to Etsy or Amazon.</p>
-      <a class="btn" href="/">Back to home</a>
-    </div>
-  </header>
+  <main id="top">
+    <header class="page-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/index.html">Home</a><span aria-hidden="true">/</span><span>Privacy</span></nav>
+        <h1 class="reveal d1">Privacy Policy</h1>
+        <p class="reveal d2">How Bliss Fox Studio handles the limited information collected through this website.</p>
+      </div>
+    </header>
 
-  <main class="policy">
-    <div class="container">
-      <article class="policy-card">
-        <p class="note"><strong>Last updated:</strong> June 4, 2026. This page is a practical website privacy policy for Bliss Fox Studio. It is not legal advice.</p>
+    <section style="padding-top:24px;">
+      <div class="container prose">
+        <p><strong>Effective date:</strong> <span>[ADD DATE]</span></p>
 
-        <h2>Overview</h2>
-        <p>Bliss Fox Studio creates coloring books, printable coloring pages, and digital downloads. This website is a simple brand hub that links visitors to the official Etsy shop for digital products and to Amazon for physical paperback coloring books.</p>
+        <div class="note">Template notice: this is a starting point, not legal advice. Replace the bracketed placeholders with your details and have a professional review it before publishing, especially if you sell to the EU, UK, or California.</div>
+
+        <p>This policy explains what information is collected when you visit <strong>blissfoxstudio.com</strong> ("the site"), operated by Bliss Fox Studio ("we", "us"). It does not cover purchases made on Etsy or Amazon, which are governed by those platforms' own privacy policies.</p>
 
         <h2>Information we collect</h2>
-        <p>This website does not currently process orders, accounts, checkout, or payments directly. Any purchases are completed through third-party marketplaces such as Etsy or Amazon.</p>
-        <p>The email signup form on the homepage is currently a placeholder and is not connected to an email marketing service. If it is connected in the future, this policy should be updated to describe what is collected and how subscribers can unsubscribe.</p>
-
-        <h2>Information collected automatically</h2>
-        <p>The website may generate ordinary server logs through its web host or deployment platform. Those logs may include information such as IP address, browser type, pages requested, referring URLs, and timestamps. This information is used for basic security, troubleshooting, and site performance.</p>
-
-        <h2>Third-party marketplaces</h2>
-        <p>When you click a link to Etsy or Amazon, you leave this website and interact with that marketplace directly. Their privacy policies, cookies, order handling, payment processing, shipping, refunds, and account systems apply.</p>
         <ul>
-          <li>Etsy shop: <a href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">https://www.etsy.com/shop/BlissFoxStudio</a></li>
-          <li>Amazon author page: <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/</a></li>
+          <li><strong>Email address:</strong> only if you choose to join our newsletter through a form on the site.</li>
+          <li><strong>Basic usage data:</strong> if analytics are enabled, aggregate, non-identifying information such as pages viewed, browser type, and approximate region.</li>
+          <li>We do not ask for or store payment details on this site. All transactions happen on Etsy or Amazon.</li>
         </ul>
 
+        <h2>How we use information</h2>
+        <ul>
+          <li>To send you newsletter updates about new books, releases, and free pages, only if you signed up.</li>
+          <li>To understand, in aggregate, how the site is used so we can improve it.</li>
+          <li>We do not sell your personal information.</li>
+        </ul>
+
+        <h2>Email and unsubscribing</h2>
+        <p>Newsletter emails are managed through our email provider ([NAME YOUR PROVIDER, e.g. MailerLite]). Every email includes an unsubscribe link, and you can opt out at any time. You may also email us to be removed.</p>
+
         <h2>Cookies and analytics</h2>
-        <p>This website does not currently include a dedicated analytics platform or advertising pixel. Third-party services, embedded marketplace images, browser fonts, hosting providers, Etsy, and Amazon may use their own cookies or request logs according to their own policies.</p>
+        <p>The site may use cookies or similar technologies to remember preferences and measure traffic ([NAME ANALYTICS TOOL IF USED, e.g. Google Analytics, Plausible]). You can control cookies through your browser settings. If you do not use any analytics or cookies, you can simplify or remove this section.</p>
 
-        <h2>Children’s privacy</h2>
-        <p>Bliss Fox Studio products may include family-friendly coloring themes, but this website is not intended to collect personal information from children. If you believe a child has submitted personal information through a connected service in the future, contact the relevant marketplace or service provider.</p>
+        <h2>Affiliate links and Amazon Associates disclosure</h2>
+        <p>Some links on this site point to Amazon and other retailers. As an Amazon Associate, we may earn a commission from qualifying purchases at no extra cost to you. Affiliate links do not change the price you pay.</p>
 
-        <h2>Data sharing</h2>
-        <p>Because this website does not currently operate its own checkout or connected email signup, Bliss Fox Studio does not sell personal information collected through this site. Third-party marketplaces and infrastructure providers handle their own data under their own policies.</p>
+        <h2>Third-party links</h2>
+        <p>The site links to external platforms such as <a href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Etsy</a> and <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Amazon</a>. We are not responsible for the content or privacy practices of those sites. Review their policies separately.</p>
+
+        <h2>Children's privacy</h2>
+        <p>Our coloring books are enjoyed by all ages, but this website is intended for adults, such as parents and gift-buyers. We do not knowingly collect personal information from children under 13 (or the equivalent age in your region). If you believe a child has provided us information, contact us and we will delete it.</p>
+
+        <h2>Your choices and rights</h2>
+        <p>Depending on where you live, you may have rights to access, correct, or delete the limited personal information we hold (such as your newsletter email). To make a request, contact us using the details below.</p>
 
         <h2>Changes to this policy</h2>
-        <p>This policy may be updated when the site adds analytics, email marketing, contact forms, advertising pixels, direct checkout, or other features. The “Last updated” date will be revised when meaningful changes are made.</p>
+        <p>We may update this policy from time to time. The effective date at the top shows the latest revision.</p>
 
         <h2>Contact</h2>
-        <p>For privacy questions about a purchase, account, refund, or download, please contact Etsy or Amazon through the marketplace where the purchase was made. For Bliss Fox Studio brand questions, use the official Etsy shop contact tools.</p>
-      </article>
-    </div>
+        <p>Questions about this policy? Email <strong>[ADD CONTACT EMAIL]</strong>.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container footer-grid">
-      <div>
-        <strong>🦊 Bliss Fox Studio</strong><br />
-        Coloring books, printable pages, and cozy creative downloads.
-      </div>
+      <div><strong>🦊 Bliss Fox Studio</strong><br />Coloring books, printable pages, and cozy creative downloads.</div>
       <div class="footer-links">
-        <a href="/">Home</a>
-        <a href="/books.html">All Books</a>
         <a href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Etsy</a>
         <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Amazon</a>
-        <a href="/privacy.html">Privacy</a>
+        <a href="/books.html">All Books</a>
+        <a href="/index.html">Home</a>
       </div>
+      <div class="footer-legal">&copy; <span id="year"></span> Bliss Fox Studio. As an Amazon Associate, qualifying purchases may earn a commission.</div>
     </div>
   </footer>
+
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>

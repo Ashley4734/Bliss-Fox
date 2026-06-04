@@ -1,0 +1,5 @@
+# Bliss Fox Studio
+User-agent: *
+Allow: /
+
+Sitemap: https://blissfoxstudio.com/sitemap.xml
