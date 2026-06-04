@@ -95,3 +95,13 @@ No database or environment variables are required.
 2. Add direct Etsy listing links for matching digital downloads.
 3. Connect the newsletter form to MailerLite, ConvertKit, Beehiiv, or another email tool.
 4. Point `blissfoxstudio.com` to the Coolify VPS and enable HTTPS in Coolify.
+
+
+## Book catalog page
+
+The site includes `/books.html`, an all-books catalog page for titles that have both buying paths:
+
+- physical paperback CTAs to Amazon product pages
+- digital copy CTAs to the BlissFoxStudio Etsy shop search for the matching title
+
+When exact Etsy listing URLs are available, replace the shop-search URLs with the direct listing URLs for better conversion.
