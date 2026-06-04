@@ -228,6 +228,49 @@
     .pin strong { font-size: 18px; letter-spacing: -.5px; }
     .pin span { color: rgba(33,25,34,.72); font-weight: 800; font-size: 13px; }
     .pin.tall { min-height: 260px; }
+
+
+    .cover-collage {
+      columns: 3 140px;
+      column-gap: 14px;
+    }
+
+    .cover-tile {
+      break-inside: avoid;
+      display: block;
+      margin: 0 0 14px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: white;
+      border: 8px solid white;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .cover-tile img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .cover-tile span {
+      display: block;
+      padding: 10px 10px 12px;
+      font-size: 12px;
+      font-weight: 900;
+      color: var(--plum);
+      background: white;
+    }
+
+    .cover-tile.featured img { aspect-ratio: 3 / 4; }
+
+    .platform-note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
     .pin.mid { min-height: 210px; }
     .p1 { background: linear-gradient(155deg, #ffe1e7, #ff9fb5); }
     .p2 { background: linear-gradient(155deg, #ebe2ff, #b79cff); }
@@ -366,7 +409,32 @@
       opacity: .45;
     }
 
-    .book-card p { margin: 12px 4px 2px; color: var(--muted); font-size: 14px; font-weight: 800; }
+    .book-card p { margin: 8px 4px 2px; color: var(--muted); font-size: 14px; font-weight: 800; }
+
+
+    .book-card {
+      overflow: hidden;
+    }
+
+    .book-cover-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      background: var(--sand);
+    }
+
+    .book-card h3 {
+      margin: 12px 4px 4px;
+      font-size: 16px;
+      line-height: 1.15;
+      letter-spacing: -.4px;
+    }
+
+    .book-card a {
+      display: block;
+    }
 
     .about {
       background: var(--warm);
@@ -441,6 +509,7 @@
     @media (max-width: 860px) {
       .nav-links a:not(.nav-cta) { display: none; }
       .hero-grid, .shop-panel, .about-grid { grid-template-columns: 1fr; }
+      .cover-collage { columns: 2 140px; }
       .cards { grid-template-columns: 1fr; }
       .featured-grid { grid-template-columns: repeat(2, 1fr); }
       .section-head { display: block; }
@@ -481,10 +550,10 @@
         <div>
           <div class="eyebrow">🖍️ Printable pages + physical coloring books</div>
           <h1>Color your cozy, cute, and slightly spooky side.</h1>
-          <p>Bliss Fox Studio creates whimsical coloring books and printable digital downloads for slow evenings, creative breaks, and screen-free relaxation.</p>
+          <p>Bliss Fox Studio creates whimsical coloring books and printable digital downloads for slow evenings, creative breaks, and screen-free relaxation — with paperbacks on Amazon KDP and digital copies on Etsy.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Shop digital copies on Etsy</a>
-            <a class="btn btn-secondary" href="#shop">Find physical books</a>
+            <a class="btn btn-secondary" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Browse Amazon paperbacks</a>
           </div>
           <div class="trust-row" aria-label="Product themes">
             <span class="pill">Dark academia</span>
@@ -493,13 +562,23 @@
             <span class="pill">Fantasy worlds</span>
           </div>
         </div>
-        <div class="masonry" aria-label="Coloring book theme preview cards">
-          <div class="pin p1 tall"><strong>Cozy Critters</strong><span>cute animal pages</span></div>
-          <div class="pin p2"><strong>Magic Corners</strong><span>witchy printable sheets</span></div>
-          <div class="pin p3 mid"><strong>Forest Calm</strong><span>relaxing nature designs</span></div>
-          <div class="pin p4"><strong>Sunny Patterns</strong><span>easy mindful coloring</span></div>
-          <div class="pin p5 tall"><strong>Dreamy Fantasy</strong><span>dragons, castles, stars</span></div>
-          <div class="pin p6"><strong>Goth Cozy</strong><span>spooky but sweet</span></div>
+        <div class="cover-collage" aria-label="Bliss Fox Studio book cover preview">
+          <a class="cover-tile featured" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">
+            <img src="https://m.media-amazon.com/images/I/71osV96VLAL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Brave Little Firehouse Cuties Coloring Fun cover" loading="eager">
+            <span>Firehouse Cuties</span>
+          </a>
+          <a class="cover-tile" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">
+            <img src="https://m.media-amazon.com/images/I/71uxAz9tDqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="The Spellbound Dragon Sanctuary cover" loading="lazy">
+            <span>Fantasy Dragons</span>
+          </a>
+          <a class="cover-tile" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">
+            <img src="https://m.media-amazon.com/images/I/71GHCrsM5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Cozy Coffee Shop Critters cover" loading="lazy">
+            <span>Cozy Critters</span>
+          </a>
+          <a class="cover-tile featured" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">
+            <img src="https://m.media-amazon.com/images/I/714sZ-DhIML._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Spooky Sweet Halloween Cutie Pals cover" loading="lazy">
+            <span>Spooky Sweet</span>
+          </a>
         </div>
       </div>
     </header>
@@ -547,7 +626,8 @@
             <div>
               <div class="eyebrow">Instant downloads</div>
               <h3>Printable digital copies on Etsy</h3>
-              <p>Browse printable coloring pages and digital coloring book PDFs from the BlissFox Studio Etsy shop.</p>
+              <p>Browse printable coloring pages and digital coloring book PDFs from the official BlissFox Studio Etsy shop.</p>
+              <p class="platform-note">Official Etsy shop: https://www.etsy.com/shop/BlissFoxStudio</p>
             </div>
             <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Visit Etsy Shop</a>
           </article>
@@ -555,9 +635,10 @@
             <div>
               <div class="eyebrow">Paperback editions</div>
               <h3>Physical books on Amazon</h3>
-              <p>Prefer a real paperback? Find Bliss Fox Studio coloring books through Amazon KDP listings.</p>
+              <p>Prefer a real paperback? Visit the Bliss Fox Studio Amazon KDP author page for current physical coloring book releases.</p>
+              <p class="platform-note">Amazon author page: amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87</p>
             </div>
-            <a class="btn btn-dark" href="https://www.amazon.com/s?k=Bliss+Fox+Studio+coloring+book" target="_blank" rel="noopener">Search on Amazon</a>
+            <a class="btn btn-dark" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Visit Amazon KDP Author Page</a>
           </article>
         </div>
       </div>
@@ -566,14 +647,38 @@
     <section>
       <div class="container">
         <div class="section-head">
-          <h2>Popular collection ideas.</h2>
-          <p>Swap these placeholder cards with your real covers as each book goes live.</p>
+          <h2>Featured Bliss Fox Studio books.</h2>
+          <p>Real cover previews from the Amazon KDP catalog. Digital versions and printable copies live on Etsy when available.</p>
         </div>
         <div class="featured-grid">
-          <article class="book-card"><div class="cover" style="background: linear-gradient(155deg,#211922,#7e238b,#ff9fb5);">Cute & Spooky</div><p>Halloween, goth, cozy spooky</p></article>
-          <article class="book-card"><div class="cover" style="background: linear-gradient(155deg,#103c25,#92c77d,#fff1c7);">Animal Friends</div><p>Critters, pets, forest animals</p></article>
-          <article class="book-card"><div class="cover" style="background: linear-gradient(155deg,#6845ab,#b79cff,#dff7ff);">Fantasy Worlds</div><p>Magic, castles, dragons</p></article>
-          <article class="book-card"><div class="cover" style="background: linear-gradient(155deg,#8b6478,#f0e4dc,#ffe1e7);">Cozy Patterns</div><p>Mandalas, patterns, calm pages</p></article>
+          <article class="book-card">
+            <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener" aria-label="View Brave Little Firehouse Cuties on Amazon">
+              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71osV96VLAL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Brave Little Firehouse Cuties cover" loading="lazy">
+              <h3>Brave Little Firehouse Cuties</h3>
+              <p>Firefighter-themed cute coloring fun</p>
+            </a>
+          </article>
+          <article class="book-card">
+            <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener" aria-label="View The Spellbound Dragon Sanctuary on Amazon">
+              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71uxAz9tDqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="The Spellbound Dragon Sanctuary cover" loading="lazy">
+              <h3>The Spellbound Dragon Sanctuary</h3>
+              <p>Whimsical fantasy coloring</p>
+            </a>
+          </article>
+          <article class="book-card">
+            <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener" aria-label="View Spooky Sweet Halloween Cutie Pals on Amazon">
+              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/714sZ-DhIML._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Spooky Sweet Halloween Cutie Pals cover" loading="lazy">
+              <h3>Spooky Sweet Halloween Cutie Pals</h3>
+              <p>Cozy costumes and friendly frights</p>
+            </a>
+          </article>
+          <article class="book-card">
+            <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener" aria-label="View Cozy Coffee Shop Critters on Amazon">
+              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71GHCrsM5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Cozy Coffee Shop Critters cover" loading="lazy">
+              <h3>Cozy Coffee Shop Critters</h3>
+              <p>Relaxing coffee shop animals</p>
+            </a>
+          </article>
         </div>
       </div>
     </section>
@@ -585,7 +690,7 @@
           <div class="eyebrow">About the studio</div>
           <h2>Small creative studio. Big stack of coloring pages.</h2>
           <p>Bliss Fox Studio is built around approachable, giftable coloring books that make it easy to unwind. The brand focuses on charming themes, clean printable formats, and collections that work for both casual colorists and dedicated coloring book fans.</p>
-          <p>Use this website as the simple hub: send Pinterest, Instagram, Etsy buyers, and Amazon shoppers here first — then route them to the right product format.</p>
+          <p>Use this website as the simple hub: send Pinterest, Instagram, Etsy buyers, and Amazon shoppers here first — then route them to Etsy for digital downloads or Amazon for physical paperbacks.</p>
           <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Start with Etsy</a>
         </div>
       </div>
@@ -611,7 +716,7 @@
       </div>
       <div class="footer-links">
         <a href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Etsy</a>
-        <a href="https://www.amazon.com/s?k=Bliss+Fox+Studio+coloring+book" target="_blank" rel="noopener">Amazon</a>
+        <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Amazon</a>
         <a href="#books">Books</a>
         <a href="#about">About</a>
       </div>

@@ -74,12 +74,18 @@ No database or environment variables are required.
 
 ## Current shop links
 
-- Etsy: https://www.etsy.com/shop/BlissFoxStudio
-- Amazon search placeholder: https://www.amazon.com/s?k=Bliss+Fox+Studio+coloring+book
+- Etsy shop: https://www.etsy.com/shop/BlissFoxStudio
+- Amazon KDP author page: https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/
+
+## Content notes
+
+- The homepage now uses the official Etsy shop link.
+- The homepage now routes physical paperback CTAs to the Bliss Fox Studio Amazon KDP author page.
+- Featured book cards use externally loaded Amazon media URLs for live cover previews rather than storing Amazon images in this repository.
 
 ## Recommended next edits
 
-1. Replace the Amazon search URL with your real Amazon Author Central page or KDP book links.
-2. Replace the placeholder collection cards with real cover images.
+1. Add direct links for each individual Amazon book once you want product-specific landing cards.
+2. Add direct Etsy listing links for matching digital downloads.
 3. Connect the newsletter form to MailerLite, ConvertKit, Beehiiv, or another email tool.
 4. Point `blissfoxstudio.com` to the Coolify VPS and enable HTTPS in Coolify.
