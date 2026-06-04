@@ -8,8 +8,9 @@ RUN rm -rf /usr/share/nginx/html/*
 # Custom nginx config for static site hosting + health checks
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Website files. Explicit chmod matters because local generated files may be mode 600.
+# Website files and local brand assets. Explicit chmod matters because local generated files may be mode 600.
 COPY *.html /usr/share/nginx/html/
+COPY assets/ /usr/share/nginx/html/assets/
 RUN chmod -R a+rX /usr/share/nginx/html
 
 # Lightweight healthcheck that Coolify/Docker can use
