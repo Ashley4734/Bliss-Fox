@@ -144,6 +144,8 @@ h3 { letter-spacing: -.5px; }
 /* Section scaffolding */
 section { padding: 70px 0; }
 .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+.section-head.align-left { display: block; margin-bottom: 22px; }
+.section-head.align-left p { margin-top: 12px; }
 .section-head p { margin: 0; color: var(--muted); max-width: 530px; font-size: 17px; }
 .center-copy { margin: 0; color: var(--muted); max-width: 560px; font-size: 17px; }
 .center-actions { display: flex; justify-content: center; margin: -4px 0 24px; }
@@ -208,6 +210,16 @@ section { padding: 70px 0; }
 .cover-tile.featured img { aspect-ratio: 3/4; }
 
 /* Feature cards */
+.sessions-section { background: linear-gradient(180deg, rgba(255, 250, 242, .55), rgba(255, 225, 231, .24)); }
+.sessions-layout { display: grid; grid-template-columns: minmax(0, .92fr) minmax(360px, 1.08fr); gap: 34px; align-items: center; }
+.sessions-copy { min-width: 0; }
+.cards.sessions-cards { grid-template-columns: 1fr; gap: 14px; }
+.cards.sessions-cards .card { min-height: auto; padding: 20px; }
+.sessions-cards .card > div { display: grid; grid-template-columns: 76px 1fr; column-gap: 16px; align-items: center; }
+.sessions-cards .icon { grid-row: span 2; margin-bottom: 0; }
+.sessions-art { margin: 0; border-radius: var(--radius-lg); overflow: hidden; background: #fff; border: 1px solid rgba(222, 222, 214, .9); box-shadow: var(--shadow); }
+.sessions-art img { width: 100%; display: block; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; }
+
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .card {
   background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 24px; min-height: 250px;
@@ -363,7 +375,9 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .nav-links.open { opacity: 1; transform: none; pointer-events: auto; }
   .nav-links a { padding: 14px; font-size: 16px; border-radius: 14px; }
   .nav-cta { text-align: center; margin-top: 4px; }
-  .shop-panel, .about-grid { grid-template-columns: 1fr; }
+  .shop-panel, .about-grid, .sessions-layout { grid-template-columns: 1fr; }
+  .sessions-art { order: -1; }
+  .sessions-art img { max-height: 520px; }
   .cover-collage { columns: 2 140px; }
   .cards, .inside-grid { grid-template-columns: 1fr; }
   .featured-grid, .catalog-grid { grid-template-columns: repeat(2, 1fr); }
