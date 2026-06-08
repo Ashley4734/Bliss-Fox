@@ -354,7 +354,10 @@ section { padding: 70px 0; }
 .inside-card h3 { margin: 0 0 8px; font-size: 20px; }
 .inside-card p { margin: 0; color: var(--muted); font-size: 15px; }
 
-.sample-download { padding-top: 10px; }
+.sample-download {
+  padding-top: 34px;
+  scroll-margin-top: 118px;
+}
 .sample-card {
   display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center;
   background: linear-gradient(135deg, #fff, #fff7ee 58%, #ffe1e7);
