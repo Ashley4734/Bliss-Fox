@@ -1,107 +1,65 @@
-# Bliss Fox Studio Website
+# Bliss Fox Studio — Coolify Static Site
 
-A static landing page for Bliss Fox Studio — physical coloring books on Amazon KDP and digital copies on Etsy.
+Static HTML/CSS/JS brand hub for Bliss Fox Studio coloring books. This repo is packaged for direct GitHub-to-Coolify deployment with Docker + Nginx.
 
-This repo is ready to run on a VPS through **Coolify** using Dockerfile deployment.
+## Coolify deployment settings
 
-## Files
+Use these settings in Coolify:
 
-- `index.html` — complete one-page website with inline CSS
-- `privacy.html` — standalone privacy policy page linked from the nav/footer
-- `assets/bliss-fox-studio-logo.png` — official Bliss Fox Studio brand logo
-- `assets/generated/*.webp` — ComfyUI-generated brand illustrations and icon art used across the homepage
-- `Dockerfile` — production container using Nginx Alpine
-- `nginx.conf` — static-site Nginx config with `/healthz`
-- `docker-compose.yml` — optional local/VPS compose runner
-- `.dockerignore` — keeps build context clean
+- Resource type: Git repository / GitHub repository
+- Repository: `Ashley4734/Bliss-Fox`
+- Branch: `New`
+- Build pack / build type: Dockerfile
+- Dockerfile path: `/Dockerfile`
+- Exposed port: `80`
+- Health check path: `/healthz`
+- Environment variables: none required
+- Database: none required
 
-## Preview locally without Docker
+After the app is created, attach your domain in Coolify and enable HTTPS.
+
+## Runtime routes
+
+- `/` or `/index.html` — homepage / brand hub
+- `/books.html` — full coloring book catalog
+- `/books/brave-little-firehouse-cuties.html` — book detail page
+- `/books/spellbound-dragon-sanctuary.html` — book detail page
+- `/books/spooky-sweet-halloween-cutie-pals.html` — book detail page
+- `/books/cozy-coffee-shop-critters.html` — book detail page
+- `/privacy.html` — privacy policy
+- `/404.html` — branded not-found page
+- `/robots.txt` — crawler rules
+- `/sitemap.xml` — sitemap
+- `/healthz` — Docker/Coolify health check, returns `ok`
+
+## Local verification
 
 ```bash
-cd /home/ashley-harris/blissfoxstudio-website
-python3 -m http.server 8765
-```
-
-Then open: <http://127.0.0.1:8765>
-
-## Run locally with Docker
-
-```bash
-cd /home/ashley-harris/blissfoxstudio-website
 docker build -t blissfoxstudio-website .
-docker run --rm -p 8080:80 blissfoxstudio-website
+docker rm -f blissfoxstudio-website-test 2>/dev/null || true
+docker run -d --name blissfoxstudio-website-test -p 8095:80 blissfoxstudio-website
+curl -fsS http://127.0.0.1:8095/healthz
+curl -I http://127.0.0.1:8095/books.html
+docker rm -f blissfoxstudio-website-test
 ```
 
-Then open: <http://127.0.0.1:8080>
+## Structure
 
-Health check:
+- `Dockerfile` — Nginx static-site container for Coolify
+- `nginx.conf` — static routing, `/healthz`, asset caching, security headers, branded 404
+- `docker-compose.yml` — optional local runner
+- `.dockerignore` — keeps build context clean
+- `index.html` — home / hub
+- `books.html` — full catalog with client-side theme filter
+- `books/*.html` — one page per title
+- `privacy.html` — privacy + marketplace disclosure page
+- `404.html` — on-brand not-found page
+- `assets/site.css` — shared design system
+- `assets/site.js` — mobile nav, newsletter handler, catalog filter, footer year
+- `robots.txt`, `sitemap.xml`
 
-```bash
-curl http://127.0.0.1:8080/healthz
-```
+## Marketplace note
 
-Expected output:
+Book covers currently load from Amazon's CDN with a fallback to the Bliss Fox Studio logo. The Etsy/Amazon buttons use shop/search URLs where exact listing URLs are not known yet. Replace those with direct Etsy listing URLs and direct Amazon product/ASIN URLs when available for better conversion.
 
-```text
-ok
-```
-
-## Run locally with Docker Compose
-
-```bash
-docker compose up -d --build
-```
-
-Then open: <http://127.0.0.1:8080>
-
-Stop it:
-
-```bash
-docker compose down
-```
-
-## Deploy on Coolify
-
-1. In Coolify, create a new **Resource**.
-2. Choose **Public Repository** or connect your GitHub account.
-3. Repository: `https://github.com/Ashley4734/Bliss-Fox.git`
-4. Branch: `main`
-5. Build pack / deployment type: **Dockerfile**
-6. Dockerfile location: `/Dockerfile`
-7. Exposed port: `80`
-8. Health check path: `/healthz`
-9. Add your domain, for example: `blissfoxstudio.com`
-10. Deploy.
-
-No database or environment variables are required.
-
-## Current shop links
-
-- Etsy shop: https://www.etsy.com/shop/BlissFoxStudio
-- Amazon KDP author page: https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/
-
-## Content notes
-
-- The homepage now uses the official Etsy shop link.
-- The homepage now routes physical paperback CTAs to the Bliss Fox Studio Amazon KDP author page.
-- Featured book cards use externally loaded Amazon media URLs for live cover previews rather than storing Amazon images in this repository.
-- The homepage uses ComfyUI-generated WebP artwork for the hero illustration, feature icons, shop cards, and about section to make the brand feel warmer and more polished while keeping page weight low.
-- The site uses the official local Bliss Fox Studio logo asset at `assets/bliss-fox-studio-logo.png` in the navbar, privacy page, and brand badges/social metadata.
-- `/privacy.html` provides a basic privacy policy covering marketplace links, server logs, cookies/analytics status, and the current placeholder newsletter form.
-
-## Recommended next edits
-
-1. Add direct links for each individual Amazon book once you want product-specific landing cards.
-2. Add direct Etsy listing links for matching digital downloads.
-3. Connect the newsletter form to MailerLite, ConvertKit, Beehiiv, or another email tool.
-4. Point `blissfoxstudio.com` to the Coolify VPS and enable HTTPS in Coolify.
-
-
-## Book catalog page
-
-The site includes `/books.html`, an all-books catalog page for titles that have both buying paths:
-
-- physical paperback CTAs to Amazon product pages
-- digital copy CTAs to the BlissFoxStudio Etsy shop search for the matching title
-
-When exact Etsy listing URLs are available, replace the shop-search URLs with the direct listing URLs for better conversion.
+Do not add locally stored Amazon product images, prices, ratings, review counts, or availability unless the content is licensed/API-served and compliant with Amazon rules.

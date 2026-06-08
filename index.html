@@ -3,640 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fffaf2" />
   <link rel="icon" type="image/png" href="/assets/bliss-fox-studio-logo.png" />
+  <link rel="apple-touch-icon" href="/assets/bliss-fox-studio-logo.png" />
+
+  <!-- SET THIS to your live domain so canonical + JSON-LD URLs resolve correctly -->
+  <link rel="canonical" href="https://blissfoxstudio.com/" />
+
   <title>Bliss Fox Studio | Coloring Books & Digital Downloads</title>
   <meta name="description" content="Bliss Fox Studio creates cozy, whimsical, spooky, fantasy, and relaxing coloring books for adults and kids. Shop physical books on Amazon KDP and printable digital copies on Etsy." />
   <meta name="keywords" content="coloring books, printable coloring pages, adult coloring books, digital coloring books, Etsy coloring pages, KDP coloring books, Bliss Fox Studio" />
+  <meta name="robots" content="index, follow" />
+
   <meta property="og:title" content="Bliss Fox Studio | Coloring Books & Digital Downloads" />
-  <meta property="og:description" content="Cozy, whimsical, spooky, fantasy, and relaxing coloring books — physical editions on Amazon and printable digital copies on Etsy." />
-  <meta property="og:image" content="/assets/generated/hero-fox-studio.webp" />
+  <meta property="og:description" content="Cozy, whimsical, spooky, fantasy, and relaxing coloring books. Physical editions on Amazon and printable digital copies on Etsy." />
+  <meta property="og:image" content="/assets/generated/home-hero-bliss-fox-studio.jpg" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://blissfoxstudio.com/" />
+  <meta property="og:site_name" content="Bliss Fox Studio" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="/assets/generated/hero-fox-studio.webp" />
+  <meta name="twitter:title" content="Bliss Fox Studio | Coloring Books & Digital Downloads" />
+  <meta name="twitter:description" content="Cozy, whimsical, spooky, fantasy, and relaxing coloring books. Digital on Etsy, paperbacks on Amazon." />
+  <meta name="twitter:image" content="/assets/generated/home-hero-bliss-fox-studio.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --red: #e60023;
-      --plum: #211922;
-      --muted: #62625b;
-      --sand: #e5e5e0;
-      --warm: #f7f3ec;
-      --cream: #fffaf2;
-      --sage: #dce8d2;
-      --rose: #ffe1e7;
-      --lavender: #ebe2ff;
-      --dark: #33332e;
-      --white: #ffffff;
-      --line: #deded6;
-      --shadow: 0 18px 55px rgba(33, 25, 34, 0.12);
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      color: var(--plum);
-      background: var(--cream);
-      line-height: 1.45;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 250, 242, 0.88);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(222, 222, 214, 0.65);
-    }
-
-    .nav-inner {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 900;
-      letter-spacing: -0.8px;
-      font-size: 21px;
-    }
-
-    .logo {
-      width: 58px;
-      height: 58px;
-      border-radius: 18px;
-      overflow: hidden;
-      background: transparent;
-      border: 1px solid rgba(222, 222, 214, 0.9);
-      box-shadow: 0 10px 25px rgba(230, 118, 35, 0.16);
-      display: block;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--muted);
-    }
-
-    .nav-links a {
-      padding: 10px 12px;
-      border-radius: 16px;
-    }
-
-    .nav-links a:hover { background: var(--sand); color: var(--plum); }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      border: 0;
-      border-radius: 16px;
-      padding: 13px 18px;
-      font-weight: 900;
-      cursor: pointer;
-      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
-      white-space: nowrap;
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--red); color: white; box-shadow: 0 12px 28px rgba(230, 0, 35, .2); }
-    .btn-secondary { background: var(--sand); color: var(--plum); }
-    .btn-dark { background: var(--plum); color: white; }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 74px 0 34px;
-    }
-
-    .hero:before {
-      content: "";
-      position: absolute;
-      width: 640px;
-      height: 640px;
-      right: -260px;
-      top: -230px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(230,0,35,.16), rgba(255,225,231,.02) 64%);
-      pointer-events: none;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.04fr .96fr;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero-art-card {
-      display: block;
-      width: min(520px, 100%);
-      margin-bottom: 22px;
-      border-radius: 36px;
-      overflow: hidden;
-      background: white;
-      border: 10px solid white;
-      box-shadow: var(--shadow);
-      transform: rotate(-1.2deg);
-    }
-
-    .hero-art-card img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-    }
-
-    .hero-brand-mark {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 18px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.82);
-      border: 1px solid var(--line);
-      box-shadow: 0 8px 22px rgba(33,25,34,.06);
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 900;
-    }
-
-    .hero-brand-mark img {
-      width: 34px;
-      height: 34px;
-      object-fit: contain;
-      border-radius: 11px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: white;
-      border: 1px solid var(--line);
-      color: var(--muted);
-      font-weight: 900;
-      font-size: 13px;
-      box-shadow: 0 8px 22px rgba(33,25,34,.06);
-    }
-
-    h1 {
-      margin: 22px 0 18px;
-      max-width: 760px;
-      font-size: clamp(46px, 7vw, 82px);
-      line-height: .92;
-      letter-spacing: -4px;
-    }
-
-    .hero p {
-      max-width: 610px;
-      font-size: clamp(18px, 2vw, 22px);
-      color: var(--muted);
-      margin: 0 0 27px;
-    }
-
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-
-    .trust-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 800;
-    }
-
-    .pill {
-      background: rgba(255,255,255,.76);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 12px;
-    }
-
-    .masonry {
-      columns: 3 150px;
-      column-gap: 14px;
-    }
-
-    .pin {
-      break-inside: avoid;
-      margin: 0 0 14px;
-      border-radius: 24px;
-      overflow: hidden;
-      min-height: 160px;
-      padding: 18px;
-      background: white;
-      border: 8px solid white;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      position: relative;
-    }
-
-    .pin:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: .36;
-      background-image: radial-gradient(circle at 20% 20%, white 0 2px, transparent 2px), radial-gradient(circle at 80% 30%, white 0 2px, transparent 2px);
-      background-size: 28px 28px;
-    }
-
-    .pin strong, .pin span { position: relative; z-index: 1; }
-    .pin strong { font-size: 18px; letter-spacing: -.5px; }
-    .pin span { color: rgba(33,25,34,.72); font-weight: 800; font-size: 13px; }
-    .pin.tall { min-height: 260px; }
-
-
-    .cover-collage {
-      columns: 3 140px;
-      column-gap: 14px;
-    }
-
-    .cover-tile {
-      break-inside: avoid;
-      display: block;
-      margin: 0 0 14px;
-      border-radius: 24px;
-      overflow: hidden;
-      background: white;
-      border: 8px solid white;
-      box-shadow: var(--shadow);
-      position: relative;
-    }
-
-    .cover-tile img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-    }
-
-    .cover-tile span {
-      display: block;
-      padding: 10px 10px 12px;
-      font-size: 12px;
-      font-weight: 900;
-      color: var(--plum);
-      background: white;
-    }
-
-    .cover-tile.featured img { aspect-ratio: 3 / 4; }
-
-    .platform-note {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 800;
-    }
-    .pin.mid { min-height: 210px; }
-    .p1 { background: linear-gradient(155deg, #ffe1e7, #ff9fb5); }
-    .p2 { background: linear-gradient(155deg, #ebe2ff, #b79cff); }
-    .p3 { background: linear-gradient(155deg, #dce8d2, #92c77d); }
-    .p4 { background: linear-gradient(155deg, #fff1c7, #f7bd47); }
-    .p5 { background: linear-gradient(155deg, #dff7ff, #7dd4ec); }
-    .p6 { background: linear-gradient(155deg, #f0e4dc, #8b6478); color: white; }
-    .p6 span { color: rgba(255,255,255,.78); }
-
-    section { padding: 70px 0; }
-
-    .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 24px;
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      font-size: clamp(32px, 4vw, 54px);
-      line-height: .98;
-      letter-spacing: -2.3px;
-      margin: 0;
-    }
-
-    .section-head p, .center-copy {
-      margin: 0;
-      color: var(--muted);
-      max-width: 530px;
-      font-size: 17px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 24px;
-      min-height: 250px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 12px 35px rgba(33,25,34,.06);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:after {
-      content: "";
-      position: absolute;
-      width: 130px;
-      height: 130px;
-      right: -52px;
-      top: -56px;
-      border-radius: 50%;
-      background: rgba(255,225,231,.72);
-      z-index: 0;
-    }
-
-    .card > div { position: relative; z-index: 1; }
-
-    .icon {
-      width: 76px;
-      height: 76px;
-      display: grid;
-      place-items: center;
-      border-radius: 24px;
-      background: var(--rose);
-      margin-bottom: 20px;
-      overflow: hidden;
-      border: 6px solid white;
-      box-shadow: 0 12px 28px rgba(33,25,34,.10);
-    }
-
-    .icon img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card h3 { margin: 0 0 10px; font-size: 25px; letter-spacing: -1px; }
-    .card p { margin: 0; color: var(--muted); }
-
-    .shop-panel {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .shop-box {
-      border-radius: 32px;
-      padding: 32px;
-      background: white;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      min-height: 320px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .shop-box:after {
-      content: "";
-      position: absolute;
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      right: -70px;
-      bottom: -90px;
-      background: rgba(230,0,35,.10);
-    }
-
-    .shop-box.amazon:after { background: rgba(247,189,71,.22); }
-    .shop-box h3 { font-size: 34px; letter-spacing: -1.5px; margin: 8px 0 12px; }
-    .shop-box p { color: var(--muted); font-size: 17px; margin: 0; max-width: 430px; }
-    .shop-box .btn { margin-top: 25px; align-self: flex-start; position: relative; z-index: 1; }
-
-    .shop-art {
-      width: min(170px, 42%);
-      border-radius: 26px;
-      border: 7px solid white;
-      box-shadow: 0 18px 35px rgba(33,25,34,.13);
-      position: absolute;
-      right: 20px;
-      bottom: 20px;
-      transform: rotate(4deg);
-      z-index: 0;
-    }
-
-    .shop-box.amazon .shop-art { transform: rotate(-4deg); }
-
-    .featured-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .book-card {
-      background: white;
-      border-radius: 24px;
-      padding: 12px;
-      border: 1px solid var(--line);
-    }
-
-    .cover {
-      aspect-ratio: 3 / 4;
-      border-radius: 18px;
-      padding: 16px;
-      display: flex;
-      align-items: end;
-      color: white;
-      font-weight: 900;
-      letter-spacing: -1px;
-      font-size: 22px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cover:before {
-      content: "✦";
-      position: absolute;
-      top: 12px;
-      right: 15px;
-      font-size: 42px;
-      opacity: .45;
-    }
-
-    .book-card p { margin: 8px 4px 2px; color: var(--muted); font-size: 14px; font-weight: 800; }
-
-
-    .book-card {
-      overflow: hidden;
-    }
-
-    .book-cover-img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 18px;
-      display: block;
-      background: var(--sand);
-    }
-
-    .book-card h3 {
-      margin: 12px 4px 4px;
-      font-size: 16px;
-      line-height: 1.15;
-      letter-spacing: -.4px;
-    }
-
-    .book-card a {
-      display: block;
-    }
-
-    .about {
-      background: var(--warm);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 32px;
-      align-items: center;
-    }
-
-    .fox-card {
-      min-height: 430px;
-      border-radius: 40px;
-      background: linear-gradient(155deg, #fffaf2, #f7f3ec 56%, #ffe1e7);
-      display: grid;
-      place-items: center;
-      padding: 28px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .fox-card img {
-      width: min(430px, 100%);
-      border-radius: 30px;
-      box-shadow: 0 12px 35px rgba(33,25,34,.12);
-      background: transparent;
-      border: 10px solid white;
-    }
-
-    .about-copy p { color: var(--muted); font-size: 18px; }
-
-    .newsletter {
-      text-align: center;
-    }
-
-    .signup {
-      width: min(640px, 100%);
-      margin: 26px auto 0;
-      background: white;
-      border: 1px solid var(--line);
-      padding: 10px;
-      border-radius: 24px;
-      display: flex;
-      gap: 8px;
-      box-shadow: var(--shadow);
-    }
-
-    .signup input {
-      flex: 1;
-      min-width: 0;
-      border: 0;
-      outline: 0;
-      padding: 0 14px;
-      font: inherit;
-      color: var(--plum);
-    }
-
-    footer {
-      background: var(--dark);
-      color: white;
-      padding: 44px 0;
-    }
-
-    .footer-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 28px;
-      flex-wrap: wrap;
-      color: #c8c8c1;
-      font-size: 14px;
-    }
-
-    .footer-grid strong { color: white; font-size: 18px; }
-    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; }
-
-    @media (max-width: 860px) {
-      .nav-links a:not(.nav-cta) { display: none; }
-      .hero-grid, .shop-panel, .about-grid { grid-template-columns: 1fr; }
-      .cover-collage { columns: 2 140px; }
-      .cards { grid-template-columns: 1fr; }
-      .featured-grid { grid-template-columns: repeat(2, 1fr); }
-      .section-head { display: block; }
-      .section-head p { margin-top: 12px; }
-      h1 { letter-spacing: -2.8px; }
-    }
-
-    @media (max-width: 560px) {
-      .nav-inner { min-height: 68px; }
-      .brand span { display: none; }
-      .logo { width: 52px; height: 52px; border-radius: 16px; }
-      .hero { padding-top: 44px; }
-      .hero-art-card { border-radius: 22px; }
-      .shop-art { display: none; }
-      .hero-actions, .signup { flex-direction: column; align-items: stretch; }
-      .btn { width: 100%; }
-      .featured-grid { grid-template-columns: 1fr; }
-      .fox-card { min-height: 300px; font-size: 92px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css?v=visual-polish-20260604" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": "https://blissfoxstudio.com/#org", "name": "Bliss Fox Studio", "url": "https://blissfoxstudio.com/", "logo": "https://blissfoxstudio.com/assets/bliss-fox-studio-logo.png", "description": "Cozy, whimsical, spooky, and fantasy coloring books and printable digital downloads.", "sameAs": ["https://www.etsy.com/shop/BlissFoxStudio", "https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/"] },
+      { "@type": "WebSite", "@id": "https://blissfoxstudio.com/#website", "url": "https://blissfoxstudio.com/", "name": "Bliss Fox Studio", "publisher": { "@id": "https://blissfoxstudio.com/#org" } },
+      { "@type": "ItemList", "name": "Featured Bliss Fox Studio Coloring Books", "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "Book", "name": "Brave Little Firehouse Cuties", "bookFormat": "https://schema.org/Paperback", "image": "https://m.media-amazon.com/images/I/71osV96VLAL._AC_CR0%2C0%2C0%2C0_SY315_.jpg", "url": "https://blissfoxstudio.com/books/brave-little-firehouse-cuties.html", "publisher": { "@id": "https://blissfoxstudio.com/#org" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "Book", "name": "The Spellbound Dragon Sanctuary", "bookFormat": "https://schema.org/Paperback", "image": "https://m.media-amazon.com/images/I/71uxAz9tDqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg", "url": "https://blissfoxstudio.com/books/spellbound-dragon-sanctuary.html", "publisher": { "@id": "https://blissfoxstudio.com/#org" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "Book", "name": "Spooky Sweet Halloween Cutie Pals", "bookFormat": "https://schema.org/Paperback", "image": "https://m.media-amazon.com/images/I/714sZ-DhIML._AC_CR0%2C0%2C0%2C0_SY315_.jpg", "url": "https://blissfoxstudio.com/books/spooky-sweet-halloween-cutie-pals.html", "publisher": { "@id": "https://blissfoxstudio.com/#org" } } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "Book", "name": "Cozy Coffee Shop Critters", "bookFormat": "https://schema.org/Paperback", "image": "https://m.media-amazon.com/images/I/71GHCrsM5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg", "url": "https://blissfoxstudio.com/books/cozy-coffee-shop-critters.html", "publisher": { "@id": "https://blissfoxstudio.com/#org" } } }
+      ] }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
   <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Bliss Fox Studio home">
-        <div class="logo" aria-hidden="true"><img src="/assets/bliss-fox-studio-logo.png" alt="" loading="eager"></div>
+      <a class="brand" href="/index.html" aria-label="Bliss Fox Studio home">
+        <span class="logo" aria-hidden="true"><img src="/assets/bliss-fox-studio-logo.png" alt="" loading="eager"></span>
         <span>Bliss Fox Studio</span>
       </a>
-      <div class="nav-links">
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/index.html" aria-current="page">Home</a>
         <a href="/books.html">All Books</a>
         <a href="#shop">Shop</a>
         <a href="#about">About</a>
@@ -647,72 +72,44 @@
   </nav>
 
   <main id="top">
-    <header class="hero">
-      <div class="container hero-grid">
-        <div>
-          <a class="hero-art-card" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener" aria-label="Visit Bliss Fox Studio Etsy shop">
-            <img src="/assets/generated/hero-fox-studio.webp" alt="Cozy fox coloring page illustration generated for Bliss Fox Studio" loading="eager">
-          </a>
-          <div class="hero-brand-mark"><img src="/assets/bliss-fox-studio-logo.png" alt="" aria-hidden="true"> Official Bliss Fox Studio</div>
-          <div class="eyebrow">🖍️ Printable pages + physical coloring books</div>
+    <header class="hero hero-cover" aria-label="Bliss Fox Studio homepage hero">
+      <img class="hero-cover-image" src="/assets/generated/home-hero-bliss-fox-studio.jpg" alt="Smiling fox drawing coloring pages at a cozy Bliss Fox Studio art desk" loading="eager">
+      <div class="hero-cover-overlay" aria-hidden="true"></div>
+      <div class="container hero-cover-content">
+        <div class="hero-copy-card reveal d1">
           <h1>Color your cozy, cute, and slightly spooky side.</h1>
-          <p>Bliss Fox Studio creates whimsical coloring books and printable digital downloads for slow evenings, creative breaks, and screen-free relaxation — with paperbacks on Amazon KDP and digital copies on Etsy.</p>
+          <p>Bliss Fox Studio makes whimsical coloring books and printable digital downloads for slow evenings, creative breaks, and screen-free relaxation. Get paperbacks on Amazon KDP and instant digital copies on Etsy.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Shop digital copies on Etsy</a>
-            <a class="btn btn-secondary" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Browse Amazon paperbacks</a>
+            <a class="btn btn-secondary" href="/books.html">Browse the full catalog</a>
           </div>
-          <div class="trust-row" aria-label="Product themes">
-            <span class="pill">Dark academia</span>
-            <span class="pill">Witchy & cozy</span>
-            <span class="pill">Cute animals</span>
-            <span class="pill">Fantasy worlds</span>
-          </div>
-        </div>
-        <div class="cover-collage" aria-label="Bliss Fox Studio book cover preview">
-          <a class="cover-tile featured" href="/books/brave-little-firehouse-cuties.html">
-            <img src="https://m.media-amazon.com/images/I/71osV96VLAL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Brave Little Firehouse Cuties Coloring Fun cover" loading="eager">
-            <span>Firehouse Cuties</span>
-          </a>
-          <a class="cover-tile" href="/books/spellbound-dragon-sanctuary.html">
-            <img src="https://m.media-amazon.com/images/I/71uxAz9tDqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="The Spellbound Dragon Sanctuary cover" loading="lazy">
-            <span>Fantasy Dragons</span>
-          </a>
-          <a class="cover-tile" href="/books/cozy-coffee-shop-critters.html">
-            <img src="https://m.media-amazon.com/images/I/71GHCrsM5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Cozy Coffee Shop Critters cover" loading="lazy">
-            <span>Cozy Critters</span>
-          </a>
-          <a class="cover-tile featured" href="/books/spooky-sweet-halloween-cutie-pals.html">
-            <img src="https://m.media-amazon.com/images/I/714sZ-DhIML._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Spooky Sweet Halloween Cutie Pals cover" loading="lazy">
-            <span>Spooky Sweet</span>
-          </a>
         </div>
       </div>
     </header>
 
-    <section id="books">
+    <section id="books" class="sessions-section">
       <div class="container">
         <div class="section-head">
           <h2>Made for happy coloring sessions.</h2>
-          <p>Simple enough to relax with, detailed enough to feel rewarding — available as print books or instant digital downloads.</p>
         </div>
-        <div class="cards">
-          <article class="card">
+        <div class="sessions-image-grid" aria-label="Bliss Fox Studio coloring book formats and themes">
+          <article class="session-image-card reveal">
+            <img src="/assets/generated/physical-books.png" alt="Fox holding physical Bliss Fox Studio coloring books with gift bag, bookshelves, road trip car, coloring pages, and pencils" loading="lazy">
             <div>
-              <div class="icon"><img src="/assets/generated/icon-physical-books.webp" alt="" loading="lazy"></div>
               <h3>Physical books</h3>
               <p>Paperback coloring books for your shelf, gifts, road trips, and offline creative time.</p>
             </div>
           </article>
-          <article class="card">
+          <article class="session-image-card reveal d1">
+            <img src="/assets/generated/printable-pdfs.png" alt="Fox beside a printer and tablet showing printable digital coloring pages" loading="lazy">
             <div>
-              <div class="icon" style="background: var(--lavender);"><img src="/assets/generated/icon-printable-pdfs.webp" alt="" loading="lazy"></div>
               <h3>Printable PDFs</h3>
               <p>Download, print, and color today. Great for trying a theme before buying the full physical edition.</p>
             </div>
           </article>
-          <article class="card">
+          <article class="session-image-card reveal d2">
+            <img src="/assets/generated/gift-friendly-themes.png" alt="Fox surrounded by cozy, kawaii, fantasy, goth, seasonal, animal, mandala, and pattern coloring theme icons" loading="lazy">
             <div>
-              <div class="icon" style="background: var(--sage);"><img src="/assets/generated/icon-gift-themes.webp" alt="" loading="lazy"></div>
               <h3>Gift-friendly themes</h3>
               <p>Cozy, kawaii, fantasy, goth, seasonal, animals, mandalas, and pattern collections.</p>
             </div>
@@ -732,10 +129,10 @@
             <div>
               <div class="eyebrow">Instant downloads</div>
               <h3>Printable digital copies on Etsy</h3>
-              <p>Browse printable coloring pages and digital coloring book PDFs from the official BlissFox Studio Etsy shop.</p>
-              <p class="platform-note">Official Etsy shop: https://www.etsy.com/shop/BlissFoxStudio</p>
+              <p>Browse printable coloring pages and digital coloring book PDFs from the official Bliss Fox Studio Etsy shop.</p>
+              <p class="platform-note">Official Etsy shop: etsy.com/shop/BlissFoxStudio</p>
             </div>
-            <img class="shop-art" src="/assets/generated/icon-printable-pdfs.webp" alt="Printable coloring page illustration" loading="lazy">
+            <img class="shop-art" src="/assets/generated/icon-printable-pdfs.webp" alt="" loading="lazy" aria-hidden="true">
             <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Visit Etsy Shop</a>
           </article>
           <article class="shop-box amazon">
@@ -745,7 +142,7 @@
               <p>Prefer a real paperback? Visit the Bliss Fox Studio Amazon KDP author page for current physical coloring book releases.</p>
               <p class="platform-note">Amazon author page: amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87</p>
             </div>
-            <img class="shop-art" src="/assets/generated/icon-physical-books.webp" alt="Stack of coloring books illustration" loading="lazy">
+            <img class="shop-art" src="/assets/generated/icon-physical-books.webp" alt="" loading="lazy" aria-hidden="true">
             <a class="btn btn-dark" href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Visit Amazon KDP Author Page</a>
           </article>
         </div>
@@ -756,40 +153,26 @@
       <div class="container">
         <div class="section-head">
           <h2>Featured Bliss Fox Studio books.</h2>
-          <p>Real cover previews from the Amazon KDP catalog. Digital versions and printable copies live on Etsy when available.</p>
+          <p>Cover previews from the Amazon KDP catalog. Digital versions and printable copies live on Etsy when available.</p>
         </div>
-        <div class="actions" style="justify-content:center;margin:-6px 0 24px;">
-          <a class="btn btn-primary" href="/books.html">View all books + formats</a>
-        </div>
+        <div class="center-actions"><a class="btn btn-primary" href="/books.html">View all books and formats</a></div>
         <div class="featured-grid">
-          <article class="book-card">
-            <a href="/books/brave-little-firehouse-cuties.html" aria-label="View Brave Little Firehouse Cuties book page">
-              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71osV96VLAL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Brave Little Firehouse Cuties cover" loading="lazy">
-              <h3>Brave Little Firehouse Cuties</h3>
-              <p>Firefighter-themed cute coloring fun</p>
-            </a>
-          </article>
-          <article class="book-card">
-            <a href="/books/spellbound-dragon-sanctuary.html" aria-label="View The Spellbound Dragon Sanctuary book page">
-              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71uxAz9tDqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="The Spellbound Dragon Sanctuary cover" loading="lazy">
-              <h3>The Spellbound Dragon Sanctuary</h3>
-              <p>Whimsical fantasy coloring</p>
-            </a>
-          </article>
-          <article class="book-card">
-            <a href="/books/spooky-sweet-halloween-cutie-pals.html" aria-label="View Spooky Sweet Halloween Cutie Pals book page">
-              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/714sZ-DhIML._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Spooky Sweet Halloween Cutie Pals cover" loading="lazy">
-              <h3>Spooky Sweet Halloween Cutie Pals</h3>
-              <p>Cozy costumes and friendly frights</p>
-            </a>
-          </article>
-          <article class="book-card">
-            <a href="/books/cozy-coffee-shop-critters.html" aria-label="View Cozy Coffee Shop Critters book page">
-              <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71GHCrsM5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Cozy Coffee Shop Critters cover" loading="lazy">
-              <h3>Cozy Coffee Shop Critters</h3>
-              <p>Relaxing coffee shop animals</p>
-            </a>
-          </article>
+          <article class="book-card"><a href="/books/brave-little-firehouse-cuties.html" aria-label="View Brave Little Firehouse Cuties">
+            <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71osV96VLAL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Brave Little Firehouse Cuties cover" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/assets/bliss-fox-studio-logo.png';">
+            <h3>Brave Little Firehouse Cuties</h3><p>Firefighter-themed cute coloring fun</p>
+          </a></article>
+          <article class="book-card"><a href="/books/spellbound-dragon-sanctuary.html" aria-label="View The Spellbound Dragon Sanctuary">
+            <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71uxAz9tDqL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="The Spellbound Dragon Sanctuary cover" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/assets/bliss-fox-studio-logo.png';">
+            <h3>The Spellbound Dragon Sanctuary</h3><p>Whimsical fantasy coloring</p>
+          </a></article>
+          <article class="book-card"><a href="/books/spooky-sweet-halloween-cutie-pals.html" aria-label="View Spooky Sweet Halloween Cutie Pals">
+            <img class="book-cover-img" src="https://m.media-amazon.com/images/I/714sZ-DhIML._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Spooky Sweet Halloween Cutie Pals cover" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/assets/bliss-fox-studio-logo.png';">
+            <h3>Spooky Sweet Halloween Cutie Pals</h3><p>Cozy costumes and friendly frights</p>
+          </a></article>
+          <article class="book-card"><a href="/books/cozy-coffee-shop-critters.html" aria-label="View Cozy Coffee Shop Critters">
+            <img class="book-cover-img" src="https://m.media-amazon.com/images/I/71GHCrsM5aL._AC_CR0%2C0%2C0%2C0_SY315_.jpg" alt="Cozy Coffee Shop Critters cover" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='/assets/bliss-fox-studio-logo.png';">
+            <h3>Cozy Coffee Shop Critters</h3><p>Relaxing coffee shop animals</p>
+          </a></article>
         </div>
       </div>
     </section>
@@ -797,13 +180,13 @@
     <section id="about" class="about">
       <div class="container about-grid">
         <div class="fox-card" aria-label="Cozy Bliss Fox Studio creative desk illustration">
-          <img src="/assets/generated/about-creative-pages.webp" alt="Cozy desk with coloring pages, pencils, coffee, and a tiny fox illustration" loading="eager">
+          <img src="/assets/generated/about-creative-pages.webp" alt="Cozy desk with coloring pages, pencils, coffee, and a tiny fox illustration" loading="lazy">
         </div>
         <div class="about-copy">
           <div class="eyebrow">About the studio</div>
           <h2>Small creative studio. Big stack of coloring pages.</h2>
-          <p>Bliss Fox Studio is built around approachable, giftable coloring books that make it easy to unwind. The brand focuses on charming themes, clean printable formats, and collections that work for both casual colorists and dedicated coloring book fans.</p>
-          <p>Use this website as the simple hub: send Pinterest, Instagram, Etsy buyers, and Amazon shoppers here first — then route them to Etsy for digital downloads or Amazon for physical paperbacks.</p>
+          <p>Bliss Fox Studio is built around approachable, giftable coloring books that make it easy to unwind. The focus is on charming themes, clean printable formats, and collections that work for casual colorists and dedicated coloring book fans alike.</p>
+          <p>Find printable digital downloads on Etsy or order paperback editions from Amazon, then color at your own pace, anytime you need a calm, screen-free moment.</p>
           <a class="btn btn-primary" href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Start with Etsy</a>
         </div>
       </div>
@@ -812,29 +195,30 @@
     <section class="newsletter">
       <div class="container">
         <h2>Get new pages and launch updates.</h2>
-        <p class="center-copy" style="margin: 12px auto 0;">Add your email provider later. For now, this form is styled and ready to connect to MailerLite, ConvertKit, Beehiiv, or Etsy updates.</p>
-        <form class="signup" onsubmit="event.preventDefault(); alert('Email signup placeholder — connect this to your email platform later.');">
-          <input type="email" aria-label="Email address" placeholder="your@email.com" required />
+        <p class="center-copy" style="margin: 12px auto 0;">Be first to hear about new coloring book releases, seasonal collections, and free printable pages.</p>
+        <form class="signup" id="signupForm" novalidate>
+          <label for="signupEmail" class="sr-only">Email address</label>
+          <input id="signupEmail" type="email" autocomplete="email" placeholder="your@email.com" required />
           <button class="btn btn-primary" type="submit">Notify me</button>
         </form>
+        <p class="signup-msg" id="signupMsg" role="status" aria-live="polite"></p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container footer-grid">
-      <div>
-        <strong>🦊 Bliss Fox Studio</strong><br />
-        Coloring books, printable pages, and cozy creative downloads.
-      </div>
+      <div><strong>🦊 Bliss Fox Studio</strong><br />Coloring books, printable pages, and cozy creative downloads.</div>
       <div class="footer-links">
         <a href="https://www.etsy.com/shop/BlissFoxStudio" target="_blank" rel="noopener">Etsy</a>
         <a href="https://www.amazon.com/Bliss-Fox-Studio/e/B0GZFBTS87/" target="_blank" rel="noopener">Amazon</a>
         <a href="/books.html">All Books</a>
-        <a href="#about">About</a>
         <a href="/privacy.html">Privacy</a>
       </div>
+      <div class="footer-legal">&copy; <span id="year"></span> Bliss Fox Studio. Coloring book covers shown belong to their respective editions. As an Amazon Associate, qualifying purchases may earn a commission.</div>
     </div>
   </footer>
+
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
