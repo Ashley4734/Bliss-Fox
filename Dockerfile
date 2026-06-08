@@ -1,6 +1,7 @@
 # Bliss Fox Studio static website container
 # Coolify can build this repo directly from GitHub using Dockerfile mode.
-FROM nginx:1.27-alpine
+# Use the AWS public ECR mirror instead of Docker Hub. Coolify builds can fail when Docker Hub's anonymous auth endpoint returns 5xx.
+FROM public.ecr.aws/nginx/nginx:1.27-alpine
 
 # Remove default nginx page
 RUN rm -rf /usr/share/nginx/html/*
