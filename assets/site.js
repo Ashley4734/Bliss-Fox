@@ -26,27 +26,6 @@
     });
   }
 
-  /* ---- Newsletter (inline confirmation) ----
-     Replace the TODO with your provider POST or n8n webhook. */
-  var form = document.getElementById('signupForm');
-  if (form) {
-    var input = document.getElementById('signupEmail');
-    var msg = document.getElementById('signupMsg');
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!input.checkValidity()) {
-        msg.style.color = '#b3261e';
-        msg.textContent = 'Please enter a valid email address.';
-        input.focus();
-        return;
-      }
-      msg.style.color = '#1f7a3d';
-      msg.textContent = 'Thanks! You are on the list. Watch your inbox for new pages.';
-      form.reset();
-      // TODO: deliver input.value to MailerLite / ConvertKit / Beehiiv / n8n webhook.
-    });
-  }
-
   /* ---- Catalog theme filter ---- */
   var filterBar = document.getElementById('filterBar');
   if (filterBar) {

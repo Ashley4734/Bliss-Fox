@@ -111,6 +111,9 @@ h3 { letter-spacing: -.5px; }
 .tag.fantasy { background: var(--lavender);  color: #4a3a8c; border-color: #d6c8ff; }
 .tag.animals { background: var(--rose);      color: #8a2747; border-color: #f7c4d2; }
 .tag.seasonal{ background: var(--gold);      color: #8a6410; border-color: #f0dca0; }
+.tag.professions { background: #dff3ff; color: #20506d; border-color: #b9def2; }
+.tag.kids { background: #e7f8dd; color: #386226; border-color: #cdeabd; }
+.tag.patriotic { background: #e3ecff; color: #284a92; border-color: #c8d7ff; }
 
 /* Nav (shared) */
 .nav {
@@ -374,14 +377,6 @@ section { padding: 70px 0; }
   border-radius: 16px; padding: 16px 18px; color: var(--muted); font-size: 14.5px; margin: 22px 0;
 }
 
-/* Newsletter */
-.newsletter { text-align: center; }
-.signup {
-  width: min(640px, 100%); margin: 26px auto 0; background: #fff; border: 1px solid var(--line);
-  padding: 10px; border-radius: var(--radius); display: flex; gap: 8px; box-shadow: var(--shadow);
-}
-.signup input { flex: 1; min-width: 0; border: 0; outline: 0; padding: 0 14px; font: inherit; color: var(--plum); background: transparent; }
-.signup-msg { margin: 14px auto 0; max-width: 640px; font-weight: 800; color: #1f7a3d; min-height: 22px; }
 
 /* 404 */
 .notfound { text-align: center; padding: 90px 0; }
@@ -437,8 +432,8 @@ footer { background: var(--dark); color: #fff; padding: 44px 0; margin-top: 10px
   .hero h1 { font-size: clamp(38px, 13vw, 56px); letter-spacing: -1.8px; }
   .hero p { font-size: 17px; }
   .shop-art { display: none; }
-  .hero-actions, .signup, .format-row { flex-direction: column; align-items: stretch; }
-  .hero-actions .btn, .signup .btn, .format-row .btn { width: 100%; }
+  .hero-actions, .format-row { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn, .format-row .btn { width: 100%; }
   .featured-grid, .catalog-grid { grid-template-columns: 1fr; }
   .sessions-image-grid { grid-template-columns: 1fr; gap: 12px; }
   .session-image-card { display: flex; flex-direction: column; gap: 10px; padding: 11px; }

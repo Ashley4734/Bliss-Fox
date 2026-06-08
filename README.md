@@ -8,7 +8,7 @@ Use these settings in Coolify:
 
 - Resource type: Git repository / GitHub repository
 - Repository: `Ashley4734/Bliss-Fox`
-- Branch: `New`
+- Branch: `main`
 - Build pack / build type: Dockerfile
 - Dockerfile path: `/Dockerfile`
 - Exposed port: `80`
@@ -55,7 +55,7 @@ docker rm -f blissfoxstudio-website-test
 - `privacy.html` — privacy + marketplace disclosure page
 - `404.html` — on-brand not-found page
 - `assets/site.css` — shared design system
-- `assets/site.js` — mobile nav, newsletter handler, catalog filter, footer year
+- `assets/site.js` — mobile nav, catalog filter, footer year
 - `robots.txt`, `sitemap.xml`
 
 ## Marketplace note
