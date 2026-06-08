@@ -339,7 +339,7 @@ section { padding: 70px 0; }
   border-radius: 30px; overflow: hidden; background: #fff; border: 12px solid #fff; box-shadow: var(--shadow-lg);
   transform: rotate(-1.4deg); position: sticky; top: 100px;
 }
-.detail-cover img { width: 100%; display: block; aspect-ratio: 3/4; object-fit: cover; background: var(--sand); }
+.detail-cover img { width: 100%; display: block; aspect-ratio: 1/1; object-fit: cover; background: var(--sand); }
 .detail-copy h1 { font-size: clamp(36px, 4.8vw, 58px); margin: 14px 0 14px; }
 .detail-copy .lede { font-size: 19px; color: var(--muted); margin: 0 0 22px; max-width: 580px; }
 .detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
