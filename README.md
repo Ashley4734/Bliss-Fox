@@ -97,9 +97,14 @@ https://blissfoxstudio.com/pinterest-catalog.xml
 ```
 
 It stays in step with the Etsy shop automatically (same 6-hour schedule). Each
-item includes id, title, description, link (the branded Etsy listing URL),
-image_link, price, sale_price (when a sale is configured), availability, brand,
-and product_type.
+item includes id, title, description, link, image_link, price, sale_price (when
+a sale is configured), availability, brand, google_product_category, and
+product_type.
+
+Pinterest requires the item `link` domain to match your verified domain, so feed
+links use `https://blissfoxstudio.com/listing/<id>/<slug>`; nginx 301-redirects
+those `/listing/...` URLs to the matching Etsy listing. (The website's own
+product cards still link straight to Etsy.)
 
 To connect it in Pinterest (one-time):
 
