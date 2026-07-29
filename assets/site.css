@@ -311,6 +311,10 @@ section { padding: 70px 0; }
 }
 .book-card .tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 4px 6px; }
 .book-card .card-price { padding: 0 4px 10px; color: var(--plum); font-weight: 900; font-size: 15px; letter-spacing: -.2px; }
+.book-card .card-price.has-sale { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.book-card .price-sale { color: #c0392b; font-weight: 900; }
+.book-card .price-original { color: var(--muted); font-weight: 700; font-size: 13px; text-decoration: line-through; }
+.book-card .price-badge { color: #b3234a; background: #ffe1e7; border: 1px solid #f7c4d2; font-weight: 800; font-size: 11px; letter-spacing: 0; padding: 2px 8px; border-radius: 999px; align-self: center; }
 
 /* Data-driven catalog states (loading / empty / error) */
 .catalog-status { color: var(--muted); font-weight: 700; padding: 20px 4px; }
