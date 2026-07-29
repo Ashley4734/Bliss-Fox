@@ -1,7 +1,3378 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://www.etsy.com/shop/BlissFoxStudio",
-  "updated": null,
-  "count": 0,
-  "products": []
+  "updated": "2026-07-29T16:54:43.226Z",
+  "count": 104,
+  "products": [
+    {
+      "listing_id": 4543885841,
+      "title": "Kawaii Bakery Coloring Book, 25 Printable Pages, Chibi Treats (Digital Download)",
+      "description": "Bakery coloring book with cute baking pages, dessert color pages, and printable dessert fun—smiling pastries, cozy café treats, and sweet characters to color. This digital…",
+      "url": "https://www.etsy.com/listing/4543885841/kawaii-bakery-coloring-book-25-printable",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "kawaii coloring book",
+        "dessert coloring",
+        "bakery coloring",
+        "cute food coloring",
+        "chibi coloring",
+        "colouring desserts",
+        "printable coloring",
+        "coloring pages kids",
+        "adult coloring book",
+        "pastry coloring",
+        "cute dessert art",
+        "coloring book pdf",
+        "instant download"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1785005571
+    },
+    {
+      "listing_id": 4526320288,
+      "title": "80s Retro Coloring Book: 24 Easy Printable Pages, Instant Download PDF",
+      "description": "80s coloring book for a quick, happy break with retro coloring book vibes—packed with simple throwback icons that are easy to finish in one sitting. Inside you’ll find bold, open…",
+      "url": "https://www.etsy.com/listing/4526320288/80s-retro-coloring-book-24-simple",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "80s coloring pages",
+        "retro coloring book",
+        "1980s coloring",
+        "adult coloring book",
+        "printable coloring",
+        "coloring book pdf",
+        "easy coloring pages",
+        "vintage coloring",
+        "nostalgic coloring",
+        "80s party activity",
+        "retro gift idea",
+        "screen free activity",
+        "bold and easy"
+      ],
+      "themes": [],
+      "created": 1784998613
+    },
+    {
+      "listing_id": 4543879482,
+      "title": "Tiny Homes Beneath Flowers Coloring Book, Cozy Cottagecore Pages (Instant Download)",
+      "description": "Tiny house coloring book for a calming garden escape—step into little homes tucked beneath towering blossoms and leafy canopies. This printable coloring set invites you into a…",
+      "url": "https://www.etsy.com/listing/4543879482/tiny-homes-beneath-flowers-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "tiny home coloring",
+        "cottagecore pages",
+        "garden coloring",
+        "fairy garden book",
+        "cozy house pages",
+        "adult coloring",
+        "teen coloring",
+        "relaxing hobby",
+        "house lover gift",
+        "spring colouring",
+        "coloring pages pdf",
+        "botanical cottages",
+        "flower village"
+      ],
+      "themes": [
+        "cozy",
+        "fantasy",
+        "seasonal"
+      ],
+      "created": 1784992024
+    },
+    {
+      "listing_id": 4543873757,
+      "title": "Woodland Tea Party Coloring Book, Cozy Animals, Forest Scenes (Digital Download)",
+      "description": "Coloring book tea lovers can unwind with cozy forest tea-time scenes made for calm, screen-free breaks. Step into a storybook woodland where shy rabbits host tea under leafy…",
+      "url": "https://www.etsy.com/listing/4543873757/woodland-tea-party-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "tea party coloring",
+        "tea time coloring",
+        "woodland coloring",
+        "forest animals",
+        "cottagecore gift",
+        "cozy coloring",
+        "adult coloring",
+        "teen coloring",
+        "printable tea pdf",
+        "digital download",
+        "tea lover gift",
+        "relaxing colouring",
+        "spring tea party"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal"
+      ],
+      "created": 1784992004
+    },
+    {
+      "listing_id": 4543894662,
+      "title": "Strawberry Garden Coloring Book, Cozy Cottage Scenes, Relaxing Berry Patch Art (PDF Download)",
+      "description": "Strawberry coloring book for cozy evenings with relaxing berry patch scenes that feel like stepping into a hidden garden path. Inside, you’ll find storybook-style garden moments…",
+      "url": "https://www.etsy.com/listing/4543894662/strawberry-garden-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "strawberry pages",
+        "fruit coloring book",
+        "garden coloring",
+        "cottagecore fruit",
+        "strawberry gift",
+        "berry coloring",
+        "adult coloring",
+        "teen coloring",
+        "spring coloring",
+        "farmhouse decor",
+        "colouring pages",
+        "printable pdf",
+        "jam jar labels"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1784991987
+    },
+    {
+      "listing_id": 4528216885,
+      "title": "Adult Coloring Book, Cozy European Village Scenes, 25 Printable Cottagecore Coloring Pages, PDF Instant Download",
+      "description": "Village coloring book for a calm, travel-inspired break with cozy street scenes you can bring to life at home. Step into a storybook European village filled with cobblestone…",
+      "url": "https://www.etsy.com/listing/4528216885/cozy-european-village-coloring-book-25",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cottagecore coloring",
+        "village coloring",
+        "hygge coloring",
+        "cozy coloring pages",
+        "country coloring",
+        "cottage coloring",
+        "printable coloring",
+        "relaxing coloring",
+        "malbuch landschaft",
+        "coloring pages pdf",
+        "village colouring",
+        "storybook coloring",
+        "coloring book gift"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1784934321
+    },
+    {
+      "listing_id": 4543045979,
+      "title": "Goth Girls Coloring Book, Cozy Midnight Rooms, Rituals, Familiars (PDF Download)",
+      "description": "Goth coloring book for adults who want a calm, cozy escape with goth girl coloring scenes full of sweet pets, candles, and spell-table details. Inside you’ll find a collection of…",
+      "url": "https://www.etsy.com/listing/4543045979/goth-girls-coloring-book-cozy-midnight",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "goth girl coloring",
+        "goth coloring pages",
+        "witchy girl pets",
+        "familiar coloring",
+        "cat familiar art",
+        "spooky cute girls",
+        "adult goth gift",
+        "teen goth gift",
+        "printable goth pdf",
+        "colouring goth",
+        "alt girl coloring",
+        "victorian pets",
+        "moonlit parlor"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals",
+        "kids"
+      ],
+      "created": 1784899332
+    },
+    {
+      "listing_id": 4543046396,
+      "title": "Cozy Goth Homes Coloring Book, Cats, Moonlit Decor, Whimsical Rooms (PDF Download)",
+      "description": "Coloring book goth for cozy nights at home—unplug with candlelit rooms, curious shelves, and whimsical cats curled up among moons and botanicals. Step into a world of cozy goth…",
+      "url": "https://www.etsy.com/listing/4543046396/cozy-goth-homes-coloring-book-cats",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "goth coloring book",
+        "goth coloring pages",
+        "spooky cozy book",
+        "witchy home decor",
+        "cozy gothic rooms",
+        "goth cat coloring",
+        "witchy cat pages",
+        "apothecary page",
+        "moon altar page",
+        "adult goth gift",
+        "goth colouring",
+        "printable goth",
+        "haunted house cute"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals"
+      ],
+      "created": 1784899291
+    },
+    {
+      "listing_id": 4543053441,
+      "title": "Pastel Goth Coloring Book, Kawaii Spooky Friends, Relaxing Soft Goth Cuties (PDF Download)",
+      "description": "Coloring book cute for cozy unwind time with spooky cute friends—an easy way to relax, focus, and enjoy a sweet-creepy vibe at home. Inside you’ll find a collection of…",
+      "url": "https://www.etsy.com/listing/4543053441/pastel-goth-coloring-book-kawaii-spooky",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cute coloring book",
+        "kawaii coloring",
+        "goth cute art",
+        "spooky cute",
+        "cute halloween",
+        "pastel goth",
+        "cute skulls",
+        "cute bats",
+        "witchy cute",
+        "adult coloring",
+        "teen coloring",
+        "colouring book",
+        "alt kid gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals",
+        "kids"
+      ],
+      "created": 1784893651
+    },
+    {
+      "listing_id": 4543061007,
+      "title": "Spooky Bookshop Cats Coloring Book, Cozy Witchy Pages (PDF Download)",
+      "description": "Coloring book cats for book lovers who want a cozy spooky bookshop escape—curl up with bookstore cats, spell shelves, and candlelit reading nooks. Step into a whimsical world of…",
+      "url": "https://www.etsy.com/listing/4543061007/spooky-bookshop-cats-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cat coloring book",
+        "witchy cat gift",
+        "spooky bookshop",
+        "bookstore cats",
+        "book lover gift",
+        "adult cat coloring",
+        "cozy witchy cats",
+        "magic shop cats",
+        "cat colouring book",
+        "printable cat pdf",
+        "library cat pages",
+        "moon cat pages",
+        "gothic book nook"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "fantasy",
+        "animals"
+      ],
+      "created": 1784893633
+    },
+    {
+      "listing_id": 4543076117,
+      "title": "Gothic Wedding Coloring Book, Moody Bridal Scenes, Romantic Dark Cottagecore (Instant Download)",
+      "description": "Gothic coloring book for romantic wedding-day escapes—enjoy witchy wedding details, ornate gowns, and candlelit ceremony scenes you can bring to life with your favorite markers…",
+      "url": "https://www.etsy.com/listing/4543076117/gothic-wedding-coloring-book-moody",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "gothic bride pages",
+        "wedding coloring",
+        "bridal coloring book",
+        "victorian bride",
+        "dark romance art",
+        "adult bridal gift",
+        "spooky wedding",
+        "witchy wedding",
+        "gothic colouring",
+        "printable bride",
+        "engagement gift",
+        "bridal shower fun",
+        "anniversary gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1784893614
+    },
+    {
+      "listing_id": 4543068745,
+      "title": "Victorian Goth Portraits Coloring Book, Moody Cameos, Lace, Gothic Romance (PDF Download)",
+      "description": "Goth coloring book for quiet evenings with Victorian portraits, lace collars, and candlelit curiosities—print, color, and unwind at your own pace. Step into a parlor of shadowy…",
+      "url": "https://www.etsy.com/listing/4543068745/victorian-goth-portraits-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "victorian coloring",
+        "gothic portraits",
+        "goth coloring pages",
+        "dark romance art",
+        "witchy cat page",
+        "apothecary shelf",
+        "spell table art",
+        "moon crystal page",
+        "adult colouring",
+        "printable pdf",
+        "gift for her",
+        "memento mori",
+        "ornate frames"
+      ],
+      "themes": [
+        "spooky",
+        "animals"
+      ],
+      "created": 1784893590
+    },
+    {
+      "listing_id": 4543082797,
+      "title": "Dark Academia Coloring Book, Moody Study Scenes, Bookish Vibes (PDF Download)",
+      "description": "Coloring book academia for bookish nights—step into dark academia with candlelit study scenes, curious students, and mystical desk rituals. This printable coloring set is made…",
+      "url": "https://www.etsy.com/listing/4543082797/dark-academia-coloring-book-moody-study",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "dark academia",
+        "academia coloring",
+        "study aesthetic",
+        "college coloring",
+        "student coloring",
+        "library coloring",
+        "bookish coloring",
+        "book lover gift",
+        "dark academia gift",
+        "academia colouring",
+        "adult coloring book",
+        "dorm decor art",
+        "gift for students"
+      ],
+      "themes": [],
+      "created": 1784893569
+    },
+    {
+      "listing_id": 4543088455,
+      "title": "Goth Cats Coloring Book, Witchy Cottage, Moody Apothecary, Spells (Digital Download)",
+      "description": "Cat coloring book for quiet nights—step into a goth cat cottage filled with potion shelves, moonlit spell tables, and curious familiars. This printable set is made for adults who…",
+      "url": "https://www.etsy.com/listing/4543088455/goth-cats-coloring-book-witchy-cottage",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "goth cat book",
+        "witchy cat pages",
+        "black cat spells",
+        "cat colouring book",
+        "cat lover gift",
+        "adult cat coloring",
+        "printable cat pdf",
+        "cozy witch cats",
+        "apothecary cats",
+        "moon cat art",
+        "crystal cat page",
+        "relaxing cat art",
+        "victorian cat"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals"
+      ],
+      "created": 1784893547
+    },
+    {
+      "listing_id": 4543093875,
+      "title": "Bunny Garden Village Coloring Book, Cozy Cottage Scenes, Printable PDF (Instant Download)",
+      "description": "Bunny coloring book for quiet, cozy afternoons in a garden village—settle in with cottage gardens, tiny shops, and gentle woodland neighbors. Step into Bunny Garden Village, a…",
+      "url": "https://www.etsy.com/listing/4543093875/bunny-garden-village-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "rabbit coloring book",
+        "bunny coloring pages",
+        "rabbit coloring",
+        "cute bunny pages",
+        "bunny lover gift",
+        "gift for teen girl",
+        "adult stress relief",
+        "spring coloring book",
+        "garden coloring book",
+        "cottagecore rabbits",
+        "rabbit colouring",
+        "digital download",
+        "easter activity"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1784893527
+    },
+    {
+      "listing_id": 4543097817,
+      "title": "Hedgehog Coloring Book, Cozy Woodland Cottage Scenes, Printable PDF (Instant Download)",
+      "description": "Hedgehog coloring book with cozy woodland cottage scenes for a calm, screen-free break you can enjoy anytime. Step into a storybook forest where tiny hedgehogs bustle through…",
+      "url": "https://www.etsy.com/listing/4543097817/hedgehog-coloring-book-cozy-woodland",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "hedgehog pages",
+        "cute hedgehog",
+        "hedgehog gift",
+        "hedgehog lover",
+        "cottagecore gift",
+        "cozy coloring",
+        "adult coloring",
+        "kids coloring",
+        "hedgehog colouring",
+        "coloring pages pdf",
+        "digital download",
+        "forest animal gift",
+        "woodland friends"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1784893503
+    },
+    {
+      "listing_id": 4542153053,
+      "title": "Celestial Witchcraft Coloring Book Bundle, 97 Pages (Instant Download PDF)",
+      "description": "Celestial Witchcraft Mystique: a bundle of 4 printable coloring books (97 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop —…",
+      "url": "https://www.etsy.com/listing/4542153053/celestial-witchcraft-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 15.99,
+        "currency": "USD",
+        "display": "$15.99"
+      },
+      "tags": [
+        "coloring bundle",
+        "coloring book set",
+        "coloring books",
+        "printable coloring",
+        "instant download",
+        "witch cat coloring",
+        "owl coloring book",
+        "raven coloring",
+        "toad coloring pages",
+        "bat coloring pages",
+        "fox coloring book",
+        "witchy animal art",
+        "adult coloring"
+      ],
+      "themes": [
+        "spooky",
+        "animals"
+      ],
+      "created": 1784741409
+    },
+    {
+      "listing_id": 4542175190,
+      "title": "Ocean Shark Adventures Coloring Bundle, 99 Pages, Printable PDF (Instant Download)",
+      "description": "Ocean Shark Adventures: a bundle of 3 printable coloring books (99 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://www.etsy.com/listing/4542175190/ocean-shark-adventures-coloring-bundle",
+      "image": "",
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "display": "$12.99"
+      },
+      "tags": [
+        "coloring bundle",
+        "coloring book set",
+        "coloring books",
+        "printable coloring",
+        "instant download",
+        "ocean coloring pages",
+        "sea animal pages",
+        "kids ocean color",
+        "toddler coloring",
+        "preschool coloring",
+        "easy ocean animals",
+        "adult simple color",
+        "sea life coloring"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1784741409
+    },
+    {
+      "listing_id": 4542184668,
+      "title": "Mystic Cottage Alchemy Coloring Book Bundle, 3 Books, 73 Pages (PDF Download)",
+      "description": "Mystic Cottage Alchemy: a bundle of 3 printable coloring books (73 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://www.etsy.com/listing/4542184668/mystic-cottage-alchemy-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "display": "$12.99"
+      },
+      "tags": [
+        "coloring bundle",
+        "coloring book set",
+        "coloring books",
+        "printable coloring",
+        "instant download",
+        "crystal pages pdf",
+        "healing crystals",
+        "herb coloring pages",
+        "herbal witch gift",
+        "botanical coloring",
+        "witchy coloring",
+        "apothecary pages",
+        "moon crystal art"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1784741409
+    },
+    {
+      "listing_id": 4541663166,
+      "title": "Zodiac Night Magic Coloring Book, Celestial Witchy Scenes, Astrology Pages (Instant Download)",
+      "description": "Unwind with printable zodiac book pages filled with cozy, moonlit witchy scenes and star-sign symbolism. Zodiac Night Magic is a downloadable adult coloring collection that…",
+      "url": "https://www.etsy.com/listing/4541663166/zodiac-night-magic-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "zodiac signs art",
+        "birth chart hobby",
+        "cottagecore witch",
+        "moonlit magic",
+        "apothecary art",
+        "constellation art",
+        "star sign gift",
+        "self care coloring",
+        "witchy night",
+        "colouring pages",
+        "aries taurus",
+        "gemini cancer",
+        "leo virgo"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1784683672
+    },
+    {
+      "listing_id": 4541571735,
+      "title": "Unicorn Coloring Book, 25 Chibi Pages, Magical Friends, Kids Activity (Instant Download)",
+      "description": "Unicorn coloring book for cozy, screen-free fun—fill sweet magical friends with your favorite shades and enjoy a relaxing break. Inside you’ll find a whole herd of chibi unicorn…",
+      "url": "https://www.etsy.com/listing/4541571735/unicorn-coloring-book-25-chibi-pages",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "unicorn coloring",
+        "cute unicorn pages",
+        "kids unicorn book",
+        "unicorn gift kids",
+        "unicorn lover gift",
+        "easy unicorn color",
+        "unicorn party favor",
+        "printable unicorn",
+        "adult unicorn calm",
+        "unicorn colouring",
+        "coloring pages pdf",
+        "digital download",
+        "printable coloring"
+      ],
+      "themes": [
+        "cozy",
+        "fantasy",
+        "animals",
+        "kids"
+      ],
+      "created": 1784683628
+    },
+    {
+      "listing_id": 4541645790,
+      "title": "Dragon Coloring Book, Simple Fantasy Friends, Calm Pages for Kids (Instant Download)",
+      "description": "Dragon coloring book pages for kids who love sweet hatchlings and friendly fantasy scenes. This printable set is made for easy, relaxing coloring with bold, simple shapes and…",
+      "url": "https://www.etsy.com/listing/4541645790/dragon-coloring-book-simple-fantasy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cute dragon pages",
+        "baby dragon book",
+        "kids dragon pages",
+        "easy dragon art",
+        "printable dragons",
+        "dragon lover gift",
+        "fantasy kids gift",
+        "classroom coloring",
+        "rainy day activity",
+        "dragon colouring",
+        "coloring pages pdf",
+        "mythical creatures",
+        "fairy tale fun"
+      ],
+      "themes": [
+        "cozy",
+        "fantasy",
+        "kids"
+      ],
+      "created": 1784683575
+    },
+    {
+      "listing_id": 4541509384,
+      "title": "Butterfly Coloring Book, Stained-Glass Style, Bold Outlines, Printable PDF (Instant Download)",
+      "description": "Butterfly coloring book for quiet, satisfying coloring time with garden wings and blossoms in bold, stained-glass inspired window designs. This printable set is made for adults…",
+      "url": "https://www.etsy.com/listing/4541509384/butterfly-coloring-book-stained-glass",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "butterfly book",
+        "butterfly pages",
+        "butterfly gift",
+        "adult coloring",
+        "kids coloring",
+        "garden butterflies",
+        "flower coloring",
+        "spring coloring",
+        "nature coloring",
+        "butterfly pdf",
+        "coloring pages pdf",
+        "butterfly colouring",
+        "pollinator garden"
+      ],
+      "themes": [
+        "seasonal",
+        "kids"
+      ],
+      "created": 1784683535
+    },
+    {
+      "listing_id": 4541614953,
+      "title": "Horse Coloring Book, Simple Big Horses, Calm Stable Scenes (Printable PDF)",
+      "description": "Horse coloring book for calm, screen-free fun—enjoy big, simple horse friends with easy pages that are quick to finish and satisfying to color. Inside you’ll find a collection of…",
+      "url": "https://www.etsy.com/listing/4541614953/horse-coloring-book-simple-big-horses",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "horse coloring pages",
+        "printable horse",
+        "pony coloring",
+        "kids horse pages",
+        "horse lover gift",
+        "easy horse coloring",
+        "horse for toddlers",
+        "cowgirl party",
+        "farm animal pages",
+        "horse colouring",
+        "digital download",
+        "coloring pages pdf",
+        "equestrian gift"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1784683421
+    },
+    {
+      "listing_id": 4541534495,
+      "title": "Mushroom Cottage Coloring Book, Enchanted Forest Scenes, Cozy Spells (PDF Download)",
+      "description": "Mushroom coloring book for cozy evenings—step into an enchanted forest cottage filled with fairy house pages you can print and color anytime. Inside this downloadable set you’ll…",
+      "url": "https://www.etsy.com/listing/4541534495/mushroom-cottage-coloring-book-enchanted",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "mushroom pages",
+        "cottage coloring",
+        "fairy house pages",
+        "forest coloring",
+        "witchy coloring",
+        "adult coloring",
+        "cozy coloring",
+        "fantasy coloring",
+        "spellbook pages",
+        "apothecary page",
+        "colouring book",
+        "gnome lover gift",
+        "botanical doodles"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1784683382
+    },
+    {
+      "listing_id": 4541485858,
+      "title": "Mermaid Coloring Book, Ornate Ocean Realms, Enchanted Sea Magic (Instant Download)",
+      "description": "Mermaid coloring book for teens and adults who want a calming escape into underwater fantasy—packed with ornate sea palaces, sirens, and ocean treasures. Inside you’ll find 24…",
+      "url": "https://www.etsy.com/listing/4541485858/mermaid-coloring-book-ornate-ocean",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "mermaid pages",
+        "adult mermaids",
+        "mermaid gift",
+        "mermaid lover gift",
+        "fantasy mermaids",
+        "sea princess art",
+        "underwater fantasy",
+        "mermaid colouring",
+        "teens coloring",
+        "coloring pages pdf",
+        "ocean nymph gift",
+        "sea goddess pages",
+        "mythical sea folk"
+      ],
+      "themes": [
+        "fantasy"
+      ],
+      "created": 1784683359
+    },
+    {
+      "listing_id": 4541555179,
+      "title": "Fairy Garden Coloring Book, Cozy Cottage Scenes, Printable PDF (Instant Download)",
+      "description": "Fairy coloring book filled with cozy fairy garden scenes for a calm, screen-free break. Step into a storybook garden where tiny friends keep busy among mushrooms, teacups, seed…",
+      "url": "https://www.etsy.com/listing/4541555179/fairy-garden-coloring-book-cozy-cottage",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "fairy coloring pages",
+        "garden fairy book",
+        "fairy garden pages",
+        "printable fairies",
+        "fairy lover gift",
+        "coloring for teens",
+        "adult fairy coloring",
+        "kids fairy pages",
+        "relaxing fairies",
+        "fairy colouring",
+        "digital download",
+        "coloring pages pdf",
+        "pixie garden"
+      ],
+      "themes": [
+        "cozy",
+        "fantasy",
+        "kids"
+      ],
+      "created": 1784683314
+    },
+    {
+      "listing_id": 4541450643,
+      "title": "Floral Mandala Coloring Pages, 24 Bloom Patterns, Adult Zen Garden (PDF Download)",
+      "description": "Unwind with mandala coloring pages inspired by a tranquil floral garden—24 detailed bloom patterns made for adult relaxation. This printable set features meditative, radial…",
+      "url": "https://www.etsy.com/listing/4541450643/floral-mandala-coloring-pages-24-bloom",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "mandala flowers",
+        "zen floral art",
+        "mindful coloring",
+        "anxiety relief art",
+        "self care printable",
+        "botanical mandalas",
+        "meditation coloring",
+        "therapy coloring",
+        "spring floral gift",
+        "mothers day craft",
+        "colouring mandala",
+        "printable pdf",
+        "calm coloring"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1784683256
+    },
+    {
+      "listing_id": 4541529478,
+      "title": "Affirmation Coloring Book, Daily Pep Talks, Bold Bubble Quotes, Printable PDF (Instant Download)",
+      "description": "Affirmation coloring book with daily pep talks and self love quotes to help you unwind, reset your mindset, and enjoy a calm creative break. Inside you’ll find a collection of…",
+      "url": "https://www.etsy.com/listing/4541529478/affirmation-coloring-book-daily-pep",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "positive quotes",
+        "self love quotes",
+        "mindfulness quotes",
+        "anxiety relief",
+        "daily affirmations",
+        "motivational quotes",
+        "printable affirm",
+        "therapy office",
+        "teacher desk decor",
+        "teen affirmations",
+        "affirmation pdf",
+        "gratitude practice",
+        "manifest journal"
+      ],
+      "themes": [
+        "cozy",
+        "professions"
+      ],
+      "created": 1784683229
+    },
+    {
+      "listing_id": 4541192594,
+      "title": "Detailed Koi Fish Coloring Book, Koi Pond Nature Scenes (Printable PDF)",
+      "description": "Koi coloring book, koi coloring pages, printable koi pdf—download a detailed koi pond collection made for calm, focused coloring at home. Koi Pond Reverie is a printable coloring…",
+      "url": "https://www.etsy.com/listing/4541192594/detailed-koi-fish-coloring-book-koi-pond",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "koi coloring book",
+        "koi coloring pages",
+        "printable koi pdf",
+        "koi pond coloring",
+        "adult koi coloring",
+        "japanese koi art",
+        "zen pond pages",
+        "koi fish printable",
+        "koi colouring page",
+        "koi line art pdf",
+        "garden pond scenes",
+        "relaxing koi pages",
+        "nature coloring pdf"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1784640697
+    },
+    {
+      "listing_id": 4541152628,
+      "title": "Realistic Songbird Coloring Book, 25 Printable Garden Bird Pages (PDF Download)",
+      "description": "Unwind with this songbird coloring book featuring realistic feather textures and calm backyard nature scenes. Cute Birds to Color is a digital PDF coloring set inspired by…",
+      "url": "https://www.etsy.com/listing/4541152628/realistic-songbird-coloring-book-25",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "realistic birds",
+        "robin coloring",
+        "cardinal couple",
+        "chickadee art",
+        "woodpecker art",
+        "goldfinch art",
+        "barn swallow",
+        "feather texture",
+        "nature scenes",
+        "adult colouring",
+        "digital download",
+        "birdwatcher gift",
+        "ornithology gift"
+      ],
+      "themes": [],
+      "created": 1784596477
+    },
+    {
+      "listing_id": 4526850046,
+      "title": "Tarot Cats Celestial Spells Coloring Book, Witchy Night-Sky Scenes (Instant Download)",
+      "description": "Tarot coloring book for relaxing nights with celestial coloring scenes that feel like a quiet ritual at your table. Step into a whimsical tarot-and-stars world filled with witchy…",
+      "url": "https://www.etsy.com/listing/4526850046/tarot-cats-celestial-spells-coloring",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "tarot coloring pages",
+        "celestial coloring",
+        "zodiac coloring",
+        "witchy cat pages",
+        "moon phase art",
+        "crystal coloring",
+        "astrology gift",
+        "adult tarot art",
+        "tarot reader gift",
+        "printable tarot",
+        "colouring tarot",
+        "oracle deck vibe",
+        "lunar altar"
+      ],
+      "themes": [
+        "spooky",
+        "animals"
+      ],
+      "created": 1784095363
+    },
+    {
+      "listing_id": 4526548049,
+      "title": "Tropical Flowers Coloring Book, Vintage Botanical Pages, Detailed Blooms (Instant Download)",
+      "description": "Tropical coloring book pages for a calm, plant-filled break—unplug with tropical flowers you can print at home and color anytime. Inside you’ll find a curated set of…",
+      "url": "https://www.etsy.com/listing/4526548049/tropical-flowers-coloring-book-vintage",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "tropical flowers",
+        "tropical pages",
+        "adult flower book",
+        "flower coloring",
+        "botanical pages",
+        "hibiscus pages",
+        "orchid coloring",
+        "palm leaf art",
+        "relaxing flowers",
+        "floral colouring",
+        "coloring pages pdf",
+        "digital download",
+        "tropical bouquet"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1783777171
+    },
+    {
+      "listing_id": 4528237721,
+      "title": "Cozy Cottage Garden Flowers Coloring Book, Vintage Botanical Pages (PDF Download)",
+      "description": "Flower coloring book for slow, cozy cottage-garden moments—settle in with relaxing flowers and let your mind wander through blooms and leafy stems. Inside you’ll find a…",
+      "url": "https://www.etsy.com/listing/4528237721/cozy-cottage-garden-flowers-coloring",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "garden coloring book",
+        "botanical coloring",
+        "wildflower pages",
+        "bouquet coloring",
+        "floral pdf",
+        "adult flower book",
+        "relaxing flowers",
+        "printable flowers",
+        "flower lover gift",
+        "flower colouring",
+        "tea time decor",
+        "country home gift",
+        "herb garden love"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1783777171
+    },
+    {
+      "listing_id": 4518018058,
+      "title": "Firefighter Coloring Book, Kawaii Animals, Fire Trucks, Kids Activity (Instant Download)",
+      "description": "Meet the bravest little rescue buddies at the friendliest firehouse in town! This kawaii coloring book is packed with adorable chibi animals in firefighter-themed scenes—full of…",
+      "url": "https://www.etsy.com/listing/4518018058/firefighter-coloring-book-kawaii-animals",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "firefighter coloring",
+        "fire truck coloring",
+        "fire engine pages",
+        "community helpers",
+        "kids hero coloring",
+        "preschool activity",
+        "career day activity",
+        "firehouse party",
+        "firefighter gift",
+        "fire safety week",
+        "fire colouring",
+        "classroom activity",
+        "kawaii coloring"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1783559514
+    },
+    {
+      "listing_id": 4528434053,
+      "title": "Realistic Sunflower Coloring Book, Nature Scenes, Garden Life, Adults PDF (Instant Download)",
+      "description": "Sunflower coloring book for anyone who wants a calm, nature-filled break with floral coloring scenes that feel like a walk through late-summer fields. Inside you’ll find a…",
+      "url": "https://www.etsy.com/listing/4528434053/realistic-sunflower-coloring-book-nature",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "sunflower pages",
+        "sunflower printable",
+        "sunflower pdf",
+        "floral coloring",
+        "flower coloring",
+        "botanical pages",
+        "adult coloring",
+        "garden flowers",
+        "country flowers",
+        "sunflower gift",
+        "sunflower colouring",
+        "botanical art gift",
+        "farmhouse wall art"
+      ],
+      "themes": [],
+      "created": 1783362751
+    },
+    {
+      "listing_id": 4529113032,
+      "title": "Kawaii Dessert Coloring Book, 25 Printable Pages (Instant Download)",
+      "description": "Print, relax, and smile with sweet treats coloring pages featuring adorable bakery characters like cupcakes, donuts, cookies, and ice cream. Sweetie Treats is a printable set of…",
+      "url": "https://www.etsy.com/listing/4529113032/kawaii-dessert-coloring-book-cute",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "sweet treats pdf",
+        "printable sweets",
+        "cute bakery pages",
+        "cupcake printables",
+        "donut coloring",
+        "ice cream coloring",
+        "macaron coloring",
+        "cookie coloring",
+        "cake slice coloring",
+        "baking party favor",
+        "birthday activity",
+        "sleepover activity",
+        "dessert colouring"
+      ],
+      "themes": [
+        "animals",
+        "seasonal"
+      ],
+      "created": 1782697472
+    },
+    {
+      "listing_id": 4529125266,
+      "title": "Wildlife Adventures Coloring Book Bundle, 75 Animal Pages (Instant Download PDF)",
+      "description": "Wildlife Adventures: a bundle of 3 printable coloring books (75 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://www.etsy.com/listing/4529125266/bold-and-easy-coloring-book-bundle-75",
+      "image": "",
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "display": "$12.99"
+      },
+      "tags": [
+        "bold easy coloring",
+        "animal coloring book",
+        "coloring book bundle",
+        "safari coloring book",
+        "woodland coloring",
+        "reptile coloring",
+        "nature coloring",
+        "kids coloring book",
+        "jungle coloring",
+        "instant download",
+        "printable coloring",
+        "forest animals",
+        "coloring book gift"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1782604723
+    },
+    {
+      "listing_id": 4528497221,
+      "title": "Boba Coloring Book, Kawaii Bubble Tea Shop Adventures, Cozy Treats (PDF Download)",
+      "description": "Boba coloring book filled with cozy bubble tea shop moments—sip, smile, and color adorable cups, toppings, and café buddies. Inside you’ll find a playful boba-tea world where the…",
+      "url": "https://www.etsy.com/listing/4528497221/boba-coloring-book-kawaii-bubble-tea",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "bubble tea coloring",
+        "boba coloring pages",
+        "kawaii boba pages",
+        "boba lover gift",
+        "bubble tea gift",
+        "tea shop coloring",
+        "kids boba coloring",
+        "adult boba coloring",
+        "boba party activity",
+        "boba colouring page",
+        "coloring pages pdf",
+        "milk tea cuties",
+        "dessert drink fun"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1782505789
+    },
+    {
+      "listing_id": 4528492528,
+      "title": "Kawaii Ramen Coloring Book, Cozy Noodle Shop Scenes, 25 Pages (Instant Download)",
+      "description": "Ramen coloring book fun for cozy nights in, with kawaii ramen scenes that feel like a warm little noodle shop you can color at your own pace. Inside you’ll find 25+ cute line-art…",
+      "url": "https://www.etsy.com/listing/4528492528/kawaii-ramen-coloring-book-cute",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "ramen coloring pages",
+        "kawaii ramen",
+        "noodle shop pages",
+        "food coloring book",
+        "cute food coloring",
+        "kids ramen coloring",
+        "adult ramen relax",
+        "ramen lover gift",
+        "gift for foodie",
+        "ramen party activity",
+        "ramen colouring",
+        "digital download",
+        "japanese food fun"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1782505789
+    },
+    {
+      "listing_id": 4528457125,
+      "title": "Bonsai Coloring Book, Vintage Botanical Studies, Zen Miniature Trees (PDF Download)",
+      "description": "Bonsai coloring book for calm, focused breaks—enjoy zen coloring with detailed miniature trees inspired by classic garden aesthetics. This printable set is designed for adults…",
+      "url": "https://www.etsy.com/listing/4528457125/bonsai-coloring-book-vintage-botanical",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "printable bonsai",
+        "bonsai pdf",
+        "adult bonsai",
+        "zen coloring",
+        "japanese garden",
+        "mini tree art",
+        "plant lover gift",
+        "relaxing plants",
+        "bonsai colouring",
+        "digital download",
+        "sumi e inspired",
+        "wabi sabi decor",
+        "botanical printable"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1782494094
+    },
+    {
+      "listing_id": 4528429374,
+      "title": "Kawaii Café Coloring Book, 25 Printable Pages, Coffee Friends, Instant Download (PDF)",
+      "description": "Coffee coloring book for cozy café breaks—color cute barista pals, latte art, and snack friends whenever you need a calm, screen-free reset. Step into a little café world where…",
+      "url": "https://www.etsy.com/listing/4528429374/kawaii-cafe-coloring-book-25-printable",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cute coffee pages",
+        "cafe coloring book",
+        "boba coloring pages",
+        "barista cat gift",
+        "coffee lover gift",
+        "tea time coloring",
+        "dessert coloring",
+        "kawaii food pages",
+        "adult relax book",
+        "kids cafe pages",
+        "coffee colouring",
+        "latte art doodle",
+        "pastry shop fun"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1782494094
+    },
+    {
+      "listing_id": 4528417182,
+      "title": "Floral Gardens Coloring Book Bundle, 3 Books, 73 Pages (Instant Download PDF)",
+      "description": "Blooming Floral Gardens: a bundle of 3 printable coloring books (73 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://www.etsy.com/listing/4528417182/floral-gardens-coloring-book-bundle-3",
+      "image": "",
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "display": "$12.99"
+      },
+      "tags": [
+        "coloring bundle",
+        "coloring book set",
+        "coloring books",
+        "printable coloring",
+        "instant download",
+        "wildflower coloring",
+        "wildflower pages",
+        "flower coloring book",
+        "botanical coloring",
+        "printable",
+        "adult flower book",
+        "floral coloring pdf",
+        "meadow flower pages"
+      ],
+      "themes": [],
+      "created": 1782484563
+    },
+    {
+      "listing_id": 4528357711,
+      "title": "Vintage Rose Bouquets Coloring Book, 25 Printable Pages (Instant Download)",
+      "description": "Rose coloring book for adults who want a calm, focused break with vintage bouquet arrangements you can print at home and color anytime. Inside you’ll find a curated set of…",
+      "url": "https://www.etsy.com/listing/4528357711/vintage-rose-bouquets-coloring-book-25",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "rose coloring pages",
+        "bouquet coloring",
+        "floral coloring book",
+        "botanical roses",
+        "printable rose art",
+        "rose bouquet pdf",
+        "adult flower color",
+        "relaxing flowers",
+        "mothers day gift",
+        "wedding flower art",
+        "rose colouring page",
+        "digital download",
+        "bridal bouquet"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1782476551
+    },
+    {
+      "listing_id": 4528206340,
+      "title": "Cozy Christmas Village Coloring Book, Storybook Winter Scenes (PDF Download)",
+      "description": "Christmas coloring book filled with cozy village scenes to color for a calm, screen-free holiday break. Step into a storybook winter town where every street glows with seasonal…",
+      "url": "https://www.etsy.com/listing/4528206340/cozy-christmas-village-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "christmas village",
+        "holiday coloring",
+        "xmas coloring book",
+        "winter coloring",
+        "cozy christmas",
+        "printable xmas",
+        "adult holiday",
+        "kids christmas",
+        "christmas gift",
+        "colouring christmas",
+        "festive coloring",
+        "coloring pages pdf",
+        "digital download"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782475414
+    },
+    {
+      "listing_id": 4528233346,
+      "title": "Cozy Bookshop Cafe Coloring Book, Whimsical Storybook Scenes (PDF Download)",
+      "description": "Bookshop coloring book for quiet evenings, featuring cozy cafe pages that turn your coloring time into a warm little escape. Step into a storybook world of shelves, pastries…",
+      "url": "https://www.etsy.com/listing/4528233346/cozy-bookshop-cafe-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "bookstore coloring",
+        "cafe coloring book",
+        "reading nook pages",
+        "cozy cafe pages",
+        "book lover gift",
+        "gift for reader",
+        "cat bookstore page",
+        "library cafe art",
+        "tea time coloring",
+        "colouring bookshop",
+        "printable book pdf",
+        "journal nook",
+        "book club gift"
+      ],
+      "themes": [
+        "cozy",
+        "animals"
+      ],
+      "created": 1782475414
+    },
+    {
+      "listing_id": 4528244063,
+      "title": "Birth Flower Coloring Pages, Vintage Botanical Line Art, Printable PDF (Instant Download)",
+      "description": "Celebrate every month with birth flower coloring you can print at home and enjoy anytime. This relaxing floral colouring set is inspired by classic botanical specimen…",
+      "url": "https://www.etsy.com/listing/4528244063/birth-flower-coloring-pages-vintage",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "birth flower art",
+        "birthday month",
+        "zodiac flower pages",
+        "birth month bouquet",
+        "january carnation",
+        "snowdrop coloring",
+        "february violet",
+        "primrose coloring",
+        "march daffodil",
+        "jonquil coloring",
+        "april daisy",
+        "sweet pea vine",
+        "floral colouring"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1782475414
+    },
+    {
+      "listing_id": 4528218000,
+      "title": "Cozy Mountain Town Coloring Book, 25 Storybook Scenes, Cottagecore Village Escapes (Instant Download)",
+      "description": "Mountain town coloring book with cozy cabin pages to help you unwind with storybook scenes inspired by a warm little village in the hills. Step into a peaceful mountain town…",
+      "url": "https://www.etsy.com/listing/4528218000/cozy-mountain-town-coloring-book-25",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "mountain coloring",
+        "cabin coloring book",
+        "cozy town pages",
+        "cottagecore town",
+        "alpine village art",
+        "cozy cabin pages",
+        "winter town page",
+        "fall town scene",
+        "relaxing coloring",
+        "adult coloring",
+        "teen coloring",
+        "town colouring",
+        "digital download"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1782475414
+    },
+    {
+      "listing_id": 4528230999,
+      "title": "Cozy Autumn Town Coloring Book, Storybook Scenes, Small Town Adventures (Printable PDF)",
+      "description": "Autumn coloring book filled with cozy small-town scenes to unwind with after a long day. Step into a storybook fall town where every street corner feels welcoming: a bakery…",
+      "url": "https://www.etsy.com/listing/4528230999/cozy-autumn-town-coloring-book-storybook",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "fall coloring book",
+        "cozy fall coloring",
+        "printable fall art",
+        "autumn town scenes",
+        "cozy village pages",
+        "adult fall coloring",
+        "teen coloring book",
+        "thanksgiving gift",
+        "fall hygge decor",
+        "autumn colouring",
+        "coloring pages pdf",
+        "pumpkin patch",
+        "harvest festival"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1782475414
+    },
+    {
+      "listing_id": 4526541561,
+      "title": "Vintage Wildflower Botanicals Coloring Book, 24 Botanical Pages (Instant Download)",
+      "description": "Wildflower coloring book for slow, mindful breaks—settle in with meadow flower art that feels like a page from an old field journal. Inside you’ll find a curated set of…",
+      "url": "https://www.etsy.com/listing/4526541561/vintage-wildflower-botanicals-coloring",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "wildflower pages",
+        "flower coloring book",
+        "botanical coloring",
+        "meadow flower art",
+        "adult flower calm",
+        "spring flower gift",
+        "garden lover gift",
+        "floral wall decor",
+        "printable flower",
+        "colouring wild",
+        "nature lover gift",
+        "mindful coloring",
+        "cottage garden"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1782400032
+    },
+    {
+      "listing_id": 4527018409,
+      "title": "Kawaii Animal Coloring Book, 25 Big-Eyed Pals, Printable PDF (Instant Download)",
+      "description": "Animal coloring book for cozy screen-free breaks—meet big-eyed animal pals in snacky, playful scenes you can color anytime. This printable set is packed with rounded, chibi-style…",
+      "url": "https://www.etsy.com/listing/4527018409/kawaii-animal-coloring-book-25-big-eyed",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cute animal pages",
+        "kawaii animal pdf",
+        "kids animal coloring",
+        "adult cute coloring",
+        "easy animal coloring",
+        "printable animal",
+        "animal lover gift",
+        "classroom coloring",
+        "birthday gift kids",
+        "rainy day activity",
+        "animal colouring",
+        "zoo animal fun",
+        "farm animal set"
+      ],
+      "themes": [
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782265536
+    },
+    {
+      "listing_id": 4527027865,
+      "title": "Kawaii Plant Coloring Book, 25 Cozy Botanical Pages, Easy Botanical Art (Digital Download)",
+      "description": "Plant coloring book filled with cute houseplant friends for relaxing screen-free time. Meet a whole shelf of big-eyed plant pals—succulents, leafy houseplants, and tiny garden…",
+      "url": "https://www.etsy.com/listing/4527027865/kawaii-plant-coloring-book-25-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "succulent coloring",
+        "cute plant pages",
+        "printable plants",
+        "houseplant coloring",
+        "plant lover gift",
+        "garden coloring",
+        "kids plant coloring",
+        "adult plant calm",
+        "easy plant coloring",
+        "plant colouring",
+        "coloring pages pdf",
+        "digital download",
+        "botanical doodles"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1782265535
+    },
+    {
+      "listing_id": 4527017652,
+      "title": "Kawaii Dessert Coloring Book, 25 Treat Pages, Relaxing Fun (Instant Download PDF)",
+      "description": "Dessert coloring book for anyone who wants a calm, cozy break with cute dessert pages that feel like a little bakery daydream. Inside you’ll find a lineup of chibi sweets and…",
+      "url": "https://www.etsy.com/listing/4527017652/kawaii-dessert-coloring-book-25-treat",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cute dessert pages",
+        "kawaii sweets book",
+        "cake coloring pages",
+        "cookie coloring",
+        "donut coloring pages",
+        "cupcake coloring",
+        "ice cream coloring",
+        "treat lover gift",
+        "kids dessert fun",
+        "dessert colouring",
+        "boba tea friend",
+        "bakery party favor",
+        "sweet tooth gift"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1782265535
+    },
+    {
+      "listing_id": 4527046792,
+      "title": "Kawaii Space Coloring Book, Chibi Astronauts, Planets (PDF Download)",
+      "description": "Space coloring book for a calm, cute break with chibi astronauts and planet pals you can color anytime. This printable PDF coloring book is packed with kawaii space scenes made…",
+      "url": "https://www.etsy.com/listing/4527046792/kawaii-space-coloring-book-chibi",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "space coloring pages",
+        "cute space pages",
+        "astronaut coloring",
+        "planet coloring",
+        "alien coloring pages",
+        "kids space coloring",
+        "adult space coloring",
+        "space lover gift",
+        "galaxy coloring",
+        "space colouring page",
+        "printable space pdf",
+        "rocket ship art",
+        "star nursery decor"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1782265534
+    },
+    {
+      "listing_id": 4527074854,
+      "title": "Grimoires Spellbooks Coloring Book, Moody Witchy Grimoire Pages (Instant Download)",
+      "description": "Spellbook coloring book for cozy evenings—sink into grimoire coloring scenes filled with candles, botanicals, crystals, and curious cats. This printable coloring book is a whole…",
+      "url": "https://www.etsy.com/listing/4527074854/grimoires-spellbooks-coloring-book-moody",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "grimoire coloring",
+        "witch book coloring",
+        "magic book pages",
+        "apothecary pages",
+        "witchy cat pages",
+        "moon crystal pages",
+        "adult relax pages",
+        "potion shelf art",
+        "altar table art",
+        "colouring book",
+        "digital download",
+        "coloring pages pdf",
+        "book lover gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "fantasy",
+        "animals"
+      ],
+      "created": 1782265534
+    },
+    {
+      "listing_id": 4527056637,
+      "title": "Kawaii Food Coloring Book, 25 Pages, Chibi Snacks & Drinks, Instant Download PDF",
+      "description": "Food coloring book fun with big-eyed snacks and one cozy treat friend per page—perfect for a quick unwind and a foodie gift. Meet a whole crew of cheerful eats and sips: smiling…",
+      "url": "https://www.etsy.com/listing/4527056637/kawaii-food-coloring-book-25-pages-chibi",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cute food pages",
+        "kawaii food print",
+        "dessert coloring",
+        "drink coloring pages",
+        "kids food coloring",
+        "adult food coloring",
+        "food lover gift",
+        "boba coloring page",
+        "easy food coloring",
+        "food colouring page",
+        "brunch lover gift",
+        "cafe treat pals",
+        "lunchbox buddies"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1782265534
+    },
+    {
+      "listing_id": 4526786998,
+      "title": "Witchy Crystals Herbs Coloring Book, Cozy Altars, Relaxing Pages (PDF Download)",
+      "description": "Crystal coloring book for calming evenings, featuring witchy coloring scenes filled with herbs, jars, and gentle altar setups. Step into a dark-cottagecore apothecary where every…",
+      "url": "https://www.etsy.com/listing/4526786998/witchy-crystals-herbs-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "crystal pages pdf",
+        "healing crystals",
+        "herb coloring pages",
+        "herbal witch gift",
+        "botanical coloring",
+        "witchy coloring",
+        "apothecary pages",
+        "moon crystal art",
+        "adult stress relief",
+        "crystal colouring",
+        "garden witch gift",
+        "potion label art",
+        "tarot vibe pages"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1782265533
+    },
+    {
+      "listing_id": 4527056606,
+      "title": "Chibi Seasons Coloring Book, 25 Cozy Year-Round Weather Pages (PDF Download)",
+      "description": "Season coloring book for a cozy, year-round break—enjoy weather coloring scenes filled with sweet chibi friends, holidays, and little monthly moments. This printable digital…",
+      "url": "https://www.etsy.com/listing/4527056606/chibi-seasons-coloring-book-25-cozy-year",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "spring coloring",
+        "summer coloring",
+        "autumn coloring",
+        "winter coloring",
+        "weather coloring",
+        "months coloring",
+        "kids coloring pdf",
+        "adult relax pages",
+        "season gift idea",
+        "season colouring",
+        "classroom activity",
+        "rainy day fun",
+        "teacher gift"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal",
+        "professions",
+        "kids"
+      ],
+      "created": 1782265533
+    },
+    {
+      "listing_id": 4526677440,
+      "title": "Witchy Familiar Coloring Book, Cozy Animal Companions, Spell Table Art (PDF Download)",
+      "description": "Familiar coloring book for quiet evenings of ritual time—meet witchy animal companions, apothecary shelves, and cozy spell tables you can bring to life with your own colors…",
+      "url": "https://www.etsy.com/listing/4526677440/witchy-familiar-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "witch cat coloring",
+        "owl coloring book",
+        "raven coloring",
+        "toad coloring pages",
+        "bat coloring pages",
+        "fox coloring book",
+        "witchy animal art",
+        "adult coloring",
+        "calming spell art",
+        "colouring pages",
+        "digital download",
+        "coloring pages pdf",
+        "pagan gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals"
+      ],
+      "created": 1782213011
+    },
+    {
+      "listing_id": 4526563077,
+      "title": "Vintage Botanical Bouquet Coloring Book, 24 Pages, Adults Floral Art (PDF Download)",
+      "description": "Bouquet coloring book for relaxing, screen-free breaks—fill each floral arrangement with your own palette and enjoy a calm, focused hour. This printable set is all about bouquets…",
+      "url": "https://www.etsy.com/listing/4526563077/vintage-botanical-bouquet-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "floral coloring",
+        "flower bouquet",
+        "adult floral book",
+        "botanical bouquet",
+        "wedding bouquet",
+        "bridal bouquet",
+        "spring flowers",
+        "summer flowers",
+        "wildflower bouquet",
+        "flower colouring",
+        "printable bouquet",
+        "digital download",
+        "florist bouquet"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1782209083
+    },
+    {
+      "listing_id": 4526487803,
+      "title": "Bug Coloring Book, 25 Simple Pages For Kids, Garden Critters (Printable PDF)",
+      "description": "Bug coloring book for easy, screen-free fun—perfect for preschool coloring time at home, in classrooms, or on the go. Inside you’ll find a cheerful collection of bugs and insects…",
+      "url": "https://www.etsy.com/listing/4526487803/bug-coloring-book-25-simple-pages-for",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "insect coloring book",
+        "bug coloring pages",
+        "cute bug coloring",
+        "kids bug coloring",
+        "preschool coloring",
+        "toddler coloring",
+        "bug lover gift",
+        "classroom activity",
+        "summer activity",
+        "bug colouring page",
+        "coloring pages pdf",
+        "nature study kids",
+        "homeschool science"
+      ],
+      "themes": [
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782209083
+    },
+    {
+      "listing_id": 4526554287,
+      "title": "Succulent Cactus Coloring Book, Vintage Botanical Pages (Instant Download)",
+      "description": "Succulent coloring book for plant lovers who want a calm, focused break with relaxing plants you can shade, blend, and bring to life at your own pace. Inside you’ll find a…",
+      "url": "https://www.etsy.com/listing/4526554287/succulent-cactus-coloring-book-vintage",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cactus coloring",
+        "succulent pages",
+        "succulent gift",
+        "cactus lover gift",
+        "plant lover gift",
+        "adult coloring",
+        "relaxing plants",
+        "botanical pages",
+        "succulent bouquet",
+        "succulent colouring",
+        "digital download",
+        "desert plants",
+        "houseplant gift"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1782209083
+    },
+    {
+      "listing_id": 4526539578,
+      "title": "Vintage Rose Botanical Coloring Book, Antique Garden Studies, Relaxing Florals (Instant Download)",
+      "description": "Rose coloring book for calm, focused coloring time—fill your pages with rose coloring pages inspired by antique garden illustrations. This printable digital download is a…",
+      "url": "https://www.etsy.com/listing/4526539578/vintage-rose-botanical-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "rose coloring pages",
+        "printable roses",
+        "rose bouquet page",
+        "wild rose pages",
+        "garden rose pdf",
+        "botanical roses",
+        "adult rose color",
+        "floral gift idea",
+        "mothers day rose",
+        "wedding rose art",
+        "rose colouring",
+        "valentine flower",
+        "anniversary gift"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1782209083
+    },
+    {
+      "listing_id": 4526514224,
+      "title": "Arctic Animals Coloring Book, Easy Polar Bear Penguin Seal Fox Pages (PDF Download)",
+      "description": "Arctic coloring book pages for cozy screen-free fun with cute polar animals. This printable set is made for beginners and young kids who want simple, friendly scenes with lots of…",
+      "url": "https://www.etsy.com/listing/4526514224/arctic-animals-coloring-book-easy-polar",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "polar animal pages",
+        "arctic animals kids",
+        "penguin coloring",
+        "polar bear pages",
+        "seal coloring page",
+        "winter animal book",
+        "printable arctic",
+        "easy coloring kids",
+        "preschool coloring",
+        "arctic colouring",
+        "classroom winter",
+        "digital download",
+        "snow day activity"
+      ],
+      "themes": [
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782209083
+    },
+    {
+      "listing_id": 4526618383,
+      "title": "Witchy Apothecary Coloring Book, Cozy Potion Shelves, Moody Witchcraft Pages (PDF Download)",
+      "description": "Potion coloring book for cozy evenings—unwind with witchy coloring book scenes of apothecary shelves, labeled bottles, herbs, and gentle magical clutter. Step into a snug little…",
+      "url": "https://www.etsy.com/listing/4526618383/witchy-apothecary-coloring-book-cozy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "witchy coloring book",
+        "apothecary pages",
+        "potion bottle art",
+        "witchcraft coloring",
+        "spellbook coloring",
+        "herbalist coloring",
+        "crystal coloring",
+        "witchy gift idea",
+        "baby witch gift",
+        "adult witch pages",
+        "witchy colouring",
+        "halloween coloring",
+        "cottage witch art"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1782209082
+    },
+    {
+      "listing_id": 4526516609,
+      "title": "Dinosaur Coloring Book, Big Friendly Dinos, Easy Shapes For Kids (Instant Download)",
+      "description": "Dinosaur coloring book for kids who love big, friendly prehistoric pals—perfect for quiet time, rainy days, and dinosaur birthday fun. This printable coloring book includes 25…",
+      "url": "https://www.etsy.com/listing/4526516609/dinosaur-coloring-book-big-friendly",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "dino coloring book",
+        "dinosaur pages",
+        "kids dino coloring",
+        "toddler coloring",
+        "preschool dinos",
+        "cute dinosaur",
+        "dino lover gift",
+        "dino birthday",
+        "easy dino pages",
+        "dinosaur for boys",
+        "dinosaur for girls",
+        "dinosaur colouring",
+        "jurassic party"
+      ],
+      "themes": [
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782209082
+    },
+    {
+      "listing_id": 4526460501,
+      "title": "Reptile Coloring Book, Easy Critters, Big Shapes, Kids Activity (PDF Download)",
+      "description": "Reptile coloring book pages for kids and beginners—meet cute turtles, frogs, lizards, and snakes in simple scenes that are easy to finish. Inside you’ll find a cheerful…",
+      "url": "https://www.etsy.com/listing/4526460501/reptile-coloring-book-easy-critters-big",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "amphibian coloring",
+        "frog coloring pages",
+        "lizard coloring",
+        "snake coloring pages",
+        "turtle coloring",
+        "gecko coloring page",
+        "kids reptile book",
+        "preschool coloring",
+        "reptile lover gift",
+        "classroom science",
+        "reptile colouring",
+        "herpetology kids",
+        "nature study fun"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1782183494
+    },
+    {
+      "listing_id": 4526439985,
+      "title": "Toddler Coloring Pages, Baby Animals, Bold Outlines, Printable PDF (Instant Download)",
+      "description": "Make screen-free fun simple with toddler coloring pages featuring bold baby animals and extra-easy shapes. This printable set is designed for little hands: big, clear outlines…",
+      "url": "https://www.etsy.com/listing/4526439985/toddler-coloring-pages-baby-animals-bold",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "easy animal pages",
+        "big outline animals",
+        "coloring for 3yo",
+        "quiet time activity",
+        "road trip activity",
+        "rainy day kids",
+        "nursery decor art",
+        "daycare printable",
+        "ot fine motor",
+        "scissor skills prep",
+        "simple cute animals",
+        "kinder prep",
+        "animal colouring"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1782182109
+    },
+    {
+      "listing_id": 4526427378,
+      "title": "Bold Birds Coloring Book, Easy Simple Pages for Kids, Nature Fun (PDF Download)",
+      "description": "Bird coloring book for easy, relaxing nature time—meet sweet backyard birds, simple perches, and cozy nests in big open shapes. This printable set is made for low-effort coloring…",
+      "url": "https://www.etsy.com/listing/4526427378/bold-birds-coloring-book-easy-simple",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "bird coloring pages",
+        "cute bird pages",
+        "kids bird coloring",
+        "easy bird coloring",
+        "bird lover gift",
+        "spring bird craft",
+        "classroom activity",
+        "preschool coloring",
+        "adult calm coloring",
+        "bird colouring page",
+        "coloring pages pdf",
+        "nature lover gift",
+        "rainy day activity"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782182109
+    },
+    {
+      "listing_id": 4526398886,
+      "title": "Woodland Animals Coloring Book, 25 Easy Pages, Forest Friends, Beginners (Instant Download PDF)",
+      "description": "Woodland animal coloring book for kids who love forest friends and simple, relaxing pages. Meet a whole crew of cozy woodland animals—from curious foxes and fluffy rabbits to…",
+      "url": "https://www.etsy.com/listing/4526398886/woodland-animals-coloring-book-25-easy",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "forest animal book",
+        "woodland animals",
+        "forest coloring",
+        "kids coloring book",
+        "toddler coloring",
+        "preschool coloring",
+        "animal lover gift",
+        "classroom activity",
+        "rainy day kids",
+        "woodland party",
+        "animal colouring",
+        "digital download",
+        "nature lover gift"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526095968,
+      "title": "Easy Cat Coloring Book, 40 Simple Kitten Pages (Instant Download PDF)",
+      "description": "Simple, adorable cat scenes made for easy, relaxing coloring. Purr-fect for kids, beginners, and cat lovers of any age. Print as many copies as you like, at home or your local…",
+      "url": "https://www.etsy.com/listing/4526095968/easy-cat-coloring-book-40-simple-kitten",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "bold and easy",
+        "large print coloring",
+        "simple cat coloring",
+        "cat coloring book",
+        "easy adult coloring",
+        "big line coloring",
+        "kitten coloring pdf",
+        "cat lover gift",
+        "low vision coloring",
+        "cat colouring book",
+        "senior coloring",
+        "beginner coloring",
+        "relaxing cat pages"
+      ],
+      "themes": [
+        "cozy",
+        "animals"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526376124,
+      "title": "Bold Easy Cats Coloring Book, Simple Kitten Pages for Beginners (Instant Download)",
+      "description": "Cat coloring book with cute kittens for kids and beginners—simple pages with big shapes for quick, relaxing coloring at home or on the go. Inside you’ll find a whole clowder of…",
+      "url": "https://www.etsy.com/listing/4526376124/bold-easy-cats-coloring-book-simple",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "cat coloring pages",
+        "cute cat coloring",
+        "kittens coloring",
+        "printable cat art",
+        "easy cat pages",
+        "kids cat coloring",
+        "cat lover gift",
+        "adult cat coloring",
+        "cat activity pages",
+        "cat colouring page",
+        "coloring pages pdf",
+        "kitten party favor",
+        "pet lover present"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526383586,
+      "title": "Bold Easy Dog Coloring Book, 25 Simple Puppy Pages (Instant Download)",
+      "description": "Dog coloring book for easy, relaxing fun—meet friendly puppies and classic breeds in simple scenes made for quick coloring breaks. This printable set is designed in a bold…",
+      "url": "https://www.etsy.com/listing/4526383586/bold-easy-dog-coloring-book-25-simple",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "dog coloring pages",
+        "puppy coloring",
+        "kids dog coloring",
+        "easy dog coloring",
+        "cute puppy pages",
+        "dog lover gift",
+        "gift for dog mom",
+        "dog birthday party",
+        "classroom coloring",
+        "calm coloring dogs",
+        "dog colouring page",
+        "pet lover activity",
+        "vet waiting room"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526242871,
+      "title": "Cottagecore Coloring Book, Spring Garden Scenes, Cozy Cottage Life, 40 Pages (PDF Download)",
+      "description": "Cottagecore coloring book for calm spring evenings, filled with cozy garden scenes you can color at your own pace. Step into a warm storybook cottage where the kettle is always…",
+      "url": "https://www.etsy.com/listing/4526242871/cottagecore-coloring-book-spring-garden",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "cottagecore pages",
+        "spring coloring book",
+        "cozy coloring book",
+        "garden coloring",
+        "country cottage",
+        "floral coloring",
+        "adult coloring",
+        "teen coloring",
+        "relaxing pages",
+        "printable pdf",
+        "cottage colouring",
+        "gift for gardener",
+        "farmhouse kitchen"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526332486,
+      "title": "90s Coloring Book, Retro Toys Tech Treats, 24 Pages Printable PDF (Instant Download)",
+      "description": "90s coloring book for anyone who wants a quick, cozy throwback—plus a fun retro party activity for kids, teens, and grown-ups. Inside you’ll find bold, simple pages inspired by…",
+      "url": "https://www.etsy.com/listing/4526332486/90s-coloring-book-retro-toys-tech-treats",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "90s coloring pages",
+        "kids 90s coloring",
+        "adult 90s coloring",
+        "retro 90s pages",
+        "90s kid gift",
+        "90s party activity",
+        "nostalgia gift",
+        "printable 90s pdf",
+        "easy retro coloring",
+        "90s colouring page",
+        "classroom activity",
+        "retro toys",
+        "y2k nostalgia"
+      ],
+      "themes": [
+        "kids"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526300812,
+      "title": "Cozy Fireside Coloring Book, Winter Hearth Scenes, Cats, Warm Decor (Printable PDF)",
+      "description": "Unwind by the glow with this fireplace coloring book of cozy winter hearths, cabin nooks, and snowy porch scenes you can print at home. Winter Hearth: Cozy Firesides to Color is…",
+      "url": "https://www.etsy.com/listing/4526300812/cozy-fireside-coloring-book-winter",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "cozy fireplace art",
+        "cabin hearth pages",
+        "mantel decor color",
+        "christmas hearth",
+        "snowy porch color",
+        "reading nook color",
+        "cottage kitchen",
+        "cat cozy coloring",
+        "wood stove vibe",
+        "winter hygge art",
+        "stress relief color",
+        "printable pdf",
+        "fireplace colouring"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526397985,
+      "title": "Safari Animals Coloring Book, 25 Bold Pages, Simple Jungle Scenes (Instant Download)",
+      "description": "Safari coloring book for kids who love friendly lions and jungle animals—simple, bold pages make it easy to start coloring right away. Inside you’ll find a collection of cute…",
+      "url": "https://www.etsy.com/listing/4526397985/safari-animals-coloring-book-25-bold",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "jungle coloring book",
+        "zoo coloring pages",
+        "kids safari pages",
+        "toddler coloring",
+        "animal coloring pdf",
+        "easy animal pages",
+        "preschool animals",
+        "classroom activity",
+        "rainforest animals",
+        "safari party favor",
+        "animal colouring",
+        "nursery activity",
+        "road trip kids"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526382617,
+      "title": "Farm Animal Coloring Book, Easy Big Simple Pages For Kids (PDF Download)",
+      "description": "Farm animal coloring book for easy, screen-free fun at home or on the go. Meet a whole barnyard of friendly faces designed for quick, relaxing coloring. Each page features one…",
+      "url": "https://www.etsy.com/listing/4526382617/farm-animal-coloring-book-easy-big",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "farm animal book",
+        "farm animal pages",
+        "cute farm animals",
+        "kids farm coloring",
+        "toddler coloring",
+        "preschool activity",
+        "barnyard animals",
+        "animal lover gift",
+        "classroom activity",
+        "rainy day activity",
+        "farm colouring book",
+        "coloring pages pdf",
+        "homeschool printable"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1782179401
+    },
+    {
+      "listing_id": 4526199576,
+      "title": "Cozy Tea & Reading Nooks Coloring Book, 40 Storybook Scenes (Instant Download)",
+      "description": "Tea coloring book for book lovers who want a calm, cozy break with a warm reading nook vibe. Step into a storybook world of kettles, cups, quilts, book stacks, and snug corners…",
+      "url": "https://www.etsy.com/listing/4526199576/cozy-tea-reading-nooks-coloring-book-40",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "cozy coloring",
+        "reading nook",
+        "tea time pages",
+        "book lover gift",
+        "cozy home art",
+        "cottagecore tea",
+        "tea party print",
+        "adult relax gift",
+        "bookish coloring",
+        "tea colouring",
+        "coloring pages pdf",
+        "library nook",
+        "tea pot collection"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1782179400
+    },
+    {
+      "listing_id": 4526252289,
+      "title": "Cozy Autumn Harvest Coloring Pages, Printable PDF (Instant Download)",
+      "description": "Cozy, rustic autumn coloring pages you can print today for relaxing fall nights, classroom calm-down time, or seasonal decor. Autumn Harvest Tales is a printable coloring…",
+      "url": "https://www.etsy.com/listing/4526252289/cozy-autumn-harvest-coloring-pages",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "pumpkin coloring",
+        "farm life coloring",
+        "country autumn",
+        "cozy coloring",
+        "cottagecore color",
+        "rustic fall decor",
+        "autumn wreath art",
+        "apple orchard art",
+        "farmstand sign art",
+        "scarecrow page",
+        "corn maze activity",
+        "autumn colouring",
+        "fall activity pack"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1782179400
+    },
+    {
+      "listing_id": 4526415656,
+      "title": "Ocean Animals Coloring Book, Easy Sea Creatures, Simple Shapes (Printable PDF)",
+      "description": "Ocean coloring book for easy, calming screen-free fun—meet cute sea creatures in simple scenes that are quick to color. This printable set is made for beginners who want…",
+      "url": "https://www.etsy.com/listing/4526415656/ocean-animals-coloring-book-easy-sea",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "ocean coloring pages",
+        "sea animal pages",
+        "kids ocean color",
+        "toddler coloring",
+        "preschool coloring",
+        "easy ocean animals",
+        "adult simple color",
+        "sea life coloring",
+        "ocean lover gift",
+        "beach trip activity",
+        "ocean colouring",
+        "digital download",
+        "marine animals"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1782179311
+    },
+    {
+      "listing_id": 4514918065,
+      "title": "Juneteenth Coloring Book: Heritage and Freedom Celebration, 45 Pages (Instant Download)",
+      "description": "Honoring history through art. A beautiful collection of scenes celebrating Black joy, community, and the spirit of freedom. Print as many copies as you like, at home or your…",
+      "url": "https://www.etsy.com/listing/4514918065/juneteenth-coloring-book-heritage-and",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "juneteenth coloring",
+        "black history month",
+        "juneteenth party",
+        "african american art",
+        "kente pattern art",
+        "freedom day pages",
+        "juneteenth printable",
+        "black history craft",
+        "classroom juneteenth",
+        "juneteenth colouring",
+        "heritage gift idea",
+        "adult coloring",
+        "kids coloring"
+      ],
+      "themes": [
+        "seasonal",
+        "kids",
+        "patriotic"
+      ],
+      "created": 1781983846
+    },
+    {
+      "listing_id": 4518128108,
+      "title": "Cozy Beach Town Coloring Book, Adult Relaxation Scenes (Printable PDF)",
+      "description": "Color cozy cottages, boardwalk corners, and harbor views inspired by a welcoming beach town. Relax into breezy seaside details—one calm scene at a time. Print as many copies as…",
+      "url": "https://www.etsy.com/listing/4518128108/cozy-beach-town-coloring-book-adult",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "beach coloring book",
+        "coastal coloring",
+        "ocean town pages",
+        "cozy beach scenes",
+        "seaside coloring",
+        "adult beach coloring",
+        "summer coloring book",
+        "beach house decor",
+        "nautical coloring",
+        "beach colouring",
+        "vacation gift idea",
+        "coastal cottage art",
+        "seashell coloring"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal"
+      ],
+      "created": 1781696214
+    },
+    {
+      "listing_id": 4518076610,
+      "title": "Kawaii Police Coloring Book, Chibi Animal Cops, Community Helpers, Kids Activity (Instant Download)",
+      "description": "A police coloring book for kids and adults featuring 45 cute animal cops and community helpers — printable coloring pages perfect for police birthday parties, classroom…",
+      "url": "https://www.etsy.com/listing/4518076610/police-coloring-book-for-kids-cute",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "police coloring book",
+        "community helpers",
+        "police officer gift",
+        "kids police pages",
+        "career day activity",
+        "law enforcement",
+        "preschool activity",
+        "kawaii coloring",
+        "police colouring",
+        "police party favor",
+        "first responder art",
+        "classroom activity",
+        "kids hero coloring"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1781324335
+    },
+    {
+      "listing_id": 4518071130,
+      "title": "Tiny Teacher Pals Coloring Book, Classroom Animals, Printable PDF (Instant Download)",
+      "description": "Relax and smile with this teacher coloring book featuring tiny classroom animal teachers in cozy school scenes. Tiny Teacher Pals in Class is a cute printable coloring set made…",
+      "url": "https://www.etsy.com/listing/4518071130/tiny-teacher-pals-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "teacher colouring",
+        "teacher gift",
+        "back to school art",
+        "classroom calm down",
+        "school counselor",
+        "social emotional",
+        "cute teacher animals",
+        "kawaii teacher book",
+        "substitute teacher",
+        "rainy day activity",
+        "teacher thank you",
+        "first day of school",
+        "classroom activity"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "professions"
+      ],
+      "created": 1780864558
+    },
+    {
+      "listing_id": 4518063500,
+      "title": "Chibi Plumber Animals Coloring Book, Pets, Home Repair Stress Relief (Printable PDF)",
+      "description": "Fix leaks with cuteness in this plumber coloring book you can print at home for relaxing, giggle-worthy coloring time. Puddle-Free Plumber Pals Coloring Fun is a printable…",
+      "url": "https://www.etsy.com/listing/4518063500/chibi-plumber-animals-coloring-book-pets",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "plumber colouring",
+        "plumber gift idea",
+        "plumber thank you",
+        "trade job coloring",
+        "kids plumber",
+        "bathroom coloring",
+        "home repair coloring",
+        "handyman coloring",
+        "construction",
+        "career day activity",
+        "plumbing pun gift",
+        "contractor gift",
+        "blue collar gift"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1780863336
+    },
+    {
+      "listing_id": 4518039961,
+      "title": "Kawaii Animal Robot Coloring Book, Chibi Construction Pages, STEM Maker Lab Art (Printable PDF)",
+      "description": "Cute, futuristic fun in a kawaii coloring book you can print at home—packed with chibi animal builders, friendly robots, and Tomorrowland worksites. Future Builders: Kawaii…",
+      "url": "https://www.etsy.com/listing/4518039961/kawaii-animal-robot-coloring-book-chibi",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "kawaii colouring",
+        "kawaii robot",
+        "kawaii builder",
+        "kawaii sci fi color",
+        "kawaii maker",
+        "kawaii engineer gift",
+        "kawaii chibi",
+        "kawaii animal robots",
+        "kawaii future city",
+        "kawaii stem activity",
+        "kawaii teen coloring",
+        "kawaii kids coloring",
+        "kawaii printable pdf"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1780860095
+    },
+    {
+      "listing_id": 4517701535,
+      "title": "Cozy Halloween Cuties Coloring Book, Kawaii Animals Pumpkins (Printable PDF)",
+      "description": "Snuggle into sweet pumpkins, silly costumes, and friendly Halloween scenes. One adorable chibi animal per page—perfect for calm fall coloring. Print as many copies as you like…",
+      "url": "https://www.etsy.com/listing/4517701535/cozy-halloween-cuties-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "halloween coloring",
+        "cute halloween pdf",
+        "kawaii halloween",
+        "not scary halloween",
+        "fall coloring pages",
+        "pumpkin coloring",
+        "halloween kids craft",
+        "halloween party game",
+        "spooky cute pages",
+        "classroom halloween",
+        "halloween colouring",
+        "october activity",
+        "trick or treat art"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780797050
+    },
+    {
+      "listing_id": 4517691562,
+      "title": "Kawaii Soccer Animals Coloring Book, 40 Printable Pages (Instant Download)",
+      "description": "Soccer coloring book pages you can print at home—cute kawaii animal characters playing around the world for kids, teens, and adults. This instant-download printable PDF features…",
+      "url": "https://www.etsy.com/listing/4517691562/kawaii-soccer-animals-coloring-book-40",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "soccer colouring",
+        "soccer activity kids",
+        "soccer party favor",
+        "soccer team gift",
+        "soccer coach gift",
+        "soccer mom gift",
+        "soccer dad gift",
+        "soccer travel",
+        "soccer camp activity",
+        "soccer calm activity",
+        "cute soccer animals",
+        "printable soccer art",
+        "soccer gift for kid"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1780797049
+    },
+    {
+      "listing_id": 4517676699,
+      "title": "Dad Coloring Book, Animal Pals, Father&#39;s Day Activity (Instant Download)",
+      "description": "Celebrate him with this dad coloring book—an instant-download set of cute, cozy scenes made for kids and adults to enjoy together. Best Dad Pals Coloring Adventure is a printable…",
+      "url": "https://www.etsy.com/listing/4517676699/dad-coloring-book-animal-pals-fathers",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "dad colouring book",
+        "father coloring",
+        "fathers day coloring",
+        "daddy and me",
+        "dad gift from kids",
+        "printable dad gift",
+        "new dad gift idea",
+        "stepdad gift idea",
+        "grandpa gift from",
+        "toddler dad activity",
+        "family bonding",
+        "dad birthday",
+        "dad appreciation"
+      ],
+      "themes": [
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780797049
+    },
+    {
+      "listing_id": 4517721750,
+      "title": "Cozy Winter Holidays Coloring Book, Animals, Global Scenes (PDF Download)",
+      "description": "Relax with a winter coloring book filled with cozy holiday moments around the world—cute animal characters, warm drinks, markets, lanterns, and snowy fun. This is a printable PDF…",
+      "url": "https://www.etsy.com/listing/4517721750/cozy-winter-holidays-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "christmas coloring",
+        "holiday coloring",
+        "cozy coloring book",
+        "winter animal",
+        "kids winter activity",
+        "holiday kids",
+        "travel themed",
+        "around world",
+        "classroom winter art",
+        "winter break",
+        "christmas activity",
+        "cozy christmas book",
+        "holiday travel theme"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780797049
+    },
+    {
+      "listing_id": 4517731791,
+      "title": "Kawaii Back-to-School Coloring Book, Classroom Cuties, Animals, First Day Activity (PDF Download)",
+      "description": "Cozy classroom scenes and adorable animal students make every page feel like the first day of school. Perfect for a calm, happy coloring break anytime. Print as many copies as…",
+      "url": "https://www.etsy.com/listing/4517731791/kawaii-back-to-school-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "back to school pdf",
+        "school coloring pdf",
+        "first day of school",
+        "classroom activity",
+        "teacher printable",
+        "kawaii school pages",
+        "kids school craft",
+        "homeschool coloring",
+        "preschool activity",
+        "school colouring",
+        "morning work sheets",
+        "sub plans activity",
+        "teacher gift idea"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1780797049
+    },
+    {
+      "listing_id": 4517651197,
+      "title": "Diwali Coloring Book, Kawaii Critters, 40 Pages, Adults Kids (Instant Download)",
+      "description": "Celebrate the season with this diwali coloring book—cute kawaii critters enjoying diyas, rangoli, sweets, lanterns, and cozy festival scenes. Diwali Sparkles for Kawaii Critters…",
+      "url": "https://www.etsy.com/listing/4517651197/diwali-coloring-book-kawaii-critters-40",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "diwali colouring",
+        "diwali kids activity",
+        "diwali party",
+        "diwali classroom",
+        "diwali homeschool",
+        "diwali party favor",
+        "diwali gift for kids",
+        "diwali gift",
+        "diwali mindful",
+        "kawaii diwali",
+        "cute diwali coloring",
+        "festival lights",
+        "diwali activity pack"
+      ],
+      "themes": [
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780797049
+    },
+    {
+      "listing_id": 4516998417,
+      "title": "Kawaii Coloring Book, Cozy Animal Shops, Miniature Scenes, Adults & Kids (PDF Download)",
+      "description": "Bold and easy kawaii coloring book featuring 45 cozy animal shop scenes — cute printable coloring pages for adults and kids who love chibi animals, tiny details, and that warm…",
+      "url": "https://www.etsy.com/listing/4516998417/kawaii-coloring-book-bold-and-easy",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "kawaii coloring book",
+        "cute shop coloring",
+        "tiny shop pages",
+        "cozy coloring book",
+        "miniature scenes",
+        "cottagecore coloring",
+        "kawaii aesthetic",
+        "adult cute coloring",
+        "teen coloring book",
+        "storefront art",
+        "kawaii colouring",
+        "japanese cute art",
+        "bookshop coloring"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1780674873
+    },
+    {
+      "listing_id": 4514178446,
+      "title": "Wedding Coloring Book, 30 Pages, Kids Reception Activity (Instant Download)",
+      "description": "Keep little guests happily busy with this wedding coloring book printable—perfect for quiet tabletime during the ceremony, dinner, and speeches. Wedding Day Coloring Fun is a…",
+      "url": "https://www.etsy.com/listing/4514178446/wedding-coloring-book-30-pages-kids",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "wedding colouring",
+        "wedding table game",
+        "reception kids pack",
+        "wedding quiet book",
+        "flower girl activity",
+        "ring bearer activity",
+        "kids reception craft",
+        "bridal shower game",
+        "wedding road trip",
+        "printable kids pdf",
+        "wedding kids favor",
+        "wedding kids table",
+        "wedding activity pdf"
+      ],
+      "themes": [
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780247514
+    },
+    {
+      "listing_id": 4514178592,
+      "title": "Shark Coloring Book for Kids, Underwater Scenes, 29 Pages (Instant Download)",
+      "description": "Print and color a shark coloring book packed with friendly ocean scenes—perfect for kids 6–10, shark fans, and family quiet-time. Amazing Sharks to Color is a relaxing…",
+      "url": "https://www.etsy.com/listing/4514178592/shark-coloring-book-for-kids-underwater",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "shark coloring pages",
+        "kids shark coloring",
+        "shark activity book",
+        "shark colouring book",
+        "shark birthday game",
+        "shark party favor",
+        "shark week activity",
+        "ocean unit study",
+        "homeschool printable",
+        "classroom calm down",
+        "rainy day activity",
+        "shark gift for kids",
+        "shark fan gift"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780247513
+    },
+    {
+      "listing_id": 4514177569,
+      "title": "Summer Camp Activity Coloring Book, 30 Printable Pages, Kids Outdoor Fun (Instant Download)",
+      "description": "Keep kids busy with this camp coloring book—printable summer camp pages made for ages 6–10 and packed with outdoor adventure. This instant-download PDF is a screen-free activity…",
+      "url": "https://www.etsy.com/listing/4514177569/summer-camp-activity-coloring-book-30",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "camping coloring",
+        "kids camp coloring",
+        "summer camp coloring",
+        "camp colouring book",
+        "camp activity pack",
+        "camp trip activity",
+        "kids travel activity",
+        "rainy day activity",
+        "screen free activity",
+        "camp party favor",
+        "camp birthday favor",
+        "outdoor kids crafts",
+        "camp cabin coloring"
+      ],
+      "themes": [
+        "seasonal",
+        "kids"
+      ],
+      "created": 1780247513
+    },
+    {
+      "listing_id": 4513975604,
+      "title": "Ocean Coloring Book, Deep Sea Creatures, Coral Reefs, Underwater Scenes (Printable PDF)",
+      "description": "Explore the mysteries of the ocean through beautiful, intricate sea life illustrations designed for relaxation. Print as many copies as you like, at home or your local print shop…",
+      "url": "https://www.etsy.com/listing/4513975604/ocean-coloring-book-deep-sea-creatures",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "ocean coloring book",
+        "sea life coloring",
+        "whale coloring pages",
+        "coral reef art",
+        "under the sea pdf",
+        "adult ocean coloring",
+        "kids ocean pages",
+        "beach house decor",
+        "marine biology art",
+        "ocean colouring",
+        "jellyfish coloring",
+        "sea turtle pages",
+        "mermaid lover gift"
+      ],
+      "themes": [
+        "fantasy",
+        "kids"
+      ],
+      "created": 1780247513
+    },
+    {
+      "listing_id": 4514178734,
+      "title": "Road Trip Coloring Pages for Kids 6-10, Printable Travel Activity Pack (PDF Download)",
+      "description": "Keep kids happily busy on the go with road trip coloring—printable pages made for car rides, travel days, and quiet-time breaks. Road Trip Coloring Adventures is a printable…",
+      "url": "https://www.etsy.com/listing/4514178734/road-trip-coloring-pages-for-kids-6-10",
+      "image": "",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "tags": [
+        "road trip colouring",
+        "road trip activity",
+        "kids road trip fun",
+        "travel coloring kids",
+        "car ride coloring",
+        "car trip activity",
+        "kids travel quiet",
+        "travel busy book",
+        "vacation activity",
+        "car ride printable",
+        "road trip gift",
+        "road trip boredom",
+        "travel day activity"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1780247513
+    },
+    {
+      "listing_id": 4513997601,
+      "title": "Goth Girls Coloring Book, 45 Spooky Anime Pages, Alt Fashion Art (PDF Download)",
+      "description": "Gothic lolita coloring book featuring 45 spooky cute anime girls — witchy printable coloring pages for adults and teens who love dark cottagecore, alt fashion, and creepy-cute…",
+      "url": "https://www.etsy.com/listing/4513997601/goth-coloring-book-gothic-lolita-anime",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "goth coloring book",
+        "gothic coloring pdf",
+        "creepy cute pages",
+        "alt girl coloring",
+        "goth girl art",
+        "pastel goth pages",
+        "witchy coloring book",
+        "adult goth coloring",
+        "teen goth gift",
+        "emo coloring pages",
+        "goth colouring",
+        "dark aesthetic art",
+        "halloween goth art"
+      ],
+      "themes": [
+        "spooky",
+        "kids"
+      ],
+      "created": 1780247513
+    },
+    {
+      "listing_id": 4513208741,
+      "title": "Electrician Coloring Book, Chibi Animals, Tools, Workshop Scenes (PDF Download)",
+      "description": "Electrician coloring book printable packed with adorable chibi animal electricians, cozy workshop scenes, and tool-themed pages for kids and adults. Spark & Snuggle: Little…",
+      "url": "https://www.etsy.com/listing/4513208741/electrician-coloring-book-chibi-animals",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "electrician gift",
+        "electrician dad gift",
+        "electrician mom gift",
+        "electrician kid gift",
+        "electrician party",
+        "electrician workbook",
+        "electrician training",
+        "cute animal coloring",
+        "chibi coloring book",
+        "kids travel activity",
+        "trade job coloring",
+        "construction",
+        "career day activity"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1780063869
+    },
+    {
+      "listing_id": 4513206249,
+      "title": "Patriotic Coloring Book, America 250th Anniversary, Americana Scenes (PDF Download)",
+      "description": "Celebrate America’s 250th anniversary with 45 printable patriotic coloring pages filled with cozy Americana charm. This relaxing digital coloring book features stars and stripes…",
+      "url": "https://www.etsy.com/listing/4513206249/america-250-coloring-book-patriotic",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "patriotic coloring",
+        "july 4th coloring",
+        "america 250 pages",
+        "usa coloring book",
+        "veterans day craft",
+        "adult patriotic art",
+        "kids july 4 craft",
+        "memorial day art",
+        "americana coloring",
+        "flag coloring pages",
+        "printable patriotic",
+        "patriotic colouring",
+        "summer party craft"
+      ],
+      "themes": [
+        "seasonal",
+        "kids",
+        "patriotic"
+      ],
+      "created": 1780063869
+    },
+    {
+      "listing_id": 4513200254,
+      "title": "Chibi Animal EMT Coloring Book, Rescue Pals, Ambulance Scenes, Kids Activity (Instant Download)",
+      "description": "Meet the cutest rescue team in town—tiny chibi animal EMTs and helper pals bringing comfort, care, and calm to every call. Sweet Rescue Pals on Call is a wholesome, feel-good…",
+      "url": "https://www.etsy.com/listing/4513200254/chibi-animal-emt-coloring-book-rescue",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "ambulance coloring",
+        "emt gift idea",
+        "paramedic gift",
+        "rescue coloring book",
+        "community helpers",
+        "first responder art",
+        "kids hero coloring",
+        "preschool activity",
+        "nurse week gift",
+        "ems week printable",
+        "hero colouring",
+        "career day activity",
+        "medical gift idea"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1780063869
+    },
+    {
+      "listing_id": 4513207531,
+      "title": "Kawaii Construction Trucks Coloring Book, Chibi Animals, Big Machines, Toddlers (Instant Download)",
+      "description": "Step into a bright, bustling worksite where the biggest machines have the cutest helpers! Big Machines, Tiny Paws at Work is a premium kawaii coloring book filled with chibi…",
+      "url": "https://www.etsy.com/listing/4513207531/kawaii-construction-trucks-coloring-book",
+      "image": "",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$6.99"
+      },
+      "tags": [
+        "truck coloring book",
+        "construction pages",
+        "digger coloring",
+        "excavator coloring",
+        "toddler coloring pdf",
+        "boys coloring book",
+        "kids truck pages",
+        "preschool activity",
+        "tractor coloring",
+        "dump truck art",
+        "construction party",
+        "truck colouring",
+        "birthday party craft"
+      ],
+      "themes": [
+        "animals",
+        "seasonal",
+        "professions",
+        "kids"
+      ],
+      "created": 1780063869
+    }
+  ]
 }
