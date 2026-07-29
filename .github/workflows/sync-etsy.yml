@@ -31,6 +31,7 @@ jobs:
       - name: Sync Etsy listings
         env:
           ETSY_API_KEY: ${{ secrets.ETSY_API_KEY }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           ETSY_SHOP_NAME: ${{ vars.ETSY_SHOP_NAME || 'BlissFoxStudio' }}
         run: node scripts/sync-etsy.mjs
 

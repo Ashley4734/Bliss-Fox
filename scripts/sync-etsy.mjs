@@ -16,6 +16,11 @@
  *   ETSY_SHOP_NAME (optional) defaults to "BlissFoxStudio"
  *
  * Node 18+ (uses global fetch). No dependencies.
+ *
+ * Auth: this app authenticates at the app level with BOTH credentials in the
+ * x-api-key header, formatted as "<keystring>:<shared_secret>". Etsy rejects the
+ * keystring alone with "Shared secret is required in x-api-key header." So both
+ * ETSY_API_KEY (keystring) and ETSY_SHARED_SECRET must be provided.
  */
 
 import { writeFile, readFile } from 'node:fs/promises';
@@ -24,10 +29,12 @@ import { dirname, join } from 'node:path';
 
 const API = 'https://openapi.etsy.com/v3/application';
 const SHOP_NAME = (process.env.ETSY_SHOP_NAME || 'BlissFoxStudio').trim();
-// Trim to strip any stray whitespace/newline pasted into the secret — a value
-// with a trailing newline makes an invalid header and Etsy replies as if the
-// x-api-key header were missing ("Shared secret is required in x-api-key header").
+// Trim to strip any stray whitespace/newline pasted into the secrets — a value
+// with a trailing newline makes an invalid header.
 const API_KEY = (process.env.ETSY_API_KEY || '').trim();
+const SHARED_SECRET = (process.env.ETSY_SHARED_SECRET || '').trim();
+// Etsy expects the shared secret alongside the keystring in the x-api-key header.
+const X_API_KEY = SHARED_SECRET ? `${API_KEY}:${SHARED_SECRET}` : API_KEY;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = join(__dirname, '..', 'data', 'products.json');
@@ -68,7 +75,7 @@ async function etsyGet(path, params = {}) {
   }
   const res = await fetch(url, {
     headers: {
-      'x-api-key': API_KEY,
+      'x-api-key': X_API_KEY,
       Accept: 'application/json',
       'User-Agent': 'BlissFoxStudio-catalog-sync',
     },
@@ -79,9 +86,9 @@ async function etsyGet(path, params = {}) {
     if (res.status === 401 || res.status === 403) {
       throw new Error(
         `Etsy API ${res.status} for ${path}: ${body.slice(0, 300)}\n` +
-          'This is an authentication failure. Check that the ETSY_API_KEY secret\n' +
-          "holds your Etsy app's keystring (the API Key) with no extra spaces or\n" +
-          'newlines. Create/find it at https://www.etsy.com/developers/your-apps'
+          'This is an authentication failure. Check the ETSY_API_KEY (keystring) and\n' +
+          'ETSY_SHARED_SECRET repository secrets — both are required, with no extra\n' +
+          'spaces or newlines. Find them at https://www.etsy.com/developers/your-apps'
       );
     }
     throw new Error(`Etsy API ${res.status} ${res.statusText} for ${path}\n${body.slice(0, 500)}`);
@@ -174,7 +181,18 @@ async function main() {
     );
     process.exit(1);
   }
-  console.log(`Using API key (length ${API_KEY.length}).`);
+  if (!SHARED_SECRET) {
+    console.error(
+      'ERROR: ETSY_SHARED_SECRET is not set (or is empty after trimming).\n' +
+        "This app authenticates with the keystring AND the app's Shared Secret.\n" +
+        'Copy the Shared Secret from https://www.etsy.com/developers/your-apps and\n' +
+        'add it as the ETSY_SHARED_SECRET repository secret.'
+    );
+    process.exit(1);
+  }
+  console.log(
+    `Using API key (length ${API_KEY.length}) + shared secret (length ${SHARED_SECRET.length}).`
+  );
 
   console.log('Verifying API key with Etsy ping…');
   await pingApiKey();
