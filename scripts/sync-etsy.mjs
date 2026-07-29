@@ -23,8 +23,11 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const API = 'https://openapi.etsy.com/v3/application';
-const SHOP_NAME = process.env.ETSY_SHOP_NAME || 'BlissFoxStudio';
-const API_KEY = process.env.ETSY_API_KEY;
+const SHOP_NAME = (process.env.ETSY_SHOP_NAME || 'BlissFoxStudio').trim();
+// Trim to strip any stray whitespace/newline pasted into the secret — a value
+// with a trailing newline makes an invalid header and Etsy replies as if the
+// x-api-key header were missing ("Shared secret is required in x-api-key header").
+const API_KEY = (process.env.ETSY_API_KEY || '').trim();
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = join(__dirname, '..', 'data', 'products.json');
@@ -63,12 +66,33 @@ async function etsyGet(path, params = {}) {
   for (const [k, v] of Object.entries(params)) {
     if (v !== undefined && v !== null) url.searchParams.set(k, String(v));
   }
-  const res = await fetch(url, { headers: { 'x-api-key': API_KEY } });
+  const res = await fetch(url, {
+    headers: {
+      'x-api-key': API_KEY,
+      Accept: 'application/json',
+      'User-Agent': 'BlissFoxStudio-catalog-sync',
+    },
+    redirect: 'follow',
+  });
   if (!res.ok) {
     const body = await res.text().catch(() => '');
+    if (res.status === 401 || res.status === 403) {
+      throw new Error(
+        `Etsy API ${res.status} for ${path}: ${body.slice(0, 300)}\n` +
+          'This is an authentication failure. Check that the ETSY_API_KEY secret\n' +
+          "holds your Etsy app's keystring (the API Key) with no extra spaces or\n" +
+          'newlines. Create/find it at https://www.etsy.com/developers/your-apps'
+      );
+    }
     throw new Error(`Etsy API ${res.status} ${res.statusText} for ${path}\n${body.slice(0, 500)}`);
   }
   return res.json();
+}
+
+/* Verify the API key works before doing real work, so failures are obvious. */
+async function pingApiKey() {
+  const data = await etsyGet('/openapi-ping');
+  return data;
 }
 
 async function resolveShopId(name) {
@@ -144,12 +168,17 @@ function toProduct(listing) {
 async function main() {
   if (!API_KEY) {
     console.error(
-      'ERROR: ETSY_API_KEY is not set.\n' +
+      'ERROR: ETSY_API_KEY is not set (or is empty after trimming).\n' +
         'Create an Etsy app at https://www.etsy.com/developers/your-apps to get a\n' +
         'keystring, then add it as the ETSY_API_KEY repository secret.'
     );
     process.exit(1);
   }
+  console.log(`Using API key (length ${API_KEY.length}).`);
+
+  console.log('Verifying API key with Etsy ping…');
+  await pingApiKey();
+  console.log('API key OK.');
 
   console.log(`Resolving Etsy shop "${SHOP_NAME}"…`);
   const shopId = await resolveShopId(SHOP_NAME);
