@@ -56,6 +56,20 @@ const OUT_FILE = join(__dirname, '..', 'data', 'products.json');
 const PINTEREST_FILE = join(__dirname, '..', 'pinterest-catalog.xml');
 const SITE_URL = 'https://blissfoxstudio.com/';
 const BRAND = 'Bliss Fox Studio';
+// Google Product Category (GPC taxonomy) for the feed — clears Pinterest's
+// "missing google_product_category" warning.
+const GOOGLE_PRODUCT_CATEGORY = 'Media > Books';
+
+// Pinterest requires the catalog link's domain to match the verified domain
+// (blissfoxstudio.com), so route feed links through the site (nginx redirects
+// /listing/... to the Etsy listing) rather than linking to etsy.com directly.
+function onDomainLink(url) {
+  try {
+    return 'https://blissfoxstudio.com' + new URL(url).pathname;
+  } catch {
+    return SITE_URL;
+  }
+}
 // Human-readable theme labels for the feed's product_type field.
 const THEME_LABELS = {
   cozy: 'Cozy',
@@ -94,7 +108,7 @@ function buildPinterestFeed(products) {
         `      <g:id>${xmlEscape(p.listing_id)}</g:id>`,
         `      <g:title>${xmlEscape(p.title)}</g:title>`,
         `      <g:description>${xmlEscape(p.description || p.title)}</g:description>`,
-        `      <g:link>${xmlEscape(p.url)}</g:link>`,
+        `      <g:link>${xmlEscape(onDomainLink(p.url))}</g:link>`,
         `      <g:image_link>${xmlEscape(p.image)}</g:image_link>`,
         `      <g:availability>in stock</g:availability>`,
         `      <g:price>${xmlEscape(price)}</g:price>`,
@@ -107,6 +121,7 @@ function buildPinterestFeed(products) {
       lines.push(`      <g:condition>new</g:condition>`);
       lines.push(`      <g:brand>${xmlEscape(BRAND)}</g:brand>`);
       lines.push(`      <g:identifier_exists>no</g:identifier_exists>`);
+      lines.push(`      <g:google_product_category>${xmlEscape(GOOGLE_PRODUCT_CATEGORY)}</g:google_product_category>`);
       lines.push(`      <g:product_type>${xmlEscape(productType)}</g:product_type>`);
       return `    <item>\n${lines.join('\n')}\n    </item>`;
     });
