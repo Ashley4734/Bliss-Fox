@@ -73,14 +73,23 @@ async function etsyGet(path, params = {}) {
   for (const [k, v] of Object.entries(params)) {
     if (v !== undefined && v !== null) url.searchParams.set(k, String(v));
   }
-  const res = await fetch(url, {
-    headers: {
-      'x-api-key': X_API_KEY,
-      Accept: 'application/json',
-      'User-Agent': 'BlissFoxStudio-catalog-sync',
-    },
-    redirect: 'follow',
-  });
+  let res;
+  for (let attempt = 0; ; attempt++) {
+    res = await fetch(url, {
+      headers: {
+        'x-api-key': X_API_KEY,
+        Accept: 'application/json',
+        'User-Agent': 'BlissFoxStudio-catalog-sync',
+      },
+      redirect: 'follow',
+    });
+    // Back off and retry on rate limiting (Etsy allows ~5 requests/second).
+    if (res.status === 429 && attempt < 4) {
+      await sleep(1000 * (attempt + 1));
+      continue;
+    }
+    break;
+  }
   if (!res.ok) {
     const body = await res.text().catch(() => '');
     if (res.status === 401 || res.status === 403) {
@@ -131,16 +140,50 @@ async function fetchActiveListings(shopId) {
   return listings;
 }
 
-function pickImage(listing) {
-  const imgs = listing.images || [];
-  const first = imgs[0] || {};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+function pickImageUrl(imgObj) {
+  const img = imgObj || {};
   return (
-    first.url_570xN ||
-    first.url_680x540 ||
-    first.url_fullxfull ||
-    first.url_300x300 ||
+    img.url_570xN ||
+    img.url_680x540 ||
+    img.url_fullxfull ||
+    img.url_300x300 ||
     ''
   );
+}
+
+function pickImage(listing) {
+  const imgs = listing.images || [];
+  return pickImageUrl(imgs[0]);
+}
+
+// The active-listings endpoint does not reliably honor includes=Images, so
+// fetch a listing's primary image from the dedicated images endpoint.
+async function fetchListingImage(listingId) {
+  try {
+    const data = await etsyGet(`/listings/${listingId}/images`, { limit: 1 });
+    return pickImageUrl((data.results || [])[0]);
+  } catch (err) {
+    console.warn(`  image fetch failed for listing ${listingId}: ${String(err.message).split('\n')[0]}`);
+    return '';
+  }
+}
+
+// Run async work over items with a bounded number of workers (keeps request
+// rate under Etsy's ~5/sec limit).
+async function mapPool(items, concurrency, fn) {
+  const results = new Array(items.length);
+  let next = 0;
+  async function worker() {
+    while (next < items.length) {
+      const idx = next++;
+      results[idx] = await fn(items[idx], idx);
+    }
+  }
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, worker);
+  await Promise.all(workers);
+  return results;
 }
 
 function formatPrice(price) {
@@ -209,6 +252,19 @@ async function main() {
   const products = listings
     .map(toProduct)
     .sort((a, b) => (b.created || 0) - (a.created || 0));
+
+  // Backfill cover images for any listing that didn't include one inline.
+  const missing = products.filter((p) => !p.image);
+  if (missing.length) {
+    console.log(`Fetching cover images for ${missing.length} listing(s)…`);
+    await mapPool(missing, 4, async (p) => {
+      p.image = await fetchListingImage(p.listing_id);
+    });
+    const stillMissing = products.filter((p) => !p.image).length;
+    console.log(
+      `Cover images resolved for ${missing.length - stillMissing}/${missing.length} listing(s).`
+    );
+  }
 
   const payload = {
     shop: SHOP_NAME,
