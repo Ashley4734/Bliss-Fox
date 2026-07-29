@@ -51,6 +51,78 @@ const SALE_PERCENT = Number.parseFloat(process.env.ETSY_SALE_PERCENT || '') || 0
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = join(__dirname, '..', 'data', 'products.json');
+// Pinterest product catalog feed (RSS 2.0 + Google namespace) served from the
+// site root so Pinterest can fetch it on a schedule.
+const PINTEREST_FILE = join(__dirname, '..', 'pinterest-catalog.xml');
+const SITE_URL = 'https://blissfoxstudio.com/';
+const BRAND = 'Bliss Fox Studio';
+// Human-readable theme labels for the feed's product_type field.
+const THEME_LABELS = {
+  cozy: 'Cozy',
+  spooky: 'Spooky',
+  fantasy: 'Fantasy',
+  animals: 'Animals',
+  seasonal: 'Seasonal',
+  professions: 'Trades & Helpers',
+  kids: 'Kids',
+  patriotic: 'Patriotic',
+};
+
+function xmlEscape(value) {
+  return String(value == null ? '' : value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+// Build a Pinterest-compatible product feed. Pinterest reads RSS 2.0 with the
+// Google Shopping (g:) fields; required per item: id, title, description, link,
+// image_link, price, availability. Digital downloads have no GTIN/MPN, so
+// identifier_exists is "no" and brand is supplied instead.
+function buildPinterestFeed(products) {
+  const items = products
+    .filter((p) => p.image && p.price && p.price.display)
+    .map((p) => {
+      const price = `${p.price.amount.toFixed(2)} ${p.price.currency}`;
+      const themeLabel = (p.themes || []).map((t) => THEME_LABELS[t]).find(Boolean);
+      const productType = themeLabel
+        ? `Printable Coloring Books > ${themeLabel}`
+        : 'Printable Coloring Books';
+      const lines = [
+        `      <g:id>${xmlEscape(p.listing_id)}</g:id>`,
+        `      <g:title>${xmlEscape(p.title)}</g:title>`,
+        `      <g:description>${xmlEscape(p.description || p.title)}</g:description>`,
+        `      <g:link>${xmlEscape(p.url)}</g:link>`,
+        `      <g:image_link>${xmlEscape(p.image)}</g:image_link>`,
+        `      <g:availability>in stock</g:availability>`,
+        `      <g:price>${xmlEscape(price)}</g:price>`,
+      ];
+      if (p.price.on_sale && typeof p.price.sale_amount === 'number') {
+        lines.push(
+          `      <g:sale_price>${xmlEscape(p.price.sale_amount.toFixed(2) + ' ' + p.price.currency)}</g:sale_price>`
+        );
+      }
+      lines.push(`      <g:condition>new</g:condition>`);
+      lines.push(`      <g:brand>${xmlEscape(BRAND)}</g:brand>`);
+      lines.push(`      <g:identifier_exists>no</g:identifier_exists>`);
+      lines.push(`      <g:product_type>${xmlEscape(productType)}</g:product_type>`);
+      return `    <item>\n${lines.join('\n')}\n    </item>`;
+    });
+
+  return (
+    '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n' +
+    '  <channel>\n' +
+    `    <title>${xmlEscape(BRAND)}</title>\n` +
+    `    <link>${xmlEscape(SITE_URL)}</link>\n` +
+    `    <description>Printable coloring books and digital downloads by ${xmlEscape(BRAND)}.</description>\n` +
+    (items.length ? items.join('\n') + '\n' : '') +
+    '  </channel>\n' +
+    '</rss>\n'
+  );
+}
 
 /* Map Etsy tags / title keywords onto the site's theme filter vocabulary.
    Keep the theme keys in sync with the filter chips the site renders. */
@@ -325,6 +397,11 @@ async function main() {
 
   await writeFile(OUT_FILE, JSON.stringify(payload, null, 2) + '\n', 'utf8');
   console.log(`Wrote ${products.length} product(s) to data/products.json`);
+
+  const feed = buildPinterestFeed(products);
+  const feedCount = products.filter((p) => p.image && p.price && p.price.display).length;
+  await writeFile(PINTEREST_FILE, feed, 'utf8');
+  console.log(`Wrote Pinterest feed with ${feedCount} item(s) to pinterest-catalog.xml`);
 }
 
 main().catch((err) => {

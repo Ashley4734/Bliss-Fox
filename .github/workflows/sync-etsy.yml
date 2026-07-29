@@ -38,11 +38,11 @@ jobs:
 
       - name: Commit catalog changes
         run: |
-          if [[ -n "$(git status --porcelain data/products.json)" ]]; then
+          if [[ -n "$(git status --porcelain data/products.json pinterest-catalog.xml)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/products.json
-            git commit -m "chore: sync Etsy digital downloads catalog"
+            git add data/products.json pinterest-catalog.xml
+            git commit -m "chore: sync Etsy catalog + Pinterest feed"
             git push
           else
             echo "No catalog changes to commit."
