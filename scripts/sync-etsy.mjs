@@ -35,6 +35,9 @@ const API_KEY = (process.env.ETSY_API_KEY || '').trim();
 const SHARED_SECRET = (process.env.ETSY_SHARED_SECRET || '').trim();
 // Etsy expects the shared secret alongside the keystring in the x-api-key header.
 const X_API_KEY = SHARED_SECRET ? `${API_KEY}:${SHARED_SECRET}` : API_KEY;
+// Optional shop-wide sale percentage (e.g. "30" for 30% off). Etsy's public API
+// doesn't expose per-listing sale prices, so the current sale is configured here.
+const SALE_PERCENT = Number.parseFloat(process.env.ETSY_SALE_PERCENT || '') || 0;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE = join(__dirname, '..', 'data', 'products.json');
@@ -186,17 +189,31 @@ async function mapPool(items, concurrency, fn) {
   return results;
 }
 
+function money(value, currency) {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(value);
+}
+
 function formatPrice(price) {
   if (!price || typeof price.amount !== 'number' || !price.divisor) return null;
-  const value = price.amount / price.divisor;
-  return {
-    amount: Number(value.toFixed(2)),
-    currency: price.currency_code || 'USD',
-    display: new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: price.currency_code || 'USD',
-    }).format(value),
+  const currency = price.currency_code || 'USD';
+  const original = price.amount / price.divisor;
+  const result = {
+    amount: Number(original.toFixed(2)),
+    currency,
+    display: money(original, currency),
   };
+  // Apply the shop-wide sale percentage (Etsy's public API does not expose the
+  // per-listing discounted price, so it is configured via ETSY_SALE_PERCENT).
+  if (SALE_PERCENT > 0 && SALE_PERCENT < 100) {
+    const sale = original * (1 - SALE_PERCENT / 100);
+    result.on_sale = true;
+    result.percent_off = SALE_PERCENT;
+    result.original_display = result.display;
+    result.sale_amount = Number(sale.toFixed(2));
+    result.sale_display = money(sale, currency);
+    result.display = result.sale_display; // prominent price = the sale price
+  }
+  return result;
 }
 
 function toProduct(listing) {
@@ -236,6 +253,11 @@ async function main() {
   console.log(
     `Using API key (length ${API_KEY.length}) + shared secret (length ${SHARED_SECRET.length}).`
   );
+  if (SALE_PERCENT > 0 && SALE_PERCENT < 100) {
+    console.log(`Applying shop sale: ${SALE_PERCENT}% off list price.`);
+  } else {
+    console.log('No sale configured (ETSY_SALE_PERCENT unset); showing list price.');
+  }
 
   console.log('Verifying API key with Etsy ping…');
   await pingApiKey();

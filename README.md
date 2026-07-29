@@ -54,6 +54,9 @@ Shared Secret (Etsy sends them together in the `x-api-key` header as
    - `ETSY_SHARED_SECRET` = the Shared Secret
 4. (Optional) If the shop name ever changes, set a repository **variable** `ETSY_SHOP_NAME`
    (defaults to `BlissFoxStudio`).
+5. (Optional) To show a sale price, set a repository **variable** `ETSY_SALE_PERCENT`
+   to your current Etsy shop-wide sale percentage (e.g. `30` for 30% off). See
+   "Showing sale prices" below.
 
 You can sanity-check the credentials from any terminal:
 
@@ -66,6 +69,23 @@ curl -s -H "x-api-key: KEYSTRING:SHARED_SECRET" \
 Once both secrets are set, open the Actions tab and run the workflow once to populate
 the catalog immediately. Until then the site shows a friendly "shop on Etsy" prompt
 instead of product cards.
+
+### Showing sale prices
+
+Etsy's public API only returns each listing's **list price** — a shop-wide "Sale"
+percentage is applied by Etsy at display/checkout time and is not exposed to the
+API. To mirror a sale on the site, set the current percentage yourself:
+
+- Repo **Settings → Secrets and variables → Actions → Variables → New repository variable**
+  - Name: `ETSY_SALE_PERCENT`
+  - Value: the whole-number percentage, e.g. `30` for 30% off
+
+When set, the sync shows the discounted price with the list price struck through
+and a `−30%` badge (e.g. **$4.19** ~~$5.99~~). Change the number when your sale
+changes, or delete the variable when the sale ends and prices revert to the list
+price. Re-run the workflow after changing it so the catalog updates. The discounted
+amount is computed from the list price, so it can differ from Etsy by a cent on
+odd roundings.
 
 ### Run the sync locally (optional)
 

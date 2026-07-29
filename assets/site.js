@@ -113,7 +113,25 @@
     if (p.price && p.price.display) {
       var price = document.createElement('div');
       price.className = 'card-price';
-      price.textContent = p.price.display;
+      if (p.price.on_sale && p.price.original_display) {
+        price.classList.add('has-sale');
+        var sale = document.createElement('span');
+        sale.className = 'price-sale';
+        sale.textContent = p.price.display;
+        var orig = document.createElement('span');
+        orig.className = 'price-original';
+        orig.textContent = p.price.original_display;
+        price.appendChild(sale);
+        price.appendChild(orig);
+        if (p.price.percent_off) {
+          var badge = document.createElement('span');
+          badge.className = 'price-badge';
+          badge.textContent = '−' + p.price.percent_off + '%';
+          price.appendChild(badge);
+        }
+      } else {
+        price.textContent = p.price.display;
+      }
       a.appendChild(price);
     }
 
