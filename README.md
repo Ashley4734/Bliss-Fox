@@ -43,7 +43,9 @@ It runs every 6 hours and can also be run on demand from the Actions tab
 The sync needs a read-only Etsy API key (no shopper OAuth required for public listings):
 
 1. Go to https://www.etsy.com/developers/your-apps and create an app.
-2. Copy the app's **keystring** (the API key).
+2. Copy the app's **Keystring** — this is the API Key. Do **not** use the
+   "Shared Secret" (that is only for OAuth), and don't include any surrounding
+   quotes, spaces, or a trailing newline.
 3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**
    - Name: `ETSY_API_KEY`
    - Value: your keystring
