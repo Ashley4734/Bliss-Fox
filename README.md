@@ -38,28 +38,40 @@ A scheduled GitHub Action (`.github/workflows/sync-etsy.yml`) refreshes it:
 It runs every 6 hours and can also be run on demand from the Actions tab
 ("Sync Etsy catalog" → "Run workflow").
 
-### One-time setup: Etsy API key
+### One-time setup: Etsy app credentials
 
-The sync needs a read-only Etsy API key (no shopper OAuth required for public listings):
+The sync authenticates at the app level using **both** the app's Keystring and its
+Shared Secret (Etsy sends them together in the `x-api-key` header as
+`keystring:shared_secret`). No shopper OAuth is required for reading public listings.
 
-1. Go to https://www.etsy.com/developers/your-apps and create an app.
-2. Copy the app's **Keystring** — this is the API Key. Do **not** use the
-   "Shared Secret" (that is only for OAuth), and don't include any surrounding
-   quotes, spaces, or a trailing newline.
-3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**
-   - Name: `ETSY_API_KEY`
-   - Value: your keystring
+1. Go to https://www.etsy.com/developers/your-apps and open (or create) your app.
+2. Copy the two values shown for the app — the **Keystring** and the **Shared Secret**
+   (click the eye icon to reveal the secret). Don't include surrounding quotes,
+   spaces, or a trailing newline.
+3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**,
+   add **two** secrets:
+   - `ETSY_API_KEY` = the Keystring
+   - `ETSY_SHARED_SECRET` = the Shared Secret
 4. (Optional) If the shop name ever changes, set a repository **variable** `ETSY_SHOP_NAME`
    (defaults to `BlissFoxStudio`).
 
-Once the secret is set, open the Actions tab and run the workflow once to populate the
-catalog immediately. Until then the site shows a friendly "shop on Etsy" prompt instead
-of product cards.
+You can sanity-check the credentials from any terminal:
+
+```bash
+curl -s -H "x-api-key: KEYSTRING:SHARED_SECRET" \
+  https://openapi.etsy.com/v3/application/openapi-ping
+# → {"application_id": ...}  means the credentials work
+```
+
+Once both secrets are set, open the Actions tab and run the workflow once to populate
+the catalog immediately. Until then the site shows a friendly "shop on Etsy" prompt
+instead of product cards.
 
 ### Run the sync locally (optional)
 
 ```bash
-ETSY_API_KEY=your_keystring node scripts/sync-etsy.mjs
+ETSY_API_KEY=your_keystring ETSY_SHARED_SECRET=your_shared_secret \
+  node scripts/sync-etsy.mjs
 ```
 
 Requires Node 18+ (uses built-in `fetch`; no dependencies).
