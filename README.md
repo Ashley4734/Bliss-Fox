@@ -1,6 +1,10 @@
 # Bliss Fox Studio — Coolify Static Site
 
-Static HTML/CSS/JS brand hub for Bliss Fox Studio coloring books. This repo is packaged for direct GitHub-to-Coolify deployment with Docker + Nginx.
+Static HTML/CSS/JS brand hub for Bliss Fox Studio **printable coloring books**.
+The product catalog is generated from the Bliss Fox Studio **Etsy shop** and stays
+in sync automatically: add a listing on Etsy and it appears on the site on the next
+scheduled sync. This repo is packaged for direct GitHub-to-Coolify deployment with
+Docker + Nginx.
 
 ## Coolify deployment settings
 
@@ -16,17 +20,55 @@ Use these settings in Coolify:
 - Environment variables: none required
 - Database: none required
 
-After the app is created, attach your domain in Coolify and enable HTTPS.
+After the app is created, attach your domain in Coolify and enable HTTPS. Enable
+Coolify's GitHub auto-deploy (webhook) so pushes to `main` — including the automated
+catalog syncs — redeploy the site.
+
+## How the Etsy catalog stays up to date
+
+The catalog is a single data file, `data/products.json`, that the site reads in the
+browser to render the book cards on the homepage and the All Books page.
+
+A scheduled GitHub Action (`.github/workflows/sync-etsy.yml`) refreshes it:
+
+1. `scripts/sync-etsy.mjs` calls the Etsy Open API v3 for the shop's **active** listings.
+2. It writes title, description, image, price, tags, and a listing link into `data/products.json`.
+3. If anything changed, the Action commits the file to `main`, which triggers a Coolify redeploy.
+
+It runs every 6 hours and can also be run on demand from the Actions tab
+("Sync Etsy catalog" → "Run workflow").
+
+### One-time setup: Etsy API key
+
+The sync needs a read-only Etsy API key (no shopper OAuth required for public listings):
+
+1. Go to https://www.etsy.com/developers/your-apps and create an app.
+2. Copy the app's **keystring** (the API key).
+3. In this GitHub repo: **Settings → Secrets and variables → Actions → New repository secret**
+   - Name: `ETSY_API_KEY`
+   - Value: your keystring
+4. (Optional) If the shop name ever changes, set a repository **variable** `ETSY_SHOP_NAME`
+   (defaults to `BlissFoxStudio`).
+
+Once the secret is set, open the Actions tab and run the workflow once to populate the
+catalog immediately. Until then the site shows a friendly "shop on Etsy" prompt instead
+of product cards.
+
+### Run the sync locally (optional)
+
+```bash
+ETSY_API_KEY=your_keystring node scripts/sync-etsy.mjs
+```
+
+Requires Node 18+ (uses built-in `fetch`; no dependencies).
 
 ## Runtime routes
 
-- `/` or `/index.html` — homepage / brand hub
-- `/books.html` — full coloring book catalog
-- `/books/brave-little-firehouse-cuties.html` — book detail page
-- `/books/spellbound-dragon-sanctuary.html` — book detail page
-- `/books/spooky-sweet-halloween-cutie-pals.html` — book detail page
-- `/books/cozy-coffee-shop-critters.html` — book detail page
+- `/` or `/index.html` — homepage / brand hub (featured downloads from Etsy)
+- `/books.html` — full catalog, generated from `data/products.json`
+- `/about.html` — about the studio
 - `/privacy.html` — privacy policy
+- `/data/products.json` — the catalog data file (served static)
 - `/404.html` — branded not-found page
 - `/robots.txt` — crawler rules
 - `/sitemap.xml` — sitemap
@@ -40,6 +82,7 @@ docker rm -f blissfoxstudio-website-test 2>/dev/null || true
 docker run -d --name blissfoxstudio-website-test -p 8095:80 blissfoxstudio-website
 curl -fsS http://127.0.0.1:8095/healthz
 curl -I http://127.0.0.1:8095/books.html
+curl -fsS http://127.0.0.1:8095/data/products.json | head
 docker rm -f blissfoxstudio-website-test
 ```
 
@@ -50,16 +93,20 @@ docker rm -f blissfoxstudio-website-test
 - `docker-compose.yml` — optional local runner
 - `.dockerignore` — keeps build context clean
 - `index.html` — home / hub
-- `books.html` — full catalog with client-side theme filter
-- `books/*.html` — one page per title
-- `privacy.html` — privacy + marketplace disclosure page
+- `books.html` — full catalog (renders from `data/products.json`)
+- `about.html` — about page
+- `privacy.html` — privacy + Etsy marketplace disclosure page
 - `404.html` — on-brand not-found page
+- `data/products.json` — Etsy catalog data (auto-generated)
+- `scripts/sync-etsy.mjs` — Etsy → `products.json` sync script
+- `.github/workflows/sync-etsy.yml` — scheduled catalog sync
 - `assets/site.css` — shared design system
-- `assets/site.js` — mobile nav, catalog filter, footer year
+- `assets/site.js` — mobile nav, catalog rendering + theme filter, footer year
 - `robots.txt`, `sitemap.xml`
 
 ## Marketplace note
 
-Book covers currently load from Amazon's CDN with a fallback to the Bliss Fox Studio logo. The Etsy/Amazon buttons use shop/search URLs where exact listing URLs are not known yet. Replace those with direct Etsy listing URLs and direct Amazon product/ASIN URLs when available for better conversion.
-
-Do not add locally stored Amazon product images, prices, ratings, review counts, or availability unless the content is licensed/API-served and compliant with Amazon rules.
+All sales run through the Bliss Fox Studio Etsy shop as instant digital downloads.
+Product images and links in the catalog come from the live Etsy listings via the
+Etsy Open API. Do not add product images, prices, or listing content by hand — the
+sync keeps everything in step with Etsy.
