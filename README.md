@@ -98,12 +98,15 @@ Requires Node 18+ (uses built-in `fetch`; no dependencies).
 
 ## Runtime routes
 
-- `/` or `/index.html` — homepage / brand hub (featured downloads from Etsy)
-- `/books.html` — full catalog, generated from `data/products.json`
-- `/about.html` — about the studio
-- `/privacy.html` — privacy policy
+URLs are extensionless — nginx serves each page from its `.html` file and 301-redirects
+the old `.html` URLs to the clean form (e.g. `/books.html` → `/books`).
+
+- `/` — homepage / brand hub (featured downloads from Etsy)
+- `/books` — full catalog, generated from `data/products.json`
+- `/about` — about the studio
+- `/privacy` — privacy policy
 - `/data/products.json` — the catalog data file (served static)
-- `/404.html` — branded not-found page
+- branded 404 page for unknown routes
 - `/robots.txt` — crawler rules
 - `/sitemap.xml` — sitemap
 - `/healthz` — Docker/Coolify health check, returns `ok`
@@ -115,7 +118,8 @@ docker build -t blissfoxstudio-website .
 docker rm -f blissfoxstudio-website-test 2>/dev/null || true
 docker run -d --name blissfoxstudio-website-test -p 8095:80 blissfoxstudio-website
 curl -fsS http://127.0.0.1:8095/healthz
-curl -I http://127.0.0.1:8095/books.html
+curl -I http://127.0.0.1:8095/books           # 200, serves books.html
+curl -I http://127.0.0.1:8095/books.html      # 301 -> /books
 curl -fsS http://127.0.0.1:8095/data/products.json | head
 docker rm -f blissfoxstudio-website-test
 ```
@@ -123,7 +127,7 @@ docker rm -f blissfoxstudio-website-test
 ## Structure
 
 - `Dockerfile` — Nginx static-site container for Coolify
-- `nginx.conf` — static routing, `/healthz`, asset caching, security headers, branded 404
+- `nginx.conf` — clean-URL routing, `/healthz`, asset caching, security headers, branded 404
 - `docker-compose.yml` — optional local runner
 - `.dockerignore` — keeps build context clean
 - `index.html` — home / hub
