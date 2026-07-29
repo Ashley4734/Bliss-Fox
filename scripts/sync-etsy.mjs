@@ -29,6 +29,16 @@ import { dirname, join } from 'node:path';
 
 const API = 'https://openapi.etsy.com/v3/application';
 const SHOP_NAME = (process.env.ETSY_SHOP_NAME || 'BlissFoxStudio').trim();
+// Branded shop subdomain (e.g. blissfoxstudio.etsy.com) used for all shop and
+// listing links on the site instead of the generic www.etsy.com URLs.
+const SHOP_HOST = `${SHOP_NAME.toLowerCase()}.etsy.com`;
+const SHOP_URL = `https://${SHOP_HOST}/`;
+
+// Rewrite an Etsy URL to use the branded shop subdomain.
+function toShopUrl(url) {
+  if (!url) return SHOP_URL;
+  return url.replace(/^https?:\/\/(www\.)?etsy\.com\//i, `https://${SHOP_HOST}/`);
+}
 // Trim to strip any stray whitespace/newline pasted into the secrets — a value
 // with a trailing newline makes an invalid header.
 const API_KEY = (process.env.ETSY_API_KEY || '').trim();
@@ -223,7 +233,7 @@ function toProduct(listing) {
     listing_id: listing.listing_id,
     title,
     description: shorten(listing.description),
-    url: listing.url || `https://www.etsy.com/listing/${listing.listing_id}/`,
+    url: toShopUrl(listing.url) || `${SHOP_URL}listing/${listing.listing_id}/`,
     image: pickImage(listing),
     price: formatPrice(listing.price),
     tags,
@@ -290,7 +300,7 @@ async function main() {
 
   const payload = {
     shop: SHOP_NAME,
-    shop_url: `https://www.etsy.com/shop/${SHOP_NAME}`,
+    shop_url: SHOP_URL,
     updated: new Date().toISOString(),
     count: products.length,
     products,

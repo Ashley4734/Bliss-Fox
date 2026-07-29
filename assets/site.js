@@ -42,7 +42,7 @@
     fantasy: 'Fantasy',
     patriotic: 'Patriotic'
   };
-  var SHOP_URL = 'https://www.etsy.com/shop/BlissFoxStudio';
+  var SHOP_URL = 'https://blissfoxstudio.etsy.com/';
   var LOGO = '/assets/bliss-fox-studio-logo.png';
 
   var catalogEl = document.getElementById('catalog');
