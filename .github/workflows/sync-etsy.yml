@@ -1,0 +1,47 @@
+name: Sync Etsy catalog
+
+# Keeps data/products.json in step with the Bliss Fox Studio Etsy shop.
+# Runs on a schedule and can be triggered by hand. When new listings appear
+# (or old ones are removed), the committed change redeploys the static site.
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours (UTC)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-etsy
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sync Etsy listings
+        env:
+          ETSY_API_KEY: ${{ secrets.ETSY_API_KEY }}
+          ETSY_SHOP_NAME: ${{ vars.ETSY_SHOP_NAME || 'BlissFoxStudio' }}
+        run: node scripts/sync-etsy.mjs
+
+      - name: Commit catalog changes
+        run: |
+          if [[ -n "$(git status --porcelain data/products.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/products.json
+            git commit -m "chore: sync Etsy digital downloads catalog"
+            git push
+          else
+            echo "No catalog changes to commit."
+          fi

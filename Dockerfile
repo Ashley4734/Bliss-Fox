@@ -13,7 +13,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY *.html /usr/share/nginx/html/
 COPY robots.txt sitemap.xml /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
-COPY books/ /usr/share/nginx/html/books/
+COPY data/ /usr/share/nginx/html/data/
 RUN chmod -R a+rX /usr/share/nginx/html
 
 # Lightweight healthcheck that Coolify/Docker can use
