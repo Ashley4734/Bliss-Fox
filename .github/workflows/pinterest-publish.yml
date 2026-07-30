@@ -8,8 +8,11 @@ name: Pinterest publish
 # PINTEREST_REFRESH_TOKEN.
 
 on:
-  schedule:
-    - cron: '0 15 * * *' # once daily, 15:00 UTC
+  # Daily schedule is PAUSED until the app has Standard API access. Trial access
+  # cannot create Pins in production (POST /pins returns 403), so a scheduled
+  # run would fail every day. Re-enable this block once Standard is approved:
+  # schedule:
+  #   - cron: '0 15 * * *' # once daily, 15:00 UTC
   workflow_dispatch:
     inputs:
       mode:
