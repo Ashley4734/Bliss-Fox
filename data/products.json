@@ -1,9 +1,190 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-07-30T13:49:05.047Z",
-  "count": 104,
+  "updated": "2026-07-30T15:51:42.876Z",
+  "count": 109,
   "products": [
+    {
+      "listing_id": 4546846927,
+      "title": "English Village Coloring Pages, Detailed Street Scenes, Relaxing Cottage Art (Instant Download)",
+      "description": "Coloring book village fans can unwind with English village scenes designed for slow, mindful coloring. Inside you’ll find a curated set of realistic street and lane illustrations…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4546846927/english-village-coloring-pages-detailed",
+      "image": "https://i.etsystatic.com/9660605/r/il/0e038c/8366021791/il_570xN.8366021791_1vkp.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$1.50",
+        "on_sale": true,
+        "percent_off": 75,
+        "original_display": "$5.99",
+        "sale_amount": 1.5,
+        "sale_display": "$1.50"
+      },
+      "tags": [
+        "english village",
+        "cottage coloring",
+        "street scene book",
+        "town coloring",
+        "countryside art",
+        "adult coloring",
+        "relaxing coloring",
+        "colouring village",
+        "printable pdf",
+        "gift for mom",
+        "travel lover gift",
+        "pub front scene",
+        "market day scene"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1785424595
+    },
+    {
+      "listing_id": 4546824543,
+      "title": "European Storefronts Coloring Book, Cozy Street Scenes, Printable PDF (Instant Download)",
+      "description": "Storefront coloring book for anyone who loves cozy café corners and old-world streets—settle in with a quiet, travel-inspired coloring break. Step into a stroll-worthy collection…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4546824543/european-storefronts-coloring-book-cozy",
+      "image": "https://i.etsystatic.com/9660605/r/il/1d342d/8366030379/il_570xN.8366030379_d3vc.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$1.50",
+        "on_sale": true,
+        "percent_off": 75,
+        "original_display": "$5.99",
+        "sale_amount": 1.5,
+        "sale_display": "$1.50"
+      },
+      "tags": [
+        "cafe coloring book",
+        "shopfront coloring",
+        "europe street scene",
+        "paris cafe coloring",
+        "italian cafe page",
+        "bakery coloring page",
+        "bookshop coloring",
+        "travel lover gift",
+        "adult stress relief",
+        "printable cafe art",
+        "colouring book pdf",
+        "architecture sketch",
+        "window display"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1785424595
+    },
+    {
+      "listing_id": 4546831717,
+      "title": "Cozy Autumn Town Coloring Book, 25 Realistic Fall Scenes (Digital Download)",
+      "description": "Autumn coloring book for anyone who wants a calm, cozy break with fall coloring pages that feel like a stroll through a small town. This printable set is packed with realistic…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4546831717/cozy-autumn-town-coloring-book-25",
+      "image": "https://i.etsystatic.com/9660605/r/il/b7857b/8318152274/il_570xN.8318152274_mqwj.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$1.50",
+        "on_sale": true,
+        "percent_off": 75,
+        "original_display": "$5.99",
+        "sale_amount": 1.5,
+        "sale_display": "$1.50"
+      },
+      "tags": [
+        "fall coloring book",
+        "fall coloring pages",
+        "cozy fall town",
+        "autumn village",
+        "pumpkin patch page",
+        "harvest festival",
+        "adult fall coloring",
+        "relaxing autumn",
+        "thanksgiving craft",
+        "autumn colouring",
+        "digital download",
+        "maple leaf pages",
+        "farm stand scene"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1785424595
+    },
+    {
+      "listing_id": 4546871310,
+      "title": "Mediterranean Bookshops Coloring Pages, Seaside Shops Reading Nooks (PDF Download)",
+      "description": "Coloring book bookshop fans can unwind with sunlit Mediterranean storefronts, quiet reading corners, and shelf-filled scenes that feel like a mini trip for your mind. Print as…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4546871310/mediterranean-bookshops-coloring-pages",
+      "image": "https://i.etsystatic.com/9660605/r/il/76485d/8365985115/il_570xN.8365985115_s7cg.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$1.50",
+        "on_sale": true,
+        "percent_off": 75,
+        "original_display": "$5.99",
+        "sale_amount": 1.5,
+        "sale_display": "$1.50"
+      },
+      "tags": [
+        "coloring book shop",
+        "bookshop coloring",
+        "library coloring",
+        "reading nook art",
+        "book lover gift",
+        "gift for readers",
+        "adult coloring",
+        "travel sketch pages",
+        "printable pdf",
+        "colouring book",
+        "italy travel gift",
+        "port town alley",
+        "old town shutters"
+      ],
+      "themes": [],
+      "created": 1785424595
+    },
+    {
+      "listing_id": 4546839319,
+      "title": "European Christmas Market Coloring Pages, Detailed Winter Scenes (PDF Download)",
+      "description": "Coloring book christmas with a cozy European Christmas market vibe—wander lantern-lit stalls, town squares, and winter streets from the comfort of home. This printable coloring…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4546839319/european-christmas-market-coloring-pages",
+      "image": "https://i.etsystatic.com/9660605/r/il/be4479/8318124092/il_570xN.8318124092_2vh6.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$1.50",
+        "on_sale": true,
+        "percent_off": 75,
+        "original_display": "$5.99",
+        "sale_amount": 1.5,
+        "sale_display": "$1.50"
+      },
+      "tags": [
+        "coloring book",
+        "christmas market",
+        "xmas market pages",
+        "winter village art",
+        "christmas colouring",
+        "holiday market scene",
+        "festive street scene",
+        "cozy winter coloring",
+        "europe travel gift",
+        "printable xmas pdf",
+        "digital download",
+        "christmas town",
+        "advent market"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1785424595
+    },
     {
       "listing_id": 4543885841,
       "title": "Kawaii Bakery Coloring Book, 25 Printable Pages, Chibi Treats (Digital Download)",
