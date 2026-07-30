@@ -1,0 +1,73 @@
+name: Pinterest token exchange (one-time)
+
+# One-time helper to obtain a Pinterest API refresh token.
+#
+# It exchanges an OAuth authorization code for a long-lived refresh token and
+# stores it directly as the PINTEREST_REFRESH_TOKEN repository secret. The
+# token is masked and never written to logs or artifacts (public repo).
+#
+# Required repository secrets before running:
+#   PINTEREST_APP_ID      - Pinterest app id (1596011)
+#   PINTEREST_APP_SECRET  - Pinterest app secret
+#   GH_PAT                - fine-grained GitHub PAT for THIS repo with
+#                           "Secrets: Read and write" permission
+#
+# Delete this workflow once PINTEREST_REFRESH_TOKEN has been updated.
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Authorization code (the value after ?code= in the redirect URL)"
+        required: true
+      redirect_uri:
+        description: "Redirect URI used to obtain the code - must match exactly"
+        required: true
+        default: "https://blissfoxstudio.com/"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pinterest-token-exchange
+  cancel-in-progress: false
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exchange code and store the refresh token as a secret
+        env:
+          APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          CODE: ${{ inputs.code }}
+          REDIRECT_URI: ${{ inputs.redirect_uri }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          : "${APP_ID:?missing PINTEREST_APP_ID secret}"
+          : "${APP_SECRET:?missing PINTEREST_APP_SECRET secret}"
+          : "${GH_TOKEN:?missing GH_PAT secret}"
+
+          BASIC=$(printf '%s:%s' "$APP_ID" "$APP_SECRET" | base64 -w0)
+
+          RESP=$(curl -sS -X POST https://api.pinterest.com/v5/oauth/token \
+            -H "Authorization: Basic ${BASIC}" \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            --data-urlencode "grant_type=authorization_code" \
+            --data-urlencode "code=${CODE}" \
+            --data-urlencode "redirect_uri=${REDIRECT_URI}" \
+            --data-urlencode "continuous_refresh=true")
+
+          REFRESH=$(printf '%s' "$RESP" | jq -r '.refresh_token // empty')
+          if [ -z "$REFRESH" ]; then
+            echo "Token exchange failed. Response (token fields hidden):"
+            printf '%s' "$RESP" | jq 'with_entries(if (.key | test("token")) then .value = "<hidden>" else . end)' || true
+            exit 1
+          fi
+
+          echo "::add-mask::$REFRESH"
+          printf '%s' "$REFRESH" | gh secret set PINTEREST_REFRESH_TOKEN --repo "$REPO"
+          echo "Stored PINTEREST_REFRESH_TOKEN as a repository secret."
+          echo "You can now delete this workflow file."
