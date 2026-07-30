@@ -1,0 +1,69 @@
+name: Pinterest publish
+
+# Publishes the Pins you selected in data/pinterest-queue.json to your themed
+# boards. It only ever posts queued entries (posted=false) — you choose each
+# Pin — and drips out a few per run. Runs on a schedule and can be run by hand.
+#
+# Requires repository secrets: PINTEREST_APP_ID, PINTEREST_APP_SECRET,
+# PINTEREST_REFRESH_TOKEN.
+
+on:
+  schedule:
+    - cron: '0 15 * * *' # once daily, 15:00 UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'verify (list boards + product menu, no posting) or publish'
+        type: choice
+        default: verify
+        options: [verify, publish]
+      max_per_run:
+        description: 'Max Pins to publish this run'
+        default: '5'
+      dry_run:
+        description: 'Log what would be posted without calling the API'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pinterest-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Pinterest publisher
+        env:
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          # Scheduled runs publish; manual runs use the chosen mode (default verify).
+          MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
+          MAX_PER_RUN: ${{ inputs.max_per_run || '5' }}
+          DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
+        run: node scripts/pinterest-publish.mjs
+
+      - name: Commit queue updates
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        run: |
+          if [[ -n "$(git status --porcelain data/pinterest-queue.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/pinterest-queue.json
+            git commit -m "chore: mark published Pinterest queue entries"
+            git push
+          else
+            echo "No queue changes to commit."
+          fi

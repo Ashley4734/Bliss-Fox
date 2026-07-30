@@ -1,0 +1,9 @@
+{
+  "_readme": "You choose which products to pin. Add one entry per Pin under `pins`, using the product's Etsy listing_id (run the publisher in verify mode, or look in data/products.json, to see ids). The publisher posts only entries here where posted=false, a few per run, then flips them to posted=true. It NEVER posts anything not listed here (Pinterest requires the owner to choose each Pin). Optional per-entry fields: `board` (defaults to the product's theme board, else default_board), `title` (<=100 chars), `description` (<=500 chars). Do not edit `posted`/`posted_at` by hand unless you want to re-pin.",
+  "default_board": "Printable Coloring Books",
+  "pins": [
+    { "listing_id": 4546846927, "posted": false },
+    { "listing_id": 4546831717, "posted": false },
+    { "listing_id": 4543885841, "posted": false }
+  ]
+}
