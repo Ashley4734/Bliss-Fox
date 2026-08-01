@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-01T13:09:01.132Z",
+  "updated": "2026-08-01T14:01:18.076Z",
   "count": 109,
   "products": [
     {
@@ -13,12 +13,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "english village",
@@ -49,12 +49,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cafe coloring book",
@@ -85,12 +85,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "fall coloring book",
@@ -123,12 +123,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "coloring book shop",
@@ -157,12 +157,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "coloring book",
@@ -194,12 +194,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "kawaii coloring book",
@@ -231,12 +231,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "80s coloring pages",
@@ -265,12 +265,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "tiny home coloring",
@@ -303,12 +303,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "tea party coloring",
@@ -341,12 +341,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "strawberry pages",
@@ -378,12 +378,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cottagecore coloring",
@@ -414,12 +414,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "goth girl coloring",
@@ -453,12 +453,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "goth coloring book",
@@ -491,12 +491,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cute coloring book",
@@ -530,12 +530,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cat coloring book",
@@ -569,12 +569,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "gothic bride pages",
@@ -607,12 +607,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "victorian coloring",
@@ -644,12 +644,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "dark academia",
@@ -678,12 +678,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "goth cat book",
@@ -716,12 +716,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "rabbit coloring book",
@@ -753,12 +753,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "hedgehog pages",
@@ -791,12 +791,12 @@
       "price": {
         "amount": 15.99,
         "currency": "USD",
-        "display": "$4.00",
+        "display": "$8.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$15.99",
-        "sale_amount": 4,
-        "sale_display": "$4.00"
+        "sale_amount": 8,
+        "sale_display": "$8.00"
       },
       "tags": [
         "coloring bundle",
@@ -828,12 +828,12 @@
       "price": {
         "amount": 12.99,
         "currency": "USD",
-        "display": "$3.25",
+        "display": "$6.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$12.99",
-        "sale_amount": 3.25,
-        "sale_display": "$3.25"
+        "sale_amount": 6.5,
+        "sale_display": "$6.50"
       },
       "tags": [
         "coloring bundle",
@@ -865,12 +865,12 @@
       "price": {
         "amount": 12.99,
         "currency": "USD",
-        "display": "$3.25",
+        "display": "$6.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$12.99",
-        "sale_amount": 3.25,
-        "sale_display": "$3.25"
+        "sale_amount": 6.5,
+        "sale_display": "$6.50"
       },
       "tags": [
         "coloring bundle",
@@ -901,12 +901,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "zodiac signs art",
@@ -939,12 +939,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "unicorn coloring",
@@ -978,12 +978,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cute dragon pages",
@@ -1016,12 +1016,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "butterfly book",
@@ -1053,12 +1053,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "horse coloring pages",
@@ -1091,12 +1091,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "mushroom pages",
@@ -1129,12 +1129,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "mermaid pages",
@@ -1165,12 +1165,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "fairy coloring pages",
@@ -1203,12 +1203,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "mandala flowers",
@@ -1240,12 +1240,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "positive quotes",
@@ -1277,12 +1277,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "koi coloring book",
@@ -1313,12 +1313,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "realistic birds",
@@ -1347,12 +1347,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "tarot coloring pages",
@@ -1384,12 +1384,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "tropical flowers",
@@ -1420,12 +1420,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "garden coloring book",
@@ -1456,12 +1456,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "firefighter coloring",
@@ -1494,12 +1494,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "sunflower pages",
@@ -1528,12 +1528,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "sweet treats pdf",
@@ -1565,12 +1565,12 @@
       "price": {
         "amount": 12.99,
         "currency": "USD",
-        "display": "$3.25",
+        "display": "$6.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$12.99",
-        "sale_amount": 3.25,
-        "sale_display": "$3.25"
+        "sale_amount": 6.5,
+        "sale_display": "$6.50"
       },
       "tags": [
         "bold easy coloring",
@@ -1602,12 +1602,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "bubble tea coloring",
@@ -1640,12 +1640,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "ramen coloring pages",
@@ -1678,12 +1678,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "printable bonsai",
@@ -1714,12 +1714,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cute coffee pages",
@@ -1752,12 +1752,12 @@
       "price": {
         "amount": 12.99,
         "currency": "USD",
-        "display": "$3.25",
+        "display": "$6.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$12.99",
-        "sale_amount": 3.25,
-        "sale_display": "$3.25"
+        "sale_amount": 6.5,
+        "sale_display": "$6.50"
       },
       "tags": [
         "coloring bundle",
@@ -1786,12 +1786,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "rose coloring pages",
@@ -1823,12 +1823,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "christmas village",
@@ -1861,12 +1861,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "bookstore coloring",
@@ -1898,12 +1898,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "birth flower art",
@@ -1934,12 +1934,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "mountain coloring",
@@ -1971,12 +1971,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "fall coloring book",
@@ -2009,12 +2009,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "wildflower pages",
@@ -2046,12 +2046,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cute animal pages",
@@ -2084,12 +2084,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "succulent coloring",
@@ -2122,12 +2122,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cute dessert pages",
@@ -2160,12 +2160,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "space coloring pages",
@@ -2198,12 +2198,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "grimoire coloring",
@@ -2237,12 +2237,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cute food pages",
@@ -2275,12 +2275,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "crystal pages pdf",
@@ -2312,12 +2312,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "spring coloring",
@@ -2352,12 +2352,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "witch cat coloring",
@@ -2390,12 +2390,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "floral coloring",
@@ -2426,12 +2426,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "insect coloring book",
@@ -2464,12 +2464,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cactus coloring",
@@ -2500,12 +2500,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "rose coloring pages",
@@ -2537,12 +2537,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "polar animal pages",
@@ -2575,12 +2575,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "witchy coloring book",
@@ -2612,12 +2612,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "dino coloring book",
@@ -2649,12 +2649,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "amphibian coloring",
@@ -2686,12 +2686,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "easy animal pages",
@@ -2724,12 +2724,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "bird coloring pages",
@@ -2762,12 +2762,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "forest animal book",
@@ -2799,12 +2799,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "bold and easy",
@@ -2836,12 +2836,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "cat coloring pages",
@@ -2873,12 +2873,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "dog coloring pages",
@@ -2912,12 +2912,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "cottagecore pages",
@@ -2949,12 +2949,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "90s coloring pages",
@@ -2985,12 +2985,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "cozy fireplace art",
@@ -3023,12 +3023,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "jungle coloring book",
@@ -3061,12 +3061,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "farm animal book",
@@ -3098,12 +3098,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "cozy coloring",
@@ -3134,12 +3134,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "pumpkin coloring",
@@ -3172,12 +3172,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "ocean coloring pages",
@@ -3209,12 +3209,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "juneteenth coloring",
@@ -3247,12 +3247,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "beach coloring book",
@@ -3285,12 +3285,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "police coloring book",
@@ -3323,12 +3323,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "teacher colouring",
@@ -3361,12 +3361,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "plumber colouring",
@@ -3399,12 +3399,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "kawaii colouring",
@@ -3437,12 +3437,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "halloween coloring",
@@ -3477,12 +3477,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "soccer colouring",
@@ -3515,12 +3515,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "dad colouring book",
@@ -3553,12 +3553,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "christmas coloring",
@@ -3592,12 +3592,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "back to school pdf",
@@ -3631,12 +3631,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "diwali colouring",
@@ -3669,12 +3669,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "kawaii coloring book",
@@ -3707,12 +3707,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "wedding colouring",
@@ -3744,12 +3744,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "shark coloring pages",
@@ -3783,12 +3783,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "camping coloring",
@@ -3820,12 +3820,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "ocean coloring book",
@@ -3857,12 +3857,12 @@
       "price": {
         "amount": 5.99,
         "currency": "USD",
-        "display": "$1.50",
+        "display": "$3.00",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$5.99",
-        "sale_amount": 1.5,
-        "sale_display": "$1.50"
+        "sale_amount": 3,
+        "sale_display": "$3.00"
       },
       "tags": [
         "road trip colouring",
@@ -3894,12 +3894,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "goth coloring book",
@@ -3931,12 +3931,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "electrician gift",
@@ -3969,12 +3969,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "patriotic coloring",
@@ -4007,12 +4007,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "ambulance coloring",
@@ -4045,12 +4045,12 @@
       "price": {
         "amount": 6.99,
         "currency": "USD",
-        "display": "$1.75",
+        "display": "$3.50",
         "on_sale": true,
-        "percent_off": 75,
+        "percent_off": 50,
         "original_display": "$6.99",
-        "sale_amount": 1.75,
-        "sale_display": "$1.75"
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
       },
       "tags": [
         "truck coloring book",
