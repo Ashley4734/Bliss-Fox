@@ -1,9 +1,46 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-03T14:29:24.511Z",
+  "updated": "2026-08-03T19:25:09.318Z",
   "count": 110,
   "products": [
+    {
+      "listing_id": 4526850046,
+      "title": "Tarot Cats Celestial Spells Coloring Book, Witchy Night-Sky Scenes (Instant Download)",
+      "description": "Tarot coloring book for relaxing nights with celestial coloring scenes that feel like a quiet ritual at your table. Step into a whimsical tarot-and-stars world filled with witchy…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4526850046/tarot-cats-celestial-spells-coloring",
+      "image": "https://i.etsystatic.com/9660605/r/il/015ae5/8300019644/il_570xN.8300019644_mpu5.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$3.00",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$5.99",
+        "sale_amount": 3,
+        "sale_display": "$3.00"
+      },
+      "tags": [
+        "tarot coloring pages",
+        "celestial coloring",
+        "zodiac coloring",
+        "witchy cat pages",
+        "moon phase art",
+        "crystal coloring",
+        "astrology gift",
+        "adult tarot art",
+        "tarot reader gift",
+        "printable tarot",
+        "colouring tarot",
+        "oracle deck vibe",
+        "lunar altar"
+      ],
+      "themes": [
+        "spooky",
+        "animals"
+      ],
+      "created": 1785768053
+    },
     {
       "listing_id": 4548301406,
       "title": "Bliss Fox Calm Corner Kit, SEL Printable Resources for Kids (Digital Download)",
@@ -1375,43 +1412,6 @@
       ],
       "themes": [],
       "created": 1784596477
-    },
-    {
-      "listing_id": 4526850046,
-      "title": "Tarot Cats Celestial Spells Coloring Book, Witchy Night-Sky Scenes (Instant Download)",
-      "description": "Tarot coloring book for relaxing nights with celestial coloring scenes that feel like a quiet ritual at your table. Step into a whimsical tarot-and-stars world filled with witchy…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4526850046/tarot-cats-celestial-spells-coloring",
-      "image": "https://i.etsystatic.com/9660605/r/il/015ae5/8300019644/il_570xN.8300019644_mpu5.jpg",
-      "price": {
-        "amount": 5.99,
-        "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
-      },
-      "tags": [
-        "tarot coloring pages",
-        "celestial coloring",
-        "zodiac coloring",
-        "witchy cat pages",
-        "moon phase art",
-        "crystal coloring",
-        "astrology gift",
-        "adult tarot art",
-        "tarot reader gift",
-        "printable tarot",
-        "colouring tarot",
-        "oracle deck vibe",
-        "lunar altar"
-      ],
-      "themes": [
-        "spooky",
-        "animals"
-      ],
-      "created": 1784095363
     },
     {
       "listing_id": 4526548049,
