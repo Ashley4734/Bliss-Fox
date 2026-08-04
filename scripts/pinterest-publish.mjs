@@ -31,6 +31,7 @@
  *   OPENAI_API_KEY       required for image_source=openai (else falls back to Etsy)
  *   OPENAI_IMAGE_MODEL   default "gpt-image-2"
  *   OPENAI_IMAGE_SIZE    default "1024x1536" (portrait, ~2:3)
+ *   OPENAI_IMAGE_QUALITY default "medium" (low | medium | high | auto) — cost control
  *
  * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a posted
  * flag/date). Board ids are resolved from board NAMES at run time and never
@@ -61,6 +62,7 @@ const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
 const OPENAI_API_KEY = (process.env.OPENAI_API_KEY || '').trim();
 const OPENAI_IMAGE_MODEL = (process.env.OPENAI_IMAGE_MODEL || 'gpt-image-2').trim();
 const OPENAI_IMAGE_SIZE = (process.env.OPENAI_IMAGE_SIZE || '1024x1536').trim();
+const OPENAI_IMAGE_QUALITY = (process.env.OPENAI_IMAGE_QUALITY || 'medium').trim();
 
 const DAY_MS = 86400000;
 
@@ -263,6 +265,7 @@ async function generateOpenAIImage(product) {
     form.append('model', OPENAI_IMAGE_MODEL);
     form.append('prompt', pinImagePrompt(product));
     form.append('size', OPENAI_IMAGE_SIZE);
+    form.append('quality', OPENAI_IMAGE_QUALITY);
     form.append('output_format', 'jpeg');
     form.append('image', new Blob([refBuf], { type: refType }), `reference.${ext}`);
 
@@ -332,7 +335,8 @@ async function runVerify(token) {
 
   console.log(
     `\nImage source: ${(process.env.IMAGE_SOURCE || 'openai')} ` +
-      `(OpenAI key ${OPENAI_API_KEY ? 'present' : 'MISSING → would fall back to Etsy'}, model ${OPENAI_IMAGE_MODEL}).`
+      `(OpenAI key ${OPENAI_API_KEY ? 'present' : 'MISSING → would fall back to Etsy'}, ` +
+      `model ${OPENAI_IMAGE_MODEL}, ${OPENAI_IMAGE_SIZE}, quality ${OPENAI_IMAGE_QUALITY}).`
   );
 
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
