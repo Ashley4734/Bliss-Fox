@@ -1,9 +1,47 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-03T19:25:09.318Z",
+  "updated": "2026-08-04T02:04:52.655Z",
   "count": 110,
   "products": [
+    {
+      "listing_id": 4518076610,
+      "title": "Kawaii Police Coloring Book, Chibi Animal Cops, Community Helpers, Kids Activity (Instant Download)",
+      "description": "A police coloring book for kids and adults featuring 45 cute animal cops and community helpers — printable coloring pages perfect for police birthday parties, classroom…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4518076610/police-coloring-book-for-kids-cute",
+      "image": "https://i.etsystatic.com/9660605/r/il/c3e6d9/8348051587/il_570xN.8348051587_hgwq.jpg",
+      "price": {
+        "amount": 6.99,
+        "currency": "USD",
+        "display": "$3.50",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$6.99",
+        "sale_amount": 3.5,
+        "sale_display": "$3.50"
+      },
+      "tags": [
+        "police coloring book",
+        "community helpers",
+        "police officer gift",
+        "kids police pages",
+        "career day activity",
+        "law enforcement",
+        "preschool activity",
+        "kawaii coloring",
+        "police colouring",
+        "police party favor",
+        "first responder art",
+        "classroom activity",
+        "kids hero coloring"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1785804564
+    },
     {
       "listing_id": 4526850046,
       "title": "Tarot Cats Celestial Spells Coloring Book, Witchy Night-Sky Scenes (Instant Download)",
@@ -3313,44 +3351,6 @@
         "seasonal"
       ],
       "created": 1781696214
-    },
-    {
-      "listing_id": 4518076610,
-      "title": "Kawaii Police Coloring Book, Chibi Animal Cops, Community Helpers, Kids Activity (Instant Download)",
-      "description": "A police coloring book for kids and adults featuring 45 cute animal cops and community helpers — printable coloring pages perfect for police birthday parties, classroom…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4518076610/police-coloring-book-for-kids-cute",
-      "image": "https://i.etsystatic.com/9660605/r/il/c3e6d9/8348051587/il_570xN.8348051587_hgwq.jpg",
-      "price": {
-        "amount": 6.99,
-        "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
-      },
-      "tags": [
-        "police coloring book",
-        "community helpers",
-        "police officer gift",
-        "kids police pages",
-        "career day activity",
-        "law enforcement",
-        "preschool activity",
-        "kawaii coloring",
-        "police colouring",
-        "police party favor",
-        "first responder art",
-        "classroom activity",
-        "kids hero coloring"
-      ],
-      "themes": [
-        "animals",
-        "professions",
-        "kids"
-      ],
-      "created": 1781324335
     },
     {
       "listing_id": 4518071130,
