@@ -19,7 +19,7 @@ on:
         options: [verify, publish]
       max_per_run:
         description: 'Max Pins to publish this run'
-        default: '5'
+        default: '10'
       dry_run:
         description: 'Log what would be posted without calling the API'
         type: boolean
@@ -51,7 +51,7 @@ jobs:
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
           # Scheduled runs publish; manual runs use the chosen mode (default verify).
           MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
-          MAX_PER_RUN: ${{ inputs.max_per_run || '5' }}
+          MAX_PER_RUN: ${{ inputs.max_per_run || '10' }}
           DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
         run: node scripts/pinterest-publish.mjs
 
