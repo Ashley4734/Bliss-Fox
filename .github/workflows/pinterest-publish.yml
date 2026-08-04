@@ -61,6 +61,7 @@ jobs:
           MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
           MAX_PER_RUN: ${{ inputs.max_per_run || '10' }}
           IMAGE_SOURCE: ${{ inputs.image_source || 'replicate' }}
+          IMAGE_QUALITY: low
           DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
         run: node scripts/pinterest-publish.mjs
 
