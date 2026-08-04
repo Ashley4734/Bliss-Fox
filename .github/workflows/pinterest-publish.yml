@@ -1,11 +1,12 @@
 name: Pinterest publish
 
-# Publishes the Pins you selected in data/pinterest-queue.json to your themed
-# boards. It only ever posts queued entries (posted=false) — you choose each
-# Pin — and drips out a few per run. Runs on a schedule and can be run by hand.
+# Publishes Pins for the shop's own products to its themed boards. Auto-enqueues
+# the catalogue, recycles after a cooldown, writes keyword-rich copy, and (by
+# default) generates original vertical Pin art with Replicate.
 #
 # Requires repository secrets: PINTEREST_APP_ID, PINTEREST_APP_SECRET,
-# PINTEREST_REFRESH_TOKEN.
+# PINTEREST_REFRESH_TOKEN. For image_source=replicate also set REPLICATE_API_TOKEN
+# (without it, the publisher falls back to the Etsy cover image).
 
 on:
   schedule:
@@ -20,6 +21,11 @@ on:
       max_per_run:
         description: 'Max Pins to publish this run'
         default: '10'
+      image_source:
+        description: 'Pin image: replicate (generated art) or etsy (product cover)'
+        type: choice
+        default: replicate
+        options: [replicate, etsy]
       dry_run:
         description: 'Log what would be posted without calling the API'
         type: boolean
@@ -49,9 +55,11 @@ jobs:
           PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
           PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
           # Scheduled runs publish; manual runs use the chosen mode (default verify).
           MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
           MAX_PER_RUN: ${{ inputs.max_per_run || '10' }}
+          IMAGE_SOURCE: ${{ inputs.image_source || 'replicate' }}
           DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
         run: node scripts/pinterest-publish.mjs
 
