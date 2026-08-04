@@ -7,25 +7,34 @@
  * queue — this keeps the tool compliant with Pinterest's Developer Guidelines,
  * which require the account owner to choose each Pin that gets published.
  *
- * Two modes (set MODE, default "publish"):
+ * Modes (set MODE, default "publish"):
  *   verify   — refresh the token, list the account's boards, and print a menu
- *              of products (listing_id + title) to help you build the queue.
- *              Creates no Pins.
+ *              of products (listing_id + title). Creates no Pins.
  *   publish  — publish up to MAX_PER_RUN queued-but-unposted Pins, then mark
- *              them posted in the queue. Scheduling Pins you selected is
- *              explicitly allowed by the guidelines.
+ *              them posted in the queue.
+ *   demo     — create a board, create a Pin, and read the Pin back. Intended
+ *              for the Pinterest Standard-access review video, run against the
+ *              SANDBOX (PINTEREST_ENV=sandbox). Does not touch the queue.
+ *
+ * Environment (set PINTEREST_ENV, default "production"):
+ *   production — https://api.pinterest.com, uses PINTEREST_REFRESH_TOKEN
+ *   sandbox    — https://api-sandbox.pinterest.com, uses
+ *                PINTEREST_SANDBOX_REFRESH_TOKEN (isolated test environment;
+ *                Trial apps can create Pins here but not in production)
  *
  * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a
  * "posted" flag). Board ids are resolved from board NAMES at run time and are
  * never persisted, so no data retrieved from the Pinterest API is stored.
  *
  * Auth (repository secrets, refreshed each run):
- *   PINTEREST_APP_ID       app id (1596011)
- *   PINTEREST_APP_SECRET   app secret
- *   PINTEREST_REFRESH_TOKEN long-lived refresh token
+ *   PINTEREST_APP_ID                app id (1596011)
+ *   PINTEREST_APP_SECRET            app secret
+ *   PINTEREST_REFRESH_TOKEN         production refresh token
+ *   PINTEREST_SANDBOX_REFRESH_TOKEN sandbox refresh token (demo only)
  *
  * Optional env:
- *   MODE                 "verify" | "publish"  (default "publish")
+ *   MODE                 "verify" | "publish" | "demo"  (default "publish")
+ *   PINTEREST_ENV        "production" | "sandbox"        (default "production")
  *   MAX_PER_RUN          max Pins to publish per run (default 5)
  *   DRY_RUN              "1" to log what would be posted without calling the API
  *
@@ -36,13 +45,18 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-const API = 'https://api.pinterest.com/v5';
+const ENV = (process.env.PINTEREST_ENV || 'production').trim().toLowerCase();
+const IS_SANDBOX = ENV === 'sandbox';
+const API_HOST = IS_SANDBOX ? 'https://api-sandbox.pinterest.com' : 'https://api.pinterest.com';
+const API = `${API_HOST}/v5`;
 const TOKEN_URL = `${API}/oauth/token`;
 const SITE_HOST = 'https://blissfoxstudio.com';
 
 const APP_ID = (process.env.PINTEREST_APP_ID || '').trim();
 const APP_SECRET = (process.env.PINTEREST_APP_SECRET || '').trim();
-const REFRESH_TOKEN = (process.env.PINTEREST_REFRESH_TOKEN || '').trim();
+// Production and sandbox use separate tokens (isolated environments).
+const REFRESH_TOKEN_VAR = IS_SANDBOX ? 'PINTEREST_SANDBOX_REFRESH_TOKEN' : 'PINTEREST_REFRESH_TOKEN';
+const REFRESH_TOKEN = (process.env[REFRESH_TOKEN_VAR] || '').trim();
 const MODE = (process.env.MODE || 'publish').trim().toLowerCase();
 const MAX_PER_RUN = Math.max(1, Number.parseInt(process.env.MAX_PER_RUN || '5', 10) || 5);
 const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
@@ -72,7 +86,7 @@ function requireAuth() {
   const missing = [];
   if (!APP_ID) missing.push('PINTEREST_APP_ID');
   if (!APP_SECRET) missing.push('PINTEREST_APP_SECRET');
-  if (!REFRESH_TOKEN) missing.push('PINTEREST_REFRESH_TOKEN');
+  if (!REFRESH_TOKEN) missing.push(REFRESH_TOKEN_VAR);
   if (missing.length) {
     console.error(`ERROR: missing required secret(s): ${missing.join(', ')}.`);
     process.exit(1);
@@ -97,8 +111,8 @@ async function getAccessToken() {
   const text = await res.text();
   if (!res.ok) {
     throw new Error(
-      `Token refresh failed: HTTP ${res.status}. ` +
-        'Check PINTEREST_APP_ID / PINTEREST_APP_SECRET / PINTEREST_REFRESH_TOKEN. ' +
+      `Token refresh failed: HTTP ${res.status} (${ENV}). ` +
+        `Check PINTEREST_APP_ID / PINTEREST_APP_SECRET / ${REFRESH_TOKEN_VAR}. ` +
         `Body: ${text.slice(0, 300)}`
     );
   }
@@ -208,7 +222,7 @@ async function loadQueue() {
 }
 
 async function runVerify(token) {
-  console.log('Verifying Pinterest access…');
+  console.log(`Verifying Pinterest access (${ENV})…`);
   const boards = await listBoards(token);
   console.log(`\nToken OK. Found ${boards.length} board(s) on the account:`);
   for (const b of boards) console.log(`  • ${b.name}`);
@@ -231,6 +245,64 @@ async function runVerify(token) {
     console.log(`  ${p.listing_id}\t[${theme}]\t${p.title}`);
   }
   console.log('\nVerify complete. No Pins were created.');
+}
+
+// End-to-end API demonstration for the Standard-access review video: create a
+// board, create a Pin on it, then read the Pin back. Run against the sandbox.
+async function runDemo(token) {
+  console.log(`Pinterest API demo (${ENV}).`);
+  if (!IS_SANDBOX) {
+    console.log('Note: demo is intended for PINTEREST_ENV=sandbox.');
+  }
+
+  const products = (await loadJson(PRODUCTS_FILE)).products || [];
+  const product = products.find((p) => p.image) || products[0];
+  if (!product) throw new Error('No products available to build a demo Pin.');
+
+  // 1) Create a board.
+  const boardName = `Bliss Fox Studio Demo ${new Date().toISOString().slice(0, 10)}`;
+  console.log(`\n[1/3] POST /boards — creating board "${boardName}"…`);
+  const board = await api(token, '/boards', {
+    method: 'POST',
+    body: {
+      name: boardName,
+      description: 'Demo board created via the Pinterest API for standard-access review.',
+    },
+  });
+  console.log(`      ✓ board created: id=${board.id}`);
+
+  // 2) Create a Pin on that board.
+  console.log(`\n[2/3] POST /pins — creating a Pin for "${product.title}"…`);
+  const pin = await api(token, '/pins', {
+    method: 'POST',
+    body: {
+      board_id: board.id,
+      title: clamp(product.title, 100),
+      description: clamp(product.description || product.title, 500),
+      link: onDomainLink(product.url),
+      media_source: { source_type: 'image_url', url: product.image },
+    },
+  });
+  console.log(`      ✓ pin created: id=${pin.id}`);
+
+  // 3) Read the Pin back to show the result.
+  console.log(`\n[3/3] GET /pins/${pin.id} — reading the created Pin back…`);
+  const fetched = await api(token, `/pins/${pin.id}`);
+  console.log('      ✓ retrieved Pin:');
+  console.log(
+    JSON.stringify(
+      {
+        id: fetched.id,
+        title: fetched.title,
+        board_id: fetched.board_id,
+        link: fetched.link,
+        created_at: fetched.created_at,
+      },
+      null,
+      2
+    )
+  );
+  console.log('\nDemo complete: board + Pin created via the API and read back.');
 }
 
 async function runPublish(token) {
@@ -303,6 +375,8 @@ async function main() {
   const token = await getAccessToken();
   if (MODE === 'verify') {
     await runVerify(token);
+  } else if (MODE === 'demo') {
+    await runDemo(token);
   } else {
     await runPublish(token);
   }
