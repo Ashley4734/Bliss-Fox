@@ -259,8 +259,9 @@ async function runDemo(token) {
   const product = products.find((p) => p.image) || products[0];
   if (!product) throw new Error('No products available to build a demo Pin.');
 
-  // 1) Create a board.
-  const boardName = `Bliss Fox Studio Demo ${new Date().toISOString().slice(0, 10)}`;
+  // 1) Create a board. Name is unique per run (Pinterest rejects duplicates).
+  const stamp = new Date().toISOString().slice(0, 19).replace('T', ' ');
+  const boardName = `Bliss Fox Studio Demo ${stamp} UTC`;
   console.log(`\n[1/3] POST /boards — creating board "${boardName}"…`);
   const board = await api(token, '/boards', {
     method: 'POST',
