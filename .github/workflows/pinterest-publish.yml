@@ -8,11 +8,8 @@ name: Pinterest publish
 # PINTEREST_REFRESH_TOKEN.
 
 on:
-  # Daily schedule is PAUSED until the app has Standard API access. Trial access
-  # cannot create Pins in production (POST /pins returns 403), so a scheduled
-  # run would fail every day. Re-enable this block once Standard is approved:
-  # schedule:
-  #   - cron: '0 15 * * *' # once daily, 15:00 UTC
+  schedule:
+    - cron: '0 15 * * *' # once daily, 15:00 UTC
   workflow_dispatch:
     inputs:
       mode:
@@ -45,7 +42,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Run Pinterest publisher
         env:
