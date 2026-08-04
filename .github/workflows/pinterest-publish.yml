@@ -2,10 +2,10 @@ name: Pinterest publish
 
 # Publishes Pins for the shop's own products to its themed boards. Auto-enqueues
 # the catalogue, recycles after a cooldown, writes keyword-rich copy, and (by
-# default) generates original vertical Pin art with Replicate.
+# default) generates original Pin art with OpenAI gpt-image from the hero image.
 #
 # Requires repository secrets: PINTEREST_APP_ID, PINTEREST_APP_SECRET,
-# PINTEREST_REFRESH_TOKEN. For image_source=replicate also set REPLICATE_API_TOKEN
+# PINTEREST_REFRESH_TOKEN. For image_source=openai also set OPENAI_API_KEY
 # (without it, the publisher falls back to the Etsy cover image).
 
 on:
@@ -22,10 +22,10 @@ on:
         description: 'Max Pins to publish this run'
         default: '10'
       image_source:
-        description: 'Pin image: replicate (generated art) or etsy (product cover)'
+        description: 'Pin image: openai (generated from the hero image) or etsy (product cover)'
         type: choice
-        default: replicate
-        options: [replicate, etsy]
+        default: openai
+        options: [openai, etsy]
       dry_run:
         description: 'Log what would be posted without calling the API'
         type: boolean
@@ -55,11 +55,11 @@ jobs:
           PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
           PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
           PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
-          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # Scheduled runs publish; manual runs use the chosen mode (default verify).
           MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
           MAX_PER_RUN: ${{ inputs.max_per_run || '10' }}
-          IMAGE_SOURCE: ${{ inputs.image_source || 'replicate' }}
+          IMAGE_SOURCE: ${{ inputs.image_source || 'openai' }}
           DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
         run: node scripts/pinterest-publish.mjs
 
