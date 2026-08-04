@@ -9,35 +9,33 @@
  * Modes (set MODE, default "publish"):
  *   verify   — refresh the token, list the account's boards, and print a menu
  *              of products (listing_id + title). Creates no Pins.
- *   publish  — publish up to MAX_PER_RUN eligible Pins, then record them in the
- *              queue. With auto_enqueue on (default) every catalogue product is
- *              added automatically, so new Etsy listings flow in with no manual
- *              work; with recycle_after_days > 0 a product becomes eligible to
- *              re-pin after that many days so the drip keeps running.
+ *   publish  — publish up to MAX_PER_RUN eligible Pins. Auto-enqueues the whole
+ *              catalogue (auto_enqueue), recycles posted products after a
+ *              cooldown (recycle_after_days), prioritises seasonal themes, writes
+ *              keyword-rich copy, and (by default) generates original vertical
+ *              Pin art with Replicate.
  *   demo     — create a board, create a Pin, and read the Pin back (sandbox;
  *              used for the Standard-access review video). Does not touch the queue.
  *
  * Queue (data/pinterest-queue.json) config:
  *   auto_enqueue        add every catalogue product automatically (default true)
  *   recycle_after_days  days before a posted product may re-pin (default 45; 0 = pin once)
+ *   image_source        "replicate" (generate art) or "etsy" (use the cover); default replicate
  *   default_board       board for products with no theme match
- *   pins[]              per-product state {listing_id, posted, posted_at,
- *                       optional board/title/description overrides}
+ *   pins[]              per-product state {listing_id, posted, posted_at, optional
+ *                       board/title/description overrides}
  *
- * Environment (set PINTEREST_ENV, default "production"):
- *   production — https://api.pinterest.com, uses PINTEREST_REFRESH_TOKEN
- *   sandbox    — https://api-sandbox.pinterest.com, uses PINTEREST_SANDBOX_REFRESH_TOKEN
+ * Environment:
+ *   PINTEREST_ENV        "production" (default) or "sandbox"
+ *   MODE, MAX_PER_RUN (default 5), DRY_RUN ("1"), IMAGE_SOURCE
+ *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
+ *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
+ *   REPLICATE_API_TOKEN  required for image_source=replicate (else falls back to Etsy)
+ *   REPLICATE_MODEL      default "black-forest-labs/flux-schnell"
  *
  * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a posted
  * flag/date). Board ids are resolved from board NAMES at run time and never
  * persisted, so no data retrieved from the Pinterest API is stored.
- *
- * Auth (repository secrets, refreshed each run):
- *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
- *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
- *
- * Optional env:
- *   MODE, PINTEREST_ENV, MAX_PER_RUN (default 5), DRY_RUN ("1")
  *
  * Node 18+ (global fetch). No dependencies.
  */
@@ -55,12 +53,14 @@ const SITE_HOST = 'https://blissfoxstudio.com';
 
 const APP_ID = (process.env.PINTEREST_APP_ID || '').trim();
 const APP_SECRET = (process.env.PINTEREST_APP_SECRET || '').trim();
-// Production and sandbox use separate tokens (isolated environments).
 const REFRESH_TOKEN_VAR = IS_SANDBOX ? 'PINTEREST_SANDBOX_REFRESH_TOKEN' : 'PINTEREST_REFRESH_TOKEN';
 const REFRESH_TOKEN = (process.env[REFRESH_TOKEN_VAR] || '').trim();
 const MODE = (process.env.MODE || 'publish').trim().toLowerCase();
 const MAX_PER_RUN = Math.max(1, Number.parseInt(process.env.MAX_PER_RUN || '5', 10) || 5);
 const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
+
+const REPLICATE_TOKEN = (process.env.REPLICATE_API_TOKEN || '').trim();
+const REPLICATE_MODEL = (process.env.REPLICATE_MODEL || 'black-forest-labs/flux-schnell').trim();
 
 const DAY_MS = 86400000;
 
@@ -70,8 +70,7 @@ const QUEUE_FILE = join(__dirname, '..', 'data', 'pinterest-queue.json');
 
 // Map each product theme (from the Etsy sync) to the board it should be pinned
 // to. Create boards with THESE EXACT names in the Pinterest UI; matching is
-// case-insensitive. Products with no theme (or an unmapped one) go to the
-// queue's default_board.
+// case-insensitive. Products with no theme go to the queue's default_board.
 const THEME_BOARDS = {
   cozy: 'Cozy Coloring Pages',
   spooky: 'Spooky Coloring Pages',
@@ -81,6 +80,29 @@ const THEME_BOARDS = {
   professions: 'Community Helpers Coloring Pages',
   kids: 'Kids Coloring Pages',
   patriotic: 'Patriotic Coloring Pages',
+};
+
+// SEO hashtags added to every Pin, plus per-theme extras.
+const BASE_HASHTAGS = ['#coloringpages', '#printable', '#coloringbook', '#adultcoloring', '#instantdownload'];
+const THEME_HASHTAGS = {
+  cozy: ['#cottagecore', '#cozyvibes'],
+  spooky: ['#halloween', '#spookyseason'],
+  fantasy: ['#fantasyart', '#mythical'],
+  animals: ['#cuteanimals', '#kawaii'],
+  seasonal: ['#seasonal', '#holidayfun'],
+  professions: ['#communityhelpers', '#kidsactivities'],
+  kids: ['#kidsactivities', '#coloringforkids'],
+  patriotic: ['#usa', '#redwhiteblue'],
+};
+
+// Month (0=Jan) -> themes to prioritise so timely products go out in season.
+const SEASONAL_BOOST = {
+  5: ['patriotic'], // June
+  6: ['patriotic'], // July
+  8: ['spooky'], // September
+  9: ['spooky'], // October
+  10: ['seasonal'], // November
+  11: ['seasonal'], // December
 };
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -96,27 +118,19 @@ function requireAuth() {
   }
 }
 
-// Exchange the stored refresh token for a short-lived access token.
 async function getAccessToken() {
   const basic = Buffer.from(`${APP_ID}:${APP_SECRET}`).toString('base64');
-  const body = new URLSearchParams({
-    grant_type: 'refresh_token',
-    refresh_token: REFRESH_TOKEN,
-  });
+  const body = new URLSearchParams({ grant_type: 'refresh_token', refresh_token: REFRESH_TOKEN });
   const res = await fetch(TOKEN_URL, {
     method: 'POST',
-    headers: {
-      Authorization: `Basic ${basic}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
+    headers: { Authorization: `Basic ${basic}`, 'Content-Type': 'application/x-www-form-urlencoded' },
     body,
   });
   const text = await res.text();
   if (!res.ok) {
     throw new Error(
       `Token refresh failed: HTTP ${res.status} (${ENV}). ` +
-        `Check PINTEREST_APP_ID / PINTEREST_APP_SECRET / ${REFRESH_TOKEN_VAR}. ` +
-        `Body: ${text.slice(0, 300)}`
+        `Check PINTEREST_APP_ID / PINTEREST_APP_SECRET / ${REFRESH_TOKEN_VAR}. Body: ${text.slice(0, 300)}`
     );
   }
   const data = JSON.parse(text);
@@ -157,7 +171,6 @@ async function api(token, path, { method = 'GET', body } = {}) {
   }
 }
 
-// Fetch every board on the account (name + id). boards:read scope.
 async function listBoards(token) {
   const boards = [];
   let bookmark = '';
@@ -178,8 +191,6 @@ function boardIdByName(boards, name) {
   return hit ? hit.id : null;
 }
 
-// Route feed/pin links through the claimed domain (nginx 301s /listing/... to
-// Etsy), matching the Pinterest catalog feed's behaviour.
 function onDomainLink(url) {
   try {
     return SITE_HOST + new URL(url).pathname;
@@ -194,22 +205,93 @@ function clamp(text, max) {
   return clean.length <= max ? clean : clean.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
 }
 
-// The board a queued entry targets: explicit `board`, else derived from the
-// product's first theme, else the queue default.
 function boardNameFor(entry, product, defaultBoard) {
   if (entry.board) return entry.board;
   const theme = (product.themes || []).find((t) => THEME_BOARDS[t]);
   return (theme && THEME_BOARDS[theme]) || defaultBoard;
 }
 
-function buildPinBody(entry, product, boardId) {
-  return {
-    board_id: boardId,
-    title: clamp(entry.title || product.title, 100),
-    description: clamp(entry.description || product.description || product.title, 500),
-    link: onDomainLink(product.url),
-    media_source: { source_type: 'image_url', url: product.image },
-  };
+// ---- Phase 2: SEO copy ----------------------------------------------------
+
+function buildHashtags(product) {
+  const tags = new Set(BASE_HASHTAGS);
+  for (const t of product.themes || []) for (const h of THEME_HASHTAGS[t] || []) tags.add(h);
+  return [...tags].slice(0, 10).join(' ');
+}
+
+function buildTitle(product) {
+  return product.title || 'Printable Coloring Book';
+}
+
+function buildDescription(product) {
+  const base = (product.description || product.title || '').replace(/\s+/g, ' ').trim();
+  const cta = 'Instant-download printable coloring pages by Bliss Fox Studio — print at home and unwind.';
+  const hashtags = buildHashtags(product);
+  const tail = ` ${cta} ${hashtags}`;
+  const room = Math.max(0, 500 - tail.length - 1);
+  const head = base.length > room ? base.slice(0, room - 1).replace(/\s+\S*$/, '') + '…' : base;
+  return `${head}${tail}`.trim();
+}
+
+// ---- Phase 2: Replicate image generation ----------------------------------
+
+function pinImagePrompt(product) {
+  const themeWord = (product.themes || [])[0] || 'whimsical';
+  return (
+    `A charming vertical Pinterest graphic of a printable coloring page. ` +
+    `Black-and-white hand-drawn line art with clean bold outlines on a white background, ` +
+    `${themeWord} theme inspired by "${clamp(product.title, 80)}". ` +
+    `Cute, whimsical, high detail, ready to color in. No text, no words, no watermark, no signature.`
+  );
+}
+
+// Generate an original 2:3 image with Replicate; returns a public URL or null.
+async function generateReplicateImage(product) {
+  if (!REPLICATE_TOKEN) return null;
+  try {
+    const res = await fetch(`https://api.replicate.com/v1/models/${REPLICATE_MODEL}/predictions`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${REPLICATE_TOKEN}`,
+        'Content-Type': 'application/json',
+        Prefer: 'wait',
+      },
+      body: JSON.stringify({
+        input: { prompt: pinImagePrompt(product), aspect_ratio: '2:3', output_format: 'jpg', num_outputs: 1 },
+      }),
+    });
+    let pred = await res.json();
+    if (!res.ok) {
+      console.warn(`  Replicate error ${res.status}: ${JSON.stringify(pred).slice(0, 200)}`);
+      return null;
+    }
+    let tries = 0;
+    while (pred.status && !['succeeded', 'failed', 'canceled'].includes(pred.status) && tries < 20) {
+      await sleep(3000);
+      const g = await fetch(pred.urls.get, { headers: { Authorization: `Bearer ${REPLICATE_TOKEN}` } });
+      pred = await g.json();
+      tries++;
+    }
+    if (pred.status !== 'succeeded') {
+      console.warn(`  Replicate did not succeed (status: ${pred.status}).`);
+      return null;
+    }
+    const out = Array.isArray(pred.output) ? pred.output[0] : pred.output;
+    return typeof out === 'string' && out ? out : null;
+  } catch (err) {
+    console.warn(`  Replicate generation failed: ${err.message}`);
+    return null;
+  }
+}
+
+// Pick the Pin image: generated art (image_source=replicate) or the Etsy cover.
+async function resolvePinImage(product, imageSource) {
+  if (imageSource === 'replicate') {
+    const gen = await generateReplicateImage(product);
+    if (gen) return { url: gen, source: 'replicate' };
+    console.warn(`  falling back to Etsy image for "${product.title}" (Replicate unavailable).`);
+  }
+  return { url: product.image || '', source: 'etsy' };
 }
 
 async function loadJson(file) {
@@ -232,14 +314,12 @@ async function runVerify(token) {
 
   console.log('\nExpected board names (create these, case-insensitive match):');
   for (const name of new Set(Object.values(THEME_BOARDS))) console.log(`  • ${name}`);
-  const missing = [...new Set(Object.values(THEME_BOARDS))].filter(
-    (n) => !boardIdByName(boards, n)
-  );
-  if (missing.length) {
-    console.log(`\n⚠ Not found yet (create in the Pinterest UI): ${missing.join(', ')}`);
-  } else {
-    console.log('\n✓ All theme boards exist.');
-  }
+  const missing = [...new Set(Object.values(THEME_BOARDS))].filter((n) => !boardIdByName(boards, n));
+  if (missing.length) console.log(`\n⚠ Not found yet (create in the Pinterest UI): ${missing.join(', ')}`);
+  else console.log('\n✓ All theme boards exist.');
+
+  console.log(`\nImage source: ${(process.env.IMAGE_SOURCE || 'replicate')} ` +
+    `(Replicate token ${REPLICATE_TOKEN ? 'present' : 'MISSING → would fall back to Etsy'}).`);
 
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
   console.log(`\nProduct menu (${products.length}) — copy listing_id into the queue:`);
@@ -250,32 +330,23 @@ async function runVerify(token) {
   console.log('\nVerify complete. No Pins were created.');
 }
 
-// End-to-end API demonstration for the Standard-access review video: create a
-// board, create a Pin on it, then read the Pin back. Run against the sandbox.
 async function runDemo(token) {
   console.log(`Pinterest API demo (${ENV}).`);
-  if (!IS_SANDBOX) {
-    console.log('Note: demo is intended for PINTEREST_ENV=sandbox.');
-  }
+  if (!IS_SANDBOX) console.log('Note: demo is intended for PINTEREST_ENV=sandbox.');
 
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
   const product = products.find((p) => p.image) || products[0];
   if (!product) throw new Error('No products available to build a demo Pin.');
 
-  // 1) Create a board. Name is unique per run (Pinterest rejects duplicates).
   const stamp = new Date().toISOString().slice(0, 19).replace('T', ' ');
   const boardName = `Bliss Fox Studio Demo ${stamp} UTC`;
   console.log(`\n[1/3] POST /boards — creating board "${boardName}"…`);
   const board = await api(token, '/boards', {
     method: 'POST',
-    body: {
-      name: boardName,
-      description: 'Demo board created via the Pinterest API for standard-access review.',
-    },
+    body: { name: boardName, description: 'Demo board created via the Pinterest API for standard-access review.' },
   });
   console.log(`      ✓ board created: id=${board.id}`);
 
-  // 2) Create a Pin on that board.
   console.log(`\n[2/3] POST /pins — creating a Pin for "${product.title}"…`);
   const pin = await api(token, '/pins', {
     method: 'POST',
@@ -289,33 +360,16 @@ async function runDemo(token) {
   });
   console.log(`      ✓ pin created: id=${pin.id}`);
 
-  // 3) Read the Pin back to show the result.
   console.log(`\n[3/3] GET /pins/${pin.id} — reading the created Pin back…`);
   const fetched = await api(token, `/pins/${pin.id}`);
   console.log('      ✓ retrieved Pin:');
-  console.log(
-    JSON.stringify(
-      {
-        id: fetched.id,
-        title: fetched.title,
-        board_id: fetched.board_id,
-        link: fetched.link,
-        created_at: fetched.created_at,
-      },
-      null,
-      2
-    )
-  );
+  console.log(JSON.stringify({ id: fetched.id, title: fetched.title, board_id: fetched.board_id, link: fetched.link, created_at: fetched.created_at }, null, 2));
   console.log('\nDemo complete: board + Pin created via the API and read back.');
 }
 
-// Is a queue entry eligible to post now? Never-posted entries always are;
-// posted entries only if recycling is on and the cooldown has elapsed.
 function eligibleToPost(entry, recycleDays, now) {
   if (!entry.posted) return true;
-  if (recycleDays > 0 && entry.posted_at) {
-    return now - Date.parse(entry.posted_at) >= recycleDays * DAY_MS;
-  }
+  if (recycleDays > 0 && entry.posted_at) return now - Date.parse(entry.posted_at) >= recycleDays * DAY_MS;
   return false;
 }
 
@@ -326,12 +380,11 @@ async function runPublish(token) {
   const defaultBoard = queue.default_board || 'Printable Coloring Books';
   const autoEnqueue = queue.auto_enqueue !== false; // default ON
   const recycleDays = Number.isFinite(queue.recycle_after_days) ? queue.recycle_after_days : 45;
+  const imageSource = (process.env.IMAGE_SOURCE || queue.image_source || 'replicate').trim().toLowerCase();
   queue.pins = Array.isArray(queue.pins) ? queue.pins : [];
 
   let dirty = false;
 
-  // Auto-enqueue: ensure every current catalogue product has a queue entry.
-  // products.json is newest-first, so new listings are appended and picked up.
   if (autoEnqueue) {
     const known = new Set(queue.pins.map((e) => String(e.listing_id)));
     let added = 0;
@@ -349,18 +402,27 @@ async function runPublish(token) {
   }
 
   const now = Date.now();
-  // Never-posted first (queue order = manual picks, then newest products), then
-  // recycle-eligible entries, oldest posted first.
   const neverPosted = queue.pins.filter((e) => !e.posted);
   const recyclable = queue.pins
     .filter((e) => e.posted && eligibleToPost(e, recycleDays, now))
     .sort((a, b) => Date.parse(a.posted_at || 0) - Date.parse(b.posted_at || 0));
-  const candidates = [...neverPosted, ...recyclable];
+  let candidates = [...neverPosted, ...recyclable];
+
+  // Seasonal prioritisation: move in-season themes to the front (stable).
+  const boostThemes = SEASONAL_BOOST[new Date().getMonth()] || [];
+  const isBoosted = (e) => {
+    const p = byId.get(String(e.listing_id));
+    return !!p && (p.themes || []).some((t) => boostThemes.includes(t));
+  };
+  if (boostThemes.length) {
+    candidates = [...candidates.filter(isBoosted), ...candidates.filter((e) => !isBoosted(e))];
+    console.log(`Seasonal boost this month: ${boostThemes.join(', ')}.`);
+  }
 
   console.log(
     `Queue: ${queue.pins.length} product(s); ${neverPosted.length} never-posted, ` +
-      `${recyclable.length} recycle-eligible. Publishing up to ${MAX_PER_RUN}` +
-      (DRY_RUN ? ' (DRY RUN)…' : '…')
+      `${recyclable.length} recycle-eligible. Image source: ${imageSource}. ` +
+      `Publishing up to ${MAX_PER_RUN}` + (DRY_RUN ? ' (DRY RUN)…' : '…')
   );
 
   const boards = candidates.length ? await listBoards(token) : [];
@@ -372,10 +434,6 @@ async function runPublish(token) {
       console.warn(`  skip listing ${entry.listing_id}: not in products.json (removed on Etsy?)`);
       continue;
     }
-    if (!product.image) {
-      console.warn(`  skip "${product.title}": no image available.`);
-      continue;
-    }
     const boardName = boardNameFor(entry, product, defaultBoard);
     const boardId = boardIdByName(boards, boardName);
     if (!boardId) {
@@ -383,22 +441,34 @@ async function runPublish(token) {
       continue;
     }
 
-    const pin = buildPinBody(entry, product, boardId);
     if (DRY_RUN) {
-      console.log(`  [dry] would pin "${pin.title}" → ${boardName}`);
+      console.log(`  [dry] would pin "${buildTitle(product)}" → ${boardName} (image: ${imageSource})`);
       published++;
       continue;
     }
+
+    const image = await resolvePinImage(product, imageSource);
+    if (!image.url) {
+      console.warn(`  skip "${product.title}": no image available.`);
+      continue;
+    }
+    const body = {
+      board_id: boardId,
+      title: clamp(entry.title || buildTitle(product), 100),
+      description: clamp(entry.description || buildDescription(product), 500),
+      link: onDomainLink(product.url),
+      media_source: { source_type: 'image_url', url: image.url },
+    };
     try {
-      await api(token, '/pins', { method: 'POST', body: pin });
+      await api(token, '/pins', { method: 'POST', body });
       entry.posted = true;
       entry.posted_at = new Date().toISOString();
       dirty = true;
       published++;
-      console.log(`  ✓ pinned "${pin.title}" → ${boardName}`);
-      await sleep(1500); // gentle pacing between writes
+      console.log(`  ✓ pinned "${body.title}" → ${boardName} [${image.source}]`);
+      await sleep(1500);
     } catch (err) {
-      console.error(`  ✗ failed "${pin.title}": ${err.message}`);
+      console.error(`  ✗ failed "${body.title}": ${err.message}`);
     }
   }
 
@@ -413,13 +483,9 @@ async function runPublish(token) {
 async function main() {
   requireAuth();
   const token = await getAccessToken();
-  if (MODE === 'verify') {
-    await runVerify(token);
-  } else if (MODE === 'demo') {
-    await runDemo(token);
-  } else {
-    await runPublish(token);
-  }
+  if (MODE === 'verify') await runVerify(token);
+  else if (MODE === 'demo') await runDemo(token);
+  else await runPublish(token);
 }
 
 main().catch((err) => {
