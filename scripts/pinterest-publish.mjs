@@ -2,41 +2,42 @@
 /**
  * Bliss Fox Studio — Pinterest organic Pin publisher.
  *
- * Publishes Pins for coloring-book products that YOU have selected in
- * data/pinterest-queue.json. It never posts anything that is not in that
- * queue — this keeps the tool compliant with Pinterest's Developer Guidelines,
- * which require the account owner to choose each Pin that gets published.
+ * Publishes Pins for the shop's own coloring-book products to the shop's own
+ * themed boards. The account owner configures the tool to publish the shop's
+ * catalogue; it only ever pins OUR OWN products, a few per run.
  *
  * Modes (set MODE, default "publish"):
  *   verify   — refresh the token, list the account's boards, and print a menu
  *              of products (listing_id + title). Creates no Pins.
- *   publish  — publish up to MAX_PER_RUN queued-but-unposted Pins, then mark
- *              them posted in the queue.
- *   demo     — create a board, create a Pin, and read the Pin back. Intended
- *              for the Pinterest Standard-access review video, run against the
- *              SANDBOX (PINTEREST_ENV=sandbox). Does not touch the queue.
+ *   publish  — publish up to MAX_PER_RUN eligible Pins, then record them in the
+ *              queue. With auto_enqueue on (default) every catalogue product is
+ *              added automatically, so new Etsy listings flow in with no manual
+ *              work; with recycle_after_days > 0 a product becomes eligible to
+ *              re-pin after that many days so the drip keeps running.
+ *   demo     — create a board, create a Pin, and read the Pin back (sandbox;
+ *              used for the Standard-access review video). Does not touch the queue.
+ *
+ * Queue (data/pinterest-queue.json) config:
+ *   auto_enqueue        add every catalogue product automatically (default true)
+ *   recycle_after_days  days before a posted product may re-pin (default 45; 0 = pin once)
+ *   default_board       board for products with no theme match
+ *   pins[]              per-product state {listing_id, posted, posted_at,
+ *                       optional board/title/description overrides}
  *
  * Environment (set PINTEREST_ENV, default "production"):
  *   production — https://api.pinterest.com, uses PINTEREST_REFRESH_TOKEN
- *   sandbox    — https://api-sandbox.pinterest.com, uses
- *                PINTEREST_SANDBOX_REFRESH_TOKEN (isolated test environment;
- *                Trial apps can create Pins here but not in production)
+ *   sandbox    — https://api-sandbox.pinterest.com, uses PINTEREST_SANDBOX_REFRESH_TOKEN
  *
- * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a
- * "posted" flag). Board ids are resolved from board NAMES at run time and are
- * never persisted, so no data retrieved from the Pinterest API is stored.
+ * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a posted
+ * flag/date). Board ids are resolved from board NAMES at run time and never
+ * persisted, so no data retrieved from the Pinterest API is stored.
  *
  * Auth (repository secrets, refreshed each run):
- *   PINTEREST_APP_ID                app id (1596011)
- *   PINTEREST_APP_SECRET            app secret
- *   PINTEREST_REFRESH_TOKEN         production refresh token
- *   PINTEREST_SANDBOX_REFRESH_TOKEN sandbox refresh token (demo only)
+ *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
+ *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
  *
  * Optional env:
- *   MODE                 "verify" | "publish" | "demo"  (default "publish")
- *   PINTEREST_ENV        "production" | "sandbox"        (default "production")
- *   MAX_PER_RUN          max Pins to publish per run (default 5)
- *   DRY_RUN              "1" to log what would be posted without calling the API
+ *   MODE, PINTEREST_ENV, MAX_PER_RUN (default 5), DRY_RUN ("1")
  *
  * Node 18+ (global fetch). No dependencies.
  */
@@ -60,6 +61,8 @@ const REFRESH_TOKEN = (process.env[REFRESH_TOKEN_VAR] || '').trim();
 const MODE = (process.env.MODE || 'publish').trim().toLowerCase();
 const MAX_PER_RUN = Math.max(1, Number.parseInt(process.env.MAX_PER_RUN || '5', 10) || 5);
 const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
+
+const DAY_MS = 86400000;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PRODUCTS_FILE = join(__dirname, '..', 'data', 'products.json');
@@ -306,27 +309,63 @@ async function runDemo(token) {
   console.log('\nDemo complete: board + Pin created via the API and read back.');
 }
 
+// Is a queue entry eligible to post now? Never-posted entries always are;
+// posted entries only if recycling is on and the cooldown has elapsed.
+function eligibleToPost(entry, recycleDays, now) {
+  if (!entry.posted) return true;
+  if (recycleDays > 0 && entry.posted_at) {
+    return now - Date.parse(entry.posted_at) >= recycleDays * DAY_MS;
+  }
+  return false;
+}
+
 async function runPublish(token) {
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
   const byId = new Map(products.map((p) => [String(p.listing_id), p]));
   const queue = await loadQueue();
   const defaultBoard = queue.default_board || 'Printable Coloring Books';
-  const pending = (queue.pins || []).filter((e) => !e.posted);
+  const autoEnqueue = queue.auto_enqueue !== false; // default ON
+  const recycleDays = Number.isFinite(queue.recycle_after_days) ? queue.recycle_after_days : 45;
+  queue.pins = Array.isArray(queue.pins) ? queue.pins : [];
 
-  if (pending.length === 0) {
-    console.log('Nothing to publish: no unposted entries in data/pinterest-queue.json.');
-    return;
+  let dirty = false;
+
+  // Auto-enqueue: ensure every current catalogue product has a queue entry.
+  // products.json is newest-first, so new listings are appended and picked up.
+  if (autoEnqueue) {
+    const known = new Set(queue.pins.map((e) => String(e.listing_id)));
+    let added = 0;
+    for (const p of products) {
+      if (!known.has(String(p.listing_id))) {
+        queue.pins.push({ listing_id: p.listing_id, posted: false });
+        known.add(String(p.listing_id));
+        added++;
+      }
+    }
+    if (added) {
+      dirty = true;
+      console.log(`Auto-enqueued ${added} new product(s) from the catalogue.`);
+    }
   }
 
-  const boards = await listBoards(token);
+  const now = Date.now();
+  // Never-posted first (queue order = manual picks, then newest products), then
+  // recycle-eligible entries, oldest posted first.
+  const neverPosted = queue.pins.filter((e) => !e.posted);
+  const recyclable = queue.pins
+    .filter((e) => e.posted && eligibleToPost(e, recycleDays, now))
+    .sort((a, b) => Date.parse(a.posted_at || 0) - Date.parse(b.posted_at || 0));
+  const candidates = [...neverPosted, ...recyclable];
+
   console.log(
-    `${pending.length} queued Pin(s) pending; publishing up to ${MAX_PER_RUN} this run` +
+    `Queue: ${queue.pins.length} product(s); ${neverPosted.length} never-posted, ` +
+      `${recyclable.length} recycle-eligible. Publishing up to ${MAX_PER_RUN}` +
       (DRY_RUN ? ' (DRY RUN)…' : '…')
   );
 
+  const boards = candidates.length ? await listBoards(token) : [];
   let published = 0;
-  let changed = false;
-  for (const entry of pending) {
+  for (const entry of candidates) {
     if (published >= MAX_PER_RUN) break;
     const product = byId.get(String(entry.listing_id));
     if (!product) {
@@ -354,7 +393,7 @@ async function runPublish(token) {
       await api(token, '/pins', { method: 'POST', body: pin });
       entry.posted = true;
       entry.posted_at = new Date().toISOString();
-      changed = true;
+      dirty = true;
       published++;
       console.log(`  ✓ pinned "${pin.title}" → ${boardName}`);
       await sleep(1500); // gentle pacing between writes
@@ -363,11 +402,11 @@ async function runPublish(token) {
     }
   }
 
-  if (changed) {
+  if (dirty) {
     await writeFile(QUEUE_FILE, JSON.stringify(queue, null, 2) + '\n', 'utf8');
-    console.log(`\nUpdated data/pinterest-queue.json (${published} newly posted).`);
+    console.log(`\nUpdated data/pinterest-queue.json (${published} newly posted this run).`);
   } else {
-    console.log(`\nNo queue changes (${published} processed).`);
+    console.log(`\nNo changes (${published} posted).`);
   }
 }
 
