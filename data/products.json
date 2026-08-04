@@ -1,9 +1,45 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-04T08:29:59.470Z",
+  "updated": "2026-08-04T14:00:27.089Z",
   "count": 110,
   "products": [
+    {
+      "listing_id": 4542184668,
+      "title": "Mystic Cottage Alchemy Coloring Book Bundle, 3 Books, 73 Pages (PDF Download)",
+      "description": "Mystic Cottage Alchemy: a bundle of 3 printable coloring books (73 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4542184668/mystic-cottage-alchemy-coloring-book",
+      "image": "https://i.etsystatic.com/9660605/r/il/5ef01a/8332503027/il_570xN.8332503027_hf8r.jpg",
+      "price": {
+        "amount": 12.99,
+        "currency": "USD",
+        "display": "$6.50",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$12.99",
+        "sale_amount": 6.5,
+        "sale_display": "$6.50"
+      },
+      "tags": [
+        "coloring bundle",
+        "coloring book set",
+        "coloring books",
+        "printable coloring",
+        "instant download",
+        "crystal pages pdf",
+        "healing crystals",
+        "herb coloring pages",
+        "herbal witch gift",
+        "botanical coloring",
+        "witchy coloring",
+        "apothecary pages",
+        "moon crystal art"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1785836704
+    },
     {
       "listing_id": 4518076610,
       "title": "Kawaii Police Coloring Book, Chibi Animal Cops, Community Helpers, Kids Activity (Instant Download)",
@@ -966,42 +1002,6 @@
       "themes": [
         "animals",
         "kids"
-      ],
-      "created": 1784741409
-    },
-    {
-      "listing_id": 4542184668,
-      "title": "Mystic Cottage Alchemy Coloring Book Bundle, 3 Books, 73 Pages (PDF Download)",
-      "description": "Mystic Cottage Alchemy: a bundle of 3 printable coloring books (73 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4542184668/mystic-cottage-alchemy-coloring-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/5ef01a/8332503027/il_570xN.8332503027_hf8r.jpg",
-      "price": {
-        "amount": 12.99,
-        "currency": "USD",
-        "display": "$6.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$12.99",
-        "sale_amount": 6.5,
-        "sale_display": "$6.50"
-      },
-      "tags": [
-        "coloring bundle",
-        "coloring book set",
-        "coloring books",
-        "printable coloring",
-        "instant download",
-        "crystal pages pdf",
-        "healing crystals",
-        "herb coloring pages",
-        "herbal witch gift",
-        "botanical coloring",
-        "witchy coloring",
-        "apothecary pages",
-        "moon crystal art"
-      ],
-      "themes": [
-        "spooky"
       ],
       "created": 1784741409
     },
