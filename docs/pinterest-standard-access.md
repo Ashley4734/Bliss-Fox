@@ -1,69 +1,82 @@
 # Pinterest API — upgrading to Standard access
 
-Trial access **cannot create Pins in production** (`POST /pins` returns HTTP 403:
-"Apps with Trial access may not create Pins in production"). The Pin publisher is
-fully built and verified on Trial (OAuth, token refresh, board matching, queue),
-but publishing to the live account requires **Standard access**.
+Trial access **cannot create Pins in production** (`POST /pins` → HTTP 403). The
+publisher is fully built and verified; publishing to the live account requires
+**Standard access** (free; demo video + manual review).
 
-Standard access is free. It requires a demo video and a manual review
-(~1 week if clean, 3–4 weeks if changes are requested).
+## First submission was denied — why
 
-## What reviewers want in the demo video
+The reviewer said the demo was incomplete: it must show the **full OAuth flow**
+*and* **real API usage with results** (not just UI/verify output). They also
+required Pinterest-specific clauses in the privacy policy. This guide reflects
+the corrected approach.
 
-A single continuous screen recording showing, in order:
+## The demo must show, in one continuous recording
 
-1. the **OAuth authorization screen** (the consent screen with the requested
-   scopes visible),
-2. the **token exchange** (code → token), and
-3. a **successful authenticated API call**.
+1. **OAuth flow:** Pinterest login → "Give access" consent screen (scopes
+   visible) → redirect back to the site with a `code` in the URL bar.
+2. **Token exchange:** exchange the `code` for an access token.
+3. **Integration with results:** a real API call and its result — here, create a
+   board, create a Pin, and read the Pin back.
 
-Common rejection cause: not showing the OAuth flow end-to-end in one recording.
-Narrate that this is a **first-party, single-account** tool that posts
-**owner-selected** Pins and **stores no Pinterest API data**.
+Production can't create Pins on Trial, so the integration is shown in the
+**Sandbox** (`https://api-sandbox.pinterest.com`), which the reviewer explicitly
+allows.
 
-## Demo script (~2–3 min, browser only)
+## Recording steps (browser only)
 
-Before recording: log into the Bliss Fox Studio Pinterest account, open a screen
-recorder, and have the GitHub **Actions** tab ready. Re-add the one-time
-token-exchange helper workflow first (so the token-exchange scene works).
+Pre-flight: confirm the `GH_PAT` secret exists (Secrets: Read and write). Start
+the screen recorder and keep it running for all steps.
 
-**Scene 1 — Intro (10–15s):**
-> "This is Bliss Fox Studio Pin Sync, a first-party tool that publishes Pins for
-> our own coloring-book shop to our own Pinterest boards. The shop owner selects
-> each Pin — nothing posts without an explicit choice — and it stores no data
-> from the Pinterest API."
-
-**Scene 2 — OAuth authorization (~30s):**
-Paste into the browser and go, then show the consent screen and click *Give access*:
+**1 — OAuth login + consent (Scene: OAuth flow).**
+Open this and approve; the consent screen shows the scopes, then you're
+redirected to `https://blissfoxstudio.com/?code=…` — copy the `code`:
 
 ```
 https://www.pinterest.com/oauth/?client_id=1596011&redirect_uri=https://blissfoxstudio.com/&response_type=code&scope=boards:read,boards:write,pins:read,pins:write&state=blissfox
 ```
 
-Show the redirect to `https://blissfoxstudio.com/?code=…` ("the app receives an
-authorization code"). Copy the code.
+**2 — Token exchange (Scene: token exchange).**
+Actions → "Pinterest token exchange (one-time)" → Run workflow:
+- environment: `sandbox`
+- code: the code from step 1
+- redirect_uri: `https://blissfoxstudio.com/`
 
-**Scene 3 — Token exchange (~30s):**
-Actions → "Pinterest token exchange (one-time)" → Run workflow → paste the code →
-run. Open the run and narrate: "the code is exchanged for a token, stored as an
-encrypted secret and never logged — no sensitive data is stored."
+Open the run; it stores `PINTEREST_SANDBOX_REFRESH_TOKEN` (masked — narrate
+"the token is exchanged and stored securely; nothing sensitive is logged").
 
-**Scene 4 — Authenticated API call (~30s):**
-Actions → "Pinterest publish" → Run workflow → mode `verify`. Show the log:
-"✓ All theme boards exist" and the board list — "an authenticated call to the
-Pinterest API listing our own boards."
+**3 — Integration with results (Scene: API usage).**
+Actions → "Pinterest sandbox demo" → Run workflow. Open the run log and show:
+- `POST /boards` → board id
+- `POST /pins` → pin id
+- `GET /pins/{id}` → the created Pin returned by the API
 
-**Scene 5 — Close (10s):**
-> "Standard access will let this same flow publish the owner-selected Pins to
-> production. Single business account, first-party use only."
+Narrate: "a board and Pin created via the Pinterest API in the sandbox, then
+read back — this is the app's real function." Keep it one continuous take.
+
+**4 — Close.**
+"Standard access will let this same flow publish owner-selected Pins to
+production. First-party, single business account, no Pinterest data stored."
+
+## Privacy policy requirements (reviewer)
+
+The policy at https://blissfoxstudio.com/privacy must state:
+- the app **uses the Pinterest API** and is **not endorsed by or affiliated
+  with Pinterest**;
+- what happens to **Pinterest-derived data when a user disconnects** (we store
+  none; on disconnect the token is revoked and nothing is retained);
+- that we **do not resell or redistribute** Pinterest content or Pinterest-
+  derived data to third parties;
+- a **contact email address** in the policy text.
 
 ## Rejection-proofing checklist
 
 - Consent screen with scopes **visible** on camera.
-- Token exchange **shown happening** (not pre-done off-screen).
-- A **successful authenticated API call** in the same recording.
-- Narrate first-party, single-account, owner-selected, no data stored.
+- Token exchange **shown happening**.
+- **Real API calls** (create board, create pin) **and their results** (read
+  back) — not just verify/UI output.
 - One continuous take.
+- Narrate first-party, single-account, owner-selected, no data stored.
 
 ## After approval
 
