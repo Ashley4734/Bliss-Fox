@@ -11,14 +11,15 @@
  *   publish  — publish up to MAX_PER_RUN eligible Pins. Auto-enqueues the whole
  *              catalogue, recycles posted products after a cooldown, prioritises
  *              seasonal themes, writes keyword-rich copy, and (by default)
- *              generates original Pin art with OpenAI gpt-image from the hero image.
+ *              generates original Pin art via openai/gpt-image-2 on Replicate,
+ *              using the product's hero image as a reference.
  *   demo     — create a board, create a Pin, read it back (sandbox; review video).
  *
  * Queue (data/pinterest-queue.json) config:
  *   auto_enqueue        add every catalogue product automatically (default true)
  *   recycle_after_days  days before a posted product may re-pin (default 45; 0 = once)
- *   image_source        "openai" (generate art from the hero image) or "etsy"
- *                       (use the cover as-is); default openai
+ *   image_source        "replicate" (generate art from the hero image) or "etsy"
+ *                       (use the cover as-is); default replicate
  *   default_board       board for products with no theme match
  *   pins[]              per-product state {listing_id, posted, posted_at, optional
  *                       board/title/description overrides}
@@ -28,16 +29,16 @@
  *   MODE, MAX_PER_RUN (default 5), DRY_RUN ("1"), IMAGE_SOURCE
  *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
  *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
- *   OPENAI_API_KEY       required for image_source=openai (else falls back to Etsy)
- *   OPENAI_IMAGE_MODEL   default "gpt-image-2"
- *   OPENAI_IMAGE_SIZE    default "1024x1536" (portrait, ~2:3)
- *   OPENAI_IMAGE_QUALITY default "medium" (low | medium | high | auto) — cost control
+ *   REPLICATE_API_TOKEN  required for image_source=replicate (else falls back to Etsy)
+ *   REPLICATE_MODEL      default "openai/gpt-image-2"
+ *   IMAGE_QUALITY        default "medium" (low | medium | high | auto) — cost control
+ *   IMAGE_ASPECT_RATIO   default "2:3" (portrait)
  *
  * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a posted
  * flag/date). Board ids are resolved from board NAMES at run time and never
  * persisted, so no data retrieved from the Pinterest API is stored.
  *
- * Node 18+ (global fetch/FormData/Blob). No dependencies.
+ * Node 18+ (global fetch). No dependencies.
  */
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -59,10 +60,10 @@ const MODE = (process.env.MODE || 'publish').trim().toLowerCase();
 const MAX_PER_RUN = Math.max(1, Number.parseInt(process.env.MAX_PER_RUN || '5', 10) || 5);
 const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
 
-const OPENAI_API_KEY = (process.env.OPENAI_API_KEY || '').trim();
-const OPENAI_IMAGE_MODEL = (process.env.OPENAI_IMAGE_MODEL || 'gpt-image-2').trim();
-const OPENAI_IMAGE_SIZE = (process.env.OPENAI_IMAGE_SIZE || '1024x1536').trim();
-const OPENAI_IMAGE_QUALITY = (process.env.OPENAI_IMAGE_QUALITY || 'medium').trim();
+const REPLICATE_TOKEN = (process.env.REPLICATE_API_TOKEN || '').trim();
+const REPLICATE_MODEL = (process.env.REPLICATE_MODEL || 'openai/gpt-image-2').trim();
+const IMAGE_QUALITY = (process.env.IMAGE_QUALITY || 'medium').trim();
+const IMAGE_ASPECT_RATIO = (process.env.IMAGE_ASPECT_RATIO || '2:3').trim();
 
 const DAY_MS = 86400000;
 
@@ -235,7 +236,7 @@ function buildDescription(product) {
   return `${head}${tail}`.trim();
 }
 
-// ---- Phase 2: OpenAI image generation (gpt-image, image-to-image) ----------
+// ---- Phase 2: image generation via openai/gpt-image-2 on Replicate ---------
 
 function pinImagePrompt(product) {
   const title = clamp(product.title, 90);
@@ -247,61 +248,59 @@ function pinImagePrompt(product) {
   );
 }
 
-// Generate an original Pin image with OpenAI using the product's hero image as a
-// reference. Returns { b64, contentType } or null (caller falls back to Etsy).
-async function generateOpenAIImage(product) {
-  if (!OPENAI_API_KEY || !product.image) return null;
+// Generate an original Pin image with openai/gpt-image-2 on Replicate, using the
+// product's hero image as a reference (input_images). Returns a public image URL
+// or null (caller falls back to the Etsy cover).
+async function generateReplicateImage(product) {
+  if (!REPLICATE_TOKEN || !product.image) return null;
   try {
-    const refRes = await fetch(product.image);
-    if (!refRes.ok) {
-      console.warn(`  reference image fetch failed (${refRes.status}).`);
-      return null;
-    }
-    const refType = refRes.headers.get('content-type') || 'image/jpeg';
-    const refBuf = Buffer.from(await refRes.arrayBuffer());
-    const ext = refType.includes('png') ? 'png' : 'jpg';
-
-    const form = new FormData();
-    form.append('model', OPENAI_IMAGE_MODEL);
-    form.append('prompt', pinImagePrompt(product));
-    form.append('size', OPENAI_IMAGE_SIZE);
-    form.append('quality', OPENAI_IMAGE_QUALITY);
-    form.append('output_format', 'jpeg');
-    form.append('image', new Blob([refBuf], { type: refType }), `reference.${ext}`);
-
-    const res = await fetch('https://api.openai.com/v1/images/edits', {
+    const res = await fetch(`https://api.replicate.com/v1/models/${REPLICATE_MODEL}/predictions`, {
       method: 'POST',
-      headers: { Authorization: `Bearer ${OPENAI_API_KEY}` },
-      body: form,
+      headers: {
+        Authorization: `Bearer ${REPLICATE_TOKEN}`,
+        'Content-Type': 'application/json',
+        Prefer: 'wait',
+      },
+      body: JSON.stringify({
+        input: {
+          prompt: pinImagePrompt(product),
+          input_images: [product.image],
+          aspect_ratio: IMAGE_ASPECT_RATIO,
+          quality: IMAGE_QUALITY,
+          number_of_images: 1,
+        },
+      }),
     });
-    const data = await res.json().catch(() => ({}));
+    let pred = await res.json().catch(() => ({}));
     if (!res.ok) {
-      console.warn(`  OpenAI image error ${res.status}: ${JSON.stringify(data).slice(0, 200)}`);
+      console.warn(`  Replicate error ${res.status}: ${JSON.stringify(pred).slice(0, 200)}`);
       return null;
     }
-    const b64 = data && data.data && data.data[0] && data.data[0].b64_json;
-    if (!b64) {
-      console.warn('  OpenAI returned no image data.');
+    let tries = 0;
+    while (pred.status && !['succeeded', 'failed', 'canceled'].includes(pred.status) && tries < 40) {
+      await sleep(3000);
+      const g = await fetch(pred.urls.get, { headers: { Authorization: `Bearer ${REPLICATE_TOKEN}` } });
+      pred = await g.json();
+      tries++;
+    }
+    if (pred.status !== 'succeeded') {
+      console.warn(`  Replicate did not succeed (status: ${pred.status}).`);
       return null;
     }
-    return { b64, contentType: 'image/jpeg' };
+    const out = Array.isArray(pred.output) ? pred.output[0] : pred.output;
+    return typeof out === 'string' && out ? out : null;
   } catch (err) {
-    console.warn(`  OpenAI generation failed: ${err.message}`);
+    console.warn(`  Replicate generation failed: ${err.message}`);
     return null;
   }
 }
 
-// Choose the Pin media: generated art (image_source=openai) or the Etsy cover.
+// Choose the Pin media: generated art (image_source=replicate) or the Etsy cover.
 async function resolvePinMedia(product, imageSource) {
-  if (imageSource === 'openai') {
-    const gen = await generateOpenAIImage(product);
-    if (gen) {
-      return {
-        mediaSource: { source_type: 'image_base64', content_type: gen.contentType, data: gen.b64 },
-        source: 'openai',
-      };
-    }
-    console.warn(`  falling back to Etsy image for "${product.title}" (OpenAI unavailable).`);
+  if (imageSource === 'replicate') {
+    const url = await generateReplicateImage(product);
+    if (url) return { mediaSource: { source_type: 'image_url', url }, source: 'replicate' };
+    console.warn(`  falling back to Etsy image for "${product.title}" (Replicate unavailable).`);
   }
   if (product.image) {
     return { mediaSource: { source_type: 'image_url', url: product.image }, source: 'etsy' };
@@ -334,9 +333,9 @@ async function runVerify(token) {
   else console.log('\n✓ All theme boards exist.');
 
   console.log(
-    `\nImage source: ${(process.env.IMAGE_SOURCE || 'openai')} ` +
-      `(OpenAI key ${OPENAI_API_KEY ? 'present' : 'MISSING → would fall back to Etsy'}, ` +
-      `model ${OPENAI_IMAGE_MODEL}, ${OPENAI_IMAGE_SIZE}, quality ${OPENAI_IMAGE_QUALITY}).`
+    `\nImage source: ${(process.env.IMAGE_SOURCE || 'replicate')} ` +
+      `(Replicate token ${REPLICATE_TOKEN ? 'present' : 'MISSING → would fall back to Etsy'}, ` +
+      `model ${REPLICATE_MODEL}, ${IMAGE_ASPECT_RATIO}, quality ${IMAGE_QUALITY}).`
   );
 
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
@@ -398,7 +397,7 @@ async function runPublish(token) {
   const defaultBoard = queue.default_board || 'Printable Coloring Books';
   const autoEnqueue = queue.auto_enqueue !== false; // default ON
   const recycleDays = Number.isFinite(queue.recycle_after_days) ? queue.recycle_after_days : 45;
-  const imageSource = (process.env.IMAGE_SOURCE || queue.image_source || 'openai').trim().toLowerCase();
+  const imageSource = (process.env.IMAGE_SOURCE || queue.image_source || 'replicate').trim().toLowerCase();
   queue.pins = Array.isArray(queue.pins) ? queue.pins : [];
 
   let dirty = false;
