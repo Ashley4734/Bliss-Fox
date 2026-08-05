@@ -6,7 +6,8 @@ name: Pinterest publish
 # each product's hero image as a reference.
 #
 # Posting is spread across five windows per day (1 Pin each = 5/day) so Pins go
-# out throughout the day rather than all at once.
+# out throughout the day rather than all at once. Minutes are off the top of the
+# hour because GitHub delays/drops cron runs scheduled at :00 (peak congestion).
 #
 # Requires repository secrets: PINTEREST_APP_ID, PINTEREST_APP_SECRET,
 # PINTEREST_REFRESH_TOKEN. For image_source=replicate also set REPLICATE_API_TOKEN
@@ -14,11 +15,11 @@ name: Pinterest publish
 
 on:
   schedule:
-    - cron: '0 13 * * *' # ~9am ET
-    - cron: '0 16 * * *' # ~12pm ET
-    - cron: '0 19 * * *' # ~3pm ET
-    - cron: '0 23 * * *' # ~7pm ET
-    - cron: '0 1 * * *'  # ~9pm ET
+    - cron: '9 13 * * *'  # ~9am ET
+    - cron: '27 16 * * *' # ~12pm ET
+    - cron: '43 19 * * *' # ~3pm ET
+    - cron: '11 23 * * *' # ~7pm ET
+    - cron: '37 1 * * *'  # ~9pm ET
   workflow_dispatch:
     inputs:
       mode:
