@@ -16,11 +16,13 @@
     },
     {
       "listing_id": 4543885841,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-05T00:01:09.920Z"
     },
     {
       "listing_id": 4542184668,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-05T00:01:38.042Z"
     },
     {
       "listing_id": 4518076610,
