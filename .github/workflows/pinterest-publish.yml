@@ -21,7 +21,7 @@ on:
         options: [verify, publish]
       max_per_run:
         description: 'Max Pins to publish this run'
-        default: '10'
+        default: '5'
       image_source:
         description: 'Pin image: replicate (gpt-image-2 from the hero image) or etsy (product cover)'
         type: choice
