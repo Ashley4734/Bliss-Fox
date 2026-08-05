@@ -15,7 +15,7 @@ name: Pinterest publish
 
 on:
   schedule:
-    - cron: '9 13 * * *'  # ~9am ET
+    - cron: '28 13 * * *' # ~9:28am ET
     - cron: '27 16 * * *' # ~12pm ET
     - cron: '43 19 * * *' # ~3pm ET
     - cron: '11 23 * * *' # ~7pm ET
