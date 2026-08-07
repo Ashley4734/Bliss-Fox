@@ -48,6 +48,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: pinterest-publish
@@ -92,4 +93,21 @@ jobs:
             git push
           else
             echo "No queue changes to commit."
+          fi
+
+      - name: Alert on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          title="Pinterest publish workflow failed"
+          num=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title $title" --json number --jq '.[0].number' 2>/dev/null || true)
+          body="The Pinterest publish workflow failed. Run: $run_url
+
+          If this is an auth error, the Pinterest refresh token (PINTEREST_REFRESH_TOKEN) may have expired — re-run the one-time OAuth exchange (see docs/pinterest-standard-access.md) and update the secret."
+          if [ -n "${num:-}" ]; then
+            gh issue comment "$num" --repo "$GITHUB_REPOSITORY" --body "Failed again: $run_url"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
           fi
