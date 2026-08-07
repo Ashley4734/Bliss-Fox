@@ -226,6 +226,60 @@ function boardNameFor(entry, product, defaultBoard) {
   return (theme && THEME_BOARDS[theme]) || defaultBoard;
 }
 
+// ---- Replicate (shared) ----------------------------------------------------
+
+// Create a Replicate prediction and wait for the result, retrying on 429
+// throttling (new/low-spend accounts are limited to ~6 req/min, burst 1).
+// Honors the Retry-After header. Returns the succeeded prediction or null.
+async function replicateRun(model, input, { maxRetries = 6 } = {}) {
+  if (!REPLICATE_TOKEN) return null;
+  for (let attempt = 0; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(`https://api.replicate.com/v1/models/${model}/predictions`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${REPLICATE_TOKEN}`,
+          'Content-Type': 'application/json',
+          Prefer: 'wait',
+        },
+        body: JSON.stringify({ input }),
+      });
+    } catch (err) {
+      console.warn(`  Replicate request failed: ${err.message}`);
+      return null;
+    }
+    if (res.status === 429 && attempt < maxRetries) {
+      const ra = Number(res.headers.get('retry-after'));
+      const waitMs = (Number.isFinite(ra) && ra > 0 ? ra : 12) * 1000;
+      console.warn(`  Replicate throttled (429); waiting ${Math.round(waitMs / 1000)}s then retrying…`);
+      await sleep(waitMs);
+      continue;
+    }
+    let pred = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      console.warn(`  Replicate error ${res.status} (${model}): ${JSON.stringify(pred).slice(0, 160)}`);
+      return null;
+    }
+    let tries = 0;
+    while (pred.status && !['succeeded', 'failed', 'canceled'].includes(pred.status) && tries < 60) {
+      await sleep(2000);
+      try {
+        const g = await fetch(pred.urls.get, { headers: { Authorization: `Bearer ${REPLICATE_TOKEN}` } });
+        pred = await g.json();
+      } catch {
+        break;
+      }
+      tries++;
+    }
+    if (pred.status !== 'succeeded') {
+      console.warn(`  Replicate ${model} did not succeed (status: ${pred.status}).`);
+      return null;
+    }
+    return pred;
+  }
+}
+
 // ---- Template copy (fallback) ---------------------------------------------
 
 function buildHashtags(product) {
@@ -268,45 +322,6 @@ function parseCopyFields(text) {
   return { title, description, hashtags: grab('HASHTAGS'), alt: grab('ALT') };
 }
 
-// Run a text model on Replicate; returns the full text output or null.
-async function generateReplicateText(system, prompt, maxTokens = 400) {
-  if (!REPLICATE_TOKEN) return null;
-  try {
-    const res = await fetch(`https://api.replicate.com/v1/models/${REPLICATE_TEXT_MODEL}/predictions`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${REPLICATE_TOKEN}`,
-        'Content-Type': 'application/json',
-        Prefer: 'wait',
-      },
-      body: JSON.stringify({
-        input: { prompt, system_prompt: system, max_tokens: maxTokens, temperature: 0.9 },
-      }),
-    });
-    let pred = await res.json().catch(() => ({}));
-    if (!res.ok) {
-      console.warn(`  Replicate text error ${res.status}: ${JSON.stringify(pred).slice(0, 160)}`);
-      return null;
-    }
-    let tries = 0;
-    while (pred.status && !['succeeded', 'failed', 'canceled'].includes(pred.status) && tries < 40) {
-      await sleep(2000);
-      const g = await fetch(pred.urls.get, { headers: { Authorization: `Bearer ${REPLICATE_TOKEN}` } });
-      pred = await g.json();
-      tries++;
-    }
-    if (pred.status !== 'succeeded') {
-      console.warn(`  Replicate text did not succeed (status: ${pred.status}).`);
-      return null;
-    }
-    const out = Array.isArray(pred.output) ? pred.output.join('') : pred.output || '';
-    return typeof out === 'string' ? out : '';
-  } catch (err) {
-    console.warn(`  Replicate text failed: ${err.message}`);
-    return null;
-  }
-}
-
 // Generate unique Pin copy (title/description/alt_text) or null on failure.
 async function generateCopy(product, boardName) {
   const angle = COPY_ANGLES[Math.floor(Math.random() * COPY_ANGLES.length)];
@@ -333,8 +348,15 @@ async function generateCopy(product, boardName) {
     .filter(Boolean)
     .join('\n');
 
-  const raw = await generateReplicateText(system, user, 400);
-  const parsed = parseCopyFields(raw || '');
+  const pred = await replicateRun(REPLICATE_TEXT_MODEL, {
+    prompt: user,
+    system_prompt: system,
+    max_tokens: 400,
+    temperature: 0.9,
+  });
+  if (!pred) return null;
+  const raw = Array.isArray(pred.output) ? pred.output.join('') : pred.output || '';
+  const parsed = parseCopyFields(raw);
   if (!parsed) {
     if (raw) console.warn(`  copy parse failed; raw output: ${clamp(raw, 200)}`);
     return null;
@@ -384,46 +406,16 @@ function pinImagePrompt(product) {
 
 async function generateReplicateImage(product) {
   if (!REPLICATE_TOKEN || !product.image) return null;
-  try {
-    const res = await fetch(`https://api.replicate.com/v1/models/${REPLICATE_MODEL}/predictions`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${REPLICATE_TOKEN}`,
-        'Content-Type': 'application/json',
-        Prefer: 'wait',
-      },
-      body: JSON.stringify({
-        input: {
-          prompt: pinImagePrompt(product),
-          input_images: [product.image],
-          aspect_ratio: IMAGE_ASPECT_RATIO,
-          quality: IMAGE_QUALITY,
-          number_of_images: 1,
-        },
-      }),
-    });
-    let pred = await res.json().catch(() => ({}));
-    if (!res.ok) {
-      console.warn(`  Replicate error ${res.status}: ${JSON.stringify(pred).slice(0, 200)}`);
-      return null;
-    }
-    let tries = 0;
-    while (pred.status && !['succeeded', 'failed', 'canceled'].includes(pred.status) && tries < 40) {
-      await sleep(3000);
-      const g = await fetch(pred.urls.get, { headers: { Authorization: `Bearer ${REPLICATE_TOKEN}` } });
-      pred = await g.json();
-      tries++;
-    }
-    if (pred.status !== 'succeeded') {
-      console.warn(`  Replicate did not succeed (status: ${pred.status}).`);
-      return null;
-    }
-    const out = Array.isArray(pred.output) ? pred.output[0] : pred.output;
-    return typeof out === 'string' && out ? out : null;
-  } catch (err) {
-    console.warn(`  Replicate generation failed: ${err.message}`);
-    return null;
-  }
+  const pred = await replicateRun(REPLICATE_MODEL, {
+    prompt: pinImagePrompt(product),
+    input_images: [product.image],
+    aspect_ratio: IMAGE_ASPECT_RATIO,
+    quality: IMAGE_QUALITY,
+    number_of_images: 1,
+  });
+  if (!pred) return null;
+  const out = Array.isArray(pred.output) ? pred.output[0] : pred.output;
+  return typeof out === 'string' && out ? out : null;
 }
 
 async function resolvePinMedia(product, imageSource) {
