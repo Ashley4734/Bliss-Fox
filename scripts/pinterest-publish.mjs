@@ -32,7 +32,7 @@
  *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
  *   REPLICATE_API_TOKEN  required for image_source=replicate and copy_source=llm
  *   REPLICATE_MODEL      image model, default "openai/gpt-image-2"
- *   REPLICATE_TEXT_MODEL text model, default "meta/meta-llama-3-8b-instruct"
+ *   REPLICATE_TEXT_MODEL text model, default "meta/meta-llama-3-70b-instruct"
  *   IMAGE_QUALITY        default "medium" (low | medium | high | auto)
  *   IMAGE_ASPECT_RATIO   default "2:3" (portrait)
  *
@@ -64,7 +64,7 @@ const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
 
 const REPLICATE_TOKEN = (process.env.REPLICATE_API_TOKEN || '').trim();
 const REPLICATE_MODEL = (process.env.REPLICATE_MODEL || 'openai/gpt-image-2').trim();
-const REPLICATE_TEXT_MODEL = (process.env.REPLICATE_TEXT_MODEL || 'meta/meta-llama-3-8b-instruct').trim();
+const REPLICATE_TEXT_MODEL = (process.env.REPLICATE_TEXT_MODEL || 'meta/meta-llama-3-70b-instruct').trim();
 const IMAGE_QUALITY = (process.env.IMAGE_QUALITY || 'medium').trim();
 const IMAGE_ASPECT_RATIO = (process.env.IMAGE_ASPECT_RATIO || '2:3').trim();
 
@@ -250,16 +250,22 @@ function buildDescription(product) {
 
 // ---- LLM copy via Replicate -----------------------------------------------
 
-function extractJson(text) {
+// Strip surrounding quotes/asterisks/space a small model sometimes adds.
+function cleanField(s) {
+  return String(s || '').replace(/^["'*\s]+/, '').replace(/["'*\s]+$/, '').trim();
+}
+
+// Parse the TITLE:/DESCRIPTION:/HASHTAGS:/ALT: delimited response.
+function parseCopyFields(text) {
   if (!text) return null;
-  const s = text.indexOf('{');
-  const e = text.lastIndexOf('}');
-  if (s < 0 || e <= s) return null;
-  try {
-    return JSON.parse(text.slice(s, e + 1));
-  } catch {
-    return null;
-  }
+  const grab = (label) => {
+    const m = text.match(new RegExp('^\\s*' + label + '\\s*:\\s*(.+)$', 'im'));
+    return m ? cleanField(m[1]) : '';
+  };
+  const title = grab('TITLE');
+  const description = grab('DESCRIPTION');
+  if (!title || !description) return null;
+  return { title, description, hashtags: grab('HASHTAGS'), alt: grab('ALT') };
 }
 
 // Run a text model on Replicate; returns the full text output or null.
@@ -309,8 +315,7 @@ async function generateCopy(product, boardName) {
   const system =
     'You are a Pinterest marketing copywriter for Bliss Fox Studio, a shop that sells ' +
     'printable, instant-download digital coloring books. Write engaging, SEO-friendly Pin ' +
-    'copy that sounds natural and human. Never invent product features that are not provided. ' +
-    'Respond with ONLY a single minified JSON object and nothing else.';
+    'copy that sounds natural and human. Never invent product features that are not provided.';
   const user = [
     `Product: "${product.title}"`,
     product.description ? `Details: ${clamp(product.description, 300)}` : '',
@@ -319,27 +324,27 @@ async function generateCopy(product, boardName) {
     `Current month: ${month}`,
     `Angle to emphasize this time: ${angle}`,
     '',
-    'Write Pinterest copy as JSON with keys:',
-    '"title": compelling Pin title, max 95 characters, no hashtags;',
-    '"description": 1-3 natural sentences (max ~350 characters) with a soft call to action, no hashtags;',
-    '"hashtags": array of 4-6 relevant lowercase hashtags (each starting with #);',
-    '"alt_text": plain description of the image for accessibility, max 200 characters.',
-    'Return ONLY the JSON object.',
+    'Reply in EXACTLY this format and nothing else (no preamble, no markdown, one line each):',
+    'TITLE: <compelling pin title, max 95 characters, no hashtags>',
+    'DESCRIPTION: <1-3 natural sentences, max 300 characters, with a soft call to action, no hashtags>',
+    'HASHTAGS: <4-6 space-separated lowercase hashtags, each starting with #>',
+    'ALT: <plain description of the image for accessibility, max 200 characters>',
   ]
     .filter(Boolean)
     .join('\n');
 
   const raw = await generateReplicateText(system, user, 400);
-  const parsed = extractJson(raw || '');
-  if (!parsed || !parsed.title || !parsed.description) return null;
-  const hashtags = Array.isArray(parsed.hashtags)
-    ? parsed.hashtags.filter((h) => typeof h === 'string' && h.startsWith('#')).slice(0, 6)
-    : [];
-  const description = clamp(`${parsed.description} ${hashtags.join(' ')}`.trim(), 500);
+  const parsed = parseCopyFields(raw || '');
+  if (!parsed) {
+    if (raw) console.warn(`  copy parse failed; raw output: ${clamp(raw, 200)}`);
+    return null;
+  }
+  const tags = (parsed.hashtags.match(/#[\w]+/g) || []).slice(0, 6);
+  const description = clamp(`${parsed.description} ${tags.join(' ')}`.trim(), 500);
   return {
     title: clamp(parsed.title, 100),
     description,
-    alt_text: parsed.alt_text ? clamp(parsed.alt_text, 500) : undefined,
+    alt_text: parsed.alt ? clamp(parsed.alt, 500) : undefined,
   };
 }
 
