@@ -1,9 +1,47 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-06T01:27:37.144Z",
+  "updated": "2026-08-07T02:05:50.078Z",
   "count": 110,
   "products": [
+    {
+      "listing_id": 4548301406,
+      "title": "Bliss Fox Calm Corner Kit, SEL Printable Resources for Kids (Digital Download)",
+      "description": "🦊 Big feelings are hard for little hearts. When a child feels angry, worried, or overwhelmed, they don&#39;t always have the words — or the tools — to calm back down. The Bliss…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4548301406/bliss-fox-calm-corner-kit-sel-printable",
+      "image": "https://i.etsystatic.com/9660605/r/il/dce8de/8375778513/il_570xN.8375778513_4z22.jpg",
+      "price": {
+        "amount": 17.98,
+        "currency": "USD",
+        "display": "$8.99",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$17.98",
+        "sale_amount": 8.99,
+        "sale_display": "$8.99"
+      },
+      "tags": [
+        "calm corner",
+        "calm down corner",
+        "social emotional",
+        "sel printable",
+        "coping skills",
+        "coping cards",
+        "feelings chart",
+        "emotions cards",
+        "self regulation",
+        "classroom calm down",
+        "school counselor",
+        "breathing exercises",
+        "anger management"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1786045091
+    },
     {
       "listing_id": 4542184668,
       "title": "Mystic Cottage Alchemy Coloring Book Bundle, 3 Books, 73 Pages (PDF Download)",
@@ -114,44 +152,6 @@
         "animals"
       ],
       "created": 1785768053
-    },
-    {
-      "listing_id": 4548301406,
-      "title": "Bliss Fox Calm Corner Kit, SEL Printable Resources for Kids (Digital Download)",
-      "description": "🦊 Big feelings are hard for little hearts. When a child feels angry, worried, or overwhelmed, they don&#39;t always have the words — or the tools — to calm back down. The Bliss…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4548301406/bliss-fox-calm-corner-kit-sel-printable",
-      "image": "https://i.etsystatic.com/9660605/r/il/dce8de/8375778513/il_570xN.8375778513_4z22.jpg",
-      "price": {
-        "amount": 17.98,
-        "currency": "USD",
-        "display": "$8.99",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$17.98",
-        "sale_amount": 8.99,
-        "sale_display": "$8.99"
-      },
-      "tags": [
-        "calm corner",
-        "calm down corner",
-        "social emotional",
-        "sel printable",
-        "coping skills",
-        "coping cards",
-        "feelings chart",
-        "emotions cards",
-        "self regulation",
-        "classroom calm down",
-        "school counselor",
-        "breathing exercises",
-        "anger management"
-      ],
-      "themes": [
-        "cozy",
-        "animals",
-        "kids"
-      ],
-      "created": 1785640285
     },
     {
       "listing_id": 4546846927,
