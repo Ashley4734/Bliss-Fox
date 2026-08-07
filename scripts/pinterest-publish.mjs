@@ -10,9 +10,9 @@
  *   verify   — refresh the token, list boards, print a product menu. No Pins.
  *   publish  — publish up to MAX_PER_RUN eligible Pins. Auto-enqueues the whole
  *              catalogue, recycles posted products after a cooldown, prioritises
- *              seasonal themes, writes keyword-rich copy, and (by default)
- *              generates original Pin art via openai/gpt-image-2 on Replicate,
- *              using the product's hero image as a reference.
+ *              seasonal themes, writes Pin copy (LLM or template), and (by
+ *              default) generates original Pin art via openai/gpt-image-2 on
+ *              Replicate using the product's hero image as a reference.
  *   demo     — create a board, create a Pin, read it back (sandbox; review video).
  *
  * Queue (data/pinterest-queue.json) config:
@@ -20,18 +20,20 @@
  *   recycle_after_days  days before a posted product may re-pin (default 45; 0 = once)
  *   image_source        "replicate" (generate art from the hero image) or "etsy"
  *                       (use the cover as-is); default replicate
+ *   copy_source         "llm" (generate varied copy) or "template"; default llm
  *   default_board       board for products with no theme match
  *   pins[]              per-product state {listing_id, posted, posted_at, optional
  *                       board/title/description overrides}
  *
  * Environment:
  *   PINTEREST_ENV        "production" (default) or "sandbox"
- *   MODE, MAX_PER_RUN (default 5), DRY_RUN ("1"), IMAGE_SOURCE
+ *   MODE, MAX_PER_RUN (default 5), DRY_RUN ("1"), IMAGE_SOURCE, COPY_SOURCE
  *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
  *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
- *   REPLICATE_API_TOKEN  required for image_source=replicate (else falls back to Etsy)
- *   REPLICATE_MODEL      default "openai/gpt-image-2"
- *   IMAGE_QUALITY        default "medium" (low | medium | high | auto) — cost control
+ *   REPLICATE_API_TOKEN  required for image_source=replicate and copy_source=llm
+ *   REPLICATE_MODEL      image model, default "openai/gpt-image-2"
+ *   REPLICATE_TEXT_MODEL text model, default "meta/meta-llama-3-8b-instruct"
+ *   IMAGE_QUALITY        default "medium" (low | medium | high | auto)
  *   IMAGE_ASPECT_RATIO   default "2:3" (portrait)
  *
  * Data handling: the queue stores only OUR OWN data (Etsy listing_id + a posted
@@ -62,6 +64,7 @@ const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
 
 const REPLICATE_TOKEN = (process.env.REPLICATE_API_TOKEN || '').trim();
 const REPLICATE_MODEL = (process.env.REPLICATE_MODEL || 'openai/gpt-image-2').trim();
+const REPLICATE_TEXT_MODEL = (process.env.REPLICATE_TEXT_MODEL || 'meta/meta-llama-3-8b-instruct').trim();
 const IMAGE_QUALITY = (process.env.IMAGE_QUALITY || 'medium').trim();
 const IMAGE_ASPECT_RATIO = (process.env.IMAGE_ASPECT_RATIO || '2:3').trim();
 
@@ -85,7 +88,7 @@ const THEME_BOARDS = {
   patriotic: 'Patriotic Coloring Pages',
 };
 
-// SEO hashtags added to every Pin, plus per-theme extras.
+// SEO hashtags added to every template Pin, plus per-theme extras.
 const BASE_HASHTAGS = ['#coloringpages', '#printable', '#coloringbook', '#adultcoloring', '#instantdownload'];
 const THEME_HASHTAGS = {
   cozy: ['#cottagecore', '#cozyvibes'],
@@ -107,6 +110,15 @@ const SEASONAL_BOOST = {
   10: ['seasonal'], // November
   11: ['seasonal'], // December
 };
+
+// Rotating copy angles so the same product reads differently across pins.
+const COPY_ANGLES = [
+  'relaxation and self-care',
+  'a thoughtful, budget-friendly gift',
+  'the specific theme and characters',
+  'instant printable at-home convenience',
+  'a seasonal or holiday tie-in',
+];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -214,7 +226,7 @@ function boardNameFor(entry, product, defaultBoard) {
   return (theme && THEME_BOARDS[theme]) || defaultBoard;
 }
 
-// ---- Phase 2: SEO copy ----------------------------------------------------
+// ---- Template copy (fallback) ---------------------------------------------
 
 function buildHashtags(product) {
   const tags = new Set(BASE_HASHTAGS);
@@ -236,7 +248,124 @@ function buildDescription(product) {
   return `${head}${tail}`.trim();
 }
 
-// ---- Phase 2: image generation via openai/gpt-image-2 on Replicate ---------
+// ---- LLM copy via Replicate -----------------------------------------------
+
+function extractJson(text) {
+  if (!text) return null;
+  const s = text.indexOf('{');
+  const e = text.lastIndexOf('}');
+  if (s < 0 || e <= s) return null;
+  try {
+    return JSON.parse(text.slice(s, e + 1));
+  } catch {
+    return null;
+  }
+}
+
+// Run a text model on Replicate; returns the full text output or null.
+async function generateReplicateText(system, prompt, maxTokens = 400) {
+  if (!REPLICATE_TOKEN) return null;
+  try {
+    const res = await fetch(`https://api.replicate.com/v1/models/${REPLICATE_TEXT_MODEL}/predictions`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${REPLICATE_TOKEN}`,
+        'Content-Type': 'application/json',
+        Prefer: 'wait',
+      },
+      body: JSON.stringify({
+        input: { prompt, system_prompt: system, max_tokens: maxTokens, temperature: 0.9 },
+      }),
+    });
+    let pred = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      console.warn(`  Replicate text error ${res.status}: ${JSON.stringify(pred).slice(0, 160)}`);
+      return null;
+    }
+    let tries = 0;
+    while (pred.status && !['succeeded', 'failed', 'canceled'].includes(pred.status) && tries < 40) {
+      await sleep(2000);
+      const g = await fetch(pred.urls.get, { headers: { Authorization: `Bearer ${REPLICATE_TOKEN}` } });
+      pred = await g.json();
+      tries++;
+    }
+    if (pred.status !== 'succeeded') {
+      console.warn(`  Replicate text did not succeed (status: ${pred.status}).`);
+      return null;
+    }
+    const out = Array.isArray(pred.output) ? pred.output.join('') : pred.output || '';
+    return typeof out === 'string' ? out : '';
+  } catch (err) {
+    console.warn(`  Replicate text failed: ${err.message}`);
+    return null;
+  }
+}
+
+// Generate unique Pin copy (title/description/alt_text) or null on failure.
+async function generateCopy(product, boardName) {
+  const angle = COPY_ANGLES[Math.floor(Math.random() * COPY_ANGLES.length)];
+  const month = new Date().toLocaleString('en-US', { month: 'long' });
+  const themes = (product.themes || []).join(', ') || 'general';
+  const system =
+    'You are a Pinterest marketing copywriter for Bliss Fox Studio, a shop that sells ' +
+    'printable, instant-download digital coloring books. Write engaging, SEO-friendly Pin ' +
+    'copy that sounds natural and human. Never invent product features that are not provided. ' +
+    'Respond with ONLY a single minified JSON object and nothing else.';
+  const user = [
+    `Product: "${product.title}"`,
+    product.description ? `Details: ${clamp(product.description, 300)}` : '',
+    `Themes: ${themes}`,
+    `Board: ${boardName}`,
+    `Current month: ${month}`,
+    `Angle to emphasize this time: ${angle}`,
+    '',
+    'Write Pinterest copy as JSON with keys:',
+    '"title": compelling Pin title, max 95 characters, no hashtags;',
+    '"description": 1-3 natural sentences (max ~350 characters) with a soft call to action, no hashtags;',
+    '"hashtags": array of 4-6 relevant lowercase hashtags (each starting with #);',
+    '"alt_text": plain description of the image for accessibility, max 200 characters.',
+    'Return ONLY the JSON object.',
+  ]
+    .filter(Boolean)
+    .join('\n');
+
+  const raw = await generateReplicateText(system, user, 400);
+  const parsed = extractJson(raw || '');
+  if (!parsed || !parsed.title || !parsed.description) return null;
+  const hashtags = Array.isArray(parsed.hashtags)
+    ? parsed.hashtags.filter((h) => typeof h === 'string' && h.startsWith('#')).slice(0, 6)
+    : [];
+  const description = clamp(`${parsed.description} ${hashtags.join(' ')}`.trim(), 500);
+  return {
+    title: clamp(parsed.title, 100),
+    description,
+    alt_text: parsed.alt_text ? clamp(parsed.alt_text, 500) : undefined,
+  };
+}
+
+// Resolve final copy: manual overrides win, then LLM (if enabled), then template.
+async function resolveCopy(entry, product, boardName, copySource) {
+  if (copySource === 'llm') {
+    const gen = await generateCopy(product, boardName);
+    if (gen) {
+      return {
+        title: clamp(entry.title || gen.title, 100),
+        description: clamp(entry.description || gen.description, 500),
+        alt_text: gen.alt_text,
+        source: 'llm',
+      };
+    }
+    console.warn(`  copy: LLM unavailable for "${product.title}", using template.`);
+  }
+  return {
+    title: clamp(entry.title || buildTitle(product), 100),
+    description: clamp(entry.description || buildDescription(product), 500),
+    alt_text: undefined,
+    source: 'template',
+  };
+}
+
+// ---- Image generation via openai/gpt-image-2 on Replicate ------------------
 
 function pinImagePrompt(product) {
   const title = clamp(product.title, 90);
@@ -248,9 +377,6 @@ function pinImagePrompt(product) {
   );
 }
 
-// Generate an original Pin image with openai/gpt-image-2 on Replicate, using the
-// product's hero image as a reference (input_images). Returns a public image URL
-// or null (caller falls back to the Etsy cover).
 async function generateReplicateImage(product) {
   if (!REPLICATE_TOKEN || !product.image) return null;
   try {
@@ -295,7 +421,6 @@ async function generateReplicateImage(product) {
   }
 }
 
-// Choose the Pin media: generated art (image_source=replicate) or the Etsy cover.
 async function resolvePinMedia(product, imageSource) {
   if (imageSource === 'replicate') {
     const url = await generateReplicateImage(product);
@@ -333,9 +458,9 @@ async function runVerify(token) {
   else console.log('\n✓ All theme boards exist.');
 
   console.log(
-    `\nImage source: ${(process.env.IMAGE_SOURCE || 'replicate')} ` +
-      `(Replicate token ${REPLICATE_TOKEN ? 'present' : 'MISSING → would fall back to Etsy'}, ` +
-      `model ${REPLICATE_MODEL}, ${IMAGE_ASPECT_RATIO}, quality ${IMAGE_QUALITY}).`
+    `\nImage source: ${(process.env.IMAGE_SOURCE || 'replicate')} (model ${REPLICATE_MODEL}, quality ${IMAGE_QUALITY}). ` +
+      `Copy source: ${(process.env.COPY_SOURCE || 'llm')} (model ${REPLICATE_TEXT_MODEL}). ` +
+      `Replicate token ${REPLICATE_TOKEN ? 'present' : 'MISSING → falls back to Etsy image + template copy'}.`
   );
 
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
@@ -398,6 +523,7 @@ async function runPublish(token) {
   const autoEnqueue = queue.auto_enqueue !== false; // default ON
   const recycleDays = Number.isFinite(queue.recycle_after_days) ? queue.recycle_after_days : 45;
   const imageSource = (process.env.IMAGE_SOURCE || queue.image_source || 'replicate').trim().toLowerCase();
+  const copySource = (process.env.COPY_SOURCE || queue.copy_source || 'llm').trim().toLowerCase();
   queue.pins = Array.isArray(queue.pins) ? queue.pins : [];
 
   let dirty = false;
@@ -437,7 +563,7 @@ async function runPublish(token) {
 
   console.log(
     `Queue: ${queue.pins.length} product(s); ${neverPosted.length} never-posted, ` +
-      `${recyclable.length} recycle-eligible. Image source: ${imageSource}. ` +
+      `${recyclable.length} recycle-eligible. Image: ${imageSource}, copy: ${copySource}. ` +
       `Publishing up to ${MAX_PER_RUN}` + (DRY_RUN ? ' (DRY RUN)…' : '…')
   );
 
@@ -458,7 +584,10 @@ async function runPublish(token) {
     }
 
     if (DRY_RUN) {
-      console.log(`  [dry] would pin "${buildTitle(product)}" → ${boardName} (image: ${imageSource})`);
+      const copy = await resolveCopy(entry, product, boardName, copySource);
+      console.log(`  [dry] "${copy.title}" → ${boardName} (image: ${imageSource}, copy: ${copy.source})`);
+      console.log(`        desc: ${copy.description}`);
+      if (copy.alt_text) console.log(`        alt:  ${copy.alt_text}`);
       published++;
       continue;
     }
@@ -468,20 +597,22 @@ async function runPublish(token) {
       console.warn(`  skip "${product.title}": no image available.`);
       continue;
     }
+    const copy = await resolveCopy(entry, product, boardName, copySource);
     const body = {
       board_id: boardId,
-      title: clamp(entry.title || buildTitle(product), 100),
-      description: clamp(entry.description || buildDescription(product), 500),
+      title: copy.title,
+      description: copy.description,
       link: onDomainLink(product.url),
       media_source: media.mediaSource,
     };
+    if (copy.alt_text) body.alt_text = copy.alt_text;
     try {
       await api(token, '/pins', { method: 'POST', body });
       entry.posted = true;
       entry.posted_at = new Date().toISOString();
       dirty = true;
       published++;
-      console.log(`  ✓ pinned "${body.title}" → ${boardName} [${media.source}]`);
+      console.log(`  ✓ pinned "${body.title}" → ${boardName} [${media.source}/${copy.source}]`);
       await sleep(1500);
     } catch (err) {
       console.error(`  ✗ failed "${body.title}": ${err.message}`);
