@@ -1,17 +1,18 @@
 name: Pinterest publish
 
 # Publishes Pins for the shop's own products to its themed boards. Auto-enqueues
-# the catalogue, recycles after a cooldown, writes keyword-rich copy, and (by
-# default) generates original Pin art via openai/gpt-image-2 on Replicate, using
-# each product's hero image as a reference.
+# the catalogue, recycles after a cooldown, writes Pin copy (LLM or template),
+# and (by default) generates original Pin art via openai/gpt-image-2 on Replicate
+# using each product's hero image as a reference.
 #
 # Posting is spread across five windows per day (1 Pin each = 5/day) so Pins go
 # out throughout the day rather than all at once. Minutes are off the top of the
 # hour because GitHub delays/drops cron runs scheduled at :00 (peak congestion).
 #
 # Requires repository secrets: PINTEREST_APP_ID, PINTEREST_APP_SECRET,
-# PINTEREST_REFRESH_TOKEN. For image_source=replicate also set REPLICATE_API_TOKEN
-# (without it, the publisher falls back to the Etsy cover image).
+# PINTEREST_REFRESH_TOKEN. REPLICATE_API_TOKEN powers image_source=replicate and
+# copy_source=llm (without it, the publisher falls back to the Etsy cover +
+# template copy).
 
 on:
   schedule:
@@ -35,8 +36,13 @@ on:
         type: choice
         default: replicate
         options: [replicate, etsy]
+      copy_source:
+        description: 'Pin copy: llm (generated, varied) or template'
+        type: choice
+        default: llm
+        options: [llm, template]
       dry_run:
-        description: 'Log what would be posted without calling the API'
+        description: 'Log what would be posted (and generated copy) without posting'
         type: boolean
         default: false
 
@@ -70,6 +76,7 @@ jobs:
           MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
           MAX_PER_RUN: ${{ inputs.max_per_run || '1' }}
           IMAGE_SOURCE: ${{ inputs.image_source || 'replicate' }}
+          COPY_SOURCE: ${{ inputs.copy_source || 'llm' }}
           IMAGE_QUALITY: medium
           DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
         run: node scripts/pinterest-publish.mjs
