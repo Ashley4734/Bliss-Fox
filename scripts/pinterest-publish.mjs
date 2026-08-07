@@ -400,7 +400,9 @@ function pinImagePrompt(product) {
     `Create a Pinterest pin based on the attached image that will help sell the ` +
     `digital coloring book "${title}". Vertical 2:3 layout, eye-catching and ` +
     `clickable for Pinterest shoppers, preserve the coloring-page line-art style ` +
-    `from the reference. Tasteful, no watermark.`
+    `from the reference. Only include a page count, rating, price, or other numeric ` +
+    `claim if it clearly appears in the reference image; otherwise do not add any ` +
+    `numbers or invented claims. Tasteful, no watermark.`
   );
 }
 
