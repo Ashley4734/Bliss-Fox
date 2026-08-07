@@ -1,0 +1,74 @@
+name: Pinterest analytics
+
+# Weekly report of how the shop's Pins are performing. Aggregates per-pin
+# analytics by product and theme into data/pinterest-analytics.md and appends
+# totals to data/pinterest-analytics-history.json. Read-only against Pinterest
+# (pins:read); commits only aggregated numbers keyed to our own listing_ids.
+
+on:
+  schedule:
+    - cron: '17 12 * * 1' # Mondays ~12:17 UTC
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: 'Days of analytics to include'
+        default: '30'
+      max_analyze:
+        description: 'Max recent Pins to analyze'
+        default: '120'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pinterest-analytics
+  cancel-in-progress: false
+
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run Pinterest analytics
+        env:
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || '30' }}
+          MAX_ANALYZE: ${{ inputs.max_analyze || '120' }}
+        run: node scripts/pinterest-analytics.mjs
+
+      - name: Commit analytics report
+        run: |
+          if [[ -n "$(git status --porcelain data/pinterest-analytics.md data/pinterest-analytics-history.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/pinterest-analytics.md data/pinterest-analytics-history.json
+            git commit -m "chore: update Pinterest analytics report"
+            git push
+          else
+            echo "No analytics changes to commit."
+          fi
+
+      - name: Alert on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          title="Pinterest analytics failed"
+          num=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title $title" --json number --jq '.[0].number' 2>/dev/null || true)
+          body="The Pinterest analytics workflow failed. Run: $run_url"
+          if [ -n "${num:-}" ]; then
+            gh issue comment "$num" --repo "$GITHUB_REPOSITORY" --body "Failed again: $run_url"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          fi
