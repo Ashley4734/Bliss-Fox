@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fffaf2" />
+  <link rel="icon" type="image/png" href="/assets/bliss-fox-studio-logo.png" />
+  <link rel="apple-touch-icon" href="/assets/bliss-fox-studio-logo.png" />
+
+  <title>Download Your Book of Shadows | Bliss Fox Studio</title>
+  <meta name="description" content="Download your Complete Printable Book of Shadows from Bliss Fox Studio. Choose US Letter, A4, or A5, grab individual sections, and get your bonus printables." />
+  <!-- Post-purchase page: keep it out of search results. -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css?v=etsy-links-20260730" />
+
+  <!--
+    ============================================================================
+    DOWNLOAD LINKS
+    ============================================================================
+    Every button below points straight at a file on R2. To change where a button
+    goes, just edit its href. The links follow this pattern:
+
+      Base:      https://files.blissfoxstudio.com/bos88-x7k4p2/
+      Complete:  complete/Bliss-Fox-Book-of-Shadows-<Size>.pdf
+      Sections:  sections/Bliss-Fox-Book-of-Shadows-<Section>.pdf
+      Bonus:     bonus/Bliss-Fox-Book-of-Shadows-<Bonus>.pdf
+
+    Upload your PDFs to R2 using these exact names, or edit the hrefs to match
+    whatever names you uploaded. Only the "US Letter" complete link below was
+    given to you directly; the rest follow the same convention — double-check
+    each one matches a real file in your R2 bucket.
+    ============================================================================
+  -->
+
+  <style>
+    /* Download-page-only styles, built on the shared design tokens. */
+    .dl-hero { text-align: center; padding: 64px 0 8px; }
+    .dl-hero .eyebrow { margin-bottom: 18px; }
+    .dl-hero h1 { font-size: clamp(38px, 5.4vw, 62px); margin: 0 auto 16px; max-width: 760px; letter-spacing: -2px; line-height: 1.0; }
+    .dl-hero p { color: var(--muted); font-size: clamp(17px, 2vw, 20px); max-width: 620px; margin: 0 auto; }
+
+    .dl-section { padding: 40px 0; }
+    .dl-section-head { text-align: center; margin-bottom: 26px; }
+    .dl-section-head h2 { font-size: clamp(26px, 3.4vw, 40px); }
+    .dl-section-head p { color: var(--muted); margin: 10px auto 0; max-width: 520px; font-size: 16px; }
+
+    /* Complete book — three size cards */
+    .size-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .size-card {
+      background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 30px 24px;
+      text-align: center; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+      align-items: center; gap: 6px; transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .size-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .size-card .size-name { font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: -.8px; }
+    .size-card .size-dims { color: var(--muted); font-weight: 700; font-size: 15px; }
+    .size-card .btn { margin-top: 18px; width: 100%; }
+
+    /* Individual sections + bonus — button lists */
+    .dl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+    .dl-link {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px;
+      font-weight: 800; color: var(--plum); box-shadow: var(--shadow-sm);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .dl-link:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--rose-deep); }
+    .dl-link .dl-link-arrow {
+      flex: none; width: 34px; height: 34px; border-radius: 12px; display: grid; place-items: center;
+      background: var(--rose); color: #8a2747;
+    }
+    .dl-link .dl-link-arrow svg { width: 18px; height: 18px; }
+
+    .dl-bonus .dl-link .dl-link-arrow { background: var(--gold); color: #8a6410; }
+
+    .dl-note { text-align: center; color: var(--muted); font-size: 14px; max-width: 560px; margin: 8px auto 0; }
+    .dl-divider { border: 0; border-top: 1px solid var(--line); margin: 4px auto; width: min(var(--maxw), calc(100% - 32px)); }
+
+    @media (max-width: 720px) {
+      .size-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="/" aria-label="Bliss Fox Studio home">
+        <span class="logo" aria-hidden="true"><img src="/assets/bliss-fox-studio-logo.png" alt="" loading="eager"></span>
+        <span>Bliss Fox Studio</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/books">All Books</a>
+        <a href="/#shop">Shop</a>
+        <a href="/#about">About</a>
+        <a href="/privacy">Privacy</a>
+        <a class="btn btn-primary nav-cta" href="https://blissfoxstudio.etsy.com/" target="_blank" rel="noopener">Shop Etsy</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- Hero -->
+    <header class="dl-hero container">
+      <span class="eyebrow reveal d1">🔮 Your download is ready</span>
+      <h1 class="reveal d1">Your Book of Shadows is ready</h1>
+      <p class="reveal d2">Thank you for purchasing the Complete Printable Book of Shadows from Bliss Fox Studio. Choose the size you'd like to download.</p>
+    </header>
+
+    <!-- Complete book: three sizes -->
+    <section class="dl-section">
+      <div class="container">
+        <div class="dl-section-head">
+          <h2>The complete book</h2>
+          <p>The full 88-page Book of Shadows in your preferred paper size.</p>
+        </div>
+        <div class="size-grid">
+          <div class="size-card">
+            <span class="size-name">US Letter</span>
+            <span class="size-dims">8.5 × 11 inches</span>
+            <a class="btn btn-primary" href="https://files.blissfoxstudio.com/bos88-x7k4p2/complete/Bliss-Fox-Book-of-Shadows-US-Letter.pdf" target="_blank" rel="noopener">Download 88-Page Book</a>
+          </div>
+          <div class="size-card">
+            <span class="size-name">A4</span>
+            <span class="size-dims">210 × 297 mm</span>
+            <a class="btn btn-primary" href="https://files.blissfoxstudio.com/bos88-x7k4p2/complete/Bliss-Fox-Book-of-Shadows-A4.pdf" target="_blank" rel="noopener">Download 88-Page Book</a>
+          </div>
+          <div class="size-card">
+            <span class="size-name">A5</span>
+            <span class="size-dims">148 × 210 mm</span>
+            <a class="btn btn-primary" href="https://files.blissfoxstudio.com/bos88-x7k4p2/complete/Bliss-Fox-Book-of-Shadows-A5.pdf" target="_blank" rel="noopener">Download 88-Page Book</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="dl-divider" />
+
+    <!-- Individual sections -->
+    <section class="dl-section">
+      <div class="container">
+        <div class="dl-section-head">
+          <h2>Individual sections</h2>
+          <p>Prefer to print one chapter at a time? Grab any section on its own.</p>
+        </div>
+        <div class="dl-grid">
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Spellwork.pdf" target="_blank" rel="noopener">
+            <span>Spellwork</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Correspondences.pdf" target="_blank" rel="noopener">
+            <span>Correspondences</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Lunar-and-Wheel-of-the-Year.pdf" target="_blank" rel="noopener">
+            <span>Lunar &amp; Wheel of the Year</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Eight-Sabbats.pdf" target="_blank" rel="noopener">
+            <span>Eight Sabbats</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Herbal-Apothecary.pdf" target="_blank" rel="noopener">
+            <span>Herbal Apothecary</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Crystals.pdf" target="_blank" rel="noopener">
+            <span>Crystals</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Divination.pdf" target="_blank" rel="noopener">
+            <span>Divination</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/sections/Bliss-Fox-Book-of-Shadows-Personal-Practice.pdf" target="_blank" rel="noopener">
+            <span>Personal Practice</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="dl-divider" />
+
+    <!-- Bonus downloads -->
+    <section class="dl-section dl-bonus">
+      <div class="container">
+        <div class="dl-section-head">
+          <h2>✨ Bonus downloads</h2>
+          <p>A few extras to make your Book of Shadows your own.</p>
+        </div>
+        <div class="dl-grid">
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/bonus/Bliss-Fox-Book-of-Shadows-Jar-Labels.pdf" target="_blank" rel="noopener">
+            <span>Jar Labels</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/bonus/Bliss-Fox-Book-of-Shadows-Binder-Tabs.pdf" target="_blank" rel="noopener">
+            <span>Binder Tabs</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2/bonus/Bliss-Fox-Book-of-Shadows-Blank-Pages.pdf" target="_blank" rel="noopener">
+            <span>Blank Pages</span>
+            <span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span>
+          </a>
+        </div>
+        <p class="dl-note">Having trouble with a download? <a href="https://blissfoxstudio.etsy.com/" target="_blank" rel="noopener" style="color:var(--red-ink);font-weight:800;">Message us on Etsy</a> and we'll get you sorted.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>🦊 Bliss Fox Studio</strong><br />Coloring books, printable pages, and cozy creative downloads.</div>
+      <div class="footer-links">
+        <a href="https://blissfoxstudio.etsy.com/" target="_blank" rel="noopener">Etsy</a>
+        <a href="/">Home</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+      <div class="footer-legal">&copy; <span id="year"></span> Bliss Fox Studio. Printable coloring books and digital downloads, sold through our Etsy shop.</div>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js?v=etsy-links-20260730" defer></script>
+</body>
+</html>
