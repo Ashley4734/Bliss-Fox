@@ -37,9 +37,8 @@
     Herbal Apothecary into Part 1 / Part 2; A5 keeps each as a single file. The
     script accounts for that automatically via the "split" flag.
 
-    Note: Jar Labels and Binder Tabs from the original mock-up are not yet in the
-    R2 kit folders, so they're not linked here. Add them to the BONUS list once
-    the files exist.
+    The bonus files (Jar Labels, Binder Tabs, Blank Pages) live alongside the
+    sections in each kit/<size>/ folder and are size-aware too.
     ============================================================================
   -->
 
@@ -214,6 +213,8 @@
           <p>A few extras to make your Book of Shadows your own.</p>
         </div>
         <div class="dl-grid" id="bonusList" aria-live="polite">
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2-81/kit/letter/book-of-shadows-jar-labels.pdf" target="_blank" rel="noopener"><span>Jar Labels</span><span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span></a>
+          <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2-81/kit/letter/book-of-shadows-binder-tabs.pdf" target="_blank" rel="noopener"><span>Binder Tabs</span><span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span></a>
           <a class="dl-link" href="https://files.blissfoxstudio.com/bos88-x7k4p2-81/kit/letter/book-of-shadows-9-blank-pages.pdf" target="_blank" rel="noopener"><span>Blank Pages</span><span class="dl-link-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/></svg></span></a>
         </div>
         <p class="dl-note">Having trouble with a download? <a href="https://blissfoxstudio.etsy.com/" target="_blank" rel="noopener" style="color:var(--red-ink);font-weight:800;">Message us on Etsy</a> and we'll get you sorted.</p>
@@ -253,8 +254,9 @@
         { name: "Personal Practice",                slug: "8-personal-practice",  split: false }
       ];
       var BONUS = [
+        { name: "Jar Labels",  slug: "jar-labels",    split: false },
+        { name: "Binder Tabs", slug: "binder-tabs",   split: false },
         { name: "Blank Pages", slug: "9-blank-pages", split: false }
-        // Add { name: "Jar Labels", slug: "..." } etc. once those files exist on R2.
       ];
 
       var ARROW = '<span class="dl-link-arrow" aria-hidden="true">' +
