@@ -1,37 +1,38 @@
 # Pinterest analytics — Bliss Fox Studio
 
-_Window: 2026-07-08 → 2026-08-07 (30 days). 23 of 23 recent Pins analyzed. Generated 2026-08-07._
+_Window: 2026-07-11 → 2026-08-10 (30 days). 37 of 37 recent Pins analyzed. Generated 2026-08-10._
 
 ## Totals
 
 | Impressions | Saves | Pin clicks | Outbound clicks |
 |---:|---:|---:|---:|
-| 106 | 0 | 4 | 1 |
+| 307 | 0 | 12 | 2 |
 
 ## Top products (by outbound clicks)
 
 | Product | Impr. | Saves | Outbound |
 |---|---:|---:|---:|
-| Mystic Cottage Alchemy Coloring Book Bundle, 3 Books, 73 Pages (PDF Do | 27 | 0 | 1 |
-| Hedgehog Coloring Book, Cozy Woodland Cottage Scenes, Printable PDF (I | 0 | 0 | 0 |
-| Bunny Garden Village Coloring Book, Cozy Cottage Scenes, Printable PDF | 0 | 0 | 0 |
-| Goth Cats Coloring Book, Witchy Cottage, Moody Apothecary, Spells (Dig | 0 | 0 | 0 |
-| Dark Academia Coloring Book, Moody Study Scenes, Bookish Vibes (PDF Do | 0 | 0 | 0 |
-| Victorian Goth Portraits Coloring Book, Moody Cameos, Lace, Gothic Rom | 0 | 0 | 0 |
-| Gothic Wedding Coloring Book, Moody Bridal Scenes, Romantic Dark Cotta | 0 | 0 | 0 |
-| Spooky Bookshop Cats Coloring Book, Cozy Witchy Pages (PDF Download) | 0 | 0 | 0 |
-| Pastel Goth Coloring Book, Kawaii Spooky Friends, Relaxing Soft Goth C | 0 | 0 | 0 |
-| Cozy Goth Homes Coloring Book, Cats, Moonlit Decor, Whimsical Rooms (P | 0 | 0 | 0 |
+| Bunny Garden Village Coloring Book, Cozy Cottage Scenes, Printable PDF | 5 | 0 | 1 |
+| Mystic Cottage Alchemy Coloring Book Bundle, 3 Books, 73 Pages (PDF Do | 37 | 0 | 1 |
+| Realistic Songbird Coloring Book, 25 Printable Garden Bird Pages (PDF  | 0 | 0 | 0 |
+| Detailed Koi Fish Coloring Book, Koi Pond Nature Scenes (Printable PDF | 0 | 0 | 0 |
+| Affirmation Coloring Book, Daily Pep Talks, Bold Bubble Quotes, Printa | 0 | 0 | 0 |
+| Floral Mandala Coloring Pages, 24 Bloom Patterns, Adult Zen Garden (PD | 0 | 0 | 0 |
+| Fairy Garden Coloring Book, Cozy Cottage Scenes, Printable PDF (Instan | 0 | 0 | 0 |
+| Mermaid Coloring Book, Ornate Ocean Realms, Enchanted Sea Magic (Insta | 0 | 0 | 0 |
+| Mushroom Cottage Coloring Book, Enchanted Forest Scenes, Cozy Spells ( | 0 | 0 | 0 |
+| Horse Coloring Book, Simple Big Horses, Calm Stable Scenes (Printable  | 0 | 0 | 0 |
 
 ## By theme (by outbound clicks)
 
 | Theme | Impr. | Saves | Outbound |
 |---|---:|---:|---:|
-| spooky | 51 | 0 | 1 |
-| cozy | 25 | 0 | 0 |
-| animals | 68 | 0 | 0 |
-| kids | 44 | 0 | 0 |
-| seasonal | 1 | 0 | 0 |
-| (untagged) | 3 | 0 | 0 |
-| fantasy | 0 | 0 | 0 |
+| cozy | 152 | 0 | 1 |
+| seasonal | 53 | 0 | 1 |
+| spooky | 126 | 0 | 1 |
+| (untagged) | 40 | 0 | 0 |
+| professions | 0 | 0 | 0 |
+| fantasy | 20 | 0 | 0 |
+| kids | 87 | 0 | 0 |
+| animals | 159 | 0 | 0 |
 
