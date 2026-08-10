@@ -14,6 +14,7 @@ COPY *.html /usr/share/nginx/html/
 COPY robots.txt sitemap.xml pinterest-catalog.xml /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
 COPY data/ /usr/share/nginx/html/data/
+COPY download/ /usr/share/nginx/html/download/
 RUN chmod -R a+rX /usr/share/nginx/html
 
 # Lightweight healthcheck that Coolify/Docker can use

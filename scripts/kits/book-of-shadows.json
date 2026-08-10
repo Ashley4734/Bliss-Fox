@@ -1,0 +1,29 @@
+{
+  "urlSlug": "book-of-shadows-9f4k2xqp7m",
+  "productName": "Complete Printable Book of Shadows",
+  "pageTitle": "Your Book of Shadows is ready",
+  "pages": 88,
+  "filePrefix": "book-of-shadows",
+  "completeSlug": "complete",
+  "splitSizes": ["letter", "a4"],
+  "sizes": [
+    { "id": "letter", "name": "US Letter", "dims": "8.5 × 11 inches" },
+    { "id": "a4", "name": "A4", "dims": "210 × 297 mm" },
+    { "id": "a5", "name": "A5", "dims": "148 × 210 mm" }
+  ],
+  "sections": [
+    { "name": "Front Matter", "slug": "1-front-matter", "split": false },
+    { "name": "Spellwork", "slug": "2-spellwork", "split": true },
+    { "name": "Correspondences", "slug": "3-correspondences", "split": false },
+    { "name": "Lunar & the Wheel of the Year", "slug": "4-lunar-and-the-wheel", "split": true },
+    { "name": "Herbal Apothecary", "slug": "5-herbal-apothecary", "split": true },
+    { "name": "Crystals", "slug": "6-crystals", "split": false },
+    { "name": "Divination", "slug": "7-divination", "split": false },
+    { "name": "Personal Practice", "slug": "8-personal-practice", "split": false }
+  ],
+  "bonus": [
+    { "name": "Jar Labels", "slug": "jar-labels", "split": false },
+    { "name": "Binder Tabs", "slug": "binder-tabs", "split": false },
+    { "name": "Blank Pages", "slug": "9-blank-pages", "split": false }
+  ]
+}

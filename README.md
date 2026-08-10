@@ -198,6 +198,42 @@ the old `.html` URLs to the clean form (e.g. `/books.html` → `/books`).
 - `/robots.txt` — crawler rules
 - `/sitemap.xml` — sitemap
 - `/healthz` — Docker/Coolify health check, returns `ok`
+- `/download` and `/download/` — return the branded 404 on purpose (no index)
+- `/download/<kit-slug>` — a private, passcode-gated per-kit download page
+
+## Passcode-gated download pages
+
+Post-purchase downloads are **per-kit** pages under `/download/<unguessable-slug>`.
+Each page is **passcode-gated**: the kit's R2 base URL is encrypted (PBKDF2 +
+AES-GCM) with the buyer passcode, so the page source shows only ciphertext until
+someone enters the right code. The bare `/download` path 404s — there's no menu
+of products to browse. Pages are `noindex` and kept out of `sitemap.xml`.
+
+**Add / update a kit:**
+
+1. Upload the kit's PDFs to R2 under a fresh, unguessable path,
+   e.g. `https://files.blissfoxstudio.com/<new-secret-path>/kit/<size>/…`.
+2. Create `scripts/kits/<kit>.json` describing the **structure only** (product
+   name, `urlSlug`, `filePrefix`, `sizes`, `sections`, `bonus`, `splitSizes`).
+   See `scripts/kits/book-of-shadows.json` for the shape. This file is safe to
+   commit — it contains no secrets.
+3. Generate the page, passing the secret base URL and passcode via env (they are
+   **never written to disk** — only the encrypted page is emitted):
+
+   ```bash
+   BASE_URL='https://files.blissfoxstudio.com/<new-secret-path>/kit' \
+   PASSCODE='the-code-you-give-buyers' \
+   node scripts/make-download-page.mjs <kit>
+   ```
+
+4. Commit the generated `download/<urlSlug>.html`, push, and share the URL +
+   passcode with buyers (e.g. in the Etsy delivery message).
+
+**Security notes:** the R2 files themselves are public URLs, so the passcode
+protects *discovery* of the link set, not a file whose direct URL a buyer
+reshares. For stronger protection, put the R2 bucket behind Cloudflare Access or
+signed URLs. Never commit a kit's plaintext base URL or passcode; rotate the R2
+path if a base URL is ever exposed.
 
 ## Local verification
 
@@ -233,6 +269,10 @@ docker rm -f blissfoxstudio-website-test
 - `docs/pinterest-standard-access.md` — Pinterest Standard-access application guide
 - `assets/site.css` — shared design system
 - `assets/site.js` — mobile nav, catalog rendering + theme filter, footer year
+- `assets/download-gate.js` — passcode unlock + link rendering for download pages
+- `scripts/make-download-page.mjs` — generator for passcode-gated per-kit pages
+- `scripts/kits/*.json` — non-secret kit definitions (structure only)
+- `download/<slug>.html` — generated, passcode-gated download pages
 - `robots.txt`, `sitemap.xml`
 
 ## Marketplace note
