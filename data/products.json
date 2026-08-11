@@ -1,9 +1,44 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-10T00:56:02.092Z",
-  "count": 110,
+  "updated": "2026-08-11T00:55:28.209Z",
+  "count": 111,
   "products": [
+    {
+      "listing_id": 4552648203,
+      "title": "Book of Shadows Printable 88 Pages | Grimoire Journal | Witch Planner, Spell Book Pages, Wheel of the Year | Letter A4 A5 Instant Download",
+      "description": "A Book of Shadows you&#39;ll actually keep — 88 hand-illustrated pages, ready to print and write in. Most printable grimoires give you twenty pages and a lot of blank space. This…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-88-pages",
+      "image": "https://i.etsystatic.com/9660605/r/il/9d53c6/8358726984/il_570xN.8358726984_gl8e.jpg",
+      "price": {
+        "amount": 19.99,
+        "currency": "USD",
+        "display": "$10.00",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$19.99",
+        "sale_amount": 9.99,
+        "sale_display": "$10.00"
+      },
+      "tags": [
+        "book of shadows",
+        "printable grimoire",
+        "witch planner",
+        "spell book pages",
+        "witchcraft journal",
+        "wheel of the year",
+        "moon phase tracker",
+        "baby witch kit",
+        "sabbat pages",
+        "herb correspondence",
+        "digital grimoire",
+        "witchy printable"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1786326130
+    },
     {
       "listing_id": 4548301406,
       "title": "Bliss Fox Calm Corner Kit, SEL Printable Resources for Kids (Digital Download)",
@@ -11,14 +46,14 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4548301406/bliss-fox-calm-corner-kit-sel-printable",
       "image": "https://i.etsystatic.com/9660605/r/il/dce8de/8375778513/il_570xN.8375778513_4z22.jpg",
       "price": {
-        "amount": 17.98,
+        "amount": 19.99,
         "currency": "USD",
-        "display": "$8.99",
+        "display": "$10.00",
         "on_sale": true,
         "percent_off": 50,
-        "original_display": "$17.98",
-        "sale_amount": 8.99,
-        "sale_display": "$8.99"
+        "original_display": "$19.99",
+        "sale_amount": 9.99,
+        "sale_display": "$10.00"
       },
       "tags": [
         "calm corner",
@@ -40,7 +75,7 @@
         "animals",
         "kids"
       ],
-      "created": 1786045091
+      "created": 1786326011
     },
     {
       "listing_id": 4542184668,
