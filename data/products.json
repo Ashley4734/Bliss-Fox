@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-13T01:04:01.969Z",
+  "updated": "2026-08-14T01:02:46.105Z",
   "count": 111,
   "products": [
     {
@@ -46,14 +46,14 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4548301406/bliss-fox-calm-corner-kit-sel-printable",
       "image": "https://i.etsystatic.com/9660605/r/il/dce8de/8375778513/il_570xN.8375778513_4z22.jpg",
       "price": {
-        "amount": 19.99,
+        "amount": 17.98,
         "currency": "USD",
-        "display": "$10.00",
+        "display": "$8.99",
         "on_sale": true,
         "percent_off": 50,
-        "original_display": "$19.99",
-        "sale_amount": 9.99,
-        "sale_display": "$10.00"
+        "original_display": "$17.98",
+        "sale_amount": 8.99,
+        "sale_display": "$8.99"
       },
       "tags": [
         "calm corner",
