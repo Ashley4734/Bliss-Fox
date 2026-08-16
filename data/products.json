@@ -1,44 +1,9 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-15T00:38:27.074Z",
+  "updated": "2026-08-16T00:39:59.941Z",
   "count": 111,
   "products": [
-    {
-      "listing_id": 4552648203,
-      "title": "Book of Shadows Printable Journal | Grimoire Spell Book Pages (Digital Download)",
-      "description": "A Book of Shadows you&#39;ll actually keep — 88 pages, ready to print and write in. Most printable grimoires give you twenty pages and a lot of blank space. This one is a…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/9d53c6/8358726984/il_570xN.8358726984_gl8e.jpg",
-      "price": {
-        "amount": 19.99,
-        "currency": "USD",
-        "display": "$10.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$19.99",
-        "sale_amount": 9.99,
-        "sale_display": "$10.00"
-      },
-      "tags": [
-        "book of shadows",
-        "printable grimoire",
-        "witch planner",
-        "spell book pages",
-        "witchcraft journal",
-        "wheel of the year",
-        "moon phase tracker",
-        "baby witch kit",
-        "sabbat pages",
-        "herb correspondence",
-        "digital grimoire",
-        "witchy printable"
-      ],
-      "themes": [
-        "spooky"
-      ],
-      "created": 1786326130
-    },
     {
       "listing_id": 4548301406,
       "title": "Bliss Fox Calm Corner Kit, SEL Printable Resources for Kids (Digital Download)",
@@ -75,7 +40,81 @@
         "animals",
         "kids"
       ],
-      "created": 1786326011
+      "created": 1786790106
+    },
+    {
+      "listing_id": 4543053441,
+      "title": "Pastel Goth Coloring Book, Kawaii Spooky Friends, Relaxing Soft Goth Cuties (PDF Download)",
+      "description": "Coloring book cute for cozy unwind time with spooky cute friends—an easy way to relax, focus, and enjoy a sweet-creepy vibe at home. Inside you’ll find a collection of…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4543053441/pastel-goth-coloring-book-kawaii-spooky",
+      "image": "https://i.etsystatic.com/9660605/r/il/565558/8373783271/il_570xN.8373783271_jkpi.jpg",
+      "price": {
+        "amount": 5.99,
+        "currency": "USD",
+        "display": "$3.00",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$5.99",
+        "sale_amount": 3,
+        "sale_display": "$3.00"
+      },
+      "tags": [
+        "cute coloring book",
+        "kawaii coloring",
+        "goth cute art",
+        "spooky cute",
+        "cute halloween",
+        "pastel goth",
+        "cute skulls",
+        "cute bats",
+        "witchy cute",
+        "adult coloring",
+        "teen coloring",
+        "colouring book",
+        "alt kid gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals",
+        "kids"
+      ],
+      "created": 1786760680
+    },
+    {
+      "listing_id": 4552648203,
+      "title": "Book of Shadows Printable Journal | Grimoire Spell Book Pages (Digital Download)",
+      "description": "A Book of Shadows you&#39;ll actually keep — 88 pages, ready to print and write in. Most printable grimoires give you twenty pages and a lot of blank space. This one is a…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
+      "image": "https://i.etsystatic.com/9660605/r/il/9d53c6/8358726984/il_570xN.8358726984_gl8e.jpg",
+      "price": {
+        "amount": 19.99,
+        "currency": "USD",
+        "display": "$10.00",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$19.99",
+        "sale_amount": 9.99,
+        "sale_display": "$10.00"
+      },
+      "tags": [
+        "book of shadows",
+        "printable grimoire",
+        "witch planner",
+        "spell book pages",
+        "witchcraft journal",
+        "wheel of the year",
+        "moon phase tracker",
+        "baby witch kit",
+        "sabbat pages",
+        "herb correspondence",
+        "digital grimoire",
+        "witchy printable"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1786760476
     },
     {
       "listing_id": 4542184668,
@@ -665,45 +704,6 @@
         "animals"
       ],
       "created": 1784899291
-    },
-    {
-      "listing_id": 4543053441,
-      "title": "Pastel Goth Coloring Book, Kawaii Spooky Friends, Relaxing Soft Goth Cuties (PDF Download)",
-      "description": "Coloring book cute for cozy unwind time with spooky cute friends—an easy way to relax, focus, and enjoy a sweet-creepy vibe at home. Inside you’ll find a collection of…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4543053441/pastel-goth-coloring-book-kawaii-spooky",
-      "image": "https://i.etsystatic.com/9660605/r/il/565558/8373783271/il_570xN.8373783271_jkpi.jpg",
-      "price": {
-        "amount": 5.99,
-        "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
-      },
-      "tags": [
-        "cute coloring book",
-        "kawaii coloring",
-        "goth cute art",
-        "spooky cute",
-        "cute halloween",
-        "pastel goth",
-        "cute skulls",
-        "cute bats",
-        "witchy cute",
-        "adult coloring",
-        "teen coloring",
-        "colouring book",
-        "alt kid gift"
-      ],
-      "themes": [
-        "cozy",
-        "spooky",
-        "animals",
-        "kids"
-      ],
-      "created": 1784893651
     },
     {
       "listing_id": 4543061007,
@@ -1968,7 +1968,7 @@
       "title": "Cozy Bookshop Cafe Coloring Book, Whimsical Storybook Scenes (PDF Download)",
       "description": "Bookshop coloring book for quiet evenings, featuring cozy cafe pages that turn your coloring time into a warm little escape. Step into a storybook world of shelves, pastries…",
       "url": "https://blissfoxstudio.etsy.com/listing/4528233346/cozy-bookshop-cafe-coloring-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/114176/8300582950/il_570xN.8300582950_rxqd.jpg",
+      "image": "",
       "price": {
         "amount": 5.99,
         "currency": "USD",
