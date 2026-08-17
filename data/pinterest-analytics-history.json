@@ -17,6 +17,15 @@
       "saves": 0,
       "pin_clicks": 12,
       "outbound_clicks": 2
+    },
+    {
+      "date": "2026-08-17",
+      "window_days": 30,
+      "pins_analyzed": 76,
+      "impressions": 677,
+      "saves": 0,
+      "pin_clicks": 15,
+      "outbound_clicks": 3
     }
   ]
 }
