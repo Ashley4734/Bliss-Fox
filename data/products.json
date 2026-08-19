@@ -1,15 +1,15 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-18T00:37:45.962Z",
+  "updated": "2026-08-19T00:38:02.991Z",
   "count": 111,
   "products": [
     {
       "listing_id": 4548301406,
-      "title": "Bliss Fox Calm Corner Kit, SEL Printable Resources for Kids (Digital Download)",
-      "description": "🦊 Big feelings are hard for little hearts. When a child feels angry, worried, or overwhelmed, they don&#39;t always have the words — or the tools — to calm back down. The Bliss…",
+      "title": "Calm Down Corner Printable Kit for Kids: 40-Page SEL Coping & Feelings Activities",
+      "description": "Create a calm-down space in minutes with this 40-page Calm Down Corner Printable Kit for Kids. Designed for ages 5–10, this SEL printable includes a feelings thermometer, emotion…",
       "url": "https://blissfoxstudio.etsy.com/listing/4548301406/bliss-fox-calm-corner-kit-sel-printable",
-      "image": "https://i.etsystatic.com/9660605/r/il/dce8de/8375778513/il_570xN.8375778513_4z22.jpg",
+      "image": "https://i.etsystatic.com/9660605/r/il/ebdd58/8398252078/il_570xN.8398252078_hnm9.jpg",
       "price": {
         "amount": 17.98,
         "currency": "USD",
@@ -23,21 +23,20 @@
       "tags": [
         "calm corner",
         "calm down corner",
-        "social emotional",
         "sel printable",
         "coping skills",
-        "coping cards",
-        "feelings chart",
-        "emotions cards",
         "self regulation",
-        "classroom calm down",
-        "school counselor",
         "breathing exercises",
-        "anger management"
+        "emotional regulation",
+        "feelings thermometer",
+        "calming corner",
+        "classroom printable",
+        "emotional printable",
+        "kids emotions",
+        "calm corner kit"
       ],
       "themes": [
         "cozy",
-        "animals",
         "kids"
       ],
       "created": 1786790106
@@ -83,10 +82,10 @@
     },
     {
       "listing_id": 4552648203,
-      "title": "Book of Shadows Printable Journal | Grimoire Spell Book Pages (Digital Download)",
-      "description": "A Book of Shadows you&#39;ll actually keep — 88 pages, ready to print and write in. Most printable grimoires give you twenty pages and a lot of blank space. This one is a…",
+      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
       "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/9d53c6/8358726984/il_570xN.8358726984_gl8e.jpg",
+      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
       "price": {
         "amount": 19.99,
         "currency": "USD",
@@ -98,21 +97,22 @@
         "sale_display": "$10.00"
       },
       "tags": [
-        "book of shadows",
         "printable grimoire",
-        "witch planner",
-        "spell book pages",
+        "book of shadows",
+        "grimoire pages",
         "witchcraft journal",
-        "wheel of the year",
-        "moon phase tracker",
-        "baby witch kit",
-        "sabbat pages",
-        "herb correspondence",
-        "digital grimoire",
-        "witchy printable"
+        "spell book pages",
+        "witch journal pdf",
+        "witchcraft printable",
+        "moon magic journal",
+        "herbal grimoire",
+        "tarot journal pages",
+        "crystal journal",
+        "pagan journal pdf"
       ],
       "themes": [
-        "spooky"
+        "spooky",
+        "fantasy"
       ],
       "created": 1786760476
     },
@@ -672,7 +672,7 @@
       "title": "Cozy Goth Homes Coloring Book, Cats, Moonlit Decor, Whimsical Rooms (PDF Download)",
       "description": "Coloring book goth for cozy nights at home—unplug with candlelit rooms, curious shelves, and whimsical cats curled up among moons and botanicals. Step into a world of cozy goth…",
       "url": "https://blissfoxstudio.etsy.com/listing/4543046396/cozy-goth-homes-coloring-book-cats",
-      "image": "https://i.etsystatic.com/9660605/r/il/fa30af/8300551076/il_570xN.8300551076_9278.jpg",
+      "image": "",
       "price": {
         "amount": 5.99,
         "currency": "USD",
