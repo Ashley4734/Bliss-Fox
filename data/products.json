@@ -1,9 +1,45 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-19T00:38:02.991Z",
+  "updated": "2026-08-20T00:37:29.659Z",
   "count": 111,
   "products": [
+    {
+      "listing_id": 4552648203,
+      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
+      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
+      "price": {
+        "amount": 19.99,
+        "currency": "USD",
+        "display": "$10.00",
+        "on_sale": true,
+        "percent_off": 50,
+        "original_display": "$19.99",
+        "sale_amount": 9.99,
+        "sale_display": "$10.00"
+      },
+      "tags": [
+        "printable grimoire",
+        "book of shadows",
+        "grimoire pages",
+        "witchcraft journal",
+        "spell book pages",
+        "witch journal pdf",
+        "witchcraft printable",
+        "moon magic journal",
+        "herbal grimoire",
+        "tarot journal pages",
+        "crystal journal",
+        "pagan journal pdf"
+      ],
+      "themes": [
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1787168367
+    },
     {
       "listing_id": 4548301406,
       "title": "Calm Down Corner Printable Kit for Kids: 40-Page SEL Coping & Feelings Activities",
@@ -39,7 +75,7 @@
         "cozy",
         "kids"
       ],
-      "created": 1786790106
+      "created": 1787146352
     },
     {
       "listing_id": 4543053441,
@@ -79,42 +115,6 @@
         "kids"
       ],
       "created": 1786760680
-    },
-    {
-      "listing_id": 4552648203,
-      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
-      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
-      "price": {
-        "amount": 19.99,
-        "currency": "USD",
-        "display": "$10.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$19.99",
-        "sale_amount": 9.99,
-        "sale_display": "$10.00"
-      },
-      "tags": [
-        "printable grimoire",
-        "book of shadows",
-        "grimoire pages",
-        "witchcraft journal",
-        "spell book pages",
-        "witch journal pdf",
-        "witchcraft printable",
-        "moon magic journal",
-        "herbal grimoire",
-        "tarot journal pages",
-        "crystal journal",
-        "pagan journal pdf"
-      ],
-      "themes": [
-        "spooky",
-        "fantasy"
-      ],
-      "created": 1786760476
     },
     {
       "listing_id": 4542184668,
@@ -672,7 +672,7 @@
       "title": "Cozy Goth Homes Coloring Book, Cats, Moonlit Decor, Whimsical Rooms (PDF Download)",
       "description": "Coloring book goth for cozy nights at home—unplug with candlelit rooms, curious shelves, and whimsical cats curled up among moons and botanicals. Step into a world of cozy goth…",
       "url": "https://blissfoxstudio.etsy.com/listing/4543046396/cozy-goth-homes-coloring-book-cats",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/fa30af/8300551076/il_570xN.8300551076_9278.jpg",
       "price": {
         "amount": 5.99,
         "currency": "USD",
