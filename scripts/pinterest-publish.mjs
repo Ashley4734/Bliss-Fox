@@ -12,7 +12,13 @@
  *              catalogue, recycles posted products after a cooldown, prioritises
  *              seasonal themes, writes Pin copy (LLM or template), and (by
  *              default) generates original Pin art via openai/gpt-image-2 on
- *              Replicate using the product's hero image as a reference.
+ *              Replicate using the product's hero image as a reference. Each
+ *              product rotates through creative VARIANTS (a storefront "cover"
+ *              plus softer, Pinterest-native "lifestyle" scenes) across posts.
+ *   preview  — generate a sample image for every variant of a few products into
+ *              data/pin-previews/<timestamp>/ with an index.html contact sheet,
+ *              WITHOUT posting anything. Needs only REPLICATE_API_TOKEN (no
+ *              Pinterest auth). Use it to eyeball styles before going live.
  *   demo     — create a board, create a Pin, read it back (sandbox; review video).
  *
  * Queue (data/pinterest-queue.json) config:
@@ -21,13 +27,20 @@
  *   image_source        "replicate" (generate art from the hero image) or "etsy"
  *                       (use the cover as-is); default replicate
  *   copy_source         "llm" (generate varied copy) or "template"; default llm
+ *   pin_variants        which creative variants to rotate through and in what
+ *                       order (default: all — cover, hands, flatlay, finished,
+ *                       scene). New products lead with the cover.
  *   default_board       board for products with no theme match
- *   pins[]              per-product state {listing_id, posted, posted_at, optional
+ *   pins[]              per-product state {listing_id, posted, posted_at,
+ *                       variant_i (rotation counter), optional
  *                       board/title/description overrides}
  *
  * Environment:
  *   PINTEREST_ENV        "production" (default) or "sandbox"
  *   MODE, MAX_PER_RUN (default 2; small daily drip), DRY_RUN ("1"), IMAGE_SOURCE, COPY_SOURCE
+ *   PIN_VARIANT          force one variant id (e.g. "flatlay") instead of rotating
+ *   PREVIEW_PRODUCTS     preview mode: how many products to sample (default 2)
+ *   PREVIEW_LISTING_ID   preview mode: sample only this listing_id
  *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
  *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
  *   REPLICATE_API_TOKEN  required for image_source=replicate and copy_source=llm
@@ -43,7 +56,7 @@
  * Node 18+ (global fetch). No dependencies.
  */
 
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -70,12 +83,16 @@ const REPLICATE_MODEL = (process.env.REPLICATE_MODEL || 'openai/gpt-image-2').tr
 const REPLICATE_TEXT_MODEL = (process.env.REPLICATE_TEXT_MODEL || 'meta/meta-llama-3-70b-instruct').trim();
 const IMAGE_QUALITY = (process.env.IMAGE_QUALITY || 'medium').trim();
 const IMAGE_ASPECT_RATIO = (process.env.IMAGE_ASPECT_RATIO || '2:3').trim();
+const FORCED_VARIANT = (process.env.PIN_VARIANT || '').trim().toLowerCase();
+const PREVIEW_PRODUCTS = Math.max(1, Number.parseInt(process.env.PREVIEW_PRODUCTS || '2', 10) || 2);
+const PREVIEW_LISTING_ID = (process.env.PREVIEW_LISTING_ID || '').trim();
 
 const DAY_MS = 86400000;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PRODUCTS_FILE = join(__dirname, '..', 'data', 'products.json');
 const QUEUE_FILE = join(__dirname, '..', 'data', 'pinterest-queue.json');
+const PREVIEW_ROOT = join(__dirname, '..', 'data', 'pin-previews');
 
 // Map each product theme (from the Etsy sync) to the board it should be pinned
 // to. Create boards with THESE EXACT names in the Pinterest UI; matching is
@@ -403,22 +420,90 @@ async function resolveCopy(entry, product, boardName, copySource) {
 
 // ---- Image generation via openai/gpt-image-2 on Replicate ------------------
 
-function pinImagePrompt(product) {
-  const title = clamp(product.title, 90);
-  return (
-    `Create a Pinterest pin based on the attached image that will help sell the ` +
-    `digital coloring book "${title}". Vertical 2:3 layout, eye-catching and ` +
-    `clickable for Pinterest shoppers, preserve the coloring-page line-art style ` +
-    `from the reference. Only include a page count, rating, price, or other numeric ` +
-    `claim if it clearly appears in the reference image; otherwise do not add any ` +
-    `numbers or invented claims. Tasteful, no watermark.`
-  );
+// Pin creative variants. The product's hero image is always passed as the
+// reference so gpt-image-2 keeps the actual line-art subjects. "cover"
+// reproduces the storefront cover (strong intro, reads as a listing); the rest
+// are softer "lifestyle" scenes that read as inspiration and tend to earn more
+// saves. Lifestyle variants deliberately carry NO sales text or badges.
+const PIN_VARIANTS = [
+  {
+    id: 'cover',
+    label: 'Product cover',
+    prompt: (product) =>
+      `Create a Pinterest pin based on the attached image that will help sell the ` +
+      `digital coloring book "${clamp(product.title, 90)}". Vertical 2:3 layout, ` +
+      `eye-catching and clickable for Pinterest shoppers, preserve the coloring-page ` +
+      `line-art style from the reference. Only include a page count, rating, price, or ` +
+      `other numeric claim if it clearly appears in the reference image; otherwise do ` +
+      `not add any numbers or invented claims. Tasteful, no watermark.`,
+  },
+  {
+    id: 'hands',
+    label: 'Hands coloring',
+    prompt: (product) =>
+      `Create a warm lifestyle Pinterest pin for the printable coloring book ` +
+      `"${clamp(product.title, 90)}". Show a person's hand holding a colored pencil, ` +
+      `partway through coloring one of the book's actual pages — use the same line-art ` +
+      `style and subjects as the attached reference. Cozy, softly lit, aspirational, ` +
+      `vertical 2:3, the coloring page as the hero. Realistic hand and pencil. No text, ` +
+      `no badges, no watermark, no invented claims.`,
+  },
+  {
+    id: 'flatlay',
+    label: 'Cozy flat-lay',
+    prompt: (product) =>
+      `Create a cozy top-down flat-lay Pinterest pin for the printable coloring book ` +
+      `"${clamp(product.title, 90)}". Show one of the book's printed pages (matching the ` +
+      `line-art style and subjects in the attached reference) on a wooden or linen ` +
+      `surface, surrounded by colored pencils or markers, a warm mug, and a small plant. ` +
+      `Cottagecore mood, soft natural light, vertical 2:3. No text, no badges, no ` +
+      `watermark, no invented claims.`,
+  },
+  {
+    id: 'finished',
+    label: 'Before / after',
+    prompt: (product) =>
+      `Create a before-and-after Pinterest pin for the printable coloring book ` +
+      `"${clamp(product.title, 90)}". Show one of the book's pages beautifully colored in ` +
+      `next to the same page as blank black-and-white line art, matching the style and ` +
+      `subjects of the attached reference. Clean and inspiring, vertical 2:3, showing the ` +
+      `coloring payoff. Minimal or no text, no badges, no watermark, no invented claims.`,
+  },
+  {
+    id: 'scene',
+    label: 'Single scene',
+    prompt: (product) =>
+      `Create a Pinterest pin that spotlights a single illustration from the coloring ` +
+      `book "${clamp(product.title, 90)}". Crop in on one charming scene from the attached ` +
+      `reference's line-art, as a clean vertical 2:3 image with generous margins. Let the ` +
+      `artwork be the focus. Minimal or no text, no badges, no watermark, no invented claims.`,
+  },
+];
+
+const VARIANT_BY_ID = new Map(PIN_VARIANTS.map((v) => [v.id, v]));
+const DEFAULT_VARIANT = VARIANT_BY_ID.get('cover');
+
+// The ordered list of variant ids to rotate through, from queue config or all.
+function variantOrder(queue) {
+  const wanted = Array.isArray(queue && queue.pin_variants) ? queue.pin_variants : null;
+  const ids = (wanted && wanted.length ? wanted : PIN_VARIANTS.map((v) => v.id))
+    .map((id) => String(id).trim().toLowerCase())
+    .filter((id) => VARIANT_BY_ID.has(id));
+  return ids.length ? ids : ['cover'];
 }
 
-async function generateReplicateImage(product) {
+// Pick the variant for this post: a forced override (env) wins; otherwise the
+// entry's rotation counter selects the next id in the order.
+function variantForEntry(entry, order) {
+  if (FORCED_VARIANT && VARIANT_BY_ID.has(FORCED_VARIANT)) return VARIANT_BY_ID.get(FORCED_VARIANT);
+  const i = Number.isInteger(entry && entry.variant_i) ? entry.variant_i : 0;
+  return VARIANT_BY_ID.get(order[i % order.length]) || DEFAULT_VARIANT;
+}
+
+async function generateReplicateImage(product, variant) {
   if (!REPLICATE_TOKEN || !product.image) return null;
   const pred = await replicateRun(REPLICATE_MODEL, {
-    prompt: pinImagePrompt(product),
+    prompt: (variant || DEFAULT_VARIANT).prompt(product),
     input_images: [product.image],
     aspect_ratio: IMAGE_ASPECT_RATIO,
     quality: IMAGE_QUALITY,
@@ -429,10 +514,11 @@ async function generateReplicateImage(product) {
   return typeof out === 'string' && out ? out : null;
 }
 
-async function resolvePinMedia(product, imageSource) {
+async function resolvePinMedia(product, imageSource, variant) {
+  const v = variant || DEFAULT_VARIANT;
   if (imageSource === 'replicate') {
-    const url = await generateReplicateImage(product);
-    if (url) return { mediaSource: { source_type: 'image_url', url }, source: 'replicate' };
+    const url = await generateReplicateImage(product, v);
+    if (url) return { mediaSource: { source_type: 'image_url', url }, source: `replicate:${v.id}` };
     console.warn(`  falling back to Etsy image for "${product.title}" (Replicate unavailable).`);
   }
   if (product.image) {
@@ -469,6 +555,11 @@ async function runVerify(token) {
     `\nImage source: ${(process.env.IMAGE_SOURCE || 'replicate')} (model ${REPLICATE_MODEL}, quality ${IMAGE_QUALITY}). ` +
       `Copy source: ${(process.env.COPY_SOURCE || 'llm')} (model ${REPLICATE_TEXT_MODEL}). ` +
       `Replicate token ${REPLICATE_TOKEN ? 'present' : 'MISSING → falls back to Etsy image + template copy'}.`
+  );
+  console.log(
+    `Pin variants: ${PIN_VARIANTS.map((v) => v.id).join(', ')} (rotated per product; ` +
+      `force one with PIN_VARIANT, restrict/reorder with queue.pin_variants). ` +
+      `Preview them with MODE=preview.`
   );
 
   const products = (await loadJson(PRODUCTS_FILE)).products || [];
@@ -532,6 +623,7 @@ async function runPublish(token) {
   const recycleDays = Number.isFinite(queue.recycle_after_days) ? queue.recycle_after_days : 45;
   const imageSource = (process.env.IMAGE_SOURCE || queue.image_source || 'replicate').trim().toLowerCase();
   const copySource = (process.env.COPY_SOURCE || queue.copy_source || 'llm').trim().toLowerCase();
+  const varOrder = variantOrder(queue);
   queue.pins = Array.isArray(queue.pins) ? queue.pins : [];
 
   let dirty = false;
@@ -569,9 +661,12 @@ async function runPublish(token) {
     console.log(`Seasonal boost this month: ${boostThemes.join(', ')}.`);
   }
 
+  const varDesc = FORCED_VARIANT && VARIANT_BY_ID.has(FORCED_VARIANT)
+    ? `forced ${FORCED_VARIANT}`
+    : `rotating ${varOrder.join(' → ')}`;
   console.log(
     `Queue: ${queue.pins.length} product(s); ${neverPosted.length} never-posted, ` +
-      `${recyclable.length} recycle-eligible. Image: ${imageSource}, copy: ${copySource}. ` +
+      `${recyclable.length} recycle-eligible. Image: ${imageSource} (${varDesc}), copy: ${copySource}. ` +
       `Publishing up to ${MAX_PER_RUN}` + (DRY_RUN ? ' (DRY RUN)…' : '…')
   );
 
@@ -590,17 +685,18 @@ async function runPublish(token) {
       console.warn(`  skip "${product.title}": board "${boardName}" not found — create it first.`);
       continue;
     }
+    const variant = variantForEntry(entry, varOrder);
 
     if (DRY_RUN) {
       const copy = await resolveCopy(entry, product, boardName, copySource);
-      console.log(`  [dry] "${copy.title}" → ${boardName} (image: ${imageSource}, copy: ${copy.source})`);
+      console.log(`  [dry] "${copy.title}" → ${boardName} (image: ${imageSource}/${variant.id}, copy: ${copy.source})`);
       console.log(`        desc: ${copy.description}`);
       if (copy.alt_text) console.log(`        alt:  ${copy.alt_text}`);
       published++;
       continue;
     }
 
-    const media = await resolvePinMedia(product, imageSource);
+    const media = await resolvePinMedia(product, imageSource, variant);
     if (!media) {
       console.warn(`  skip "${product.title}": no image available.`);
       continue;
@@ -618,6 +714,9 @@ async function runPublish(token) {
       await api(token, '/pins', { method: 'POST', body });
       entry.posted = true;
       entry.posted_at = new Date().toISOString();
+      // Advance the rotation so the next post for this product uses the next
+      // variant. A forced variant (env) does not move the pointer.
+      if (!FORCED_VARIANT) entry.variant_i = (Number.isInteger(entry.variant_i) ? entry.variant_i : 0) + 1;
       dirty = true;
       published++;
       console.log(`  ✓ pinned "${body.title}" → ${boardName} [${media.source}/${copy.source}]`);
@@ -635,7 +734,133 @@ async function runPublish(token) {
   }
 }
 
+// ---- Preview mode (no posting) --------------------------------------------
+
+// Fetch a generated image URL to disk, choosing an extension from its type.
+async function downloadImage(url, dir, base) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const ct = res.headers.get('content-type') || '';
+  const ext = ct.includes('webp') ? 'webp' : ct.includes('jpeg') || ct.includes('jpg') ? 'jpg' : 'png';
+  const file = `${base}.${ext}`;
+  await writeFile(join(dir, file), Buffer.from(await res.arrayBuffer()));
+  return file;
+}
+
+function previewProducts(products) {
+  const withImage = products.filter((p) => p.image);
+  if (PREVIEW_LISTING_ID) {
+    const hit = withImage.filter((p) => String(p.listing_id) === PREVIEW_LISTING_ID);
+    if (!hit.length) throw new Error(`PREVIEW_LISTING_ID ${PREVIEW_LISTING_ID} not found (or has no image).`);
+    return hit;
+  }
+  return withImage.slice(0, PREVIEW_PRODUCTS);
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+function previewIndexHtml(stamp, rows) {
+  const byProduct = new Map();
+  for (const r of rows) {
+    if (!byProduct.has(r.listing_id)) byProduct.set(r.listing_id, { title: r.title, items: [] });
+    byProduct.get(r.listing_id).items.push(r);
+  }
+  const sections = [...byProduct.values()]
+    .map((g) => {
+      const cards = g.items
+        .map(
+          (r) => `
+      <figure>
+        ${r.file ? `<img src="${escHtml(r.file)}" alt="${escHtml(r.label)}">` : `<div class="fail">generation failed</div>`}
+        <figcaption><strong>${escHtml(r.label)}</strong><br><span>${escHtml(r.variant)}</span></figcaption>
+      </figure>`
+        )
+        .join('');
+      return `<section><h2>${escHtml(g.title)}</h2><div class="row">${cards}</div></section>`;
+    })
+    .join('\n');
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pin variant preview ${escHtml(stamp)}</title>
+<style>
+  body{font-family:system-ui,-apple-system,sans-serif;margin:24px;background:#faf8f5;color:#222}
+  h1{font-size:20px} h2{font-size:16px;margin-top:32px}
+  .row{display:flex;flex-wrap:wrap;gap:16px}
+  figure{margin:0;width:220px}
+  img{width:220px;height:330px;object-fit:cover;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.15)}
+  .fail{width:220px;height:330px;display:flex;align-items:center;justify-content:center;background:#eee;border-radius:8px;color:#999;font-size:13px}
+  figcaption{font-size:13px;margin-top:6px} figcaption span{color:#888}
+</style></head><body>
+<h1>Bliss Fox — Pinterest pin variant preview</h1>
+<p>Generated ${escHtml(stamp)} · model ${escHtml(REPLICATE_MODEL)} · quality ${escHtml(IMAGE_QUALITY)} · aspect ${escHtml(IMAGE_ASPECT_RATIO)}</p>
+${sections}
+</body></html>`;
+}
+
+async function runPreview() {
+  if (!REPLICATE_TOKEN) {
+    console.error('ERROR: preview mode needs REPLICATE_API_TOKEN (it generates images, but posts nothing).');
+    process.exit(1);
+  }
+  const products = (await loadJson(PRODUCTS_FILE)).products || [];
+  const picks = previewProducts(products);
+  const queue = await loadQueue();
+  const variants =
+    FORCED_VARIANT && VARIANT_BY_ID.has(FORCED_VARIANT)
+      ? [VARIANT_BY_ID.get(FORCED_VARIANT)]
+      : variantOrder(queue).map((id) => VARIANT_BY_ID.get(id));
+
+  const stamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+  const dir = join(PREVIEW_ROOT, stamp);
+  await mkdir(dir, { recursive: true });
+  console.log(`Preview (${ENV}): ${picks.length} product(s) × ${variants.length} variant(s) → ${dir}`);
+
+  const rows = [];
+  for (const product of picks) {
+    for (const variant of variants) {
+      process.stdout.write(`  ${product.listing_id} / ${variant.id} … `);
+      const url = await generateReplicateImage(product, variant);
+      let file = null;
+      if (url) {
+        try {
+          file = await downloadImage(url, dir, `${product.listing_id}-${variant.id}`);
+          console.log('ok');
+        } catch (err) {
+          console.log(`saved image URL only (download failed: ${err.message})`);
+        }
+      } else {
+        console.log('generation failed');
+      }
+      rows.push({
+        listing_id: product.listing_id,
+        title: product.title,
+        variant: variant.id,
+        label: variant.label,
+        url,
+        file,
+        prompt: variant.prompt(product),
+      });
+    }
+  }
+
+  await writeFile(
+    join(dir, 'manifest.json'),
+    JSON.stringify(
+      { generated: new Date().toISOString(), model: REPLICATE_MODEL, quality: IMAGE_QUALITY, aspect_ratio: IMAGE_ASPECT_RATIO, rows },
+      null,
+      2
+    ) + '\n',
+    'utf8'
+  );
+  await writeFile(join(dir, 'index.html'), previewIndexHtml(stamp, rows), 'utf8');
+  const ok = rows.filter((r) => r.file).length;
+  console.log(`\nDone: ${ok}/${rows.length} images saved. Open ${join(dir, 'index.html')} to compare variants.`);
+}
+
 async function main() {
+  if (MODE === 'preview') return runPreview();
   requireAuth();
   const token = await getAccessToken();
   if (MODE === 'verify') await runVerify(token);
