@@ -27,7 +27,7 @@
  *
  * Environment:
  *   PINTEREST_ENV        "production" (default) or "sandbox"
- *   MODE, MAX_PER_RUN (default 5), DRY_RUN ("1"), IMAGE_SOURCE, COPY_SOURCE
+ *   MODE, MAX_PER_RUN (default 2; small daily drip), DRY_RUN ("1"), IMAGE_SOURCE, COPY_SOURCE
  *   PINTEREST_APP_ID, PINTEREST_APP_SECRET, PINTEREST_REFRESH_TOKEN
  *   PINTEREST_SANDBOX_REFRESH_TOKEN (demo only)
  *   REPLICATE_API_TOKEN  required for image_source=replicate and copy_source=llm
@@ -59,7 +59,10 @@ const APP_SECRET = (process.env.PINTEREST_APP_SECRET || '').trim();
 const REFRESH_TOKEN_VAR = IS_SANDBOX ? 'PINTEREST_SANDBOX_REFRESH_TOKEN' : 'PINTEREST_REFRESH_TOKEN';
 const REFRESH_TOKEN = (process.env[REFRESH_TOKEN_VAR] || '').trim();
 const MODE = (process.env.MODE || 'publish').trim().toLowerCase();
-const MAX_PER_RUN = Math.max(1, Number.parseInt(process.env.MAX_PER_RUN || '5', 10) || 5);
+// Default to a small, steady daily drip. A new/low-authority account earns more
+// per-pin distribution from consistent posting than from large bursts, so keep
+// this low and run the publisher often (e.g. once or twice a day).
+const MAX_PER_RUN = Math.max(1, Number.parseInt(process.env.MAX_PER_RUN || '2', 10) || 2);
 const DRY_RUN = process.env.DRY_RUN === '1' || process.env.DRY_RUN === 'true';
 
 const REPLICATE_TOKEN = (process.env.REPLICATE_API_TOKEN || '').trim();
@@ -282,10 +285,13 @@ async function replicateRun(model, input, { maxRetries = 6 } = {}) {
 
 // ---- Template copy (fallback) ---------------------------------------------
 
+// Keep hashtags few and targeted: theme-specific tags first, then a couple of
+// base tags, capped at 3. Long hashtag stacks read as spam and don't aid reach.
 function buildHashtags(product) {
-  const tags = new Set(BASE_HASHTAGS);
-  for (const t of product.themes || []) for (const h of THEME_HASHTAGS[t] || []) tags.add(h);
-  return [...tags].slice(0, 10).join(' ');
+  const themeTags = [];
+  for (const t of product.themes || []) for (const h of THEME_HASHTAGS[t] || []) themeTags.push(h);
+  const tags = [...new Set([...themeTags, ...BASE_HASHTAGS])];
+  return tags.slice(0, 3).join(' ');
 }
 
 function buildTitle(product) {
@@ -327,22 +333,25 @@ async function generateCopy(product, boardName) {
   const angle = COPY_ANGLES[Math.floor(Math.random() * COPY_ANGLES.length)];
   const month = new Date().toLocaleString('en-US', { month: 'long' });
   const themes = (product.themes || []).join(', ') || 'general';
+  const keywords = (product.tags || []).slice(0, 8).join(', ');
   const system =
-    'You are a Pinterest marketing copywriter for Bliss Fox Studio, a shop that sells ' +
-    'printable, instant-download digital coloring books. Write engaging, SEO-friendly Pin ' +
-    'copy that sounds natural and human. Never invent product features that are not provided.';
+    'You are a Pinterest SEO copywriter for Bliss Fox Studio, a shop that sells ' +
+    'printable, instant-download digital coloring books. Pinterest is a search engine: ' +
+    'lead with the words a shopper would actually type, keep it natural and human, and ' +
+    'never invent product features that are not provided.';
   const user = [
     `Product: "${product.title}"`,
     product.description ? `Details: ${clamp(product.description, 300)}` : '',
     `Themes: ${themes}`,
+    keywords ? `Target keywords (weave the best ones in naturally; do not just list them): ${keywords}` : '',
     `Board: ${boardName}`,
     `Current month: ${month}`,
     `Angle to emphasize this time: ${angle}`,
     '',
     'Reply in EXACTLY this format and nothing else (no preamble, no markdown, one line each):',
-    'TITLE: <compelling pin title, max 95 characters, no hashtags>',
-    'DESCRIPTION: <1-3 natural sentences, max 300 characters, with a soft call to action, no hashtags>',
-    'HASHTAGS: <4-6 space-separated lowercase hashtags, each starting with #>',
+    'TITLE: <pin title, max 60 characters, LEAD with the main search keyword/theme, no hashtags, no "PDF" or "instant download">',
+    'DESCRIPTION: <1-2 natural sentences, max 300 characters. Put the most important search keywords in the FIRST sentence, then a soft call to action. No hashtags.>',
+    'HASHTAGS: <2-3 space-separated lowercase hashtags, each starting with #>',
     'ALT: <plain description of the image for accessibility, max 200 characters>',
   ]
     .filter(Boolean)
@@ -361,10 +370,10 @@ async function generateCopy(product, boardName) {
     if (raw) console.warn(`  copy parse failed; raw output: ${clamp(raw, 200)}`);
     return null;
   }
-  const tags = (parsed.hashtags.match(/#[\w]+/g) || []).slice(0, 6);
+  const tags = (parsed.hashtags.match(/#[\w]+/g) || []).slice(0, 3);
   const description = clamp(`${parsed.description} ${tags.join(' ')}`.trim(), 500);
   return {
-    title: clamp(parsed.title, 100),
+    title: clamp(parsed.title, 70),
     description,
     alt_text: parsed.alt ? clamp(parsed.alt, 500) : undefined,
   };
