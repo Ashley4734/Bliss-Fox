@@ -41,6 +41,11 @@ on:
         type: choice
         default: llm
         options: [llm, template]
+      pin_variant:
+        description: 'Force one creative variant (leave as rotate to use per-product rotation)'
+        type: choice
+        default: rotate
+        options: [rotate, cover, hands, flatlay, finished, scene]
       dry_run:
         description: 'Log what would be posted (and generated copy) without posting'
         type: boolean
@@ -78,6 +83,8 @@ jobs:
           MAX_PER_RUN: ${{ inputs.max_per_run || '1' }}
           IMAGE_SOURCE: ${{ inputs.image_source || 'replicate' }}
           COPY_SOURCE: ${{ inputs.copy_source || 'llm' }}
+          # 'rotate' (default) leaves PIN_VARIANT empty so per-product rotation runs.
+          PIN_VARIANT: ${{ inputs.pin_variant == 'rotate' && '' || inputs.pin_variant }}
           IMAGE_QUALITY: medium
           DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
         run: node scripts/pinterest-publish.mjs
