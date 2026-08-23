@@ -420,11 +420,40 @@ async function resolveCopy(entry, product, boardName, copySource) {
 
 // ---- Image generation via openai/gpt-image-2 on Replicate ------------------
 
+// Lifestyle staging by theme, so the props match the book's mood instead of
+// always defaulting to cottagecore (which clashes on spooky/goth books). The
+// first matching theme wins; anything unmatched gets the cozy default.
+const LIFESTYLE_MOODS = {
+  spooky: {
+    surface: 'a dark wood or black cloth surface',
+    props: 'lit candles, dried dark roses, a few small crystals, and a black mug',
+    light: 'moody low light with warm candle glow',
+    vibe: 'witchy and atmospheric',
+  },
+  fantasy: {
+    surface: 'a rustic wood surface',
+    props: 'candles, small crystals, dried flowers, and an open old book',
+    light: 'soft warm light',
+    vibe: 'whimsical and enchanted',
+  },
+};
+const DEFAULT_MOOD = {
+  surface: 'a wooden or linen surface',
+  props: 'a warm mug and a small plant',
+  light: 'soft natural light',
+  vibe: 'cozy cottagecore',
+};
+function lifestyleMood(product) {
+  for (const t of product.themes || []) if (LIFESTYLE_MOODS[t]) return LIFESTYLE_MOODS[t];
+  return DEFAULT_MOOD;
+}
+
 // Pin creative variants. The product's hero image is always passed as the
 // reference so gpt-image-2 keeps the actual line-art subjects. "cover"
 // reproduces the storefront cover (strong intro, reads as a listing); the rest
 // are softer "lifestyle" scenes that read as inspiration and tend to earn more
-// saves. Lifestyle variants deliberately carry NO sales text or badges.
+// saves. Lifestyle staging is theme-aware (see lifestyleMood); variants
+// deliberately carry NO sales text or badges.
 const PIN_VARIANTS = [
   {
     id: 'cover',
@@ -440,24 +469,31 @@ const PIN_VARIANTS = [
   {
     id: 'hands',
     label: 'Hands coloring',
-    prompt: (product) =>
-      `Create a warm lifestyle Pinterest pin for the printable coloring book ` +
-      `"${clamp(product.title, 90)}". Show a person's hand holding a colored pencil, ` +
-      `partway through coloring one of the book's actual pages — use the same line-art ` +
-      `style and subjects as the attached reference. Cozy, softly lit, aspirational, ` +
-      `vertical 2:3, the coloring page as the hero. Realistic hand and pencil. No text, ` +
-      `no badges, no watermark, no invented claims.`,
+    prompt: (product) => {
+      const m = lifestyleMood(product);
+      return (
+        `Create a lifestyle Pinterest pin for the printable coloring book ` +
+        `"${clamp(product.title, 90)}". Show a person's hand holding a colored pencil, ` +
+        `partway through coloring one of the book's actual pages — use the same line-art ` +
+        `style and subjects as the attached reference. Staged with ${m.props} to match the ` +
+        `book's mood; ${m.vibe}, ${m.light}, vertical 2:3, the coloring page as the hero. ` +
+        `Realistic hand and pencil. No text, no badges, no watermark, no invented claims.`
+      );
+    },
   },
   {
     id: 'flatlay',
-    label: 'Cozy flat-lay',
-    prompt: (product) =>
-      `Create a cozy top-down flat-lay Pinterest pin for the printable coloring book ` +
-      `"${clamp(product.title, 90)}". Show one of the book's printed pages (matching the ` +
-      `line-art style and subjects in the attached reference) on a wooden or linen ` +
-      `surface, surrounded by colored pencils or markers, a warm mug, and a small plant. ` +
-      `Cottagecore mood, soft natural light, vertical 2:3. No text, no badges, no ` +
-      `watermark, no invented claims.`,
+    label: 'Styled flat-lay',
+    prompt: (product) => {
+      const m = lifestyleMood(product);
+      return (
+        `Create a top-down flat-lay Pinterest pin for the printable coloring book ` +
+        `"${clamp(product.title, 90)}". Show one of the book's printed pages (matching the ` +
+        `line-art style and subjects in the attached reference) on ${m.surface}, styled ` +
+        `with colored pencils plus ${m.props}. ${m.vibe} mood, ${m.light}, vertical 2:3. ` +
+        `The staging must match the book's mood. No text, no badges, no watermark, no invented claims.`
+      );
+    },
   },
   {
     id: 'finished',
