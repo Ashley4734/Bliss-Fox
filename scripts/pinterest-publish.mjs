@@ -562,12 +562,24 @@ function variantOrder(queue) {
   return ids.length ? ids : ['cover'];
 }
 
+// Rotation index for an entry's next post. Entries posted before rotation
+// tracking existed (variant_i unset but posted=true) already had their cover
+// posted, so start them at index 1 (the first lifestyle variant) instead of
+// repeating the cover. Never-posted entries lead with the cover at index 0.
+function startIndexFor(entry) {
+  if (Number.isInteger(entry && entry.variant_i)) return entry.variant_i;
+  return entry && entry.posted ? 1 : 0;
+}
+
 // Pick the variant for this post: a forced override (env) wins; otherwise the
-// entry's rotation counter selects the next id in the order.
+// rotation index selects the id in the order. Returns { variant, index } so the
+// caller can advance the counter by the index actually used.
 function variantForEntry(entry, order) {
-  if (FORCED_VARIANT && VARIANT_BY_ID.has(FORCED_VARIANT)) return VARIANT_BY_ID.get(FORCED_VARIANT);
-  const i = Number.isInteger(entry && entry.variant_i) ? entry.variant_i : 0;
-  return VARIANT_BY_ID.get(order[i % order.length]) || DEFAULT_VARIANT;
+  if (FORCED_VARIANT && VARIANT_BY_ID.has(FORCED_VARIANT)) {
+    return { variant: VARIANT_BY_ID.get(FORCED_VARIANT), index: startIndexFor(entry), forced: true };
+  }
+  const index = startIndexFor(entry);
+  return { variant: VARIANT_BY_ID.get(order[index % order.length]) || DEFAULT_VARIANT, index, forced: false };
 }
 
 async function generateReplicateImage(product, variant) {
@@ -755,7 +767,7 @@ async function runPublish(token) {
       console.warn(`  skip "${product.title}": board "${boardName}" not found — create it first.`);
       continue;
     }
-    const variant = variantForEntry(entry, varOrder);
+    const { variant, index: variantIndex, forced: variantForced } = variantForEntry(entry, varOrder);
 
     if (DRY_RUN) {
       const copy = await resolveCopy(entry, product, boardName, copySource);
@@ -784,9 +796,10 @@ async function runPublish(token) {
       await api(token, '/pins', { method: 'POST', body });
       entry.posted = true;
       entry.posted_at = new Date().toISOString();
-      // Advance the rotation so the next post for this product uses the next
-      // variant. A forced variant (env) does not move the pointer.
-      if (!FORCED_VARIANT) entry.variant_i = (Number.isInteger(entry.variant_i) ? entry.variant_i : 0) + 1;
+      // Advance the rotation past the index actually used, so the next post for
+      // this product moves to the following variant. A forced variant (env) does
+      // not move the pointer.
+      if (!variantForced) entry.variant_i = variantIndex + 1;
       dirty = true;
       published++;
       console.log(`  ✓ pinned "${body.title}" → ${boardName} [${media.source}/${copy.source}]`);
