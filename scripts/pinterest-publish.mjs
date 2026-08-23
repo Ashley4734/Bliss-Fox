@@ -421,8 +421,7 @@ async function resolveCopy(entry, product, boardName, copySource) {
 // ---- Image generation via openai/gpt-image-2 on Replicate ------------------
 
 // Lifestyle staging by theme, so the props match the book's mood instead of
-// always defaulting to cottagecore (which clashes on spooky/goth books). The
-// first matching theme wins; anything unmatched gets the cozy default.
+// always defaulting to cottagecore (which clashes on spooky/goth books).
 const LIFESTYLE_MOODS = {
   spooky: {
     surface: 'a dark wood or black cloth surface',
@@ -436,15 +435,50 @@ const LIFESTYLE_MOODS = {
     light: 'soft warm light',
     vibe: 'whimsical and enchanted',
   },
+  patriotic: {
+    surface: 'a clean white or light wood surface',
+    props: 'red, white, and blue colored pencils, a small flag, and a few star accents',
+    light: 'bright daylight',
+    vibe: 'cheerful and celebratory',
+  },
+  seasonal: {
+    surface: 'a rustic wood surface',
+    props: 'seasonal touches like pinecones, evergreen sprigs, string lights, and a warm mug of cocoa',
+    light: 'warm cozy glow',
+    vibe: 'festive and cozy',
+  },
+  professions: {
+    surface: 'a tidy bright desk',
+    props: 'crayons and markers in primary colors and a small toy',
+    light: 'bright cheerful daylight',
+    vibe: 'playful and wholesome',
+  },
+  kids: {
+    surface: 'a bright wooden desk or light play table',
+    props: 'chunky crayons and markers in bright colors and a couple of small toys',
+    light: 'bright cheerful daylight',
+    vibe: 'playful and colorful',
+  },
+  animals: {
+    surface: 'a light wood or linen surface',
+    props: 'colored pencils, a leafy green plant, and a ceramic mug',
+    light: 'bright natural light',
+    vibe: 'fresh and cheerful',
+  },
+  cozy: {
+    surface: 'a wooden or linen surface',
+    props: 'a warm mug and a small plant',
+    light: 'soft natural light',
+    vibe: 'cozy cottagecore',
+  },
 };
-const DEFAULT_MOOD = {
-  surface: 'a wooden or linen surface',
-  props: 'a warm mug and a small plant',
-  light: 'soft natural light',
-  vibe: 'cozy cottagecore',
-};
+// Products often carry several themes; pick the mood by this fixed priority
+// (most distinctive first) rather than the order themes happen to be listed in.
+const MOOD_PRIORITY = ['spooky', 'patriotic', 'seasonal', 'fantasy', 'professions', 'kids', 'animals', 'cozy'];
+const DEFAULT_MOOD = LIFESTYLE_MOODS.cozy;
 function lifestyleMood(product) {
-  for (const t of product.themes || []) if (LIFESTYLE_MOODS[t]) return LIFESTYLE_MOODS[t];
+  const themes = new Set(product.themes || []);
+  for (const t of MOOD_PRIORITY) if (themes.has(t)) return LIFESTYLE_MOODS[t];
   return DEFAULT_MOOD;
 }
 
