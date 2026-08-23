@@ -1,7 +1,7 @@
 {
   "_readme": "This queue is now SELF-MAINTAINING. With auto_enqueue on, the publisher adds every product from data/products.json automatically, so new Etsy listings are pinned without adding IDs by hand. With recycle_after_days > 0, a product becomes eligible to re-pin that many days after it was last posted, so the daily drip keeps running once the catalogue is covered. The publisher posts a few (MAX_PER_RUN) per run and records posted/posted_at. You normally do not need to edit this file. Optional overrides: set auto_enqueue=false to only pin entries you add here; set recycle_after_days=0 to pin each product once and stop; add a `board`, `title`, or `description` to an entry to override the defaults for that product.",
   "auto_enqueue": true,
-  "recycle_after_days": 45,
+  "recycle_after_days": 14,
   "default_board": "Printable Coloring Books",
   "pins": [
     {
