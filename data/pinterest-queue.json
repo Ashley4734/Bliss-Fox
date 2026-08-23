@@ -541,19 +541,27 @@
     },
     {
       "listing_id": 4513206249,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-23T05:08:17.897Z",
+      "variant_i": 1
     },
     {
       "listing_id": 4513200254,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-23T05:09:06.024Z",
+      "variant_i": 1
     },
     {
       "listing_id": 4513207531,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-23T05:10:06.509Z",
+      "variant_i": 1
     },
     {
       "listing_id": 4552648203,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-23T05:10:50.504Z",
+      "variant_i": 1
     }
   ]
 }
