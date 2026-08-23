@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-23T00:40:47.834Z",
+  "updated": "2026-08-23T02:28:58.488Z",
   "count": 111,
   "products": [
     {
@@ -11,14 +11,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
       "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
       "price": {
-        "amount": 19.99,
+        "amount": 15,
         "currency": "USD",
-        "display": "$10.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$19.99",
-        "sale_amount": 9.99,
-        "sale_display": "$10.00"
+        "display": "$15.00"
       },
       "tags": [
         "printable grimoire",
@@ -47,14 +42,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4548301406/bliss-fox-calm-corner-kit-sel-printable",
       "image": "https://i.etsystatic.com/9660605/r/il/ebdd58/8398252078/il_570xN.8398252078_hnm9.jpg",
       "price": {
-        "amount": 17.98,
+        "amount": 13.49,
         "currency": "USD",
-        "display": "$8.99",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$17.98",
-        "sale_amount": 8.99,
-        "sale_display": "$8.99"
+        "display": "$13.49"
       },
       "tags": [
         "calm corner",
@@ -84,14 +74,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543053441/pastel-goth-coloring-book-kawaii-spooky",
       "image": "https://i.etsystatic.com/9660605/r/il/565558/8373783271/il_570xN.8373783271_jkpi.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cute coloring book",
@@ -123,14 +108,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4542184668/mystic-cottage-alchemy-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/5ef01a/8332503027/il_570xN.8332503027_hf8r.jpg",
       "price": {
-        "amount": 12.99,
+        "amount": 9.74,
         "currency": "USD",
-        "display": "$6.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$12.99",
-        "sale_amount": 6.5,
-        "sale_display": "$6.50"
+        "display": "$9.74"
       },
       "tags": [
         "coloring bundle",
@@ -159,14 +139,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4518076610/police-coloring-book-for-kids-cute",
       "image": "https://i.etsystatic.com/9660605/r/il/c3e6d9/8348051587/il_570xN.8348051587_hgwq.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "police coloring book",
@@ -197,14 +172,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526850046/tarot-cats-celestial-spells-coloring",
       "image": "https://i.etsystatic.com/9660605/r/il/015ae5/8300019644/il_570xN.8300019644_mpu5.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "tarot coloring pages",
@@ -234,14 +204,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4546846927/english-village-coloring-pages-detailed",
       "image": "https://i.etsystatic.com/9660605/r/il/0e038c/8366021791/il_570xN.8366021791_1vkp.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "english village",
@@ -270,14 +235,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4546824543/european-storefronts-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/1d342d/8366030379/il_570xN.8366030379_d3vc.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cafe coloring book",
@@ -306,14 +266,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4546831717/cozy-autumn-town-coloring-book-25",
       "image": "https://i.etsystatic.com/9660605/r/il/b7857b/8318152274/il_570xN.8318152274_mqwj.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "fall coloring book",
@@ -344,14 +299,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4546871310/mediterranean-bookshops-coloring-pages",
       "image": "https://i.etsystatic.com/9660605/r/il/76485d/8365985115/il_570xN.8365985115_s7cg.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "coloring book shop",
@@ -378,14 +328,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4546839319/european-christmas-market-coloring-pages",
       "image": "https://i.etsystatic.com/9660605/r/il/be4479/8318124092/il_570xN.8318124092_2vh6.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "coloring book",
@@ -415,14 +360,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543885841/kawaii-bakery-coloring-book-25-printable",
       "image": "https://i.etsystatic.com/9660605/r/il/37e036/8348156063/il_570xN.8348156063_l0wh.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "kawaii coloring book",
@@ -452,14 +392,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526320288/80s-retro-coloring-book-24-simple",
       "image": "https://i.etsystatic.com/9660605/r/il/db4fdf/8300769912/il_570xN.8300769912_50zw.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "80s coloring pages",
@@ -486,14 +421,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543879482/tiny-homes-beneath-flowers-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/0c0e52/8347881845/il_570xN.8347881845_7j9z.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "tiny home coloring",
@@ -524,14 +454,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543873757/woodland-tea-party-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/411e59/8299935308/il_570xN.8299935308_e9vf.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "tea party coloring",
@@ -562,14 +487,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543894662/strawberry-garden-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/ab3199/8299996680/il_570xN.8299996680_dlqv.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "strawberry pages",
@@ -599,14 +519,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528216885/cozy-european-village-coloring-book-25",
       "image": "https://i.etsystatic.com/9660605/r/il/e4a86b/8300559008/il_570xN.8300559008_epif.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cottagecore coloring",
@@ -635,14 +550,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543045979/goth-girls-coloring-book-cozy-midnight",
       "image": "https://i.etsystatic.com/9660605/r/il/a42d51/8348198907/il_570xN.8348198907_1sn7.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "goth girl coloring",
@@ -674,14 +584,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543046396/cozy-goth-homes-coloring-book-cats",
       "image": "https://i.etsystatic.com/9660605/r/il/fa30af/8300551076/il_570xN.8300551076_9278.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "goth coloring book",
@@ -712,14 +617,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543061007/spooky-bookshop-cats-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/556fc5/8347960521/il_570xN.8347960521_d3qo.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cat coloring book",
@@ -751,14 +651,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543076117/gothic-wedding-coloring-book-moody",
       "image": "https://i.etsystatic.com/9660605/r/il/77d914/8348189453/il_570xN.8348189453_at9z.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "gothic bride pages",
@@ -789,14 +684,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543068745/victorian-goth-portraits-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/e48a2b/8347866555/il_570xN.8347866555_j34x.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "victorian coloring",
@@ -826,14 +716,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543082797/dark-academia-coloring-book-moody-study",
       "image": "https://i.etsystatic.com/9660605/r/il/1bdbb7/8300466110/il_570xN.8300466110_a8jq.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "dark academia",
@@ -860,14 +745,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543088455/goth-cats-coloring-book-witchy-cottage",
       "image": "https://i.etsystatic.com/9660605/r/il/25a3a8/8348220573/il_570xN.8348220573_t9em.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "goth cat book",
@@ -898,14 +778,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543093875/bunny-garden-village-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/fe041b/8348538567/il_570xN.8348538567_ftw5.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "rabbit coloring book",
@@ -935,14 +810,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4543097817/hedgehog-coloring-book-cozy-woodland",
       "image": "https://i.etsystatic.com/9660605/r/il/1f257c/8300278210/il_570xN.8300278210_vdah.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "hedgehog pages",
@@ -973,14 +843,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4542153053/celestial-witchcraft-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/95a68e/8284487186/il_570xN.8284487186_n7zc.jpg",
       "price": {
-        "amount": 15.99,
+        "amount": 11.99,
         "currency": "USD",
-        "display": "$8.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$15.99",
-        "sale_amount": 8,
-        "sale_display": "$8.00"
+        "display": "$11.99"
       },
       "tags": [
         "coloring bundle",
@@ -1010,14 +875,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4542175190/ocean-shark-adventures-coloring-bundle",
       "image": "https://i.etsystatic.com/9660605/r/il/1971ab/8332442579/il_570xN.8332442579_eh6s.jpg",
       "price": {
-        "amount": 12.99,
+        "amount": 9.74,
         "currency": "USD",
-        "display": "$6.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$12.99",
-        "sale_amount": 6.5,
-        "sale_display": "$6.50"
+        "display": "$9.74"
       },
       "tags": [
         "coloring bundle",
@@ -1047,14 +907,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541663166/zodiac-night-magic-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/835b84/8347733079/il_570xN.8347733079_4ksp.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "zodiac signs art",
@@ -1085,14 +940,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541571735/unicorn-coloring-book-25-chibi-pages",
       "image": "https://i.etsystatic.com/9660605/r/il/8c1ef6/8348108755/il_570xN.8348108755_gocv.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "unicorn coloring",
@@ -1124,14 +974,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541645790/dragon-coloring-book-simple-fantasy",
       "image": "https://i.etsystatic.com/9660605/r/il/14f6a8/8348377111/il_570xN.8348377111_h3uy.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cute dragon pages",
@@ -1162,14 +1007,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541509384/butterfly-coloring-book-stained-glass",
       "image": "https://i.etsystatic.com/9660605/r/il/1defd3/8300051960/il_570xN.8300051960_hvsk.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "butterfly book",
@@ -1199,14 +1039,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541614953/horse-coloring-book-simple-big-horses",
       "image": "https://i.etsystatic.com/9660605/r/il/a3a842/8300675216/il_570xN.8300675216_7s86.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "horse coloring pages",
@@ -1237,14 +1072,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541534495/mushroom-cottage-coloring-book-enchanted",
       "image": "https://i.etsystatic.com/9660605/r/il/ec9eaf/8300411222/il_570xN.8300411222_lrxn.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "mushroom pages",
@@ -1275,14 +1105,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541485858/mermaid-coloring-book-ornate-ocean",
       "image": "https://i.etsystatic.com/9660605/r/il/e428a2/8300198836/il_570xN.8300198836_oge9.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "mermaid pages",
@@ -1311,14 +1136,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541555179/fairy-garden-coloring-book-cozy-cottage",
       "image": "https://i.etsystatic.com/9660605/r/il/cfc3ff/8300402348/il_570xN.8300402348_ehzq.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "fairy coloring pages",
@@ -1349,14 +1169,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541450643/floral-mandala-coloring-pages-24-bloom",
       "image": "https://i.etsystatic.com/9660605/r/il/8f252b/8348251697/il_570xN.8348251697_cpon.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "mandala flowers",
@@ -1386,14 +1201,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541529478/affirmation-coloring-book-daily-pep",
       "image": "https://i.etsystatic.com/9660605/r/il/f58e82/8348368769/il_570xN.8348368769_ikiw.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "positive quotes",
@@ -1423,14 +1233,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541192594/detailed-koi-fish-coloring-book-koi-pond",
       "image": "https://i.etsystatic.com/9660605/r/il/be6e0e/8300206856/il_570xN.8300206856_ktzr.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "koi coloring book",
@@ -1459,14 +1264,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4541152628/realistic-songbird-coloring-book-25",
       "image": "https://i.etsystatic.com/9660605/r/il/5311fe/8300490640/il_570xN.8300490640_j9n0.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "realistic birds",
@@ -1493,14 +1293,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526548049/tropical-flowers-coloring-book-vintage",
       "image": "https://i.etsystatic.com/9660605/r/il/327965/8347873837/il_570xN.8347873837_5yk3.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "tropical flowers",
@@ -1529,14 +1324,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528237721/cozy-cottage-garden-flowers-coloring",
       "image": "https://i.etsystatic.com/9660605/r/il/c43b97/8300566494/il_570xN.8300566494_4r7m.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "garden coloring book",
@@ -1565,14 +1355,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4518018058/firefighter-coloring-book-kawaii-animals",
       "image": "https://i.etsystatic.com/9660605/r/il/e1b00a/8300367046/il_570xN.8300367046_d57o.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "firefighter coloring",
@@ -1603,14 +1388,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528434053/realistic-sunflower-coloring-book-nature",
       "image": "https://i.etsystatic.com/9660605/r/il/bb591a/8347920727/il_570xN.8347920727_bziu.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "sunflower pages",
@@ -1635,16 +1415,11 @@
       "title": "Kawaii Dessert Coloring Book, 25 Printable Pages (Instant Download)",
       "description": "Print, relax, and smile with sweet treats coloring pages featuring adorable bakery characters like cupcakes, donuts, cookies, and ice cream. Sweetie Treats is a printable set of…",
       "url": "https://blissfoxstudio.etsy.com/listing/4529113032/kawaii-dessert-coloring-book-cute",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/f78b59/8348115129/il_570xN.8348115129_80x2.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "sweet treats pdf",
@@ -1674,14 +1449,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4529125266/bold-and-easy-coloring-book-bundle-75",
       "image": "https://i.etsystatic.com/9660605/r/il/28da0a/8234906881/il_570xN.8234906881_ihx9.jpg",
       "price": {
-        "amount": 12.99,
+        "amount": 9.74,
         "currency": "USD",
-        "display": "$6.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$12.99",
-        "sale_amount": 6.5,
-        "sale_display": "$6.50"
+        "display": "$9.74"
       },
       "tags": [
         "bold easy coloring",
@@ -1711,14 +1481,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528497221/boba-coloring-book-kawaii-bubble-tea",
       "image": "https://i.etsystatic.com/9660605/r/il/293f93/8348578013/il_570xN.8348578013_r9yo.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "bubble tea coloring",
@@ -1749,14 +1514,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528492528/kawaii-ramen-coloring-book-cute",
       "image": "https://i.etsystatic.com/9660605/r/il/cf5197/8348028449/il_570xN.8348028449_ii64.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "ramen coloring pages",
@@ -1787,14 +1547,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528457125/bonsai-coloring-book-vintage-botanical",
       "image": "https://i.etsystatic.com/9660605/r/il/ba184c/8348561859/il_570xN.8348561859_acv0.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "printable bonsai",
@@ -1823,14 +1578,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528429374/kawaii-cafe-coloring-book-25-printable",
       "image": "https://i.etsystatic.com/9660605/r/il/7ffdef/8348148991/il_570xN.8348148991_oydy.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cute coffee pages",
@@ -1861,14 +1611,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528417182/floral-gardens-coloring-book-bundle-3",
       "image": "https://i.etsystatic.com/9660605/r/il/40c00f/8181702672/il_570xN.8181702672_tqpl.jpg",
       "price": {
-        "amount": 12.99,
+        "amount": 9.74,
         "currency": "USD",
-        "display": "$6.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$12.99",
-        "sale_amount": 6.5,
-        "sale_display": "$6.50"
+        "display": "$9.74"
       },
       "tags": [
         "coloring bundle",
@@ -1895,14 +1640,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528357711/vintage-rose-bouquets-coloring-book-25",
       "image": "https://i.etsystatic.com/9660605/r/il/637726/8299965188/il_570xN.8299965188_nr6f.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "rose coloring pages",
@@ -1932,14 +1672,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528206340/cozy-christmas-village-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/1e0ea7/8300574572/il_570xN.8300574572_8kvr.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "christmas village",
@@ -1970,14 +1705,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528233346/cozy-bookshop-cafe-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/114176/8300582950/il_570xN.8300582950_rxqd.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "bookstore coloring",
@@ -2007,14 +1737,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528244063/birth-flower-coloring-pages-vintage",
       "image": "https://i.etsystatic.com/9660605/r/il/231be2/8300690810/il_570xN.8300690810_qifd.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "birth flower art",
@@ -2043,14 +1768,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528218000/cozy-mountain-town-coloring-book-25",
       "image": "https://i.etsystatic.com/9660605/r/il/3dd150/8300519058/il_570xN.8300519058_b3tn.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "mountain coloring",
@@ -2080,14 +1800,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4528230999/cozy-autumn-town-coloring-book-storybook",
       "image": "https://i.etsystatic.com/9660605/r/il/faad67/8348494251/il_570xN.8348494251_h61y.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "fall coloring book",
@@ -2118,14 +1833,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526541561/vintage-wildflower-botanicals-coloring",
       "image": "https://i.etsystatic.com/9660605/r/il/46ff4e/8347841971/il_570xN.8347841971_60mp.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "wildflower pages",
@@ -2155,14 +1865,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527018409/kawaii-animal-coloring-book-25-big-eyed",
       "image": "https://i.etsystatic.com/9660605/r/il/843d28/8348163419/il_570xN.8348163419_cxr4.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cute animal pages",
@@ -2193,14 +1898,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527027865/kawaii-plant-coloring-book-25-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/3df93c/8348135501/il_570xN.8348135501_b2rw.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "succulent coloring",
@@ -2231,14 +1931,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527017652/kawaii-dessert-coloring-book-25-treat",
       "image": "https://i.etsystatic.com/9660605/r/il/200878/8300227826/il_570xN.8300227826_6s6t.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cute dessert pages",
@@ -2269,14 +1964,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527046792/kawaii-space-coloring-book-chibi",
       "image": "https://i.etsystatic.com/9660605/r/il/a05715/8300234618/il_570xN.8300234618_8qqp.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "space coloring pages",
@@ -2307,14 +1997,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527074854/grimoires-spellbooks-coloring-book-moody",
       "image": "https://i.etsystatic.com/9660605/r/il/15b62d/8300287000/il_570xN.8300287000_pw3r.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "grimoire coloring",
@@ -2346,14 +2031,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527056637/kawaii-food-coloring-book-25-pages-chibi",
       "image": "https://i.etsystatic.com/9660605/r/il/3ff863/8300249212/il_570xN.8300249212_lqmn.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cute food pages",
@@ -2384,14 +2064,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526786998/witchy-crystals-herbs-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/4a6b98/8300499934/il_570xN.8300499934_rs2q.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "crystal pages pdf",
@@ -2421,14 +2096,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4527056606/chibi-seasons-coloring-book-25-cozy-year",
       "image": "https://i.etsystatic.com/9660605/r/il/26c676/8348522263/il_570xN.8348522263_308t.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "spring coloring",
@@ -2461,14 +2131,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526677440/witchy-familiar-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/e7eb9a/8300393584/il_570xN.8300393584_6kv1.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "witch cat coloring",
@@ -2499,14 +2164,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526563077/vintage-botanical-bouquet-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/47348e/8348553967/il_570xN.8348553967_k0db.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "floral coloring",
@@ -2535,14 +2195,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526487803/bug-coloring-book-25-simple-pages-for",
       "image": "https://i.etsystatic.com/9660605/r/il/d91027/8300651836/il_570xN.8300651836_ev10.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "insect coloring book",
@@ -2573,14 +2228,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526554287/succulent-cactus-coloring-book-vintage",
       "image": "https://i.etsystatic.com/9660605/r/il/5789ab/8300043692/il_570xN.8300043692_9u71.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cactus coloring",
@@ -2609,14 +2259,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526539578/vintage-rose-botanical-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/d26294/8348004915/il_570xN.8348004915_al08.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "rose coloring pages",
@@ -2646,14 +2291,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526514224/arctic-animals-coloring-book-easy-polar",
       "image": "https://i.etsystatic.com/9660605/r/il/8fc186/8348638371/il_570xN.8348638371_gq3k.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "polar animal pages",
@@ -2684,14 +2324,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526618383/witchy-apothecary-coloring-book-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/07d8a5/8348038861/il_570xN.8348038861_jov8.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "witchy coloring book",
@@ -2721,14 +2356,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526516609/dinosaur-coloring-book-big-friendly",
       "image": "https://i.etsystatic.com/9660605/r/il/acc56d/8300456222/il_570xN.8300456222_ajak.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "dino coloring book",
@@ -2758,14 +2388,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526460501/reptile-coloring-book-easy-critters-big",
       "image": "https://i.etsystatic.com/9660605/r/il/701865/8300128170/il_570xN.8300128170_4m5t.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "amphibian coloring",
@@ -2795,14 +2420,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526439985/toddler-coloring-pages-baby-animals-bold",
       "image": "https://i.etsystatic.com/9660605/r/il/5c433a/8300726954/il_570xN.8300726954_6ssq.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "easy animal pages",
@@ -2833,14 +2453,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526427378/bold-birds-coloring-book-easy-simple",
       "image": "https://i.etsystatic.com/9660605/r/il/61f9c4/8348593297/il_570xN.8348593297_1dmp.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "bird coloring pages",
@@ -2871,14 +2486,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526398886/woodland-animals-coloring-book-25-easy",
       "image": "https://i.etsystatic.com/9660605/r/il/fc421f/8300346316/il_570xN.8300346316_fsgh.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "forest animal book",
@@ -2908,14 +2518,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526095968/easy-cat-coloring-book-40-simple-kitten",
       "image": "https://i.etsystatic.com/9660605/r/il/2389df/8165803772/il_570xN.8165803772_qd3w.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "bold and easy",
@@ -2945,14 +2550,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526376124/bold-easy-cats-coloring-book-simple",
       "image": "https://i.etsystatic.com/9660605/r/il/02a3a0/8300635342/il_570xN.8300635342_b4wn.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "cat coloring pages",
@@ -2982,14 +2582,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526383586/bold-easy-dog-coloring-book-25-simple",
       "image": "https://i.etsystatic.com/9660605/r/il/5bc196/8348332651/il_570xN.8348332651_htts.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "dog coloring pages",
@@ -3021,14 +2616,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526242871/cottagecore-coloring-book-spring-garden",
       "image": "https://i.etsystatic.com/9660605/r/il/983415/8300059634/il_570xN.8300059634_j07k.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "cottagecore pages",
@@ -3058,14 +2648,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526332486/90s-coloring-book-retro-toys-tech-treats",
       "image": "https://i.etsystatic.com/9660605/r/il/8b80f3/8300762490/il_570xN.8300762490_kf59.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "90s coloring pages",
@@ -3094,14 +2679,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526300812/cozy-fireside-coloring-book-winter",
       "image": "https://i.etsystatic.com/9660605/r/il/1fa466/8347835351/il_570xN.8347835351_9ynw.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "cozy fireplace art",
@@ -3132,14 +2712,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526397985/safari-animals-coloring-book-25-bold",
       "image": "https://i.etsystatic.com/9660605/r/il/1b3282/8300104472/il_570xN.8300104472_744y.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "jungle coloring book",
@@ -3170,14 +2745,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526382617/farm-animal-coloring-book-easy-big",
       "image": "https://i.etsystatic.com/9660605/r/il/050bde/8348278791/il_570xN.8348278791_64ai.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "farm animal book",
@@ -3207,14 +2777,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526199576/cozy-tea-reading-nooks-coloring-book-40",
       "image": "https://i.etsystatic.com/9660605/r/il/561f0e/8300011732/il_570xN.8300011732_kwux.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "cozy coloring",
@@ -3243,14 +2808,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526252289/cozy-autumn-harvest-coloring-pages",
       "image": "https://i.etsystatic.com/9660605/r/il/6c67b1/8300736264/il_570xN.8300736264_6w5y.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "pumpkin coloring",
@@ -3281,14 +2841,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4526415656/ocean-animals-coloring-book-easy-sea",
       "image": "https://i.etsystatic.com/9660605/r/il/b52cfb/8348084195/il_570xN.8348084195_gg6a.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "ocean coloring pages",
@@ -3318,14 +2873,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4514918065/juneteenth-coloring-book-heritage-and",
       "image": "https://i.etsystatic.com/9660605/r/il/2c9a31/8301466102/il_570xN.8301466102_5yp1.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "juneteenth coloring",
@@ -3356,14 +2906,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4518128108/cozy-beach-town-coloring-book-adult",
       "image": "https://i.etsystatic.com/9660605/r/il/17b17f/8348486719/il_570xN.8348486719_8y1k.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "beach coloring book",
@@ -3394,14 +2939,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4518071130/tiny-teacher-pals-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/56bab7/8300004604/il_570xN.8300004604_jfyv.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "teacher colouring",
@@ -3432,14 +2972,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4518063500/chibi-plumber-animals-coloring-book-pets",
       "image": "https://i.etsystatic.com/9660605/r/il/c47652/8300167608/il_570xN.8300167608_7yrp.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "plumber colouring",
@@ -3470,14 +3005,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4518039961/kawaii-animal-robot-coloring-book-chibi",
       "image": "https://i.etsystatic.com/9660605/r/il/705f93/8300338500/il_570xN.8300338500_7s17.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "kawaii colouring",
@@ -3508,14 +3038,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4517701535/cozy-halloween-cuties-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/e1c76b/8300542092/il_570xN.8300542092_lw3w.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "halloween coloring",
@@ -3548,14 +3073,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4517691562/kawaii-soccer-animals-coloring-book-40",
       "image": "https://i.etsystatic.com/9660605/r/il/686c03/8347970623/il_570xN.8347970623_6odm.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "soccer colouring",
@@ -3586,14 +3106,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4517676699/dad-coloring-book-animal-pals-fathers",
       "image": "https://i.etsystatic.com/9660605/r/il/9d7734/8348270845/il_570xN.8348270845_58fy.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "dad colouring book",
@@ -3624,14 +3139,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4517721750/cozy-winter-holidays-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/600626/8348405743/il_570xN.8348405743_7sv5.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "christmas coloring",
@@ -3663,14 +3173,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4517731791/kawaii-back-to-school-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/e1267f/8348614065/il_570xN.8348614065_b4u3.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "back to school pdf",
@@ -3702,14 +3207,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4517651197/diwali-coloring-book-kawaii-critters-40",
       "image": "https://i.etsystatic.com/9660605/r/il/db1fba/8300449480/il_570xN.8300449480_sppt.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "diwali colouring",
@@ -3740,14 +3240,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4516998417/kawaii-coloring-book-bold-and-easy",
       "image": "https://i.etsystatic.com/9660605/r/il/4a98c5/8348424593/il_570xN.8348424593_bpfq.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "kawaii coloring book",
@@ -3778,14 +3273,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4514178446/wedding-coloring-book-30-pages-kids",
       "image": "https://i.etsystatic.com/9660605/r/il/3ac7a6/8299958236/il_570xN.8299958236_o9fp.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "wedding colouring",
@@ -3815,14 +3305,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4514178592/shark-coloring-book-for-kids-underwater",
       "image": "https://i.etsystatic.com/9660605/r/il/c47118/8300087922/il_570xN.8300087922_oin4.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "shark coloring pages",
@@ -3854,14 +3339,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4514177569/summer-camp-activity-coloring-book-30",
       "image": "https://i.etsystatic.com/9660605/r/il/d4de24/8300035940/il_570xN.8300035940_p8o1.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "camping coloring",
@@ -3891,14 +3371,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4513975604/ocean-coloring-book-deep-sea-creatures",
       "image": "https://i.etsystatic.com/9660605/r/il/2c5cbd/8347990637/il_570xN.8347990637_bp0o.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "ocean coloring book",
@@ -3928,14 +3403,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4514178734/road-trip-coloring-pages-for-kids-6-10",
       "image": "https://i.etsystatic.com/9660605/r/il/066ca3/8348014493/il_570xN.8348014493_jvs6.jpg",
       "price": {
-        "amount": 5.99,
+        "amount": 4.49,
         "currency": "USD",
-        "display": "$3.00",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$5.99",
-        "sale_amount": 3,
-        "sale_display": "$3.00"
+        "display": "$4.49"
       },
       "tags": [
         "road trip colouring",
@@ -3965,14 +3435,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4513997601/goth-coloring-book-gothic-lolita-anime",
       "image": "https://i.etsystatic.com/9660605/r/il/672722/8348211015/il_570xN.8348211015_87p2.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "goth coloring book",
@@ -4002,14 +3467,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4513208741/electrician-coloring-book-chibi-animals",
       "image": "https://i.etsystatic.com/9660605/r/il/0d0b21/8348325031/il_570xN.8348325031_tesd.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "electrician gift",
@@ -4040,14 +3500,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4513206249/america-250-coloring-book-patriotic",
       "image": "https://i.etsystatic.com/9660605/r/il/523092/8300755322/il_570xN.8300755322_djsk.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "patriotic coloring",
@@ -4078,14 +3533,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4513200254/chibi-animal-emt-coloring-book-rescue",
       "image": "https://i.etsystatic.com/9660605/r/il/849027/8300421494/il_570xN.8300421494_ej97.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "ambulance coloring",
@@ -4116,14 +3566,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4513207531/kawaii-construction-trucks-coloring-book",
       "image": "https://i.etsystatic.com/9660605/r/il/b4fde1/8300709094/il_570xN.8300709094_6wyz.jpg",
       "price": {
-        "amount": 6.99,
+        "amount": 5.24,
         "currency": "USD",
-        "display": "$3.50",
-        "on_sale": true,
-        "percent_off": 50,
-        "original_display": "$6.99",
-        "sale_amount": 3.5,
-        "sale_display": "$3.50"
+        "display": "$5.24"
       },
       "tags": [
         "truck coloring book",
