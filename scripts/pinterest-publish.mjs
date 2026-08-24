@@ -353,9 +353,12 @@ async function generateCopy(product, boardName) {
   const keywords = (product.tags || []).slice(0, 8).join(', ');
   const system =
     'You are a Pinterest SEO copywriter for Bliss Fox Studio, a shop that sells ' +
-    'printable, instant-download digital coloring books. Pinterest is a search engine: ' +
-    'lead with the words a shopper would actually type, keep it natural and human, and ' +
-    'never invent product features that are not provided.';
+    'printable, instant-download digital coloring books. Pinterest is a search engine, so ' +
+    'every title must READ AS A SEARCH PHRASE, not a product name: lead with the exact words ' +
+    'a shopper types — the subject plus "coloring book" or "coloring pages", plus the ' +
+    'audience (for adults, for kids, for adults & teens) and a format qualifier (Printable ' +
+    'PDF / Instant PDF) where natural. Keep it human, never keyword-stuff, and never invent ' +
+    'features that are not in the product details.';
   const user = [
     `Product: "${product.title}"`,
     product.description ? `Details: ${clamp(product.description, 300)}` : '',
@@ -365,9 +368,14 @@ async function generateCopy(product, boardName) {
     `Current month: ${month}`,
     `Angle to emphasize this time: ${angle}`,
     '',
+    'Good titles read as a search phrase, not a product name. Match this style exactly:',
+    '  • "Halloween Coloring Pages for Adults — Spooky Bookshop Scenes, Printable PDF"',
+    '  • "Fall Coloring Pages for Adults — Cozy Autumn Town Scenes, Printable PDF"',
+    '  • "Zodiac Coloring Book for Adults — Celestial Astrology Pages, Instant PDF"',
+    '',
     'Reply in EXACTLY this format and nothing else (no preamble, no markdown, one line each):',
-    'TITLE: <pin title, max 60 characters, LEAD with the main search keyword/theme, no hashtags, no "PDF" or "instant download">',
-    'DESCRIPTION: <1-2 natural sentences, max 300 characters. Put the most important search keywords in the FIRST sentence, then a soft call to action. No hashtags.>',
+    'TITLE: <40-95 characters. Structure: "<primary search phrase with \'coloring book\' or \'coloring pages\' + audience> — <2-4 word scene/descriptor>, <Printable PDF | Instant PDF>". LEAD with the words a shopper types. No hashtags.>',
+    'DESCRIPTION: <2 natural sentences, max 300 characters. Sentence 1 packs the top search keywords, names 2-4 concrete things in the book (e.g. pumpkins, black cats, potion shelves), and says who it is for. Sentence 2 is a soft call to action mentioning printable / instant download. No hashtags.>',
     'HASHTAGS: <2-3 space-separated lowercase hashtags, each starting with #>',
     'ALT: <plain description of the image for accessibility, max 200 characters>',
   ]
@@ -390,7 +398,7 @@ async function generateCopy(product, boardName) {
   const tags = (parsed.hashtags.match(/#[\w]+/g) || []).slice(0, 3);
   const description = clamp(`${parsed.description} ${tags.join(' ')}`.trim(), 500);
   return {
-    title: clamp(parsed.title, 70),
+    title: clamp(parsed.title, 100),
     description,
     alt_text: parsed.alt ? clamp(parsed.alt, 500) : undefined,
   };
