@@ -13,13 +13,11 @@ name: Pinterest free pages
 # rendered locally by pipeline/free_pages.py and committed to this repo.
 
 on:
-  # No schedule yet — this campaign is manual-only until the first batch has been
-  # reviewed. To start the daily drip, uncomment the two crons below (2 Pins/day,
-  # 1 per run) and push; scheduled runs post automatically.
-  #
-  # schedule:
-  #   - cron: '41 14 * * *' # ~10:41am ET
-  #   - cron: '19 21 * * *' # ~5:19pm ET
+  # 2 Pins/day, 1 per run, on top of the product job's 5/day. Minutes are off the
+  # top of the hour because GitHub delays or drops crons scheduled at :00.
+  schedule:
+    - cron: '41 14 * * *' # ~10:41am ET
+    - cron: '19 21 * * *' # ~5:19pm ET
   workflow_dispatch:
     inputs:
       mode:
