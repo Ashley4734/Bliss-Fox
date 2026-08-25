@@ -211,9 +211,37 @@ function clamp(text, max) {
   return clean.length <= max ? clean : clean.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
 }
 
+// A theme only earns a hashtag if the book's own title backs it up. Themes are
+// derived from the Etsy title *and tags*, and tags describe who might buy the
+// thing rather than what is drawn on it — the affirmations book carries the tag
+// "teacher desk decor", which made it "professions" and would have pinned it as
+// #communityhelpers. Titles don't have that problem. Board choice still uses the
+// full theme list; only the hashtags are held to this stricter test.
+const THEME_TITLE_WORDS = {
+  cozy: ['cozy', 'cosy', 'cottagecore', 'cottage', 'coffee', 'cafe', 'tea'],
+  spooky: ['spooky', 'halloween', 'goth', 'gothic', 'witch', 'witchy', 'ghost', 'skeleton', 'pumpkin'],
+  fantasy: ['fantasy', 'dragon', 'magic', 'magical', 'fairy', 'mermaid', 'unicorn', 'celestial', 'zodiac'],
+  animals: ['animal', 'cat', 'kitten', 'dog', 'fox', 'kawaii', 'chibi', 'shark', 'bunny', 'hedgehog', 'horse', 'koi', 'bird'],
+  seasonal: ['christmas', 'winter', 'valentine', 'easter', 'thanksgiving', 'diwali', 'juneteenth', 'wedding', 'autumn', 'fall', 'harvest', 'festive', 'holiday'],
+  professions: ['firefighter', 'police', 'teacher', 'doctor', 'nurse', 'mechanic', 'construction', 'electrician', 'plumber', 'emt'],
+  kids: ['kid', 'kids', 'children', 'toddler', 'preschool'],
+  patriotic: ['patriotic', 'america', 'americana', 'usa', 'independence', 'freedom'],
+};
+
+function titleBacks(theme, title) {
+  const words = THEME_TITLE_WORDS[theme];
+  if (!words) return false;
+  const h = title.toLowerCase();
+  return words.some((w) =>
+    new RegExp(`\\b${w}${w.length >= 5 ? '[a-z]*' : 's?'}\\b`).test(h)
+  );
+}
+
 function hashtagsFor(item) {
   const tags = [];
-  for (const t of item.themes || []) if (THEME_HASHTAGS[t]) tags.push(THEME_HASHTAGS[t]);
+  for (const t of item.themes || []) {
+    if (THEME_HASHTAGS[t] && titleBacks(t, item.title || '')) tags.push(THEME_HASHTAGS[t]);
+  }
   tags.push('#freeprintable', '#coloringpages');
   return [...new Set(tags)].slice(0, 3).join(' ');
 }
