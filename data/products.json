@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-25T00:38:47.010Z",
+  "updated": "2026-08-25T01:16:30.676Z",
   "count": 111,
   "products": [
     {
@@ -873,7 +873,7 @@
       "title": "Ocean Shark Adventures Coloring Bundle, 99 Pages, Printable PDF (Instant Download)",
       "description": "Ocean Shark Adventures: a bundle of 3 printable coloring books (99 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
       "url": "https://blissfoxstudio.etsy.com/listing/4542175190/ocean-shark-adventures-coloring-bundle",
-      "image": "https://i.etsystatic.com/9660605/r/il/1971ab/8332442579/il_570xN.8332442579_eh6s.jpg",
+      "image": "",
       "price": {
         "amount": 9.74,
         "currency": "USD",
@@ -1221,7 +1221,6 @@
         "manifest journal"
       ],
       "themes": [
-        "cozy",
         "professions"
       ],
       "created": 1784683229
@@ -2927,7 +2926,6 @@
       ],
       "themes": [
         "cozy",
-        "animals",
         "seasonal"
       ],
       "created": 1781696214
@@ -3193,7 +3191,6 @@
         "teacher gift idea"
       ],
       "themes": [
-        "cozy",
         "animals",
         "professions",
         "kids"
@@ -3423,7 +3420,6 @@
         "travel day activity"
       ],
       "themes": [
-        "animals",
         "kids"
       ],
       "created": 1780247513
