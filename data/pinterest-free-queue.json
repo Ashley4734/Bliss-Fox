@@ -1,0 +1,420 @@
+{
+  "_readme": "Self-maintaining ledger for the FREE-PAGE Pin campaign. Every entry in data/free-pages.json is enqueued automatically; recycle_after_days makes a page eligible to re-pin (with a different copy angle) that many days after its last post. You normally do not need to edit this file.",
+  "auto_enqueue": true,
+  "recycle_after_days": 30,
+  "free_board": "Free Printable Coloring Pages",
+  "pins": [
+    {
+      "slug": "80s-nostalgia-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "90s-nostalgia-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "daily-affirmations-positive-quotes-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "arctic-polar-animals-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "birth-month-flowers-coloring-book-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "boba-tea-2026-06-26",
+      "posted": false
+    },
+    {
+      "slug": "birds-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "cats-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "dogs-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "bonsai-trees-2026-06-26",
+      "posted": false
+    },
+    {
+      "slug": "bugs-insects-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "bunny-garden-village-2026-07-24",
+      "posted": false
+    },
+    {
+      "slug": "stained-glass-butterflies-blooms-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "emt-and-rescue-heroes-coloring-book-2026-05-14",
+      "posted": false
+    },
+    {
+      "slug": "plumber-coloring-book-2026-05-15",
+      "posted": false
+    },
+    {
+      "slug": "chibi-seasons-2026-06-23",
+      "posted": false
+    },
+    {
+      "slug": "spring-cottage-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "autumn-harvest-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "cozy-autumn-town-2026-07-30",
+      "posted": false
+    },
+    {
+      "slug": "cozy-autumn-town-coloring-scenes-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "cozy-beach-town-adult-coloring-book-2026-05-31",
+      "posted": false
+    },
+    {
+      "slug": "cozy-bookshop-cafe-coloring-scenes-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "cozy-christmas-village-coloring-scenes-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "cozy-cottage-garden-flowers-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "cozy-european-village-coloring-scenes-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "winter-hearth-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "cozy-goth-homes-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "cozy-halloween-kawaii-animals-coloring-book-2026-06-06",
+      "posted": false
+    },
+    {
+      "slug": "cozy-mountain-town-coloring-scenes-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "tea-reading-nook-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "cozy-winter-holidays-around-the-world-coloring-book-2026-06-06",
+      "posted": false
+    },
+    {
+      "slug": "fathers-day-cute-animal-dads-coloring-book-2026-06-06",
+      "posted": false
+    },
+    {
+      "slug": "dark-academia-students-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "koi-fish-2026-07-20",
+      "posted": false
+    },
+    {
+      "slug": "dinosaurs-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "diwali-festival-of-lights-coloring-book-2026-06-06",
+      "posted": false
+    },
+    {
+      "slug": "cute-dragons-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "electrician-coloring-book-2026-05-15",
+      "posted": false
+    },
+    {
+      "slug": "english-village-street-scenes-2026-07-30",
+      "posted": false
+    },
+    {
+      "slug": "european-christmas-markets-2026-07-30",
+      "posted": false
+    },
+    {
+      "slug": "cozy-european-storefrontscafes-2026-07-30",
+      "posted": false
+    },
+    {
+      "slug": "fairy-garden-friends-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "farm-animals-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "firefighter-coloring-book-2026-05-14",
+      "posted": false
+    },
+    {
+      "slug": "floral-mandalas-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "goth-cats-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "goth-girls-and-their-pets-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "goth-girls-2026-05-30",
+      "posted": false
+    },
+    {
+      "slug": "gothic-brides-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "grimoires-spellbooks-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "hedgehog-cottage-days-2026-07-24",
+      "posted": false
+    },
+    {
+      "slug": "bold-easy-horses-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "juneteenth-heritage-freedom-2026-06-01",
+      "posted": false
+    },
+    {
+      "slug": "cozy-kawaii-tiny-shops-2026-06-05",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-animals-2026-06-23",
+      "posted": false
+    },
+    {
+      "slug": "future-builder-coloring-book-2026-05-15",
+      "posted": false
+    },
+    {
+      "slug": "back-to-school-kawaii-classroom-coloring-book-2026-06-06",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-bakery-treats-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-cafe-coffee-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "big-machines-at-work-coloring-book-2026-05-15",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-sweets-desserts-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-sweets-desserts-2026-06-23",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-food-drinks-2026-06-23",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-plants-succulents-2026-06-23",
+      "posted": false
+    },
+    {
+      "slug": "police-officer-coloring-book-2026-05-14",
+      "posted": false
+    },
+    {
+      "slug": "ramen-noodles-2026-06-26",
+      "posted": false
+    },
+    {
+      "slug": "soccer-around-the-world-coloring-book-2026-06-06",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-space-2026-06-23",
+      "posted": false
+    },
+    {
+      "slug": "mediterranean-bookshops-2026-07-30",
+      "posted": false
+    },
+    {
+      "slug": "magical-mermaids-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "enchanted-mushroom-cottage-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "sea-creatures-2026-05-30",
+      "posted": false
+    },
+    {
+      "slug": "ocean-animals-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "pastel-goth-cuties-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "americas-250th-anniversery-2026-05-21",
+      "posted": false
+    },
+    {
+      "slug": "cute-birds-2026-07-20",
+      "posted": false
+    },
+    {
+      "slug": "sunflowers-2026-06-26",
+      "posted": false
+    },
+    {
+      "slug": "reptiles-amphibians-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "road-trip-kids-activity-book-2026-05-31",
+      "posted": false
+    },
+    {
+      "slug": "safari-jungle-animals-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "shark-coloring-book-2026-05-31",
+      "posted": false
+    },
+    {
+      "slug": "spooky-bookshops-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "the-secret-strawberry-garden-2026-07-24",
+      "posted": false
+    },
+    {
+      "slug": "succulents-cacti-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "summer-camp-activity-bundle-2026-05-31",
+      "posted": false
+    },
+    {
+      "slug": "tarot-celestial-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "tiny-homes-beneath-the-flowers-2026-07-24",
+      "posted": false
+    },
+    {
+      "slug": "teacher-coloring-book-2026-05-15",
+      "posted": false
+    },
+    {
+      "slug": "baby-animals-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "tropical-flowers-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "kawaii-unicorns-2026-07-21",
+      "posted": false
+    },
+    {
+      "slug": "victorian-goth-portraits-2026-07-23",
+      "posted": false
+    },
+    {
+      "slug": "bouquets-arrangements-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "roses-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "vintage-rose-bouquets-2026-06-25",
+      "posted": false
+    },
+    {
+      "slug": "wildflowers-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "wedding-kids-table-activity-book-2026-05-31",
+      "posted": false
+    },
+    {
+      "slug": "potions-apothecary-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "crystals-herbs-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "familiars-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "forest-woodland-animals-2026-06-22",
+      "posted": false
+    },
+    {
+      "slug": "woodland-tea-parties-2026-07-24",
+      "posted": false
+    },
+    {
+      "slug": "zodiac-celestial-nights-2026-07-21",
+      "posted": false
+    }
+  ]
+}
