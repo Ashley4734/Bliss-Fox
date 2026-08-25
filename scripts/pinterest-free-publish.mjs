@@ -75,6 +75,36 @@ const THEME_HASHTAGS = {
   patriotic: '#usa',
 };
 
+// Order the queue by what actually earns traffic, not alphabetically. The
+// 2026-07-26 shop audit measured views/listing/day by theme: holiday & seasonal
+// 1.02, cozy scenes 0.81, goth/witchy 0.80, floral 0.48, kawaii 0.39, plain
+// animals 0.19, careers 0.18. Lower rank posts first; untagged sits mid-table.
+const THEME_RANK = {
+  seasonal: 0, cozy: 1, spooky: 2, fantasy: 3, patriotic: 4, kids: 5, animals: 6, professions: 7,
+};
+const UNTAGGED_RANK = 4;
+
+// Month (0=Jan) -> themes to push to the front, so timely pages go out while the
+// search traffic is ramping. The audit's finding was that seasonal books need a
+// 6-8 week lead, so Halloween starts in August, not October.
+const SEASONAL_FIRST = {
+  0: ['cozy'],
+  1: ['seasonal'],
+  4: ['patriotic'],
+  5: ['patriotic'],
+  6: ['patriotic'],
+  7: ['spooky', 'seasonal'],
+  8: ['spooky', 'seasonal'],
+  9: ['spooky', 'seasonal'],
+  10: ['seasonal'],
+  11: ['seasonal'],
+};
+
+function themeRank(item) {
+  const ranks = (item.themes || []).map((t) => THEME_RANK[t]).filter((n) => n !== undefined);
+  return ranks.length ? Math.min(...ranks) : UNTAGGED_RANK;
+}
+
 // Rotating title/description angles so a recycled Pin for the same page reads
 // differently. Index comes from the ledger's angle_i, advanced on each post.
 const TITLE_ANGLES = [
@@ -308,19 +338,26 @@ async function runPublish(token) {
   const recyclable = queue.pins
     .filter((e) => e.posted && bySlug.has(e.slug) && eligibleToPost(e, queue.recycle_after_days, now))
     .sort((a, b) => Date.parse(a.posted_at || 0) - Date.parse(b.posted_at || 0));
-  const candidates = [...neverPosted, ...recyclable];
+  const boost = SEASONAL_FIRST[new Date().getMonth()] || [];
+  const isBoosted = (e) => (bySlug.get(e.slug).themes || []).some((t) => boost.includes(t));
+  const candidates = [...neverPosted, ...recyclable]
+    .map((e, i) => ({ e, i, b: isBoosted(e) ? 0 : 1, r: themeRank(bySlug.get(e.slug)) }))
+    .sort((x, y) => x.b - y.b || x.r - y.r || x.i - y.i)
+    .map((x) => x.e);
 
   console.log(
     `Free-page queue: ${queue.pins.length} page(s); ${neverPosted.length} never-posted, ` +
-      `${recyclable.length} recycle-eligible. Publishing up to ${MAX_PER_RUN}` +
-      (DRY_RUN ? ' (DRY RUN)…' : '…')
+      `${recyclable.length} recycle-eligible.` +
+      (boost.length ? ` Seasonal boost this month: ${boost.join(', ')}.` : '') +
+      ` Publishing up to ${MAX_PER_RUN}` + (DRY_RUN ? ' (DRY RUN)…' : '…')
   );
 
   const boards = candidates.length ? await listBoards(token) : [];
-  let published = 0;
+  let published = 0;   // Pins actually created
+  let previewed = 0;   // dry-run only: what a real run would have posted
 
   for (const entry of candidates) {
-    if (published >= MAX_PER_RUN) break;
+    if (published + previewed >= MAX_PER_RUN) break;
     const item = bySlug.get(entry.slug);
     if (!item) continue;
 
@@ -341,7 +378,7 @@ async function runPublish(token) {
       console.log(`        link: ${link}`);
       console.log(`        img:  ${imageUrl}`);
       console.log(`        desc: ${copy.description}`);
-      published++;
+      previewed++;
       continue;
     }
 
@@ -369,11 +406,14 @@ async function runPublish(token) {
     }
   }
 
+  if (DRY_RUN) {
+    console.log(`\nDRY RUN — nothing was posted. ${previewed} Pin(s) would have gone out.`);
+  }
   if (dirty) {
     await writeFile(QUEUE_FILE, JSON.stringify(queue, null, 2) + '\n', 'utf8');
-    console.log(`\nUpdated data/pinterest-free-queue.json (${published} newly posted this run).`);
+    console.log(`Updated data/pinterest-free-queue.json (${published} newly posted this run).`);
   } else {
-    console.log(`\nNo changes (${published} posted).`);
+    console.log(`No queue changes (${published} posted).`);
   }
 }
 

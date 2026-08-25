@@ -152,11 +152,24 @@ const THEME_KEYWORDS = {
   patriotic: ['patriotic', 'america', 'usa', 'independence', 'july', 'flag', 'freedom'],
 };
 
+// Match a theme keyword against the haystack. A bare substring test is wrong:
+// it tagged the affirmations book "cozy" because 'tea' sits inside "teacher",
+// and beach/road-trip books "animals" because 'cat' sits inside "vacation".
+// Length decides how forgiving to be:
+//   >= 5 chars — must start a word, any suffix allowed, so 'relax' still catches
+//                "relaxing" and 'witch' catches "witchy" and "witchcraft";
+//   <  5 chars — whole word only (plus an optional plural), so 'tea' matches
+//                "tea party" but not "teacher", and 'cat' not "vacation".
+function keywordMatches(haystack, word) {
+  const tail = word.length >= 5 ? '[a-z]*' : 's?';
+  return new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}${tail}\\b`).test(haystack);
+}
+
 function deriveThemes(title, tags) {
   const haystack = (title + ' ' + tags.join(' ')).toLowerCase();
   const themes = [];
   for (const [theme, words] of Object.entries(THEME_KEYWORDS)) {
-    if (words.some((w) => haystack.includes(w))) themes.push(theme);
+    if (words.some((w) => keywordMatches(haystack, w))) themes.push(theme);
   }
   return themes;
 }
