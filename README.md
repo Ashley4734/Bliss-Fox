@@ -183,6 +183,73 @@ PINTEREST_APP_ID=... PINTEREST_APP_SECRET=... PINTEREST_REFRESH_TOKEN=... \
 `MODE=publish` posts up to `MAX_PER_RUN` (default 5) eligible Pins; `DRY_RUN=1`
 logs what would post without calling the API.
 
+## Free coloring pages (lead magnet)
+
+Every coloring book gives away **one real page from the book** at
+`/free/<slug>`, and `/free` is the gallery of all of them. The pages are free
+with no email gate: the funnel is Pinterest → free page → Etsy, and an email
+wall at the top of it costs more traffic than it earns.
+
+The assets are **not** generated in this repo. `pipeline/free_pages.py` in the
+`etsy-coloring-studio` repo (which is where the actual page art lives) renders
+them and writes them here:
+
+```bash
+# from ~/etsy-coloring-studio, against a checkout of this repo
+./venv/bin/python pipeline/free_pages.py --site-dir /path/to/Bliss-Fox
+```
+
+It emits, per book:
+
+| Path | What |
+|---|---|
+| `free/pages/<slug>.pdf` | the download — US Letter, 300 DPI, bilevel (~100 KB) |
+| `assets/free/<slug>.jpg` | web preview shown on the site |
+| `assets/pins/<slug>.jpg` | the Pinterest pin — the page art alone, filling the frame |
+| `free/<slug>.html` | landing page (the Pin's destination) |
+| `data/free-pages.json` | manifest — the Pin publisher reads this |
+
+**Which page gets given away** is chosen automatically: the page closest to that
+book's *own median* ink density. An absolute threshold doesn't work here — ink
+coverage varies ~50× between a fine mandala book and a bold kawaii one, and
+counting dark pixels on a downscale erases hairline art entirely (a dense
+mermaid page scores near zero and looks blank). Vision-QA-flagged pages,
+near-duplicates and blank pages are excluded, and `page_001` is deprioritised
+because it is the style-lock reference and usually already the listing hero.
+
+Re-running the script is idempotent — the same page is picked each time unless
+the book's art changes.
+
+**Pin dimensions follow the page, not the other way round.** 77 books render portrait
+pages (0.690 w:h), which cover Pinterest's preferred 2:3 frame losing ~17px a side —
+the drawn page border sits further in than that, so it survives. The other 26 render
+square pages; cropping those to 2:3 would cut a third of their width off, so they get a
+square 1000×1000 pin instead, which Pinterest accepts. Either way the art is never
+letterboxed and fills 100% of the pin. `--pin-style` still offers the captioned layouts
+(`tall`, `card`, `bleed`) if the wording is ever wanted back.
+
+### Free-page Pins
+
+`scripts/pinterest-free-publish.mjs` + `.github/workflows/pinterest-free-publish.yml`
+post these to Pinterest, **separately** from the product Pin job so the campaign
+can be paused or retimed on its own:
+
+- 2 Pins/day (14:41 and 21:19 UTC), 1 per run.
+- Links go to `blissfoxstudio.com/free/<slug>`, not Etsy — an on-domain link on
+  a claimed domain, which Pinterest distributes better than an outbound one.
+- Images are the pre-rendered pins; **no Replicate credit is used**. The pin is the
+  page art and nothing else — no caption, no logo, no badge. The "free" hook lives in
+  the Pin title and description, which Pinterest renders beside the image.
+- Copy rotates through 4 title/description angles, so a recycled Pin for the same
+  page reads differently (`recycle_after_days`, default 30).
+- Ledger: `data/pinterest-free-queue.json` (self-maintaining, don't hand-edit).
+
+**One-time setup:** create a board named **Free Printable Coloring Pages** in the
+Pinterest UI — "free printable coloring pages" is a high-volume search term and
+keeps the giveaway's analytics separate from the product pins. Until it exists
+the publisher falls back to the matching theme board, so nothing breaks. Then run
+the workflow once with mode `verify` to confirm the token, board and eligible pages.
+
 ## Runtime routes
 
 URLs are extensionless — nginx serves each page from its `.html` file and 301-redirects
@@ -198,6 +265,9 @@ the old `.html` URLs to the clean form (e.g. `/books.html` → `/books`).
 - `/robots.txt` — crawler rules
 - `/sitemap.xml` — sitemap
 - `/healthz` — Docker/Coolify health check, returns `ok`
+- `/free` — gallery of every free coloring page
+- `/free/<slug>` — a single free page's landing page (the Pinterest destination)
+- `/free/pages/<slug>.pdf` — the free page itself
 - `/download` and `/download/` — return the branded 404 on purpose (no index)
 - `/download/<kit-slug>` — a private, passcode-gated per-kit download page
 
@@ -273,6 +343,12 @@ docker rm -f blissfoxstudio-website-test
 - `scripts/make-download-page.mjs` — generator for passcode-gated per-kit pages
 - `scripts/kits/*.json` — non-secret kit definitions (structure only)
 - `download/<slug>.html` — generated, passcode-gated download pages
+- `free.html`, `free/<slug>.html` — free-page gallery + landing pages (generated)
+- `free/pages/*.pdf`, `assets/free/*.jpg`, `assets/pins/*.jpg` — free-page assets (generated)
+- `data/free-pages.json` — free-page manifest (generated)
+- `scripts/pinterest-free-publish.mjs` — free-page Pin publisher
+- `data/pinterest-free-queue.json` — free-page Pin ledger (auto-maintained)
+- `.github/workflows/pinterest-free-publish.yml` — scheduled free-page Pin publishing
 - `robots.txt`, `sitemap.xml`
 
 ## Marketplace note

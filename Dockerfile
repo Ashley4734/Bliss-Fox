@@ -15,6 +15,8 @@ COPY robots.txt sitemap.xml pinterest-catalog.xml /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
 COPY data/ /usr/share/nginx/html/data/
 COPY download/ /usr/share/nginx/html/download/
+# Free-page landing pages (/free/<slug>) and their downloadable PDFs.
+COPY free/ /usr/share/nginx/html/free/
 RUN chmod -R a+rX /usr/share/nginx/html
 
 # Lightweight healthcheck that Coolify/Docker can use
