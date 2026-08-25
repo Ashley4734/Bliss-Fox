@@ -74,15 +74,21 @@
     },
     {
       "slug": "autumn-harvest-2026-06-22",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-25T01:30:59.999Z",
+      "angle_i": 1
     },
     {
       "slug": "cozy-autumn-town-2026-07-30",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-25T01:31:02.581Z",
+      "angle_i": 1
     },
     {
       "slug": "cozy-autumn-town-coloring-scenes-2026-06-25",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-25T01:31:05.040Z",
+      "angle_i": 1
     },
     {
       "slug": "cozy-beach-town-adult-coloring-book-2026-05-31",
