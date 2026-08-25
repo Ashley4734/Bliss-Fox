@@ -1,0 +1,98 @@
+name: Pinterest free pages
+
+# Publishes Pins for the FREE coloring pages at /free/<slug>. Separate from the
+# "Pinterest publish" workflow, which sells products: this one links to the site
+# rather than Etsy, uses pre-rendered pin art committed under /assets/pins/, and
+# can be paused on its own without touching the daily product drip.
+#
+# Two windows a day (1 Pin each = 2/day) on top of the product job's 5/day.
+# Minutes are off the top of the hour because GitHub delays/drops crons at :00.
+#
+# Requires repository secrets: PINTEREST_APP_ID, PINTEREST_APP_SECRET,
+# PINTEREST_REFRESH_TOKEN. No Replicate credit is used — the pin images are
+# rendered locally by pipeline/free_pages.py and committed to this repo.
+
+on:
+  # No schedule yet — this campaign is manual-only until the first batch has been
+  # reviewed. To start the daily drip, uncomment the two crons below (2 Pins/day,
+  # 1 per run) and push; scheduled runs post automatically.
+  #
+  # schedule:
+  #   - cron: '41 14 * * *' # ~10:41am ET
+  #   - cron: '19 21 * * *' # ~5:19pm ET
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'verify (check token, boards + eligible pages) or publish'
+        type: choice
+        default: verify
+        options: [verify, publish]
+      max_per_run:
+        description: 'Max Pins to publish this run'
+        default: '3'
+      dry_run:
+        description: 'Log what would be posted without posting'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pinterest-free-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run free-page Pin publisher
+        env:
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          # Scheduled runs publish 1 Pin each (2 windows/day); manual runs use the
+          # chosen mode and count.
+          MODE: ${{ github.event_name == 'schedule' && 'publish' || inputs.mode }}
+          MAX_PER_RUN: ${{ github.event_name == 'schedule' && '1' || inputs.max_per_run }}
+          DRY_RUN: ${{ inputs.dry_run == true && '1' || '0' }}
+        run: node scripts/pinterest-free-publish.mjs
+
+      - name: Commit queue updates
+        if: ${{ github.event_name == 'schedule' || inputs.mode == 'publish' }}
+        run: |
+          if [[ -n "$(git status --porcelain data/pinterest-free-queue.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/pinterest-free-queue.json
+            git commit -m "chore: mark published free-page Pins"
+            git push
+          else
+            echo "No queue changes to commit."
+          fi
+
+      - name: Alert on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          title="Pinterest free-page workflow failed"
+          num=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title $title" --json number --jq '.[0].number' 2>/dev/null || true)
+          body="The Pinterest free-page publish workflow failed. Run: $run_url
+
+          If this is an auth error, the Pinterest refresh token (PINTEREST_REFRESH_TOKEN) may have expired — re-run the one-time OAuth exchange (see docs/pinterest-standard-access.md) and update the secret."
+          if [ -n "${num:-}" ]; then
+            gh issue comment "$num" --repo "$GITHUB_REPOSITORY" --body "Failed again: $run_url"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          fi
