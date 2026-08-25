@@ -84,24 +84,34 @@ const THEME_RANK = {
 };
 const UNTAGGED_RANK = 4;
 
-// Month (0=Jan) -> themes to push to the front, so timely pages go out while the
-// search traffic is ramping. The audit's finding was that seasonal books need a
-// 6-8 week lead, so Halloween starts in August, not October.
+// Month (0=Jan) -> what is in season, matched against the book's own TITLE.
+// Deliberately not matched against the derived themes: "seasonal" is so broad
+// (winter, fall, summer, wedding, birthday…) that 53 of 103 books carry it, which
+// makes it useless as a priority signal — an arctic-animals book came out ranked
+// as in-season for Halloween. The audit found seasonal books need a 6-8 week
+// lead, hence Halloween starting in August rather than October.
 const SEASONAL_FIRST = {
-  0: ['cozy'],
-  1: ['seasonal'],
-  4: ['patriotic'],
-  5: ['patriotic'],
-  6: ['patriotic'],
-  7: ['spooky', 'seasonal'],
-  8: ['spooky', 'seasonal'],
-  9: ['spooky', 'seasonal'],
-  10: ['seasonal'],
-  11: ['seasonal'],
+  0: /\b(winter|cozy|hygge|snow\w*)\b/i,
+  1: /\b(valentine\w*|love|heart\w*)\b/i,
+  2: /\b(spring|easter)\b/i,
+  3: /\b(spring|easter|garden)\b/i,
+  4: /\b(patriotic|america\w*|summer)\b/i,
+  5: /\b(patriotic|america\w*|juneteenth|summer|father\w*)\b/i,
+  6: /\b(patriotic|america\w*|independence|summer)\b/i,
+  7: /\b(halloween|spooky|goth\w*|witch\w*|pumpkin|autumn|fall|harvest)\b/i,
+  8: /\b(halloween|spooky|goth\w*|witch\w*|pumpkin|autumn|fall|harvest)\b/i,
+  9: /\b(halloween|spooky|goth\w*|witch\w*|pumpkin|autumn|fall|harvest|thanksgiving)\b/i,
+  10: /\b(thanksgiving|harvest|christmas|winter|festive|holiday)\b/i,
+  11: /\b(christmas|winter|festive|holiday|snow\w*)\b/i,
 };
 
+// Rank on themes the title actually backs up, for the same reason: a tag-only
+// "seasonal" or "cozy" shouldn't jump a book up the queue.
 function themeRank(item) {
-  const ranks = (item.themes || []).map((t) => THEME_RANK[t]).filter((n) => n !== undefined);
+  const ranks = (item.themes || [])
+    .filter((t) => titleBacks(t, item.title || ''))
+    .map((t) => THEME_RANK[t])
+    .filter((n) => n !== undefined);
   return ranks.length ? Math.min(...ranks) : UNTAGGED_RANK;
 }
 
@@ -366,8 +376,8 @@ async function runPublish(token) {
   const recyclable = queue.pins
     .filter((e) => e.posted && bySlug.has(e.slug) && eligibleToPost(e, queue.recycle_after_days, now))
     .sort((a, b) => Date.parse(a.posted_at || 0) - Date.parse(b.posted_at || 0));
-  const boost = SEASONAL_FIRST[new Date().getMonth()] || [];
-  const isBoosted = (e) => (bySlug.get(e.slug).themes || []).some((t) => boost.includes(t));
+  const boost = SEASONAL_FIRST[new Date().getMonth()] || null;
+  const isBoosted = (e) => !!boost && boost.test(bySlug.get(e.slug).title || '');
   const candidates = [...neverPosted, ...recyclable]
     .map((e, i) => ({ e, i, b: isBoosted(e) ? 0 : 1, r: themeRank(bySlug.get(e.slug)) }))
     .sort((x, y) => x.b - y.b || x.r - y.r || x.i - y.i)
@@ -376,7 +386,7 @@ async function runPublish(token) {
   console.log(
     `Free-page queue: ${queue.pins.length} page(s); ${neverPosted.length} never-posted, ` +
       `${recyclable.length} recycle-eligible.` +
-      (boost.length ? ` Seasonal boost this month: ${boost.join(', ')}.` : '') +
+      (boost ? ` In season this month: ${boost.source}.` : '') +
       ` Publishing up to ${MAX_PER_RUN}` + (DRY_RUN ? ' (DRY RUN)…' : '…')
   );
 
@@ -461,4 +471,4 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   });
 }
 
-export { buildCopy, hashtagsFor, clamp, eligibleToPost, TITLE_ANGLES, DESC_ANGLES };
+export { buildCopy, hashtagsFor, clamp, eligibleToPost, themeRank, titleBacks, SEASONAL_FIRST, TITLE_ANGLES, DESC_ANGLES };
