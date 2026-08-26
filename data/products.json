@@ -1,8 +1,8 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-25T01:16:30.676Z",
-  "count": 111,
+  "updated": "2026-08-26T00:39:20.661Z",
+  "count": 114,
   "products": [
     {
       "listing_id": 4552648203,
@@ -33,7 +33,105 @@
         "spooky",
         "fantasy"
       ],
-      "created": 1787168367
+      "created": 1787663032
+    },
+    {
+      "listing_id": 4558393849,
+      "title": "Printable Fox Affirmation Coloring Pages, SEL Calm Down Sheets (Digital Download)",
+      "description": "🦊 Color, calm, and repeat the words! These 8 black-and-white fox coloring pages pair big, easy-to-read affirmations with a soothing coloring activity — perfect for a calm…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4558393849/affirmation-coloring-pages-printable",
+      "image": "https://i.etsystatic.com/9660605/r/il/2315b3/8448674249/il_570xN.8448674249_2yud.jpg",
+      "price": {
+        "amount": 2.99,
+        "currency": "USD",
+        "display": "$2.99"
+      },
+      "tags": [
+        "coloring pages",
+        "affirmation coloring",
+        "kids coloring",
+        "calm down coloring",
+        "affirmations kids",
+        "social emotional",
+        "sel printable",
+        "coloring sheets",
+        "mindfulness kids",
+        "feelings coloring",
+        "classroom coloring",
+        "self esteem kids",
+        "fox coloring"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1787661535
+    },
+    {
+      "listing_id": 4558427292,
+      "title": "Kids Breathing Exercises Printable, Fox Mindfulness Calm Corner Cards (SEL)",
+      "description": "🦊 Simple breathing kids actually want to do! Four friendly fox breathing exercises help children slow down, calm their bodies, and feel back in control — anywhere, anytime. ⭐…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4558427292/kids-breathing-exercises-printable-fox",
+      "image": "https://i.etsystatic.com/9660605/r/il/5e38f3/8400884970/il_570xN.8400884970_14sx.jpg",
+      "price": {
+        "amount": 2.99,
+        "currency": "USD",
+        "display": "$2.99"
+      },
+      "tags": [
+        "breathing exercises",
+        "breathing cards",
+        "calm down cards",
+        "mindfulness kids",
+        "breathing for kids",
+        "social emotional",
+        "sel printable",
+        "self regulation",
+        "calm corner",
+        "coping skills",
+        "anxiety kids",
+        "breathing bookmarks",
+        "deep breathing"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1787659007
+    },
+    {
+      "listing_id": 4558436678,
+      "title": "Fox Calm Corner Posters, SEL Classroom Decor, Printable Affirmations (Digital Download)",
+      "description": "🦊 Set up a calming space in minutes! This set of 7 friendly fox posters gives your calm corner everything it needs to feel warm, welcoming, and clear for little ones. ⭐…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4558436678/fox-calm-corner-posters-sel-classroom",
+      "image": "https://i.etsystatic.com/9660605/r/il/5becb2/8400946098/il_570xN.8400946098_p4wf.jpg",
+      "price": {
+        "amount": 3.99,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "tags": [
+        "calm corner",
+        "calm down corner",
+        "classroom posters",
+        "sel posters",
+        "calming corner",
+        "calm down signs",
+        "social emotional",
+        "classroom decor",
+        "counselor office",
+        "self regulation",
+        "feelings poster",
+        "kindness poster",
+        "calm corner sign"
+      ],
+      "themes": [
+        "cozy",
+        "animals"
+      ],
+      "created": 1787658953
     },
     {
       "listing_id": 4548301406,
@@ -873,7 +971,7 @@
       "title": "Ocean Shark Adventures Coloring Bundle, 99 Pages, Printable PDF (Instant Download)",
       "description": "Ocean Shark Adventures: a bundle of 3 printable coloring books (99 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
       "url": "https://blissfoxstudio.etsy.com/listing/4542175190/ocean-shark-adventures-coloring-bundle",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/1971ab/8332442579/il_570xN.8332442579_eh6s.jpg",
       "price": {
         "amount": 9.74,
         "currency": "USD",
