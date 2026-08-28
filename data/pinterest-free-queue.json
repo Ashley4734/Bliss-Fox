@@ -412,7 +412,9 @@
     },
     {
       "slug": "potions-apothecary-2026-06-22",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-28T23:39:05.407Z",
+      "angle_i": 1
     },
     {
       "slug": "crystals-herbs-2026-06-22",
