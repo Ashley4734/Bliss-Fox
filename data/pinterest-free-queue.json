@@ -346,7 +346,9 @@
     },
     {
       "slug": "spooky-bookshops-2026-07-23",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-28T05:24:43.227Z",
+      "angle_i": 1
     },
     {
       "slug": "the-secret-strawberry-garden-2026-07-24",
