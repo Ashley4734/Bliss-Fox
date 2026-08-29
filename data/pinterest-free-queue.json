@@ -418,7 +418,9 @@
     },
     {
       "slug": "crystals-herbs-2026-06-22",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-08-29T03:10:38.411Z",
+      "angle_i": 1
     },
     {
       "slug": "familiars-2026-06-22",
