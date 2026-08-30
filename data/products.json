@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-08-29T04:43:56.047Z",
+  "updated": "2026-08-30T02:19:36.079Z",
   "count": 114,
   "products": [
     {
@@ -33,7 +33,7 @@
         "spooky",
         "fantasy"
       ],
-      "created": 1787875553
+      "created": 1788054584
     },
     {
       "listing_id": 4558393849,
@@ -583,7 +583,7 @@
       "title": "Strawberry Garden Coloring Book, Cozy Cottage Scenes, Relaxing Berry Patch Art (PDF Download)",
       "description": "Strawberry coloring book for cozy evenings with relaxing berry patch scenes that feel like stepping into a hidden garden path. Inside, you’ll find storybook-style garden moments…",
       "url": "https://blissfoxstudio.etsy.com/listing/4543894662/strawberry-garden-coloring-book-cozy",
-      "image": "https://i.etsystatic.com/9660605/r/il/ab3199/8299996680/il_570xN.8299996680_dlqv.jpg",
+      "image": "",
       "price": {
         "amount": 4.49,
         "currency": "USD",
