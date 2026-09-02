@@ -114,7 +114,9 @@
     },
     {
       "slug": "winter-hearth-2026-06-22",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-02T18:00:58.607Z",
+      "angle_i": 1
     },
     {
       "slug": "cozy-goth-homes-2026-07-23",
