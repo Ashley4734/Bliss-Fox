@@ -430,7 +430,9 @@
     },
     {
       "slug": "wedding-kids-table-activity-book-2026-05-31",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-04T23:03:00.111Z",
+      "angle_i": 1
     },
     {
       "slug": "potions-apothecary-2026-06-22",
