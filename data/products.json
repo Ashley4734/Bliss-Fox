@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-03T02:00:14.557Z",
+  "updated": "2026-09-04T01:55:31.099Z",
   "count": 114,
   "products": [
+    {
+      "listing_id": 4552648203,
+      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
+      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "printable grimoire",
+        "book of shadows",
+        "grimoire pages",
+        "witchcraft journal",
+        "spell book pages",
+        "witch journal pdf",
+        "witchcraft printable",
+        "moon magic journal",
+        "herbal grimoire",
+        "tarot journal pages",
+        "crystal journal",
+        "pagan journal pdf"
+      ],
+      "themes": [
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1788405710
+    },
     {
       "listing_id": 4558436678,
       "title": "Fox Calm Corner Posters, SEL Classroom Decor, Printable Affirmations (Digital Download)",
@@ -35,37 +66,6 @@
         "animals"
       ],
       "created": 1788313564
-    },
-    {
-      "listing_id": 4552648203,
-      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
-      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
-      "price": {
-        "amount": 15,
-        "currency": "USD",
-        "display": "$15.00"
-      },
-      "tags": [
-        "printable grimoire",
-        "book of shadows",
-        "grimoire pages",
-        "witchcraft journal",
-        "spell book pages",
-        "witch journal pdf",
-        "witchcraft printable",
-        "moon magic journal",
-        "herbal grimoire",
-        "tarot journal pages",
-        "crystal journal",
-        "pagan journal pdf"
-      ],
-      "themes": [
-        "spooky",
-        "fantasy"
-      ],
-      "created": 1788054584
     },
     {
       "listing_id": 4558393849,
