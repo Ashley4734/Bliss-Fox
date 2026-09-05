@@ -1,9 +1,133 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-04T01:55:31.099Z",
-  "count": 114,
+  "updated": "2026-09-05T01:56:02.847Z",
+  "count": 118,
   "products": [
+    {
+      "listing_id": 4569255381,
+      "title": "25 Gothic Botanical Clipart PNG, Moonlit Flowers Mushrooms Herbs, Witchy Floral Transparent Commercial Use Bundle",
+      "description": "A poison garden at midnight. Twenty-five dark flowers, mushrooms, herbs and specimen bundles in deep burgundy, bruised violet and antique gold, cut out cleanly so you can build…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569255381/25-gothic-botanical-clipart-png-moonlit",
+      "image": "https://i.etsystatic.com/9660605/r/il/2f7b47/8478603600/il_570xN.8478603600_b5i4.jpg",
+      "price": {
+        "amount": 6.95,
+        "currency": "USD",
+        "display": "$6.95"
+      },
+      "tags": [
+        "gothic botanical",
+        "dark floral png",
+        "witchy flowers",
+        "moonlit garden",
+        "poisonous plants",
+        "mushroom clipart",
+        "floral clipart",
+        "celestial floral",
+        "dark cottagecore",
+        "gothic clipart",
+        "transparent png",
+        "journal supplies",
+        "commercial use"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1788571340
+    },
+    {
+      "listing_id": 4569269146,
+      "title": "25 Dark Academia Clipart PNG, Haunted Library Books Raven Typewriter, Gothic Transparent Commercial Use Bundle",
+      "description": "Dark academia in twenty-five pieces. Stacked leather books, quills, inkwells, candles, keys and a raven or two, painted with real leather and paper texture and cut out clean for…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569269146/25-dark-academia-clipart-png-haunted",
+      "image": "https://i.etsystatic.com/9660605/r/il/6cfad0/8478606500/il_570xN.8478606500_eztd.jpg",
+      "price": {
+        "amount": 6.95,
+        "currency": "USD",
+        "display": "$6.95"
+      },
+      "tags": [
+        "dark academia png",
+        "book clipart",
+        "gothic library",
+        "raven book png",
+        "vintage books png",
+        "writer clipart",
+        "library clipart",
+        "scholar clipart",
+        "reading png",
+        "gothic clipart",
+        "transparent png",
+        "journal supplies",
+        "commercial use"
+      ],
+      "themes": [],
+      "created": 1788571340
+    },
+    {
+      "listing_id": 4569269060,
+      "title": "25 Gothic Apothecary Clipart PNG, Potion Bottles Herbs Witchy Objects, Dark Academia Transparent Graphics Bundle",
+      "description": "Everything on the witch&#39;s shelf. Twenty-five potion bottles, jars, candles, crystals and ritual objects with hand-painted glass, wax and metal detail, each one isolated on a…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569269060/25-gothic-apothecary-clipart-png-potion",
+      "image": "https://i.etsystatic.com/9660605/r/il/71a401/8478606048/il_570xN.8478606048_zpis.jpg",
+      "price": {
+        "amount": 6.95,
+        "currency": "USD",
+        "display": "$6.95"
+      },
+      "tags": [
+        "apothecary png",
+        "potion bottle png",
+        "witchy clipart",
+        "gothic herbs",
+        "magic bottle png",
+        "dark academia png",
+        "grimoire clipart",
+        "crystal clipart",
+        "alchemy clipart",
+        "transparent png",
+        "halloween clipart",
+        "journal supplies",
+        "commercial use"
+      ],
+      "themes": [
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1788571340
+    },
+    {
+      "listing_id": 4569269592,
+      "title": "250 Gothic Clipart PNG Mega Bundle, Witchy Dark Academia Botanical Skull Moth Victorian Transparent Commercial Use",
+      "description": "The whole library in one download. All ten gothic collections, 250 transparent PNG graphics, organised into ten folders and painted to a locked palette so pieces from different…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569269592/250-gothic-clipart-png-mega-bundle",
+      "image": "https://i.etsystatic.com/9660605/r/il/5587a0/8526518129/il_570xN.8526518129_iinm.jpg",
+      "price": {
+        "amount": 24.95,
+        "currency": "USD",
+        "display": "$24.95"
+      },
+      "tags": [
+        "gothic clipart",
+        "gothic mega bundle",
+        "witchy clipart",
+        "dark academia png",
+        "gothic botanical",
+        "gothic skull png",
+        "moth clipart",
+        "apothecary png",
+        "victorian clipart",
+        "celestial clipart",
+        "transparent png",
+        "journal supplies",
+        "commercial use"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1788570781
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
@@ -33,7 +157,7 @@
         "spooky",
         "fantasy"
       ],
-      "created": 1788405710
+      "created": 1788562688
     },
     {
       "listing_id": 4558436678,
@@ -488,7 +612,7 @@
       "title": "80s Retro Coloring Book: 24 Easy Printable Pages, Instant Download PDF",
       "description": "80s coloring book for a quick, happy break with retro coloring book vibes—packed with simple throwback icons that are easy to finish in one sitting. Inside you’ll find bold, open…",
       "url": "https://blissfoxstudio.etsy.com/listing/4526320288/80s-retro-coloring-book-24-simple",
-      "image": "https://i.etsystatic.com/9660605/r/il/db4fdf/8300769912/il_570xN.8300769912_50zw.jpg",
+      "image": "",
       "price": {
         "amount": 4.49,
         "currency": "USD",
