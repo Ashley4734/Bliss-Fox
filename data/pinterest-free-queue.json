@@ -26,7 +26,9 @@
     },
     {
       "slug": "boba-tea-2026-06-26",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-05T16:55:12.461Z",
+      "angle_i": 1
     },
     {
       "slug": "birds-2026-06-22",
