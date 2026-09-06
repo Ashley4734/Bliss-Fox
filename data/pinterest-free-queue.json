@@ -76,7 +76,9 @@
     },
     {
       "slug": "spring-cottage-2026-06-22",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-06T22:53:52.571Z",
+      "angle_i": 1
     },
     {
       "slug": "autumn-harvest-2026-06-22",
