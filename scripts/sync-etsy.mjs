@@ -24,7 +24,7 @@
  */
 
 import { writeFile, readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const API = 'https://openapi.etsy.com/v3/application';
@@ -95,7 +95,13 @@ function xmlEscape(value) {
 // Google Shopping (g:) fields; required per item: id, title, description, link,
 // image_link, price, availability. Digital downloads have no GTIN/MPN, so
 // identifier_exists is "no" and brand is supplied instead.
-function buildPinterestFeed(products) {
+export function buildPinterestFeed(products) {
+  // RFC-822 build date on the channel. It gives Pinterest a freshness signal and,
+  // just as usefully, lets anyone confirm how current the *live* feed is: fetch
+  // https://blissfoxstudio.com/pinterest-catalog.xml and read <lastBuildDate>. If
+  // that date is old, the site is not redeploying; if it is today's date but the
+  // Pinterest catalog is still stale, the gap is Pinterest's scheduled fetch.
+  const built = new Date().toUTCString();
   const items = products
     .filter((p) => p.image && p.price && p.price.display)
     .map((p) => {
@@ -133,6 +139,8 @@ function buildPinterestFeed(products) {
     `    <title>${xmlEscape(BRAND)}</title>\n` +
     `    <link>${xmlEscape(SITE_URL)}</link>\n` +
     `    <description>Printable coloring books and digital downloads by ${xmlEscape(BRAND)}.</description>\n` +
+    `    <lastBuildDate>${xmlEscape(built)}</lastBuildDate>\n` +
+    `    <pubDate>${xmlEscape(built)}</pubDate>\n` +
     (items.length ? items.join('\n') + '\n' : '') +
     '  </channel>\n' +
     '</rss>\n'
@@ -432,7 +440,12 @@ async function main() {
   console.log(`Wrote Pinterest feed with ${feedCount} item(s) to pinterest-catalog.xml`);
 }
 
-main().catch((err) => {
-  console.error(err.message || err);
-  process.exit(1);
-});
+// Only run the full Etsy sync when executed directly (node scripts/sync-etsy.mjs).
+// Importing the module (e.g. to reuse buildPinterestFeed for feed regeneration)
+// must not trigger network calls.
+if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
+  main().catch((err) => {
+    console.error(err.message || err);
+    process.exit(1);
+  });
+}
