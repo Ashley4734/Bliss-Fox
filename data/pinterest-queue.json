@@ -736,7 +736,9 @@
     },
     {
       "listing_id": 4569269454,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-07T18:18:51.683Z",
+      "variant_i": 1
     },
     {
       "listing_id": 4569269378,
@@ -784,6 +786,54 @@
     },
     {
       "listing_id": 4569874778,
+      "posted": false
+    },
+    {
+      "listing_id": 4570395074,
+      "posted": false
+    },
+    {
+      "listing_id": 4570394956,
+      "posted": false
+    },
+    {
+      "listing_id": 4570171726,
+      "posted": false
+    },
+    {
+      "listing_id": 4570156919,
+      "posted": false
+    },
+    {
+      "listing_id": 4570394850,
+      "posted": false
+    },
+    {
+      "listing_id": 4570379421,
+      "posted": false
+    },
+    {
+      "listing_id": 4570157205,
+      "posted": false
+    },
+    {
+      "listing_id": 4570379551,
+      "posted": false
+    },
+    {
+      "listing_id": 4570171826,
+      "posted": false
+    },
+    {
+      "listing_id": 4570156817,
+      "posted": false
+    },
+    {
+      "listing_id": 4570379659,
+      "posted": false
+    },
+    {
+      "listing_id": 4570171422,
       "posted": false
     }
   ]
