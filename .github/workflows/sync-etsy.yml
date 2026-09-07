@@ -6,7 +6,8 @@ name: Sync Etsy catalog
 
 on:
   schedule:
-    - cron: '0 0 * * *' # every 24 hours at midnight UTC
+    - cron: '0 */6 * * *' # every 6 hours (matches the README) so new Etsy
+      # listings reach the site and the Pinterest feed the same day
   workflow_dispatch: {}
 
 permissions:
