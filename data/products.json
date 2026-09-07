@@ -1,9 +1,291 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-06T01:50:43.796Z",
-  "count": 135,
+  "updated": "2026-09-07T01:47:56.675Z",
+  "count": 144,
   "products": [
+    {
+      "listing_id": 4570026629,
+      "title": "25 Thanksgiving Quote Png PNG, Thankful Sayings & Signs, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "Hand-lettered style phrases like “give thanks” and “grateful” are paired with simple sign shapes and gentle flourishes. Use these ready-made word art pieces on cards, shirts…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026629/25-thanksgiving-quote-png-png-thankful",
+      "image": "https://i.etsystatic.com/9660605/r/il/1fe980/8532153481/il_570xN.8532153481_5gdn.jpg",
+      "price": {
+        "amount": 12.95,
+        "currency": "USD",
+        "display": "$12.95"
+      },
+      "tags": [
+        "thanksgiving quotes",
+        "thankful clipart",
+        "grateful quotes",
+        "fall quotes",
+        "word art png",
+        "thanksgiving words",
+        "thankful words",
+        "give thanks art",
+        "quote clipart",
+        "fall word art",
+        "script quote",
+        "holiday sayings",
+        "thank you art"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1788700087
+    },
+    {
+      "listing_id": 4570026441,
+      "title": "25 Thanksgiving Dinner Clipart PNG, Feast & Fixings, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "This collection focuses on the Thanksgiving table itself: roast turkeys, pies, casseroles, breads, and cozy mugs and glasses painted in a soft watercolor style. Use these food…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026441/25-thanksgiving-dinner-clipart-png-feast",
+      "image": "https://i.etsystatic.com/9660605/r/il/ddea8d/8484253414/il_570xN.8484253414_2qdf.jpg",
+      "price": {
+        "amount": 12.95,
+        "currency": "USD",
+        "display": "$12.95"
+      },
+      "tags": [
+        "thanksgiving food",
+        "turkey clipart",
+        "dinner clipart",
+        "thanksgiving meal",
+        "pumpkin pie png",
+        "fall baking",
+        "pie clipart",
+        "autumn food",
+        "holiday dinner",
+        "thanksgiving png",
+        "kitchen clipart",
+        "menu graphics",
+        "harvest feast"
+      ],
+      "themes": [
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1788700017
+    },
+    {
+      "listing_id": 4570039686,
+      "title": "100 Thanksgiving Clipart Bundle PNG, Cozy Thanksgiving Bundle, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "The complete 100 Thanksgiving Clipart PNG Mega Bundle | Transparent Clipart | Commercial Use | Digital Download library in one download…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570039686/100-thanksgiving-clipart-bundle-png-cozy",
+      "image": "https://i.etsystatic.com/9660605/r/il/95ab0b/8484253002/il_570xN.8484253002_17ct.jpg",
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "display": "$24.99"
+      },
+      "tags": [
+        "thanksgiving",
+        "thanksgiving clipart",
+        "thanksgiving png",
+        "thanksgiving bundle",
+        "clipart bundle",
+        "png bundle",
+        "mega bundle",
+        "commercial use",
+        "thanksgiving food",
+        "pumpkin clipart",
+        "fall leaves",
+        "thanksgiving quotes",
+        "turkey clipart"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1788700017
+    },
+    {
+      "listing_id": 4570026571,
+      "title": "25 Fall Leaves Watercolor Clipart PNG, Leaves & Florals, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "Delicate leaves, branches, and floral clusters make this collection ideal for borders, frames, and backgrounds. Combine single leaves with pre-arranged bouquets and wreaths to…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026571/25-fall-leaves-watercolor-clipart-png",
+      "image": "https://i.etsystatic.com/9660605/r/il/eca21f/8532153149/il_570xN.8532153149_szk4.jpg",
+      "price": {
+        "amount": 12.95,
+        "currency": "USD",
+        "display": "$12.95"
+      },
+      "tags": [
+        "fall leaves",
+        "autumn leaves",
+        "leaf clipart",
+        "fall foliage",
+        "floral clipart",
+        "fall florals",
+        "autumn bouquet",
+        "wreath clipart",
+        "fall wreaths",
+        "botanical png",
+        "leaf png",
+        "branch clipart",
+        "floral png"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1788700016
+    },
+    {
+      "listing_id": 4570026509,
+      "title": "25 Watercolor Pumpkin Clipart PNG, Pumpkins & Harvest, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "Pumpkins, gourds, corn, and rustic harvest elements give this set a relaxed farmhouse feel. Mix and match single pumpkins, stacked arrangements, and simple farm accents to create…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026509/25-watercolor-pumpkin-clipart-png",
+      "image": "https://i.etsystatic.com/9660605/r/il/8df604/8532152697/il_570xN.8532152697_1ez3.jpg",
+      "price": {
+        "amount": 12.95,
+        "currency": "USD",
+        "display": "$12.95"
+      },
+      "tags": [
+        "pumpkin clipart",
+        "pumpkin png",
+        "fall pumpkins",
+        "autumn pumpkins",
+        "harvest png",
+        "farmhouse pumpkins",
+        "gourd illustration",
+        "corn illustration",
+        "thanksgiving decor",
+        "fall harvest",
+        "autumn squash",
+        "country pumpkin",
+        "pumpkin bundle"
+      ],
+      "themes": [
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1788700016
+    },
+    {
+      "listing_id": 4569884622,
+      "title": "37 Race Track Clipart PNG, Tracks & Flags, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "Build full race scenes with winding tracks, checkered flags, cones, and finish lines ready for posters, worksheets, and party backdrops. Simple shapes and bold outlines make each…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569884622/37-race-track-clipart-png-tracks-flags",
+      "image": "https://i.etsystatic.com/9660605/r/il/56aa6d/8530934941/il_570xN.8530934941_b4yz.jpg",
+      "price": {
+        "amount": 4.95,
+        "currency": "USD",
+        "display": "$4.95"
+      },
+      "tags": [
+        "race track clipart",
+        "racetrack png",
+        "checkered flag art",
+        "finish line clipart",
+        "race track map",
+        "pit stop graphics",
+        "trophy clip art",
+        "race banner png",
+        "start line art",
+        "race party icons",
+        "speedway clipart",
+        "road signs art",
+        "racing elements"
+      ],
+      "themes": [
+        "patriotic"
+      ],
+      "created": 1788699809
+    },
+    {
+      "listing_id": 4569871571,
+      "title": "75 Race Car Clipart PNG, Race Car Track Bundle, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "The complete Race Car and Race Track Clipart Bundle Checker Flag Sports Car library in one download. ────────────────────────────────────────── WHAT YOU GET…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569871571/75-race-car-clipart-png-race-car-track",
+      "image": "https://i.etsystatic.com/9660605/r/il/d35f7c/8530934197/il_570xN.8530934197_44ul.jpg",
+      "price": {
+        "amount": 12.95,
+        "currency": "USD",
+        "display": "$12.95"
+      },
+      "tags": [
+        "race car clipart",
+        "race clipart",
+        "race png",
+        "race bundle",
+        "clipart bundle",
+        "png bundle",
+        "mega bundle",
+        "commercial use",
+        "fast race cars",
+        "tracks flags",
+        "cartoon race car",
+        "sports car png",
+        "fast car art"
+      ],
+      "themes": [
+        "patriotic"
+      ],
+      "created": 1788699809
+    },
+    {
+      "listing_id": 4569871611,
+      "title": "38 Race Car Clip Art PNG, Fast Race Cars, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "This set focuses on sleek race cars, helmets, numbers, and speed marks that drop easily into invites, games, and wall art. Clean outlines and flat fills keep them print-friendly…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569871611/38-race-car-clip-art-png-fast-race-cars",
+      "image": "https://i.etsystatic.com/9660605/r/il/07f01d/8530934567/il_570xN.8530934567_bq3i.jpg",
+      "price": {
+        "amount": 4.95,
+        "currency": "USD",
+        "display": "$4.95"
+      },
+      "tags": [
+        "race car clipart",
+        "cartoon race car",
+        "sports car png",
+        "fast car art",
+        "racing clip art",
+        "grand prix clipart",
+        "kids racing art",
+        "boy birthday theme",
+        "race party decor",
+        "speedway graphics",
+        "red racer png",
+        "motorsport clipart",
+        "racing wall art"
+      ],
+      "themes": [
+        "seasonal",
+        "kids"
+      ],
+      "created": 1788699809
+    },
+    {
+      "listing_id": 4569874778,
+      "title": "25 Butter Baking Clipart PNG, Butter Baking Set, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "description": "A cozy mix of butter sticks, pats, dishes, and melty drizzles, painted in a soft watercolour style that feels right at home in the kitchen. Use these pieces on recipe cards…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569874778/25-butter-baking-clipart-png-butter",
+      "image": "https://i.etsystatic.com/9660605/r/il/66d275/8530866217/il_570xN.8530866217_s4gd.jpg",
+      "price": {
+        "amount": 4.95,
+        "currency": "USD",
+        "display": "$4.95"
+      },
+      "tags": [
+        "butter clipart",
+        "baking clip art",
+        "kitchen clipart",
+        "butter png",
+        "recipe illustration",
+        "baking graphics",
+        "food clip art",
+        "digital stickers",
+        "butter doodles",
+        "cooking icons",
+        "watercolor food",
+        "farmhouse kitchen",
+        "baking logo art"
+      ],
+      "themes": [],
+      "created": 1788662400
+    },
     {
       "listing_id": 4569268918,
       "title": "25 Gothic Moth Clipart PNG, Midnight Entomology Insect Bundle, Dark Academia Transparent Graphics, Commercial Use",
@@ -238,23 +520,23 @@
         "display": "$12.95"
       },
       "tags": [
-        "kawaii study",
-        "kawaii desk icons",
-        "cute office clipart",
-        "pastel planner",
-        "kawaii stationery",
-        "study supplies",
-        "school doodle set",
-        "kawaii laptop",
-        "pastel icons",
-        "digital planner",
-        "cute notebook",
-        "study stickers",
-        "teacher clip art"
+        "kawaii everyday",
+        "kawaii clipart",
+        "kawaii png",
+        "kawaii bundle",
+        "clipart bundle",
+        "png bundle",
+        "mega bundle",
+        "commercial use",
+        "kawaii study desk",
+        "kawaii self care",
+        "kawaii snacks sips",
+        "kawaii cozy home",
+        "kawaii home"
       ],
       "themes": [
-        "animals",
-        "professions"
+        "cozy",
+        "animals"
       ],
       "created": 1788657335
     },
@@ -525,19 +807,19 @@
         "display": "$12.95"
       },
       "tags": [
-        "pumpkin spice art",
-        "spice coffee art",
-        "coffee clipart",
-        "fall coffee",
-        "cozy coffee art",
-        "pumpkin mug",
-        "autumn drinks",
-        "fall doodles",
-        "planner stickers",
-        "fall planner",
-        "sublimation png",
-        "cute fall art",
-        "latte clipart"
+        "fall clipart",
+        "fall png",
+        "fall bundle",
+        "clipart bundle",
+        "png bundle",
+        "mega bundle",
+        "commercial use",
+        "pumpkin spice caf",
+        "sweater weather cozy",
+        "woodland autumn",
+        "cozy ghost season",
+        "cute ghost",
+        "ghost clipart"
       ],
       "themes": [
         "cozy",
