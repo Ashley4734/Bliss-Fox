@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-08T16:18:26.403Z",
+  "updated": "2026-09-08T20:53:46.876Z",
   "count": 156,
   "products": [
+    {
+      "listing_id": 4552648203,
+      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
+      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "printable grimoire",
+        "book of shadows",
+        "grimoire pages",
+        "witchcraft journal",
+        "spell book pages",
+        "witch journal pdf",
+        "witchcraft printable",
+        "moon magic journal",
+        "herbal grimoire",
+        "tarot journal pages",
+        "crystal journal",
+        "pagan journal pdf"
+      ],
+      "themes": [
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1788899738
+    },
     {
       "listing_id": 4570395074,
       "title": "30 Gothic Decor Clipart PNG, Haunted Gothic Decor, Transparent PNG Clipart, Commercial Use, Instant Download",
@@ -1362,37 +1393,6 @@
         "spooky"
       ],
       "created": 1788570781
-    },
-    {
-      "listing_id": 4552648203,
-      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
-      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
-      "price": {
-        "amount": 15,
-        "currency": "USD",
-        "display": "$15.00"
-      },
-      "tags": [
-        "printable grimoire",
-        "book of shadows",
-        "grimoire pages",
-        "witchcraft journal",
-        "spell book pages",
-        "witch journal pdf",
-        "witchcraft printable",
-        "moon magic journal",
-        "herbal grimoire",
-        "tarot journal pages",
-        "crystal journal",
-        "pagan journal pdf"
-      ],
-      "themes": [
-        "spooky",
-        "fantasy"
-      ],
-      "created": 1788562688
     },
     {
       "listing_id": 4558436678,
