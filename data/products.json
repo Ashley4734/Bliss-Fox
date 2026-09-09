@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-09T16:12:30.902Z",
-  "count": 156,
+  "updated": "2026-09-09T20:41:54.147Z",
+  "count": 157,
   "products": [
+    {
+      "listing_id": 4571920011,
+      "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
+      "description": "A kitchen witch&#39;s working book — 88 illustrated pages for the cooking, growing, brewing and foraging side of the craft. This is the book for the practice that happens at the…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4571920011/kitchen-witch-printable-88-page-green",
+      "image": "https://i.etsystatic.com/9660605/r/il/fbae5c/8547858999/il_570xN.8547858999_g5mu.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "kitchen witch",
+        "green witch",
+        "kitchen witchery",
+        "printable grimoire",
+        "herbal apothecary",
+        "witch recipe book",
+        "book of shadows",
+        "foraging journal",
+        "herbalist journal",
+        "garden journal",
+        "sabbat recipes",
+        "witchy printable",
+        "tea correspondence"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1788976268
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
