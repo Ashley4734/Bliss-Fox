@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-09T20:41:54.147Z",
-  "count": 157,
+  "updated": "2026-09-10T03:48:21.428Z",
+  "count": 158,
   "products": [
+    {
+      "listing_id": 4572355136,
+      "title": "Book of Shadows Bundle | 2 Printable Grimoires, 176 Pages | Witch Journal + Kitchen Witch Recipe Book | Letter A4 A5",
+      "description": "Both volumes, 176 illustrated pages — the whole practice in one binder. Volume I is the Book of Shadows: spellwork, correspondences, the moon and the Wheel of the Year, a page…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4572355136/book-of-shadows-bundle-2-printable",
+      "image": "https://i.etsystatic.com/9660605/r/il/a57ee8/8549565329/il_570xN.8549565329_15os.jpg",
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "display": "$24.99"
+      },
+      "tags": [
+        "book of shadows",
+        "grimoire bundle",
+        "printable grimoire",
+        "witch planner",
+        "kitchen witch",
+        "green witch",
+        "spell book pages",
+        "witchcraft journal",
+        "wheel of the year",
+        "herbal apothecary",
+        "witchy printable",
+        "grimoire pages",
+        "baby witch kit"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1789001589
+    },
     {
       "listing_id": 4571920011,
       "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
