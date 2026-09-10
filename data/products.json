@@ -1,12 +1,12 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-10T16:04:15.554Z",
+  "updated": "2026-09-10T20:36:52.850Z",
   "count": 159,
   "products": [
     {
       "listing_id": 4572689600,
-      "title": "Blank Grimoire Pages Printable | 68 Parchment Journal Papers | Book of Shadows Paper, Junk Journal Kit | Letter A4 A5",
+      "title": "Blank Grimoire Pages Printable | 68 Parchment Journal Papers (Digital Download)",
       "description": "68 blank grimoire pages — decorated parchment, and not one word printed on it. Borders, spot illustration and aged paper, with every writing area left clean. What goes on them is…",
       "url": "https://blissfoxstudio.etsy.com/listing/4572689600/blank-grimoire-pages-printable-68",
       "image": "https://i.etsystatic.com/9660605/r/il/53320f/8552083641/il_570xN.8552083641_hxf3.jpg",
@@ -37,7 +37,7 @@
     },
     {
       "listing_id": 4572355136,
-      "title": "Book of Shadows Bundle | 2 Printable Grimoires, 176 Pages | Witch Journal + Kitchen Witch Recipe Book | Letter A4 A5",
+      "title": "Book of Shadows Bundle | 176-Page Printable Grimoire & Kitchen Witch Journal (Digital Download)",
       "description": "Both volumes, 176 illustrated pages — the whole practice in one binder. Volume I is the Book of Shadows: spellwork, correspondences, the moon and the Wheel of the Year, a page…",
       "url": "https://blissfoxstudio.etsy.com/listing/4572355136/book-of-shadows-bundle-2-printable",
       "image": "https://i.etsystatic.com/9660605/r/il/a57ee8/8549565329/il_570xN.8549565329_15os.jpg",
@@ -100,28 +100,29 @@
     },
     {
       "listing_id": 4552648203,
-      "title": "Printable Grimoire Journal: 88-Page Witchcraft Book of Shadows",
-      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal. This illustrated witchcraft journal includes spell record pages, moon trackers, Wheel of the…",
+      "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal and witchcraft planner, designed for printing and building your own personalized binder. This…",
       "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/3951bf/8447778229/il_570xN.8447778229_icms.jpg",
+      "image": "https://i.etsystatic.com/9660605/r/il/827ae8/8505399716/il_570xN.8505399716_fuin.jpg",
       "price": {
         "amount": 15,
         "currency": "USD",
         "display": "$15.00"
       },
       "tags": [
-        "printable grimoire",
+        "grimoire journal",
+        "grimoire printable",
         "book of shadows",
         "grimoire pages",
         "witchcraft journal",
         "spell book pages",
         "witch journal pdf",
-        "witchcraft printable",
+        "wheel of the year",
         "moon magic journal",
         "herbal grimoire",
         "tarot journal pages",
         "crystal journal",
-        "pagan journal pdf"
+        "witchcraft printable"
       ],
       "themes": [
         "spooky",
@@ -131,9 +132,9 @@
     },
     {
       "listing_id": 4570395074,
-      "title": "30 Gothic Decor Clipart PNG, Haunted Gothic Decor, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Haunted Gothic Decor Clipart, Skulls, Coffins, Candles (30 PNG Files)",
       "description": "Haunted Gothic Decor brings in the atmospheric details: skulls, coffins, ornate frames, mirrors, windows, chandeliers, keys and clustered candles. These pieces are designed to…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570395074/30-gothic-decor-clipart-png-haunted",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570395074/haunted-gothic-decor-clipart-skulls",
       "image": "https://i.etsystatic.com/9660605/r/il/736968/8486850816/il_570xN.8486850816_q4zf.jpg",
       "price": {
         "amount": 12.95,
@@ -162,9 +163,9 @@
     },
     {
       "listing_id": 4570394956,
-      "title": "30 Occult Symbols Clipart PNG, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Occult Symbols Clipart, Moons, Sigils, Tarot, Runes (Transparent PNG)",
       "description": "This collection gathers crescent moons, sigils, tarot card motifs, eyes, crystal grids, runes and alchemical emblems into a clean symbolic set. The icons are drawn with…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570394956/30-occult-symbols-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570394956/30-occult-symbols-clipart-moons-sigils",
       "image": "https://i.etsystatic.com/9660605/r/il/4a169e/8486850052/il_570xN.8486850052_9dui.jpg",
       "price": {
         "amount": 12.95,
@@ -194,9 +195,9 @@
     },
     {
       "listing_id": 4570171726,
-      "title": "30 Cute Christmas Characters PNG, Winter Friends & Characters, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Winter Friends PNG Clipart, Reindeer, Snowmen, Penguins, Kids (Commercial Use)",
       "description": "Meet a cast of winter friends including reindeer, snowmen, penguins, polar bears, owls, gnomes, elves, and bundled-up kids. Each character has big expressive faces and simple…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570171726/30-cute-christmas-characters-png-winter",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570171726/30-winter-friends-png-clipart-reindeer",
       "image": "https://i.etsystatic.com/9660605/r/il/71876d/8485215668/il_570xN.8485215668_9k5q.jpg",
       "price": {
         "amount": 12.95,
@@ -227,9 +228,9 @@
     },
     {
       "listing_id": 4570156919,
-      "title": "30 Christmas Baking Clipart PNG, Christmas Treats & Mugs, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Christmas Baking Clipart PNGs, Gingerbread Cookies, Cocoa Mugs, Candy Canes (Commercial Use)",
       "description": "Bake a whole spread of digital sweets with gingerbread people, cookies, cocoa mugs, candy canes, cupcakes, and festive desserts. The clean outlines keep even detailed toppings…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570156919/30-christmas-baking-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570156919/30-christmas-baking-clipart-pngs",
       "image": "https://i.etsystatic.com/9660605/r/il/e6e792/8533113127/il_570xN.8533113127_r6pp.jpg",
       "price": {
         "amount": 12.95,
@@ -258,9 +259,9 @@
     },
     {
       "listing_id": 4570394850,
-      "title": "30 Witchcraft Clipart PNG, Witchcraft Tools, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Witchcraft Tools PNG Clipart, Transparent Background, Commercial Use (Instant Download)",
       "description": "This set focuses on the everyday tools of a modern witch: cauldrons bubbling over, altar layouts, potion bottles, mortar and pestles, candles, wands and worn spell books. Each…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570394850/30-witchcraft-clipart-png-witchcraft",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570394850/30-witchcraft-tools-png-clipart",
       "image": "https://i.etsystatic.com/9660605/r/il/9287ef/8486849220/il_570xN.8486849220_clrs.jpg",
       "price": {
         "amount": 12.95,
@@ -291,9 +292,9 @@
     },
     {
       "listing_id": 4570379421,
-      "title": "150 Goth Witchy Clipart PNG, Midnight Goth Coven, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "150 Goth Witchy PNG Clipart Bundle, Transparent Commercial Use (Digital Download)",
       "description": "The complete 150 Goth / Witchy Clipart PNG Mega Bundle | Transparent Clipart | Commercial Use | Digital Download library in one download…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570379421/150-goth-witchy-clipart-png-midnight",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570379421/150-goth-witchy-png-clipart-bundle",
       "image": "https://i.etsystatic.com/9660605/r/il/18e895/8488836564/il_570xN.8488836564_2k87.jpg",
       "price": {
         "amount": 24.99,
@@ -323,9 +324,9 @@
     },
     {
       "listing_id": 4570157205,
-      "title": "30 Christmas Wreath Clipart PNG, Wreaths & Florals, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Christmas Wreaths & Florals PNG Clipart, Transparent, Commercial Use (Instant Download)",
       "description": "Frame your words and photos with lush Christmas wreaths, bouquets, swags, borders, and corner sprays of winter greenery. Each arrangement is balanced for use as a frame, header…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570157205/30-christmas-wreath-clipart-png-wreaths",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570157205/30-christmas-wreaths-florals-png-clipart",
       "image": "https://i.etsystatic.com/9660605/r/il/e9cf4c/8485217188/il_570xN.8485217188_46ru.jpg",
       "price": {
         "amount": 12.95,
@@ -354,9 +355,9 @@
     },
     {
       "listing_id": 4570379551,
-      "title": "30 Gothic Flower Clipart PNG, Gothic Botanicals, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Gothic Botanicals PNG Clipart, Poisonous Flowers, Eerie Mushrooms (Instant Download)",
       "description": "Gothic Botanicals brings together thorny roses, poisonous blooms, hanging herbs, twisting vines and eerie mushrooms for a darker take on floral art. Use these detailed plant…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570379551/30-gothic-flower-clipart-png-gothic",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570379551/30-gothic-botanicals-png-clipart",
       "image": "https://i.etsystatic.com/9660605/r/il/11356e/8486849678/il_570xN.8486849678_87rx.jpg",
       "price": {
         "amount": 12.95,
@@ -385,9 +386,9 @@
     },
     {
       "listing_id": 4570171826,
-      "title": "30 Christmas Home Clipart PNG, Cozy Christmas Home, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Cozy Christmas Home Clipart, Houses, Fireplaces, Rooms, Windows (30 PNG Files)",
       "description": "Create warm interior scenes with fireplaces, mantels, sofas, decorated windows, front doors, bookshelves, and full living room vignettes. Every piece is drawn to layer easily, so…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570171826/30-christmas-home-clipart-png-cozy",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570171826/cozy-christmas-home-clipart-houses",
       "image": "https://i.etsystatic.com/9660605/r/il/f493e9/8485216466/il_570xN.8485216466_2laq.jpg",
       "price": {
         "amount": 12.95,
@@ -417,9 +418,9 @@
     },
     {
       "listing_id": 4570156817,
-      "title": "30 Christmas Clipart PNG, Classic Christmas Icons, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Classic Christmas Icons PNG, Transparent Clipart, Commercial Use (Instant Download)",
       "description": "This set gathers the essential symbols of Christmas: trees, stockings, sleighs, ornaments, gifts, bells, and more in a unified bold-line style. Shapes are simple and readable…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570156817/30-christmas-clipart-png-classic",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570156817/30-classic-christmas-icons-png",
       "image": "https://i.etsystatic.com/9660605/r/il/3291f1/8533112339/il_570xN.8533112339_a5tb.jpg",
       "price": {
         "amount": 12.95,
@@ -448,9 +449,9 @@
     },
     {
       "listing_id": 4570379659,
-      "title": "30 Witchy Animals Clipart PNG, Dark Familiars, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Dark Familiars Clipart PNG, Gothic Spirit Animals, Transparent (Commercial Use)",
       "description": "Dark Familiars features gothic companions like sleek cats, watchful ravens, moths, owls, snakes, bats and other spirit animals. Each creature is stylized but readable, ideal for…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570379659/30-witchy-animals-clipart-png-dark",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570379659/30-dark-familiars-clipart-png-gothic",
       "image": "https://i.etsystatic.com/9660605/r/il/a20afa/8536736437/il_570xN.8536736437_6y5r.jpg",
       "price": {
         "amount": 12.95,
@@ -480,9 +481,9 @@
     },
     {
       "listing_id": 4570171422,
-      "title": "150 Christmas Clipart Bundle PNG, Holiday Cheer Clipart, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "150 Christmas Clipart Bundle, Transparent PNGs, Commercial Use (Digital Download)",
       "description": "The complete 150 Christmas Clipart PNG Mega Bundle | Transparent Clipart | Commercial Use | Digital Download library in one download. ──────────────────────────────────────────…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570171422/150-christmas-clipart-bundle-png-holiday",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570171422/150-christmas-clipart-bundle-transparent",
       "image": "https://i.etsystatic.com/9660605/r/il/a08bf2/8485213254/il_570xN.8485213254_mnyz.jpg",
       "price": {
         "amount": 24.99,
@@ -511,9 +512,9 @@
     },
     {
       "listing_id": 4570026629,
-      "title": "25 Thanksgiving Quote Png PNG, Thankful Sayings & Signs, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "25 Thanksgiving Quote PNGs, Hand-lettered Sayings, Transparent Clipart (Commercial Use)",
       "description": "Hand-lettered style phrases like “give thanks” and “grateful” are paired with simple sign shapes and gentle flourishes. Use these ready-made word art pieces on cards, shirts…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570026629/25-thanksgiving-quote-png-png-thankful",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026629/25-thanksgiving-quote-pngs-hand-lettered",
       "image": "https://i.etsystatic.com/9660605/r/il/1fe980/8532153481/il_570xN.8532153481_5gdn.jpg",
       "price": {
         "amount": 12.95,
@@ -542,9 +543,9 @@
     },
     {
       "listing_id": 4570026441,
-      "title": "25 Thanksgiving Dinner Clipart PNG, Feast & Fixings, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Thanksgiving Feast Clipart Collection, Watercolor Food & Drinks (25 PNG Files)",
       "description": "This collection focuses on the Thanksgiving table itself: roast turkeys, pies, casseroles, breads, and cozy mugs and glasses painted in a soft watercolor style. Use these food…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570026441/25-thanksgiving-dinner-clipart-png-feast",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026441/thanksgiving-feast-clipart-collection",
       "image": "https://i.etsystatic.com/9660605/r/il/ddea8d/8484253414/il_570xN.8484253414_2qdf.jpg",
       "price": {
         "amount": 12.95,
@@ -574,9 +575,9 @@
     },
     {
       "listing_id": 4570039686,
-      "title": "100 Thanksgiving Clipart Bundle PNG, Cozy Thanksgiving Bundle, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "100 Thanksgiving Clipart Bundle, Cozy Harvest, Transparent PNG (Digital Download)",
       "description": "The complete 100 Thanksgiving Clipart PNG Mega Bundle | Transparent Clipart | Commercial Use | Digital Download library in one download…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570039686/100-thanksgiving-clipart-bundle-png-cozy",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570039686/100-thanksgiving-clipart-bundle-cozy",
       "image": "https://i.etsystatic.com/9660605/r/il/95ab0b/8484253002/il_570xN.8484253002_17ct.jpg",
       "price": {
         "amount": 24.99,
@@ -607,9 +608,9 @@
     },
     {
       "listing_id": 4570026571,
-      "title": "25 Fall Leaves Watercolor Clipart PNG, Leaves & Florals, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "25 Watercolor Fall Leaves & Florals Clipart (Transparent PNG, Commercial Use)",
       "description": "Delicate leaves, branches, and floral clusters make this collection ideal for borders, frames, and backgrounds. Combine single leaves with pre-arranged bouquets and wreaths to…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570026571/25-fall-leaves-watercolor-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026571/25-watercolor-fall-leaves-florals",
       "image": "https://i.etsystatic.com/9660605/r/il/eca21f/8532153149/il_570xN.8532153149_szk4.jpg",
       "price": {
         "amount": 12.95,
@@ -638,9 +639,9 @@
     },
     {
       "listing_id": 4570026509,
-      "title": "25 Watercolor Pumpkin Clipart PNG, Pumpkins & Harvest, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Watercolor Pumpkin & Harvest Clipart Set, Transparent PNGs (25 Files)",
       "description": "Pumpkins, gourds, corn, and rustic harvest elements give this set a relaxed farmhouse feel. Mix and match single pumpkins, stacked arrangements, and simple farm accents to create…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4570026509/25-watercolor-pumpkin-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4570026509/watercolor-pumpkin-harvest-clipart-set",
       "image": "https://i.etsystatic.com/9660605/r/il/8df604/8532152697/il_570xN.8532152697_1ez3.jpg",
       "price": {
         "amount": 12.95,
@@ -670,9 +671,9 @@
     },
     {
       "listing_id": 4569884622,
-      "title": "37 Race Track Clipart PNG, Tracks & Flags, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "37 Race Track Clipart PNGs, Flags, Trophies, Signs (Commercial Use)",
       "description": "Build full race scenes with winding tracks, checkered flags, cones, and finish lines ready for posters, worksheets, and party backdrops. Simple shapes and bold outlines make each…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569884622/37-race-track-clipart-png-tracks-flags",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569884622/37-race-track-clipart-pngs-flags",
       "image": "https://i.etsystatic.com/9660605/r/il/56aa6d/8530934941/il_570xN.8530934941_b4yz.jpg",
       "price": {
         "amount": 4.95,
@@ -701,9 +702,9 @@
     },
     {
       "listing_id": 4569871571,
-      "title": "75 Race Car Clipart PNG, Race Car Track Bundle, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Race Car Track Bundle, 75 Transparent PNG Files, Commercial Use (Instant Download)",
       "description": "The complete Race Car and Race Track Clipart Bundle Checker Flag Sports Car library in one download. ────────────────────────────────────────── WHAT YOU GET…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569871571/75-race-car-clipart-png-race-car-track",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569871571/race-car-track-bundle-75-transparent-png",
       "image": "https://i.etsystatic.com/9660605/r/il/d35f7c/8530934197/il_570xN.8530934197_44ul.jpg",
       "price": {
         "amount": 12.95,
@@ -732,9 +733,9 @@
     },
     {
       "listing_id": 4569871611,
-      "title": "38 Race Car Clip Art PNG, Fast Race Cars, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "38 Race Car Clip Art PNG, Transparent Graphics, Commercial Use (Instant Download)",
       "description": "This set focuses on sleek race cars, helmets, numbers, and speed marks that drop easily into invites, games, and wall art. Clean outlines and flat fills keep them print-friendly…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569871611/38-race-car-clip-art-png-fast-race-cars",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569871611/38-race-car-clip-art-png-transparent",
       "image": "https://i.etsystatic.com/9660605/r/il/07f01d/8530934567/il_570xN.8530934567_bq3i.jpg",
       "price": {
         "amount": 4.95,
@@ -764,7 +765,7 @@
     },
     {
       "listing_id": 4569874778,
-      "title": "25 Butter Baking Clipart PNG, Butter Baking Set, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Watercolor Butter Baking Clipart Set, Transparent PNGs (25 Files)",
       "description": "A cozy mix of butter sticks, pats, dishes, and melty drizzles, painted in a soft watercolour style that feels right at home in the kitchen. Use these pieces on recipe cards…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569874778/25-butter-baking-clipart-png-butter",
       "image": "https://i.etsystatic.com/9660605/r/il/66d275/8530866217/il_570xN.8530866217_s4gd.jpg",
@@ -793,9 +794,9 @@
     },
     {
       "listing_id": 4569268918,
-      "title": "25 Gothic Moth Clipart PNG, Midnight Entomology Insect Bundle, Dark Academia Transparent Graphics, Commercial Use",
+      "title": "Gothic Moth & Beetle Clipart Bundle, Victorian Entomology PNGs (25 Files)",
       "description": "A cabinet of curiosities in transparent PNG. Twenty-five moths, beetles and night insects drawn in the style of a Victorian natural-history plate, every specimen pinned, centred…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569268918/25-gothic-moth-clipart-png-midnight",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569268918/gothic-moth-beetle-clipart-bundle",
       "image": "https://i.etsystatic.com/9660605/r/il/72cacd/8478604868/il_570xN.8478604868_2my5.jpg",
       "price": {
         "amount": 6.95,
@@ -824,9 +825,9 @@
     },
     {
       "listing_id": 4569835987,
-      "title": "30 Kawaii Home Decor Clipart PNG, Kawaii Cozy Home, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Kawaii Cozy Home Clipart PNGs, Plants, Decor, Comforts (Instant Download)",
       "description": "This mix of plants, candles, mugs, and soft furnishings adds a gentle homey touch to your designs. It suits planner spreads, room makeover mood boards, and lifestyle branding…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569835987/30-kawaii-home-decor-clipart-png-kawaii",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569835987/30-kawaii-cozy-home-clipart-pngs-plants",
       "image": "https://i.etsystatic.com/9660605/r/il/72d893/8530691279/il_570xN.8530691279_tcsu.jpg",
       "price": {
         "amount": 4.95,
@@ -856,9 +857,9 @@
     },
     {
       "listing_id": 4569268970,
-      "title": "25 Gothic Animal Clipart PNG, Ravens Bats Black Cats, Witch Familiar Bundle, Transparent Commercial Use Graphics",
+      "title": "25 Gothic Animal Clipart PNGs, Ravens, Bats, Cats, Owls (Transparent Commercial Use)",
       "description": "The witch&#39;s familiars, all twenty-five of them. Ravens, bats, black cats, owls and night creatures rendered with soft feather and fur detail on a true transparent background…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569268970/25-gothic-animal-clipart-png-ravens-bats",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569268970/25-gothic-animal-clipart-pngs-ravens",
       "image": "https://i.etsystatic.com/9660605/r/il/2d371e/8526513923/il_570xN.8526513923_jzec.jpg",
       "price": {
         "amount": 6.95,
@@ -888,9 +889,9 @@
     },
     {
       "listing_id": 4569848760,
-      "title": "30 Kawaii Self Care Clipart PNG, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Kawaii Self Care Clipart PNG, Bath, Skincare, Beauty Icons (Commercial Use)",
       "description": "Fill your self-care layouts with bubbly baths, sheet masks, lotions, and cozy loungewear icons. These gentle doodles work well in wellness planners, journal pages, or spa and…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569848760/30-kawaii-self-care-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569848760/30-kawaii-self-care-clipart-png-bath",
       "image": "https://i.etsystatic.com/9660605/r/il/b278e0/8530690463/il_570xN.8530690463_fuzy.jpg",
       "price": {
         "amount": 4.95,
@@ -919,9 +920,9 @@
     },
     {
       "listing_id": 4569848820,
-      "title": "30 Kawaii Food And Drink Clipart PNG, Kawaii Snacks & Sips, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Kawaii Food and Drink PNG Clipart, Smiling Snacks and Sips (Commercial Use)",
       "description": "Illustrations of milkshakes, bubble tea, pastries, and bento-style treats, each with a smiling face. Use them for menu boards, recipe cards, or to brighten digital stickers and…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569848820/30-kawaii-food-and-drink-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569848820/30-kawaii-food-and-drink-png-clipart",
       "image": "https://i.etsystatic.com/9660605/r/il/02d40c/8530690789/il_570xN.8530690789_5wtc.jpg",
       "price": {
         "amount": 4.95,
@@ -951,7 +952,7 @@
     },
     {
       "listing_id": 4569255931,
-      "title": "25 Celestial Witch Clipart PNG, Moon Phases Tarot Astrology Crystals, Gothic Transparent Commercial Use Bundle",
+      "title": "25 Celestial Witch Clipart PNG, Moon Phases, Tarot, Crystals (Commercial Use)",
       "description": "Moon phases, tarot, crystals and stars. Twenty-five celestial and divination graphics with gilded line work and deep night colour, transparent and ready for tarot decks…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569255931/25-celestial-witch-clipart-png-moon",
       "image": "https://i.etsystatic.com/9660605/r/il/7f9598/8526515559/il_570xN.8526515559_s9j8.jpg",
@@ -983,9 +984,9 @@
     },
     {
       "listing_id": 4569835815,
-      "title": "30 Kawaii Study Clipart PNG, Kawaii Study Desk, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "30 Kawaii Study Desk PNG Clipart, Transparent Digital Files (Commercial Use)",
       "description": "This set gathers laptops, planners, pens, and mugs in a soft kawaii style. Use them to decorate digital planners, study layouts, or classroom resources with a calm, cozy desk…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569835815/30-kawaii-study-clipart-png-kawaii-study",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569835815/30-kawaii-study-desk-png-clipart",
       "image": "https://i.etsystatic.com/9660605/r/il/f20570/8530690111/il_570xN.8530690111_9h9g.jpg",
       "price": {
         "amount": 4.95,
@@ -1015,9 +1016,9 @@
     },
     {
       "listing_id": 4569835757,
-      "title": "120 Kawaii Everyday Objects Clipart PNG, Pastel Kawaii Everyday, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "120 Kawaii Everyday Objects Clipart Bundle, Pastel Lifestyle Graphics (Digital Download)",
       "description": "The complete Trendy Kawaii Clipart Bundle | Cute Everyday Objects PNG | Pastel Girly Lifestyle Graphics library in one download. ────────────────────────────────────────── WHAT…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569835757/120-kawaii-everyday-objects-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569835757/120-kawaii-everyday-objects-clipart",
       "image": "https://i.etsystatic.com/9660605/r/il/8491ef/8530689703/il_570xN.8530689703_8tlk.jpg",
       "price": {
         "amount": 12.95,
@@ -1047,7 +1048,7 @@
     },
     {
       "listing_id": 4569269294,
-      "title": "25 Gothic Skull Clipart PNG, Dark Floral Skeleton Snake Raven, Tattoo Style Transparent Commercial Use Bundle",
+      "title": "25 Gothic Skull Clipart PNG, Dark Floral Snake Raven Tattoo Style (Commercial Use)",
       "description": "Bone and bloom. Twenty-five skulls, snakes, moths and dark florals in a tattoo-flash spirit, heavy enough for apparel and clean enough for stationery, every file cut out on…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569269294/25-gothic-skull-clipart-png-dark-floral",
       "image": "https://i.etsystatic.com/9660605/r/il/6a8143/8478607562/il_570xN.8478607562_n99h.jpg",
@@ -1071,16 +1072,14 @@
         "sticker design",
         "commercial use"
       ],
-      "themes": [
-        "spooky"
-      ],
+      "themes": [],
       "created": 1788653993
     },
     {
       "listing_id": 4569759741,
-      "title": "25 Pumpkin Spice Clipart PNG, Pumpkin Spice Caf, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Pumpkin Spice Café Clipart, Latte, Mugs, Pastries (25 PNG Files)",
       "description": "These hand-drawn pumpkin spice and coffee icons bring a cozy café feel to your autumn projects. Each mug, pastry, and pumpkin is isolated as a high-resolution PNG so you can…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569759741/25-pumpkin-spice-clipart-png-pumpkin",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569759741/pumpkin-spice-cafe-clipart-latte-mugs",
       "image": "https://i.etsystatic.com/9660605/r/il/9c5565/8530166543/il_570xN.8530166543_qdes.jpg",
       "price": {
         "amount": 4.95,
@@ -1111,9 +1110,9 @@
     },
     {
       "listing_id": 4569759863,
-      "title": "25 Fall Woodland Animals Clipart PNG, Woodland Autumn Friends, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "25 Woodland Autumn Friends Clipart, Foxes, Hedgehogs, Mushrooms (PNG Files)",
       "description": "Woodland foxes, hedgehogs, squirrels, and tiny critters play among mushrooms and falling leaves in this collection. These characters work well for classroom decor, nursery…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569759863/25-fall-woodland-animals-clipart-png",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569759863/25-woodland-autumn-friends-clipart-foxes",
       "image": "https://i.etsystatic.com/9660605/r/il/689c14/8530167577/il_570xN.8530167577_nxjz.jpg",
       "price": {
         "amount": 4.95,
@@ -1143,9 +1142,9 @@
     },
     {
       "listing_id": 4569772422,
-      "title": "25 Cute Fall Ghost Clipart PNG, Cozy Ghost Season, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Cozy Ghost Season Clipart, 25 Transparent PNG Files (Commercial Use)",
       "description": "Friendly ghosts sip coffee, cuddle pumpkins, and float through piles of leaves for a soft take on spooky season. Mix these illustrations into fall party invites, stickers, and…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569772422/25-cute-fall-ghost-clipart-png-cozy",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569772422/cozy-ghost-season-clipart-25-transparent",
       "image": "https://i.etsystatic.com/9660605/r/il/aa3937/8482264810/il_570xN.8482264810_12bh.jpg",
       "price": {
         "amount": 4.95,
@@ -1177,9 +1176,9 @@
     },
     {
       "listing_id": 4569269522,
-      "title": "25 Gothic Frame Clipart PNG, Victorian Borders Dark Floral Flourishes, Transparent Commercial Use Design Elements",
+      "title": "25 Gothic Victorian Frame Clipart PNG, Dark Floral Flourishes (Commercial Use)",
       "description": "Twenty-five ornate frames, borders, dividers and corner flourishes with genuinely empty centres, so you can drop your own text, photo or product straight inside. Gilded…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569269522/25-gothic-frame-clipart-png-victorian",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569269522/25-gothic-victorian-frame-clipart-png",
       "image": "https://i.etsystatic.com/9660605/r/il/094bc0/8478608996/il_570xN.8478608996_9syl.jpg",
       "price": {
         "amount": 6.95,
@@ -1270,9 +1269,9 @@
     },
     {
       "listing_id": 4569772296,
-      "title": "25 Sweater Weather Clipart PNG, Sweater Weather Cozy, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "Sweater Weather Cozy Clipart Set, Sweaters, Blankets, Books, Candles (25 PNG Files)",
       "description": "This set gathers sweaters, blankets, books, and candles that feel like a slow autumn afternoon at home. Use the mix of cozy objects and little moments to build hygge-inspired…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569772296/25-sweater-weather-clipart-png-sweater",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569772296/sweater-weather-cozy-clipart-set",
       "image": "https://i.etsystatic.com/9660605/r/il/1b6e7e/8482263806/il_570xN.8482263806_j7ug.jpg",
       "price": {
         "amount": 4.95,
@@ -1302,9 +1301,9 @@
     },
     {
       "listing_id": 4569772468,
-      "title": "100 Fall Clipart Bundle PNG, Cozy Fall Doodles, Mega Bundle, Transparent PNG Clipart, Commercial Use, Instant Download",
+      "title": "100 Fall Clipart Bundle, Cozy Autumn Doodles, Transparent PNG (Commercial Use)",
       "description": "The complete Fall Clipart Mega Bundle PNG | Cozy Autumn Clipart | Pumpkin Spice, Ghosts, Sweaters, Coffee, Animals, Leaves library in one download…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569772468/100-fall-clipart-bundle-png-cozy-fall",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569772468/100-fall-clipart-bundle-cozy-autumn",
       "image": "https://i.etsystatic.com/9660605/r/il/c3c7cb/8530168495/il_570xN.8530168495_ru74.jpg",
       "price": {
         "amount": 12.95,
@@ -1366,9 +1365,9 @@
     },
     {
       "listing_id": 4569255381,
-      "title": "25 Gothic Botanical Clipart PNG, Moonlit Flowers Mushrooms Herbs, Witchy Floral Transparent Commercial Use Bundle",
+      "title": "Gothic Botanical Clipart Bundle, Moonlit Flowers, Mushrooms, Herbs (25 PNG Files)",
       "description": "A poison garden at midnight. Twenty-five dark flowers, mushrooms, herbs and specimen bundles in deep burgundy, bruised violet and antique gold, cut out cleanly so you can build…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569255381/25-gothic-botanical-clipart-png-moonlit",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569255381/gothic-botanical-clipart-bundle-moonlit",
       "image": "https://i.etsystatic.com/9660605/r/il/2f7b47/8478603600/il_570xN.8478603600_b5i4.jpg",
       "price": {
         "amount": 6.95,
@@ -1398,9 +1397,9 @@
     },
     {
       "listing_id": 4569269146,
-      "title": "25 Dark Academia Clipart PNG, Haunted Library Books Raven Typewriter, Gothic Transparent Commercial Use Bundle",
+      "title": "Dark Academia Clipart Bundle, Gothic Library, Books, Quills, Ravens (25 PNG Files)",
       "description": "Dark academia in twenty-five pieces. Stacked leather books, quills, inkwells, candles, keys and a raven or two, painted with real leather and paper texture and cut out clean for…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569269146/25-dark-academia-clipart-png-haunted",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569269146/dark-academia-clipart-bundle-gothic",
       "image": "https://i.etsystatic.com/9660605/r/il/6cfad0/8478606500/il_570xN.8478606500_eztd.jpg",
       "price": {
         "amount": 6.95,
@@ -1427,9 +1426,9 @@
     },
     {
       "listing_id": 4569269060,
-      "title": "25 Gothic Apothecary Clipart PNG, Potion Bottles Herbs Witchy Objects, Dark Academia Transparent Graphics Bundle",
+      "title": "Gothic Apothecary Clipart Bundle, Witchy Potion Bottles, Ritual Objects (25 PNG Files)",
       "description": "Everything on the witch&#39;s shelf. Twenty-five potion bottles, jars, candles, crystals and ritual objects with hand-painted glass, wax and metal detail, each one isolated on a…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569269060/25-gothic-apothecary-clipart-png-potion",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569269060/gothic-apothecary-clipart-bundle-witchy",
       "image": "https://i.etsystatic.com/9660605/r/il/71a401/8478606048/il_570xN.8478606048_zpis.jpg",
       "price": {
         "amount": 6.95,
@@ -1459,7 +1458,7 @@
     },
     {
       "listing_id": 4569269592,
-      "title": "250 Gothic Clipart PNG Mega Bundle, Witchy Dark Academia Botanical Skull Moth Victorian Transparent Commercial Use",
+      "title": "Gothic Mega Bundle: 250 Transparent PNGs, Dark Academia, Witchy, Skull, Moth, Victorian (Digital Download)",
       "description": "The whole library in one download. All ten gothic collections, 250 transparent PNG graphics, organised into ten folders and painted to a locked palette so pieces from different…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569269592/250-gothic-clipart-png-mega-bundle",
       "image": "https://i.etsystatic.com/9660605/r/il/5587a0/8526518129/il_570xN.8526518129_iinm.jpg",
@@ -1721,7 +1720,7 @@
       "title": "Tarot Cats Celestial Spells Coloring Book, Witchy Night-Sky Scenes (Instant Download)",
       "description": "Tarot coloring book for relaxing nights with celestial coloring scenes that feel like a quiet ritual at your table. Step into a whimsical tarot-and-stars world filled with witchy…",
       "url": "https://blissfoxstudio.etsy.com/listing/4526850046/tarot-cats-celestial-spells-coloring",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/015ae5/8300019644/il_570xN.8300019644_mpu5.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -1753,7 +1752,7 @@
       "title": "English Village Coloring Pages, Detailed Street Scenes, Relaxing Cottage Art (Instant Download)",
       "description": "Coloring book village fans can unwind with English village scenes designed for slow, mindful coloring. Inside you’ll find a curated set of realistic street and lane illustrations…",
       "url": "https://blissfoxstudio.etsy.com/listing/4546846927/english-village-coloring-pages-detailed",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/0e038c/8366021791/il_570xN.8366021791_1vkp.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
