@@ -262,7 +262,9 @@
     },
     {
       "slug": "hedgehog-cottage-days-2026-07-24",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-11T23:16:07.219Z",
+      "angle_i": 1
     },
     {
       "slug": "bold-easy-horses-2026-07-21",
