@@ -300,7 +300,9 @@
     },
     {
       "slug": "kawaii-cafe-coffee-2026-06-25",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-12T23:03:12.895Z",
+      "angle_i": 1
     },
     {
       "slug": "big-machines-at-work-coloring-book-2026-05-15",
