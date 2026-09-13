@@ -714,7 +714,9 @@
     },
     {
       "listing_id": 4569835757,
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-13T21:43:02.960Z",
+      "variant_i": 1
     },
     {
       "listing_id": 4569269294,
