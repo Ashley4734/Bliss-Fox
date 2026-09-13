@@ -332,7 +332,9 @@
     },
     {
       "slug": "ramen-noodles-2026-06-26",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-13T23:10:43.149Z",
+      "angle_i": 1
     },
     {
       "slug": "soccer-around-the-world-coloring-book-2026-06-06",
