@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-16T16:27:06.951Z",
+  "updated": "2026-09-16T21:03:34.150Z",
   "count": 159,
   "products": [
     {
@@ -34,7 +34,7 @@
         "spooky",
         "fantasy"
       ],
-      "created": 1789185514
+      "created": 1789589415
     },
     {
       "listing_id": 4572689600,
@@ -1304,7 +1304,7 @@
       "title": "100 Fall Clipart Bundle, Cozy Autumn Doodles, Transparent PNG (Commercial Use)",
       "description": "The complete Fall Clipart Mega Bundle PNG | Cozy Autumn Clipart | Pumpkin Spice, Ghosts, Sweaters, Coffee, Animals, Leaves library in one download…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569772468/100-fall-clipart-bundle-cozy-autumn",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/c3c7cb/8530168495/il_570xN.8530168495_ru74.jpg",
       "price": {
         "amount": 12.95,
         "currency": "USD",
