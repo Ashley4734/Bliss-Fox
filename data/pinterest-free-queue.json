@@ -6,7 +6,9 @@
   "pins": [
     {
       "slug": "80s-nostalgia-2026-06-22",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-17T23:33:28.078Z",
+      "angle_i": 1
     },
     {
       "slug": "90s-nostalgia-2026-06-22",
