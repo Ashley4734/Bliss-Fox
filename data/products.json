@@ -1,7 +1,7 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-16T21:03:34.150Z",
+  "updated": "2026-09-17T04:07:34.088Z",
   "count": 159,
   "products": [
     {
@@ -43,9 +43,9 @@
       "url": "https://blissfoxstudio.etsy.com/listing/4572689600/blank-grimoire-pages-printable-68",
       "image": "https://i.etsystatic.com/9660605/r/il/53320f/8552083641/il_570xN.8552083641_hxf3.jpg",
       "price": {
-        "amount": 12.99,
+        "amount": 9.99,
         "currency": "USD",
-        "display": "$12.99"
+        "display": "$9.99"
       },
       "tags": [
         "grimoire pages",
