@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-18T03:53:23.907Z",
+  "updated": "2026-09-18T10:49:19.985Z",
   "count": 160,
   "products": [
+    {
+      "listing_id": 4571920011,
+      "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
+      "description": "A kitchen witch&#39;s working book — 88 illustrated pages for the cooking, growing, brewing and foraging side of the craft. This is the book for the practice that happens at the…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4571920011/kitchen-witch-printable-88-page-green",
+      "image": "https://i.etsystatic.com/9660605/r/il/fbae5c/8547858999/il_570xN.8547858999_g5mu.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "kitchen witch",
+        "green witch",
+        "kitchen witchery",
+        "printable grimoire",
+        "herbal apothecary",
+        "witch recipe book",
+        "book of shadows",
+        "foraging journal",
+        "herbalist journal",
+        "garden journal",
+        "sabbat recipes",
+        "witchy printable",
+        "tea correspondence"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1789726992
+    },
     {
       "listing_id": 4577491550,
       "title": "Samhain Printable Journal: 30-Page Book of Shadows Expansion, Autumn Grimoire PDF",
@@ -129,38 +161,6 @@
         "spooky"
       ],
       "created": 1789001589
-    },
-    {
-      "listing_id": 4571920011,
-      "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
-      "description": "A kitchen witch&#39;s working book — 88 illustrated pages for the cooking, growing, brewing and foraging side of the craft. This is the book for the practice that happens at the…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4571920011/kitchen-witch-printable-88-page-green",
-      "image": "https://i.etsystatic.com/9660605/r/il/fbae5c/8547858999/il_570xN.8547858999_g5mu.jpg",
-      "price": {
-        "amount": 15,
-        "currency": "USD",
-        "display": "$15.00"
-      },
-      "tags": [
-        "kitchen witch",
-        "green witch",
-        "kitchen witchery",
-        "printable grimoire",
-        "herbal apothecary",
-        "witch recipe book",
-        "book of shadows",
-        "foraging journal",
-        "herbalist journal",
-        "garden journal",
-        "sabbat recipes",
-        "witchy printable",
-        "tea correspondence"
-      ],
-      "themes": [
-        "cozy",
-        "spooky"
-      ],
-      "created": 1788976268
     },
     {
       "listing_id": 4570395074,
@@ -892,7 +892,7 @@
       "title": "25 Gothic Animal Clipart PNGs, Ravens, Bats, Cats, Owls (Transparent Commercial Use)",
       "description": "The witch&#39;s familiars, all twenty-five of them. Ravens, bats, black cats, owls and night creatures rendered with soft feather and fur detail on a true transparent background…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569268970/25-gothic-animal-clipart-pngs-ravens",
-      "image": "https://i.etsystatic.com/9660605/r/il/2d371e/8526513923/il_570xN.8526513923_jzec.jpg",
+      "image": "",
       "price": {
         "amount": 6.95,
         "currency": "USD",
@@ -3029,7 +3029,7 @@
       "title": "Boba Coloring Book, Kawaii Bubble Tea Shop Adventures, Cozy Treats (PDF Download)",
       "description": "Boba coloring book filled with cozy bubble tea shop moments—sip, smile, and color adorable cups, toppings, and café buddies. Inside you’ll find a playful boba-tea world where the…",
       "url": "https://blissfoxstudio.etsy.com/listing/4528497221/boba-coloring-book-kawaii-bubble-tea",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/293f93/8348578013/il_570xN.8348578013_r9yo.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
