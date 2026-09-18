@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-17T21:05:49.547Z",
-  "count": 159,
+  "updated": "2026-09-18T03:53:23.907Z",
+  "count": 160,
   "products": [
+    {
+      "listing_id": 4577491550,
+      "title": "Samhain Printable Journal: 30-Page Book of Shadows Expansion, Autumn Grimoire PDF",
+      "description": "Make space for remembrance, seasonal reflection, and a quieter Samhain with this 30-page printable Book of Shadows expansion. Warm parchment, botanical borders, lanterns, and…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4577491550/samhain-printable-journal-30-page-book",
+      "image": "https://i.etsystatic.com/9660605/r/il/1eab11/8539719940/il_570xN.8539719940_k4ds.jpg",
+      "price": {
+        "amount": 7.99,
+        "currency": "USD",
+        "display": "$7.99"
+      },
+      "tags": [
+        "samhain printable",
+        "samhain journal",
+        "book of shadows",
+        "grimoire pages",
+        "autumn journal",
+        "witchy printable",
+        "sabbat journal",
+        "pagan journal",
+        "remembrance journal",
+        "tarot spread",
+        "seasonal reflection",
+        "printable workbook",
+        "samhain grimoire"
+      ],
+      "themes": [
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1789686313
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
@@ -2997,7 +3029,7 @@
       "title": "Boba Coloring Book, Kawaii Bubble Tea Shop Adventures, Cozy Treats (PDF Download)",
       "description": "Boba coloring book filled with cozy bubble tea shop moments—sip, smile, and color adorable cups, toppings, and café buddies. Inside you’ll find a playful boba-tea world where the…",
       "url": "https://blissfoxstudio.etsy.com/listing/4528497221/boba-coloring-book-kawaii-bubble-tea",
-      "image": "https://i.etsystatic.com/9660605/r/il/293f93/8348578013/il_570xN.8348578013_r9yo.jpg",
+      "image": "",
       "price": {
         "amount": 4.49,
         "currency": "USD",
