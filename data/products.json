@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-19T10:33:20.008Z",
+  "updated": "2026-09-19T15:37:16.465Z",
   "count": 160,
   "products": [
+    {
+      "listing_id": 4558427292,
+      "title": "Kids Breathing Exercises Printable, Fox Mindfulness Calm Corner Cards (SEL)",
+      "description": "🦊 Simple breathing kids actually want to do! Four friendly fox breathing exercises help children slow down, calm their bodies, and feel back in control — anywhere, anytime. ⭐…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4558427292/kids-breathing-exercises-printable-fox",
+      "image": "https://i.etsystatic.com/9660605/r/il/5e38f3/8400884970/il_570xN.8400884970_14sx.jpg",
+      "price": {
+        "amount": 2.99,
+        "currency": "USD",
+        "display": "$2.99"
+      },
+      "tags": [
+        "breathing exercises",
+        "breathing cards",
+        "calm down cards",
+        "mindfulness kids",
+        "breathing for kids",
+        "social emotional",
+        "sel printable",
+        "self regulation",
+        "calm corner",
+        "coping skills",
+        "anxiety kids",
+        "breathing bookmarks",
+        "deep breathing"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1789830517
+    },
     {
       "listing_id": 4571920011,
       "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
@@ -1583,39 +1616,6 @@
         "kids"
       ],
       "created": 1787661535
-    },
-    {
-      "listing_id": 4558427292,
-      "title": "Kids Breathing Exercises Printable, Fox Mindfulness Calm Corner Cards (SEL)",
-      "description": "🦊 Simple breathing kids actually want to do! Four friendly fox breathing exercises help children slow down, calm their bodies, and feel back in control — anywhere, anytime. ⭐…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4558427292/kids-breathing-exercises-printable-fox",
-      "image": "https://i.etsystatic.com/9660605/r/il/5e38f3/8400884970/il_570xN.8400884970_14sx.jpg",
-      "price": {
-        "amount": 2.99,
-        "currency": "USD",
-        "display": "$2.99"
-      },
-      "tags": [
-        "breathing exercises",
-        "breathing cards",
-        "calm down cards",
-        "mindfulness kids",
-        "breathing for kids",
-        "social emotional",
-        "sel printable",
-        "self regulation",
-        "calm corner",
-        "coping skills",
-        "anxiety kids",
-        "breathing bookmarks",
-        "deep breathing"
-      ],
-      "themes": [
-        "cozy",
-        "animals",
-        "kids"
-      ],
-      "created": 1787659007
     },
     {
       "listing_id": 4548301406,
