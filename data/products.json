@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-20T04:06:21.942Z",
+  "updated": "2026-09-20T10:55:46.030Z",
   "count": 160,
   "products": [
+    {
+      "listing_id": 4528206340,
+      "title": "Cozy Christmas Village Coloring Book, Storybook Winter Scenes (PDF Download)",
+      "description": "Christmas coloring book filled with cozy village scenes to color for a calm, screen-free holiday break. Step into a storybook winter town where every street glows with seasonal…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528206340/cozy-christmas-village-coloring-book",
+      "image": "https://i.etsystatic.com/9660605/r/il/1e0ea7/8300574572/il_570xN.8300574572_8kvr.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "christmas village",
+        "holiday coloring",
+        "xmas coloring book",
+        "winter coloring",
+        "cozy christmas",
+        "printable xmas",
+        "adult holiday",
+        "kids christmas",
+        "christmas gift",
+        "colouring christmas",
+        "festive coloring",
+        "coloring pages pdf",
+        "digital download"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1789889129
+    },
     {
       "listing_id": 4558427292,
       "title": "Kids Breathing Exercises Printable, Fox Mindfulness Calm Corner Cards (SEL)",
@@ -3214,39 +3247,6 @@
         "seasonal"
       ],
       "created": 1782476551
-    },
-    {
-      "listing_id": 4528206340,
-      "title": "Cozy Christmas Village Coloring Book, Storybook Winter Scenes (PDF Download)",
-      "description": "Christmas coloring book filled with cozy village scenes to color for a calm, screen-free holiday break. Step into a storybook winter town where every street glows with seasonal…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528206340/cozy-christmas-village-coloring-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/1e0ea7/8300574572/il_570xN.8300574572_8kvr.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "christmas village",
-        "holiday coloring",
-        "xmas coloring book",
-        "winter coloring",
-        "cozy christmas",
-        "printable xmas",
-        "adult holiday",
-        "kids christmas",
-        "christmas gift",
-        "colouring christmas",
-        "festive coloring",
-        "coloring pages pdf",
-        "digital download"
-      ],
-      "themes": [
-        "cozy",
-        "seasonal",
-        "kids"
-      ],
-      "created": 1782475414
     },
     {
       "listing_id": 4528233346,
