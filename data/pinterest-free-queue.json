@@ -188,7 +188,9 @@
     },
     {
       "slug": "koi-fish-2026-07-20",
-      "posted": false
+      "posted": true,
+      "posted_at": "2026-09-21T19:42:14.057Z",
+      "angle_i": 1
     },
     {
       "slug": "dinosaurs-2026-06-22",
