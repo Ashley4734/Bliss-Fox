@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-21T21:49:57.124Z",
+  "updated": "2026-09-22T04:00:47.137Z",
   "count": 160,
   "products": [
+    {
+      "listing_id": 4526677440,
+      "title": "Witchy Familiar Coloring Book, Cozy Animal Companions, Spell Table Art (PDF Download)",
+      "description": "Familiar coloring book for quiet evenings of ritual time—meet witchy animal companions, apothecary shelves, and cozy spell tables you can bring to life with your own colors…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4526677440/witchy-familiar-coloring-book-cozy",
+      "image": "https://i.etsystatic.com/9660605/r/il/e7eb9a/8300393584/il_570xN.8300393584_6kv1.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "witch cat coloring",
+        "owl coloring book",
+        "raven coloring",
+        "toad coloring pages",
+        "bat coloring pages",
+        "fox coloring book",
+        "witchy animal art",
+        "adult coloring",
+        "calming spell art",
+        "colouring pages",
+        "digital download",
+        "coloring pages pdf",
+        "pagan gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "animals"
+      ],
+      "created": 1790049167
+    },
     {
       "listing_id": 4528206340,
       "title": "Cozy Christmas Village Coloring Book, Storybook Winter Scenes (PDF Download)",
@@ -3673,39 +3706,6 @@
         "kids"
       ],
       "created": 1782265533
-    },
-    {
-      "listing_id": 4526677440,
-      "title": "Witchy Familiar Coloring Book, Cozy Animal Companions, Spell Table Art (PDF Download)",
-      "description": "Familiar coloring book for quiet evenings of ritual time—meet witchy animal companions, apothecary shelves, and cozy spell tables you can bring to life with your own colors…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4526677440/witchy-familiar-coloring-book-cozy",
-      "image": "https://i.etsystatic.com/9660605/r/il/e7eb9a/8300393584/il_570xN.8300393584_6kv1.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "witch cat coloring",
-        "owl coloring book",
-        "raven coloring",
-        "toad coloring pages",
-        "bat coloring pages",
-        "fox coloring book",
-        "witchy animal art",
-        "adult coloring",
-        "calming spell art",
-        "colouring pages",
-        "digital download",
-        "coloring pages pdf",
-        "pagan gift"
-      ],
-      "themes": [
-        "cozy",
-        "spooky",
-        "animals"
-      ],
-      "created": 1782213011
     },
     {
       "listing_id": 4526563077,
