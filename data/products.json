@@ -1,9 +1,72 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-22T16:35:09.918Z",
+  "updated": "2026-09-22T21:02:29.423Z",
   "count": 160,
   "products": [
+    {
+      "listing_id": 4571920011,
+      "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
+      "description": "A kitchen witch&#39;s working book — 88 illustrated pages for the cooking, growing, brewing and foraging side of the craft. This is the book for the practice that happens at the…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4571920011/kitchen-witch-printable-88-page-green",
+      "image": "https://i.etsystatic.com/9660605/r/il/fbae5c/8547858999/il_570xN.8547858999_g5mu.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "kitchen witch",
+        "green witch",
+        "kitchen witchery",
+        "printable grimoire",
+        "herbal apothecary",
+        "witch recipe book",
+        "book of shadows",
+        "foraging journal",
+        "herbalist journal",
+        "garden journal",
+        "sabbat recipes",
+        "witchy printable",
+        "tea correspondence"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1790110631
+    },
+    {
+      "listing_id": 4572355136,
+      "title": "Book of Shadows Bundle | 176-Page Printable Grimoire & Kitchen Witch Journal (Digital Download)",
+      "description": "Both volumes, 176 illustrated pages — the whole practice in one binder. Digital download only; no physical book is shipped. Includes US Letter, A4, and A5 PDFs, delivered through…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4572355136/book-of-shadows-bundle-2-printable",
+      "image": "https://i.etsystatic.com/9660605/r/il/a57ee8/8549565329/il_570xN.8549565329_15os.jpg",
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "display": "$24.99"
+      },
+      "tags": [
+        "book of shadows",
+        "grimoire bundle",
+        "printable grimoire",
+        "witch planner",
+        "kitchen witch",
+        "green witch",
+        "spell book pages",
+        "witchcraft journal",
+        "wheel of the year",
+        "herbal apothecary",
+        "witchy printable",
+        "grimoire pages",
+        "baby witch kit"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1790110630
+    },
     {
       "listing_id": 4526677440,
       "title": "Witchy Familiar Coloring Book, Cozy Animal Companions, Spell Table Art (PDF Download)",
@@ -104,38 +167,6 @@
       "created": 1789830517
     },
     {
-      "listing_id": 4571920011,
-      "title": "Kitchen Witch Grimoire | 88-Page Herbal Recipe Journal (Digital Download)",
-      "description": "A kitchen witch&#39;s working book — 88 illustrated pages for the cooking, growing, brewing and foraging side of the craft. This is the book for the practice that happens at the…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4571920011/kitchen-witch-printable-88-page-green",
-      "image": "https://i.etsystatic.com/9660605/r/il/fbae5c/8547858999/il_570xN.8547858999_g5mu.jpg",
-      "price": {
-        "amount": 15,
-        "currency": "USD",
-        "display": "$15.00"
-      },
-      "tags": [
-        "kitchen witch",
-        "green witch",
-        "kitchen witchery",
-        "printable grimoire",
-        "herbal apothecary",
-        "witch recipe book",
-        "book of shadows",
-        "foraging journal",
-        "herbalist journal",
-        "garden journal",
-        "sabbat recipes",
-        "witchy printable",
-        "tea correspondence"
-      ],
-      "themes": [
-        "cozy",
-        "spooky"
-      ],
-      "created": 1789726992
-    },
-    {
       "listing_id": 4577491550,
       "title": "Samhain Printable Journal: 30-Page Book of Shadows Expansion, Autumn Grimoire PDF",
       "description": "Make space for remembrance, seasonal reflection, and a quieter Samhain with this 30-page printable Book of Shadows expansion. Warm parchment, botanical borders, lanterns, and…",
@@ -229,37 +260,6 @@
         "spooky"
       ],
       "created": 1789050022
-    },
-    {
-      "listing_id": 4572355136,
-      "title": "Book of Shadows Bundle | 176-Page Printable Grimoire & Kitchen Witch Journal (Digital Download)",
-      "description": "Both volumes, 176 illustrated pages — the whole practice in one binder. Digital download only; no physical book is shipped. Includes US Letter, A4, and A5 PDFs, delivered through…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4572355136/book-of-shadows-bundle-2-printable",
-      "image": "https://i.etsystatic.com/9660605/r/il/a57ee8/8549565329/il_570xN.8549565329_15os.jpg",
-      "price": {
-        "amount": 24.99,
-        "currency": "USD",
-        "display": "$24.99"
-      },
-      "tags": [
-        "book of shadows",
-        "grimoire bundle",
-        "printable grimoire",
-        "witch planner",
-        "kitchen witch",
-        "green witch",
-        "spell book pages",
-        "witchcraft journal",
-        "wheel of the year",
-        "herbal apothecary",
-        "witchy printable",
-        "grimoire pages",
-        "baby witch kit"
-      ],
-      "themes": [
-        "spooky"
-      ],
-      "created": 1789001589
     },
     {
       "listing_id": 4570395074,
