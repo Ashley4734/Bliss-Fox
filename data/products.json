@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-23T11:04:18.053Z",
+  "updated": "2026-09-23T16:25:38.752Z",
   "count": 160,
   "products": [
+    {
+      "listing_id": 4552648203,
+      "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal and witchcraft planner, designed for printing and building your own personalized binder…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
+      "image": "https://i.etsystatic.com/9660605/r/il/827ae8/8505399716/il_570xN.8505399716_fuin.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "grimoire journal",
+        "grimoire printable",
+        "book of shadows",
+        "grimoire pages",
+        "witchcraft journal",
+        "spell book pages",
+        "witch journal pdf",
+        "wheel of the year",
+        "moon magic journal",
+        "herbal grimoire",
+        "tarot journal pages",
+        "crystal journal",
+        "witchcraft printable"
+      ],
+      "themes": [
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1790174533
+    },
     {
       "listing_id": 4526677440,
       "title": "Witchy Familiar Coloring Book, Cozy Animal Companions, Spell Table Art (PDF Download)",
@@ -197,38 +229,6 @@
         "seasonal"
       ],
       "created": 1789686313
-    },
-    {
-      "listing_id": 4552648203,
-      "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
-      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal and witchcraft planner, designed for printing and building your own personalized binder…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/827ae8/8505399716/il_570xN.8505399716_fuin.jpg",
-      "price": {
-        "amount": 15,
-        "currency": "USD",
-        "display": "$15.00"
-      },
-      "tags": [
-        "grimoire journal",
-        "grimoire printable",
-        "book of shadows",
-        "grimoire pages",
-        "witchcraft journal",
-        "spell book pages",
-        "witch journal pdf",
-        "wheel of the year",
-        "moon magic journal",
-        "herbal grimoire",
-        "tarot journal pages",
-        "crystal journal",
-        "witchcraft printable"
-      ],
-      "themes": [
-        "spooky",
-        "fantasy"
-      ],
-      "created": 1789659306
     },
     {
       "listing_id": 4572689600,
