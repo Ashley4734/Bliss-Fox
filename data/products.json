@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-23T21:17:42.583Z",
-  "count": 160,
+  "updated": "2026-09-24T03:52:13.012Z",
+  "count": 161,
   "products": [
+    {
+      "listing_id": 4581466975,
+      "title": "Digital Wedding Planner, Wedding Budget Tracker, Guest List & Seating Chart, Wedding Checklist, Vendor Tracker, Day Of Timeline",
+      "description": "Plan your entire wedding in one beautiful, private digital planner: checklist, budget, guest list, seating chart, vendors and day-of timeline, all connected. No app, no…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4581466975/digital-wedding-planner-wedding-budget",
+      "image": "https://i.etsystatic.com/9660605/r/il/e8bdae/8617499539/il_570xN.8617499539_ntk3.jpg",
+      "price": {
+        "amount": 39.99,
+        "currency": "USD",
+        "display": "$39.99"
+      },
+      "tags": [
+        "wedding planner",
+        "digital planner",
+        "wedding budget",
+        "guest list tracker",
+        "seating chart",
+        "wedding checklist",
+        "bride to be gift",
+        "engagement gift",
+        "wedding organizer",
+        "vendor tracker",
+        "day of timeline",
+        "rsvp tracker",
+        "wedding planning"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1790213533
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
