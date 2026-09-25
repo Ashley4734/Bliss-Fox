@@ -97,8 +97,8 @@
     {
       "listing_id": 4543045979,
       "posted": true,
-      "posted_at": "2026-09-11T01:02:22.339Z",
-      "variant_i": 3
+      "posted_at": "2026-09-25T06:32:38.478Z",
+      "variant_i": 4
     },
     {
       "listing_id": 4543046396,
@@ -929,6 +929,18 @@
     },
     {
       "listing_id": 4581466975,
+      "posted": false
+    },
+    {
+      "listing_id": 4582128046,
+      "posted": false
+    },
+    {
+      "listing_id": 4582115091,
+      "posted": false
+    },
+    {
+      "listing_id": 4582124608,
       "posted": false
     }
   ]
