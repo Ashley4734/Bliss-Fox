@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-09-26T20:49:02.908Z",
+  "updated": "2026-09-27T04:26:54.831Z",
   "count": 164,
   "products": [
+    {
+      "listing_id": 4528492528,
+      "title": "Kawaii Ramen Coloring Book, Cozy Noodle Shop Scenes, 25 Pages (Instant Download)",
+      "description": "Ramen coloring book fun for cozy nights in, with kawaii ramen scenes that feel like a warm little noodle shop you can color at your own pace. Inside you’ll find 25+ cute line-art…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528492528/kawaii-ramen-coloring-book-cute",
+      "image": "https://i.etsystatic.com/9660605/r/il/cf5197/8348028449/il_570xN.8348028449_ii64.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "ramen coloring pages",
+        "kawaii ramen",
+        "noodle shop pages",
+        "food coloring book",
+        "cute food coloring",
+        "kids ramen coloring",
+        "adult ramen relax",
+        "ramen lover gift",
+        "gift for foodie",
+        "ramen party activity",
+        "ramen colouring",
+        "digital download",
+        "japanese food fun"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1790463879
+    },
     {
       "listing_id": 4569884622,
       "title": "37 Race Track Clipart PNGs, Flags, Trophies, Signs (Commercial Use)",
@@ -1840,7 +1873,7 @@
       "title": "Pastel Goth Coloring Book, Kawaii Spooky Friends, Relaxing Soft Goth Cuties (PDF Download)",
       "description": "Coloring book cute for cozy unwind time with spooky cute friends—an easy way to relax, focus, and enjoy a sweet-creepy vibe at home. Inside you’ll find a collection of…",
       "url": "https://blissfoxstudio.etsy.com/listing/4543053441/pastel-goth-coloring-book-kawaii-spooky",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/565558/8373783271/il_570xN.8373783271_jkpi.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -2709,7 +2742,7 @@
       "title": "Dragon Coloring Book, Simple Fantasy Friends, Calm Pages for Kids (Instant Download)",
       "description": "Dragon coloring book pages for kids who love sweet hatchlings and friendly fantasy scenes. This printable set is made for easy, relaxing coloring with bold, simple shapes and…",
       "url": "https://blissfoxstudio.etsy.com/listing/4541645790/dragon-coloring-book-simple-fantasy",
-      "image": "https://i.etsystatic.com/9660605/r/il/14f6a8/8348377111/il_570xN.8348377111_h3uy.jpg",
+      "image": "",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -2742,7 +2775,7 @@
       "title": "Butterfly Coloring Book, Stained-Glass Style, Bold Outlines, Printable PDF (Instant Download)",
       "description": "Butterfly coloring book for quiet, satisfying coloring time with garden wings and blossoms in bold, stained-glass inspired window designs. This printable set is made for adults…",
       "url": "https://blissfoxstudio.etsy.com/listing/4541509384/butterfly-coloring-book-stained-glass",
-      "image": "https://i.etsystatic.com/9660605/r/il/1defd3/8300051960/il_570xN.8300051960_hvsk.jpg",
+      "image": "",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -3235,39 +3268,6 @@
         "coloring pages pdf",
         "milk tea cuties",
         "dessert drink fun"
-      ],
-      "themes": [
-        "cozy",
-        "animals",
-        "kids"
-      ],
-      "created": 1782505789
-    },
-    {
-      "listing_id": 4528492528,
-      "title": "Kawaii Ramen Coloring Book, Cozy Noodle Shop Scenes, 25 Pages (Instant Download)",
-      "description": "Ramen coloring book fun for cozy nights in, with kawaii ramen scenes that feel like a warm little noodle shop you can color at your own pace. Inside you’ll find 25+ cute line-art…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528492528/kawaii-ramen-coloring-book-cute",
-      "image": "https://i.etsystatic.com/9660605/r/il/cf5197/8348028449/il_570xN.8348028449_ii64.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "ramen coloring pages",
-        "kawaii ramen",
-        "noodle shop pages",
-        "food coloring book",
-        "cute food coloring",
-        "kids ramen coloring",
-        "adult ramen relax",
-        "ramen lover gift",
-        "gift for foodie",
-        "ramen party activity",
-        "ramen colouring",
-        "digital download",
-        "japanese food fun"
       ],
       "themes": [
         "cozy",
