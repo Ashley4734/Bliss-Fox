@@ -89,6 +89,15 @@
       "saves": 154,
       "pin_clicks": 340,
       "outbound_clicks": 20
+    },
+    {
+      "date": "2026-09-28",
+      "window_days": 30,
+      "pins_analyzed": 120,
+      "impressions": 38853,
+      "saves": 647,
+      "pin_clicks": 1286,
+      "outbound_clicks": 33
     }
   ]
 }

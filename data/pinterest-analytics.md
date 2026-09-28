@@ -1,39 +1,39 @@
 # Pinterest analytics — Bliss Fox Studio
 
-_Window: 2026-08-22 → 2026-09-21 (30 days). 120 of 120 recent Pins analyzed. Generated 2026-09-21._
+_Window: 2026-08-29 → 2026-09-28 (30 days). 120 of 120 recent Pins analyzed. Generated 2026-09-28._
 
 ## Totals
 
 | Impressions | Saves | Pin clicks | Outbound clicks |
 |---:|---:|---:|---:|
-| 9,050 | 154 | 340 | 20 |
+| 38,853 | 647 | 1,286 | 33 |
 
 ## Top products (by outbound clicks)
 
 | Product | Impr. | Saves | Outbound |
 |---|---:|---:|---:|
-| listing unknown | 8,228 | 152 | 17 |
-| 100 Fall Clipart Bundle, Cozy Autumn Doodles, Transparent PNG (Commerc | 23 | 2 | 1 |
-| Blank Grimoire Pages Printable / 68 Parchment Journal Papers (Digital  | 40 | 0 | 1 |
-| Book of Shadows Bundle / 176-Page Printable Grimoire & Kitchen Witch J | 17 | 0 | 1 |
-| Cozy Ghost Season Clipart, 25 Transparent PNG Files (Commercial Use) | 0 | 0 | 0 |
-| Pumpkin Spice Café Clipart, Latte, Mugs, Pastries (25 PNG Files) | 0 | 0 | 0 |
-| Kawaii Food Coloring Book, 25 Pages, Chibi Snacks & Drinks, Instant Do | 0 | 0 | 0 |
-| 25 Celestial Witch Clipart PNG, Moon Phases, Tarot, Crystals (Commerci | 0 | 0 | 0 |
-| 25 Gothic Animal Clipart PNGs, Ravens, Bats, Cats, Owls (Transparent C | 0 | 0 | 0 |
-| Gothic Moth & Beetle Clipart Bundle, Victorian Entomology PNGs (25 Fil | 0 | 0 | 0 |
+| listing unknown | 38,082 | 646 | 32 |
+| Pregnancy Planner Digital, Baby Registry Checklist, Hospital Bag List, | 4 | 0 | 1 |
+| Cozy Ghost Season Clipart, 25 Transparent PNG Files (Commercial Use) | 10 | 1 | 0 |
+| Bug Coloring Book, 25 Simple Pages For Kids, Garden Critters (Printabl | 0 | 0 | 0 |
+| Vintage Botanical Bouquet Coloring Book, 24 Pages, Adults Floral Art ( | 0 | 0 | 0 |
+| Christmas Planner Digital, Holiday Gift List Tracker, Christmas Budget | 0 | 0 | 0 |
+| Home Renovation Planner Digital, Remodel Budget Tracker, Contractor Qu | 0 | 0 | 0 |
+| Digital Wedding Planner, Wedding Budget Tracker, Guest List & Seating  | 0 | 0 | 0 |
+| Mushroom Cottage Coloring Book, Enchanted Forest Scenes, Cozy Spells ( | 13 | 0 | 0 |
+| Zodiac Night Magic Coloring Book, Celestial Witchy Scenes, Astrology P | 7 | 0 | 0 |
 
 ## By theme (by outbound clicks)
 
 | Theme | Impr. | Saves | Outbound |
 |---|---:|---:|---:|
-| (untagged) | 8,230 | 152 | 17 |
-| spooky | 554 | 2 | 3 |
-| cozy | 350 | 2 | 1 |
-| seasonal | 224 | 2 | 1 |
-| animals | 267 | 0 | 0 |
-| kids | 17 | 0 | 0 |
-| fantasy | 201 | 0 | 0 |
-| professions | 4 | 0 | 0 |
-| patriotic | 6 | 0 | 0 |
+| (untagged) | 38,094 | 646 | 33 |
+| animals | 313 | 1 | 0 |
+| seasonal | 295 | 1 | 0 |
+| kids | 101 | 0 | 0 |
+| cozy | 417 | 1 | 0 |
+| spooky | 511 | 1 | 0 |
+| fantasy | 126 | 0 | 0 |
+| professions | 26 | 0 | 0 |
+| patriotic | 17 | 0 | 0 |
 
