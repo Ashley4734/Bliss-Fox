@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-02T12:08:08.930Z",
+  "updated": "2026-10-02T21:59:04.818Z",
   "count": 143,
   "products": [
+    {
+      "listing_id": 4546824543,
+      "title": "European Storefronts Coloring Book, Cozy Street Scenes, Printable PDF (Instant Download)",
+      "description": "Storefront coloring book for anyone who loves cozy café corners and old-world streets—settle in with a quiet, travel-inspired coloring break. Step into a stroll-worthy collection…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4546824543/european-storefronts-coloring-book-cozy",
+      "image": "https://i.etsystatic.com/9660605/r/il/1d342d/8366030379/il_570xN.8366030379_d3vc.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "cafe coloring book",
+        "shopfront coloring",
+        "europe street scene",
+        "paris cafe coloring",
+        "italian cafe page",
+        "bakery coloring page",
+        "bookshop coloring",
+        "travel lover gift",
+        "adult stress relief",
+        "printable cafe art",
+        "colouring book pdf",
+        "architecture sketch",
+        "window display"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1790958486
+    },
     {
       "listing_id": 4582124608,
       "title": "Pregnancy Planner Digital, Baby Registry Checklist, Hospital Bag List, Baby Budget, Baby Shower Planner, Baby Names, Due Date Countdown",
@@ -425,7 +456,7 @@
       "title": "Kawaii Ramen Coloring Book, Cozy Noodle Shop Scenes, 25 Pages (Instant Download)",
       "description": "Ramen coloring book fun for cozy nights in, with kawaii ramen scenes that feel like a warm little noodle shop you can color at your own pace. Inside you’ll find 25+ cute line-art…",
       "url": "https://blissfoxstudio.etsy.com/listing/4528492528/kawaii-ramen-coloring-book-cute",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/cf5197/8348028449/il_570xN.8348028449_ii64.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -1941,37 +1972,6 @@
         "seasonal"
       ],
       "created": 1788653730
-    },
-    {
-      "listing_id": 4546824543,
-      "title": "European Storefronts Coloring Book, Cozy Street Scenes, Printable PDF (Instant Download)",
-      "description": "Storefront coloring book for anyone who loves cozy café corners and old-world streets—settle in with a quiet, travel-inspired coloring break. Step into a stroll-worthy collection…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4546824543/european-storefronts-coloring-book-cozy",
-      "image": "https://i.etsystatic.com/9660605/r/il/1d342d/8366030379/il_570xN.8366030379_d3vc.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "cafe coloring book",
-        "shopfront coloring",
-        "europe street scene",
-        "paris cafe coloring",
-        "italian cafe page",
-        "bakery coloring page",
-        "bookshop coloring",
-        "travel lover gift",
-        "adult stress relief",
-        "printable cafe art",
-        "colouring book pdf",
-        "architecture sketch",
-        "window display"
-      ],
-      "themes": [
-        "cozy"
-      ],
-      "created": 1788635278
     },
     {
       "listing_id": 4569255381,
