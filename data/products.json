@@ -1,9 +1,102 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-04T21:02:36.854Z",
-  "count": 143,
+  "updated": "2026-10-05T04:48:03.704Z",
+  "count": 146,
   "products": [
+    {
+      "listing_id": 4588542786,
+      "title": "Gothic Wedding Planner, Digital Wedding Organizer, Dark Romantic Budget Tracker, Guest List RSVP, Vendor List, Victorian Celestial",
+      "description": "Plan a dark-romantic wedding without the chaos. Track your timeline, budget, guests and RSVPs, vendors, decor, music and day-of schedule in one gothic planner that opens right in…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4588542786/gothic-wedding-planner-digital-wedding",
+      "image": "https://i.etsystatic.com/9660605/r/il/489507/8623560126/il_570xN.8623560126_peea.jpg",
+      "price": {
+        "amount": 34.99,
+        "currency": "USD",
+        "display": "$34.99"
+      },
+      "tags": [
+        "gothic wedding",
+        "wedding planner",
+        "dark wedding",
+        "gothic bride",
+        "digital planner",
+        "wedding organizer",
+        "wedding budget",
+        "guest list tracker",
+        "rsvp tracker",
+        "victorian wedding",
+        "celestial wedding",
+        "dark romantic",
+        "wedding checklist"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1791155669
+    },
+    {
+      "listing_id": 4588637028,
+      "title": "Teacher Planner Digital, Lesson Plan Template, Gradebook, Class Roster, Attendance Tracker, Curriculum Map, Sub Plans Binder",
+      "description": "Start the school year organized and stay that way through the last day. Plan weekly lessons by period, map your curriculum, and keep rosters, attendance, assignments, parent…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4588637028/teacher-planner-digital-lesson-plan",
+      "image": "https://i.etsystatic.com/9660605/r/il/42eef4/8624302760/il_570xN.8624302760_e5fk.jpg",
+      "price": {
+        "amount": 34.99,
+        "currency": "USD",
+        "display": "$34.99"
+      },
+      "tags": [
+        "teacher planner",
+        "lesson plan template",
+        "gradebook template",
+        "class roster",
+        "attendance tracker",
+        "curriculum map",
+        "substitute binder",
+        "sub plans template",
+        "parent contact log",
+        "seating chart",
+        "teacher organizer",
+        "classroom planner",
+        "weekly lesson plans"
+      ],
+      "themes": [
+        "professions"
+      ],
+      "created": 1791155668
+    },
+    {
+      "listing_id": 4588584048,
+      "title": "Cleaning Business Planner, House Cleaning Client Tracker, Job Schedule, Mileage Log, Invoice Tracker, Digital Planner for Cleaners",
+      "description": "Run your cleaning business from one organized place: clients, recurring jobs, team assignments, invoices, supplies, mileage and your monthly budget, all in a single planner that…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4588584048/cleaning-business-planner-house-cleaning",
+      "image": "https://i.etsystatic.com/9660605/r/il/592830/8671717451/il_570xN.8671717451_qjco.jpg",
+      "price": {
+        "amount": 34.99,
+        "currency": "USD",
+        "display": "$34.99"
+      },
+      "tags": [
+        "cleaning business",
+        "cleaning planner",
+        "house cleaning",
+        "cleaner client list",
+        "cleaning schedule",
+        "business planner",
+        "mileage log",
+        "invoice tracker",
+        "cleaning service",
+        "maid service planner",
+        "client tracker",
+        "digital planner",
+        "inventory tracker"
+      ],
+      "themes": [
+        "professions"
+      ],
+      "created": 1791155668
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
