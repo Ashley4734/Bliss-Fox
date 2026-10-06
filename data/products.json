@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-06T13:01:11.118Z",
+  "updated": "2026-10-06T22:30:05.552Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4516998417,
+      "title": "Kawaii Coloring Book, Cozy Animal Shops, Miniature Scenes, Adults & Kids (PDF Download)",
+      "description": "Bold and easy kawaii coloring book featuring 45 cozy animal shop scenes — cute printable coloring pages for adults and kids who love chibi animals, tiny details, and that warm…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4516998417/kawaii-coloring-book-bold-and-easy",
+      "image": "https://i.etsystatic.com/9660605/r/il/4a98c5/8348424593/il_570xN.8348424593_bpfq.jpg",
+      "price": {
+        "amount": 5.24,
+        "currency": "USD",
+        "display": "$5.24"
+      },
+      "tags": [
+        "kawaii coloring book",
+        "cute shop coloring",
+        "tiny shop pages",
+        "cozy coloring book",
+        "miniature scenes",
+        "cottagecore coloring",
+        "kawaii aesthetic",
+        "adult cute coloring",
+        "teen coloring book",
+        "storefront art",
+        "kawaii colouring",
+        "japanese cute art",
+        "bookshop coloring"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1791303203
+    },
     {
       "listing_id": 4588542786,
       "title": "Gothic Wedding Planner, Digital Wedding Organizer, Dark Romantic Budget Tracker, Guest List RSVP, Vendor List, Victorian Celestial",
@@ -837,7 +870,7 @@
       "title": "Samhain Printable Journal: 30-Page Book of Shadows Expansion, Autumn Grimoire PDF",
       "description": "Make space for remembrance, seasonal reflection, and a quieter Samhain with this 30-page printable Book of Shadows expansion. Warm parchment, botanical borders, lanterns, and…",
       "url": "https://blissfoxstudio.etsy.com/listing/4577491550/samhain-printable-journal-30-page-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/1eab11/8539719940/il_570xN.8539719940_k4ds.jpg",
+      "image": "",
       "price": {
         "amount": 7.99,
         "currency": "USD",
@@ -4629,39 +4662,6 @@
         "kids"
       ],
       "created": 1780797049
-    },
-    {
-      "listing_id": 4516998417,
-      "title": "Kawaii Coloring Book, Cozy Animal Shops, Miniature Scenes, Adults & Kids (PDF Download)",
-      "description": "Bold and easy kawaii coloring book featuring 45 cozy animal shop scenes — cute printable coloring pages for adults and kids who love chibi animals, tiny details, and that warm…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4516998417/kawaii-coloring-book-bold-and-easy",
-      "image": "https://i.etsystatic.com/9660605/r/il/4a98c5/8348424593/il_570xN.8348424593_bpfq.jpg",
-      "price": {
-        "amount": 5.24,
-        "currency": "USD",
-        "display": "$5.24"
-      },
-      "tags": [
-        "kawaii coloring book",
-        "cute shop coloring",
-        "tiny shop pages",
-        "cozy coloring book",
-        "miniature scenes",
-        "cottagecore coloring",
-        "kawaii aesthetic",
-        "adult cute coloring",
-        "teen coloring book",
-        "storefront art",
-        "kawaii colouring",
-        "japanese cute art",
-        "bookshop coloring"
-      ],
-      "themes": [
-        "cozy",
-        "animals",
-        "kids"
-      ],
-      "created": 1780674873
     }
   ]
 }
