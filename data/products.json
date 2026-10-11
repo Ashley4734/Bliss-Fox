@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-10T21:20:55.639Z",
+  "updated": "2026-10-11T04:50:32.866Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4513997601,
+      "title": "Goth Girls Coloring Book, 45 Spooky Anime Pages, Alt Fashion Art (PDF Download)",
+      "description": "Gothic lolita coloring book featuring 45 spooky cute anime girls — witchy printable coloring pages for adults and teens who love dark cottagecore, alt fashion, and creepy-cute…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4513997601/goth-coloring-book-gothic-lolita-anime",
+      "image": "https://i.etsystatic.com/9660605/r/il/672722/8348211015/il_570xN.8348211015_87p2.jpg",
+      "price": {
+        "amount": 5.24,
+        "currency": "USD",
+        "display": "$5.24"
+      },
+      "tags": [
+        "goth coloring book",
+        "gothic coloring pdf",
+        "creepy cute pages",
+        "alt girl coloring",
+        "goth girl art",
+        "pastel goth pages",
+        "witchy coloring book",
+        "adult goth coloring",
+        "teen goth gift",
+        "emo coloring pages",
+        "goth colouring",
+        "dark aesthetic art",
+        "halloween goth art"
+      ],
+      "themes": [
+        "spooky",
+        "kids"
+      ],
+      "created": 1791690405
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
@@ -546,38 +578,6 @@
       ],
       "themes": [
         "fantasy",
-        "kids"
-      ],
-      "created": 1790876043
-    },
-    {
-      "listing_id": 4513997601,
-      "title": "Goth Girls Coloring Book, 45 Spooky Anime Pages, Alt Fashion Art (PDF Download)",
-      "description": "Gothic lolita coloring book featuring 45 spooky cute anime girls — witchy printable coloring pages for adults and teens who love dark cottagecore, alt fashion, and creepy-cute…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4513997601/goth-coloring-book-gothic-lolita-anime",
-      "image": "https://i.etsystatic.com/9660605/r/il/672722/8348211015/il_570xN.8348211015_87p2.jpg",
-      "price": {
-        "amount": 5.24,
-        "currency": "USD",
-        "display": "$5.24"
-      },
-      "tags": [
-        "goth coloring book",
-        "gothic coloring pdf",
-        "creepy cute pages",
-        "alt girl coloring",
-        "goth girl art",
-        "pastel goth pages",
-        "witchy coloring book",
-        "adult goth coloring",
-        "teen goth gift",
-        "emo coloring pages",
-        "goth colouring",
-        "dark aesthetic art",
-        "halloween goth art"
-      ],
-      "themes": [
-        "spooky",
         "kids"
       ],
       "created": 1790876043
