@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-13T00:20:05.708Z",
+  "updated": "2026-10-13T13:50:05.940Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4569884622,
+      "title": "37 Race Track Clipart PNGs, Flags, Trophies, Signs (Commercial Use)",
+      "description": "Build full race scenes with winding tracks, checkered flags, cones, and finish lines ready for posters, worksheets, and party backdrops. Simple shapes and bold outlines make each…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4569884622/37-race-track-clipart-pngs-flags",
+      "image": "https://i.etsystatic.com/9660605/r/il/56aa6d/8530934941/il_570xN.8530934941_b4yz.jpg",
+      "price": {
+        "amount": 4.95,
+        "currency": "USD",
+        "display": "$4.95"
+      },
+      "tags": [
+        "race track clipart",
+        "racetrack png",
+        "checkered flag art",
+        "finish line clipart",
+        "race track map",
+        "pit stop graphics",
+        "trophy clip art",
+        "race banner png",
+        "start line art",
+        "race party icons",
+        "speedway clipart",
+        "road signs art",
+        "racing elements"
+      ],
+      "themes": [
+        "patriotic"
+      ],
+      "created": 1791896456
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
@@ -682,7 +713,7 @@
       "title": "Kawaii Construction Trucks Coloring Book, Chibi Animals, Big Machines, Toddlers (Instant Download)",
       "description": "Step into a bright, bustling worksite where the biggest machines have the cutest helpers! Big Machines, Tiny Paws at Work is a premium kawaii coloring book filled with chibi…",
       "url": "https://blissfoxstudio.etsy.com/listing/4513207531/kawaii-construction-trucks-coloring-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/b4fde1/8300709094/il_570xN.8300709094_6wyz.jpg",
+      "image": "",
       "price": {
         "amount": 5.24,
         "currency": "USD",
@@ -776,37 +807,6 @@
         "kids"
       ],
       "created": 1790463879
-    },
-    {
-      "listing_id": 4569884622,
-      "title": "37 Race Track Clipart PNGs, Flags, Trophies, Signs (Commercial Use)",
-      "description": "Build full race scenes with winding tracks, checkered flags, cones, and finish lines ready for posters, worksheets, and party backdrops. Simple shapes and bold outlines make each…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4569884622/37-race-track-clipart-pngs-flags",
-      "image": "https://i.etsystatic.com/9660605/r/il/56aa6d/8530934941/il_570xN.8530934941_b4yz.jpg",
-      "price": {
-        "amount": 4.95,
-        "currency": "USD",
-        "display": "$4.95"
-      },
-      "tags": [
-        "race track clipart",
-        "racetrack png",
-        "checkered flag art",
-        "finish line clipart",
-        "race track map",
-        "pit stop graphics",
-        "trophy clip art",
-        "race banner png",
-        "start line art",
-        "race party icons",
-        "speedway clipart",
-        "road signs art",
-        "racing elements"
-      ],
-      "themes": [
-        "patriotic"
-      ],
-      "created": 1790303794
     },
     {
       "listing_id": 4582115091,
