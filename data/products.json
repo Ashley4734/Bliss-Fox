@@ -1,9 +1,38 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-13T13:50:05.940Z",
+  "updated": "2026-10-13T22:25:50.600Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4582128046,
+      "title": "Home Renovation Planner, Budget Tracker, Contractor Quotes, Materials List (Digital Download)",
+      "description": "Keep your remodel on time, on budget and organised in one private digital planner: rooms and task lists, budget with contingency, side-by-side contractor quotes, contractor…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4582128046/home-renovation-planner-budget-tracker",
+      "image": "https://i.etsystatic.com/9660605/r/il/68859d/8574561574/il_570xN.8574561574_nke7.jpg",
+      "price": {
+        "amount": 39.99,
+        "currency": "USD",
+        "display": "$39.99"
+      },
+      "tags": [
+        "renovation planner",
+        "home renovation",
+        "remodel planner",
+        "renovation budget",
+        "remodel budget",
+        "contractor tracker",
+        "home project planner",
+        "kitchen remodel",
+        "bathroom remodel",
+        "renovation checklist",
+        "new homeowner gift",
+        "house project",
+        "diy home planner"
+      ],
+      "themes": [],
+      "created": 1791911724
+    },
     {
       "listing_id": 4569884622,
       "title": "37 Race Track Clipart PNGs, Flags, Trophies, Signs (Commercial Use)",
@@ -332,7 +361,7 @@
     },
     {
       "listing_id": 4588637028,
-      "title": "Teacher Planner Digital, Lesson Plan Template, Gradebook, Class Roster, Attendance Tracker, Curriculum Map, Sub Plans Binder",
+      "title": "All-in-One Teacher Planner, Lesson Plans, Gradebook, Rosters (Digital Download)",
       "description": "Start the school year organized and stay that way through the last day. Plan weekly lessons by period, map your curriculum, and keep rosters, attendance, assignments, parent…",
       "url": "https://blissfoxstudio.etsy.com/listing/4588637028/teacher-planner-digital-lesson-plan",
       "image": "https://i.etsystatic.com/9660605/r/il/42eef4/8624302760/il_570xN.8624302760_e5fk.jpg",
@@ -363,7 +392,7 @@
     },
     {
       "listing_id": 4588584048,
-      "title": "Cleaning Business Planner, House Cleaning Client Tracker, Job Schedule, Mileage Log, Invoice Tracker, Digital Planner for Cleaners",
+      "title": "Cleaning Business Planner, Client Tracker, Job Schedule, Mileage Log, Invoice Tracker (Digital Download)",
       "description": "Run your cleaning business from one organized place: clients, recurring jobs, team assignments, invoices, supplies, mileage and your monthly budget, all in a single planner that…",
       "url": "https://blissfoxstudio.etsy.com/listing/4588584048/cleaning-business-planner-house-cleaning",
       "image": "https://i.etsystatic.com/9660605/r/il/592830/8671717451/il_570xN.8671717451_qjco.jpg",
@@ -425,9 +454,9 @@
     },
     {
       "listing_id": 4582124608,
-      "title": "Pregnancy Planner Digital, Baby Registry Checklist, Hospital Bag List, Baby Budget, Baby Shower Planner, Baby Names, Due Date Countdown",
+      "title": "All-in-One Pregnancy Planner, Baby Registry, Budget, Hospital Bag (Digital Download)",
       "description": "Plan your whole pregnancy, and baby&#39;s first weeks, in one beautiful, private digital planner: due date countdown, week-by-week checklist, baby budget, registry and gift…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4582124608/pregnancy-planner-digital-baby-registry",
+      "url": "https://blissfoxstudio.etsy.com/listing/4582124608/all-in-one-pregnancy-planner-baby",
       "image": "https://i.etsystatic.com/9660605/r/il/2a8b7d/8622364291/il_570xN.8622364291_2f8v.jpg",
       "price": {
         "amount": 34.99,
@@ -614,35 +643,6 @@
       "created": 1790876043
     },
     {
-      "listing_id": 4582128046,
-      "title": "Home Renovation Planner Digital, Remodel Budget Tracker, Contractor Quote Comparison, Renovation Checklist, Materials List, Project Tracker",
-      "description": "Keep your remodel on time, on budget and organised in one private digital planner: rooms and task lists, budget with contingency, side-by-side contractor quotes, contractor…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4582128046/home-renovation-planner-digital-remodel",
-      "image": "https://i.etsystatic.com/9660605/r/il/68859d/8574561574/il_570xN.8574561574_nke7.jpg",
-      "price": {
-        "amount": 39.99,
-        "currency": "USD",
-        "display": "$39.99"
-      },
-      "tags": [
-        "renovation planner",
-        "home renovation",
-        "remodel planner",
-        "renovation budget",
-        "remodel budget",
-        "contractor tracker",
-        "home project planner",
-        "kitchen remodel",
-        "bathroom remodel",
-        "renovation checklist",
-        "new homeowner gift",
-        "house project",
-        "diy home planner"
-      ],
-      "themes": [],
-      "created": 1790797686
-    },
-    {
       "listing_id": 4513208741,
       "title": "Electrician Coloring Book, Chibi Animals, Tools, Workshop Scenes (PDF Download)",
       "description": "Electrician coloring book printable packed with adorable chibi animal electricians, cozy workshop scenes, and tool-themed pages for kids and adults. Spark & Snuggle: Little…",
@@ -713,7 +713,7 @@
       "title": "Kawaii Construction Trucks Coloring Book, Chibi Animals, Big Machines, Toddlers (Instant Download)",
       "description": "Step into a bright, bustling worksite where the biggest machines have the cutest helpers! Big Machines, Tiny Paws at Work is a premium kawaii coloring book filled with chibi…",
       "url": "https://blissfoxstudio.etsy.com/listing/4513207531/kawaii-construction-trucks-coloring-book",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/b4fde1/8300709094/il_570xN.8300709094_6wyz.jpg",
       "price": {
         "amount": 5.24,
         "currency": "USD",
@@ -810,9 +810,9 @@
     },
     {
       "listing_id": 4582115091,
-      "title": "Christmas Planner Digital, Holiday Gift List Tracker, Christmas Budget, Card Address List, Christmas Dinner Menu Planner, Holiday Countdown",
+      "title": "All-in-One Christmas Planner, Holiday Budget, Gift List, Dinner Menu (Digital Download)",
       "description": "Plan your whole holiday season in one beautiful, private digital planner: countdown checklist, gift list with budgets, holiday budget, card address list, Christmas dinner menu…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4582115091/christmas-planner-digital-holiday-gift",
+      "url": "https://blissfoxstudio.etsy.com/listing/4582115091/all-in-one-christmas-planner-holiday",
       "image": "https://i.etsystatic.com/9660605/r/il/d5fd47/8574557974/il_570xN.8574557974_51ny.jpg",
       "price": {
         "amount": 19.99,
@@ -841,7 +841,7 @@
     },
     {
       "listing_id": 4581466975,
-      "title": "Digital Wedding Planner, Wedding Budget Tracker, Guest List & Seating Chart, Wedding Checklist, Vendor Tracker, Day Of Timeline",
+      "title": "All-in-One Wedding Planner, Budget Tracker, Guest List, Seating Chart (Digital Download)",
       "description": "Plan your entire wedding in one beautiful, private digital planner: checklist, budget, guest list, seating chart, vendors and day-of timeline, all connected. No app, no…",
       "url": "https://blissfoxstudio.etsy.com/listing/4581466975/digital-wedding-planner-wedding-budget",
       "image": "https://i.etsystatic.com/9660605/r/il/e8bdae/8617499539/il_570xN.8617499539_ntk3.jpg",
