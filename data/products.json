@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-18T10:38:03.155Z",
+  "updated": "2026-10-18T15:35:48.994Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4518128108,
+      "title": "Cozy Beach Town Coloring Book, Adult Relaxation Scenes (Printable PDF)",
+      "description": "Color cozy cottages, boardwalk corners, and harbor views inspired by a welcoming beach town. Relax into breezy seaside details—one calm scene at a time. Print as many copies as…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4518128108/cozy-beach-town-coloring-book-adult",
+      "image": "https://i.etsystatic.com/9660605/r/il/17b17f/8348486719/il_570xN.8348486719_8y1k.jpg",
+      "price": {
+        "amount": 5.24,
+        "currency": "USD",
+        "display": "$5.24"
+      },
+      "tags": [
+        "beach coloring book",
+        "coastal coloring",
+        "ocean town pages",
+        "cozy beach scenes",
+        "seaside coloring",
+        "adult beach coloring",
+        "summer coloring book",
+        "beach house decor",
+        "nautical coloring",
+        "beach colouring",
+        "vacation gift idea",
+        "coastal cottage art",
+        "seashell coloring"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1792324863
+    },
     {
       "listing_id": 4582128046,
       "title": "Home Renovation Planner, Budget Tracker, Contractor Quotes, Materials List (Digital Download)",
@@ -4630,38 +4662,6 @@
         "patriotic"
       ],
       "created": 1781983846
-    },
-    {
-      "listing_id": 4518128108,
-      "title": "Cozy Beach Town Coloring Book, Adult Relaxation Scenes (Printable PDF)",
-      "description": "Color cozy cottages, boardwalk corners, and harbor views inspired by a welcoming beach town. Relax into breezy seaside details—one calm scene at a time. Print as many copies as…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4518128108/cozy-beach-town-coloring-book-adult",
-      "image": "https://i.etsystatic.com/9660605/r/il/17b17f/8348486719/il_570xN.8348486719_8y1k.jpg",
-      "price": {
-        "amount": 5.24,
-        "currency": "USD",
-        "display": "$5.24"
-      },
-      "tags": [
-        "beach coloring book",
-        "coastal coloring",
-        "ocean town pages",
-        "cozy beach scenes",
-        "seaside coloring",
-        "adult beach coloring",
-        "summer coloring book",
-        "beach house decor",
-        "nautical coloring",
-        "beach colouring",
-        "vacation gift idea",
-        "coastal cottage art",
-        "seashell coloring"
-      ],
-      "themes": [
-        "cozy",
-        "seasonal"
-      ],
-      "created": 1781696214
     }
   ]
 }
