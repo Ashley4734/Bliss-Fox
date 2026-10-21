@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-21T16:52:16.931Z",
+  "updated": "2026-10-21T21:25:32.875Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4514918065,
+      "title": "Juneteenth Coloring Book: Heritage and Freedom Celebration, 45 Pages (Instant Download)",
+      "description": "Honoring history through art. A beautiful collection of scenes celebrating Black joy, community, and the spirit of freedom. Print as many copies as you like, at home or your…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4514918065/juneteenth-coloring-book-heritage-and",
+      "image": "https://i.etsystatic.com/9660605/r/il/2c9a31/8301466102/il_570xN.8301466102_5yp1.jpg",
+      "price": {
+        "amount": 5.24,
+        "currency": "USD",
+        "display": "$5.24"
+      },
+      "tags": [
+        "juneteenth coloring",
+        "black history month",
+        "juneteenth party",
+        "african american art",
+        "kente pattern art",
+        "freedom day pages",
+        "juneteenth printable",
+        "black history craft",
+        "classroom juneteenth",
+        "juneteenth colouring",
+        "heritage gift idea",
+        "adult coloring",
+        "kids coloring"
+      ],
+      "themes": [
+        "seasonal",
+        "kids",
+        "patriotic"
+      ],
+      "created": 1792611830
+    },
     {
       "listing_id": 4518128108,
       "title": "Cozy Beach Town Coloring Book, Adult Relaxation Scenes (Printable PDF)",
@@ -907,7 +940,7 @@
       "title": "Witchy Familiar Coloring Book, Cozy Animal Companions, Spell Table Art (PDF Download)",
       "description": "Familiar coloring book for quiet evenings of ritual time—meet witchy animal companions, apothecary shelves, and cozy spell tables you can bring to life with your own colors…",
       "url": "https://blissfoxstudio.etsy.com/listing/4526677440/witchy-familiar-coloring-book-cozy",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/e7eb9a/8300393584/il_570xN.8300393584_6kv1.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -1860,7 +1893,7 @@
       "title": "30 Kawaii Self Care Clipart PNG, Bath, Skincare, Beauty Icons (Commercial Use)",
       "description": "Fill your self-care layouts with bubbly baths, sheet masks, lotions, and cozy loungewear icons. These gentle doodles work well in wellness planners, journal pages, or spa and…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569848760/30-kawaii-self-care-clipart-png-bath",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/b278e0/8530690463/il_570xN.8530690463_fuzy.jpg",
       "price": {
         "amount": 4.95,
         "currency": "USD",
@@ -4631,39 +4664,6 @@
         "seasonal"
       ],
       "created": 1782179400
-    },
-    {
-      "listing_id": 4514918065,
-      "title": "Juneteenth Coloring Book: Heritage and Freedom Celebration, 45 Pages (Instant Download)",
-      "description": "Honoring history through art. A beautiful collection of scenes celebrating Black joy, community, and the spirit of freedom. Print as many copies as you like, at home or your…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4514918065/juneteenth-coloring-book-heritage-and",
-      "image": "https://i.etsystatic.com/9660605/r/il/2c9a31/8301466102/il_570xN.8301466102_5yp1.jpg",
-      "price": {
-        "amount": 5.24,
-        "currency": "USD",
-        "display": "$5.24"
-      },
-      "tags": [
-        "juneteenth coloring",
-        "black history month",
-        "juneteenth party",
-        "african american art",
-        "kente pattern art",
-        "freedom day pages",
-        "juneteenth printable",
-        "black history craft",
-        "classroom juneteenth",
-        "juneteenth colouring",
-        "heritage gift idea",
-        "adult coloring",
-        "kids coloring"
-      ],
-      "themes": [
-        "seasonal",
-        "kids",
-        "patriotic"
-      ],
-      "created": 1781983846
     }
   ]
 }
