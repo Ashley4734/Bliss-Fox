@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-24T10:33:39.810Z",
+  "updated": "2026-10-24T15:37:12.118Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4552648203,
+      "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
+      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal and witchcraft planner, designed for printing and building your own personalized binder…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
+      "image": "https://i.etsystatic.com/9660605/r/il/827ae8/8505399716/il_570xN.8505399716_fuin.jpg",
+      "price": {
+        "amount": 15,
+        "currency": "USD",
+        "display": "$15.00"
+      },
+      "tags": [
+        "grimoire journal",
+        "grimoire printable",
+        "book of shadows",
+        "grimoire pages",
+        "witchcraft journal",
+        "spell book pages",
+        "witch journal pdf",
+        "wheel of the year",
+        "moon magic journal",
+        "herbal grimoire",
+        "tarot journal pages",
+        "crystal journal",
+        "witchcraft printable"
+      ],
+      "themes": [
+        "spooky",
+        "fantasy"
+      ],
+      "created": 1792843681
+    },
     {
       "listing_id": 4526563077,
       "title": "Vintage Botanical Bouquet Coloring Book, 24 Pages, Adults Floral Art (PDF Download)",
@@ -512,38 +544,6 @@
         "patriotic"
       ],
       "created": 1791896456
-    },
-    {
-      "listing_id": 4552648203,
-      "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
-      "description": "Create your own working Book of Shadows with this 88-page printable grimoire journal and witchcraft planner, designed for printing and building your own personalized binder…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4552648203/book-of-shadows-printable-journal",
-      "image": "https://i.etsystatic.com/9660605/r/il/827ae8/8505399716/il_570xN.8505399716_fuin.jpg",
-      "price": {
-        "amount": 15,
-        "currency": "USD",
-        "display": "$15.00"
-      },
-      "tags": [
-        "grimoire journal",
-        "grimoire printable",
-        "book of shadows",
-        "grimoire pages",
-        "witchcraft journal",
-        "spell book pages",
-        "witch journal pdf",
-        "wheel of the year",
-        "moon magic journal",
-        "herbal grimoire",
-        "tarot journal pages",
-        "crystal journal",
-        "witchcraft printable"
-      ],
-      "themes": [
-        "spooky",
-        "fantasy"
-      ],
-      "created": 1791748533
     },
     {
       "listing_id": 4513997601,
@@ -1741,7 +1741,7 @@
       "title": "30 Christmas Wreaths & Florals PNG Clipart, Transparent, Commercial Use (Instant Download)",
       "description": "Frame your words and photos with lush Christmas wreaths, bouquets, swags, borders, and corner sprays of winter greenery. Each arrangement is balanced for use as a frame, header…",
       "url": "https://blissfoxstudio.etsy.com/listing/4570157205/30-christmas-wreaths-florals-png-clipart",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/e9cf4c/8485217188/il_570xN.8485217188_46ru.jpg",
       "price": {
         "amount": 12.95,
         "currency": "USD",
@@ -1772,7 +1772,7 @@
       "title": "30 Gothic Botanicals PNG Clipart, Poisonous Flowers, Eerie Mushrooms (Instant Download)",
       "description": "Gothic Botanicals brings together thorny roses, poisonous blooms, hanging herbs, twisting vines and eerie mushrooms for a darker take on floral art. Use these detailed plant…",
       "url": "https://blissfoxstudio.etsy.com/listing/4570379551/30-gothic-botanicals-png-clipart",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/11356e/8486849678/il_570xN.8486849678_87rx.jpg",
       "price": {
         "amount": 12.95,
         "currency": "USD",
@@ -2564,7 +2564,7 @@
       "title": "25 Gothic Victorian Frame Clipart PNG, Dark Floral Flourishes (Commercial Use)",
       "description": "Twenty-five ornate frames, borders, dividers and corner flourishes with genuinely empty centres, so you can drop your own text, photo or product straight inside. Gilded…",
       "url": "https://blissfoxstudio.etsy.com/listing/4569269522/25-gothic-victorian-frame-clipart-png",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/094bc0/8478608996/il_570xN.8478608996_9syl.jpg",
       "price": {
         "amount": 6.95,
         "currency": "USD",
