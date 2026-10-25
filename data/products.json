@@ -1,9 +1,141 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-24T20:27:38.802Z",
+  "updated": "2026-10-25T03:50:55.058Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4527046792,
+      "title": "Kawaii Space Coloring Book, Chibi Astronauts, Planets (PDF Download)",
+      "description": "Space coloring book for a calm, cute break with chibi astronauts and planet pals you can color anytime. This printable PDF coloring book is packed with kawaii space scenes made…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4527046792/kawaii-space-coloring-book-chibi",
+      "image": "https://i.etsystatic.com/9660605/r/il/a05715/8300234618/il_570xN.8300234618_8qqp.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "space coloring pages",
+        "cute space pages",
+        "astronaut coloring",
+        "planet coloring",
+        "alien coloring pages",
+        "kids space coloring",
+        "adult space coloring",
+        "space lover gift",
+        "galaxy coloring",
+        "space colouring page",
+        "printable space pdf",
+        "rocket ship art",
+        "star nursery decor"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1792893102
+    },
+    {
+      "listing_id": 4527074854,
+      "title": "Grimoires Spellbooks Coloring Book, Moody Witchy Grimoire Pages (Instant Download)",
+      "description": "Spellbook coloring book for cozy evenings—sink into grimoire coloring scenes filled with candles, botanicals, crystals, and curious cats. This printable coloring book is a whole…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4527074854/grimoires-spellbooks-coloring-book-moody",
+      "image": "https://i.etsystatic.com/9660605/r/il/15b62d/8300287000/il_570xN.8300287000_pw3r.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "grimoire coloring",
+        "witch book coloring",
+        "magic book pages",
+        "apothecary pages",
+        "witchy cat pages",
+        "moon crystal pages",
+        "adult relax pages",
+        "potion shelf art",
+        "altar table art",
+        "colouring book",
+        "digital download",
+        "coloring pages pdf",
+        "book lover gift"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "fantasy",
+        "animals"
+      ],
+      "created": 1792893102
+    },
+    {
+      "listing_id": 4527056637,
+      "title": "Kawaii Food Coloring Book, 25 Pages, Chibi Snacks & Drinks, Instant Download PDF",
+      "description": "Food coloring book fun with big-eyed snacks and one cozy treat friend per page—perfect for a quick unwind and a foodie gift. Meet a whole crew of cheerful eats and sips: smiling…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4527056637/kawaii-food-coloring-book-25-pages-chibi",
+      "image": "https://i.etsystatic.com/9660605/r/il/3ff863/8300249212/il_570xN.8300249212_lqmn.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "cute food pages",
+        "kawaii food print",
+        "dessert coloring",
+        "drink coloring pages",
+        "kids food coloring",
+        "adult food coloring",
+        "food lover gift",
+        "boba coloring page",
+        "easy food coloring",
+        "food colouring page",
+        "brunch lover gift",
+        "cafe treat pals",
+        "lunchbox buddies"
+      ],
+      "themes": [
+        "cozy",
+        "animals",
+        "kids"
+      ],
+      "created": 1792893102
+    },
+    {
+      "listing_id": 4526786998,
+      "title": "Witchy Crystals Herbs Coloring Book, Cozy Altars, Relaxing Pages (PDF Download)",
+      "description": "Crystal coloring book for calming evenings, featuring witchy coloring scenes filled with herbs, jars, and gentle altar setups. Step into a dark-cottagecore apothecary where every…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4526786998/witchy-crystals-herbs-coloring-book-cozy",
+      "image": "https://i.etsystatic.com/9660605/r/il/4a6b98/8300499934/il_570xN.8300499934_rs2q.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "crystal pages pdf",
+        "healing crystals",
+        "herb coloring pages",
+        "herbal witch gift",
+        "botanical coloring",
+        "witchy coloring",
+        "apothecary pages",
+        "moon crystal art",
+        "adult stress relief",
+        "crystal colouring",
+        "garden witch gift",
+        "potion label art",
+        "tarot vibe pages"
+      ],
+      "themes": [
+        "cozy",
+        "spooky"
+      ],
+      "created": 1792893101
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
@@ -1962,7 +2094,7 @@
       "title": "Thanksgiving Feast Clipart Collection, Watercolor Food & Drinks (25 PNG Files)",
       "description": "This collection focuses on the Thanksgiving table itself: roast turkeys, pies, casseroles, breads, and cozy mugs and glasses painted in a soft watercolor style. Use these food…",
       "url": "https://blissfoxstudio.etsy.com/listing/4570026441/thanksgiving-feast-clipart-collection",
-      "image": "https://i.etsystatic.com/9660605/r/il/ddea8d/8484253414/il_570xN.8484253414_2qdf.jpg",
+      "image": "",
       "price": {
         "amount": 12.95,
         "currency": "USD",
@@ -2027,7 +2159,7 @@
       "title": "25 Watercolor Fall Leaves & Florals Clipart (Transparent PNG, Commercial Use)",
       "description": "Delicate leaves, branches, and floral clusters make this collection ideal for borders, frames, and backgrounds. Combine single leaves with pre-arranged bouquets and wreaths to…",
       "url": "https://blissfoxstudio.etsy.com/listing/4570026571/25-watercolor-fall-leaves-florals",
-      "image": "https://i.etsystatic.com/9660605/r/il/eca21f/8532153149/il_570xN.8532153149_szk4.jpg",
+      "image": "",
       "price": {
         "amount": 12.95,
         "currency": "USD",
@@ -4532,138 +4664,6 @@
         "seasonal"
       ],
       "created": 1782400032
-    },
-    {
-      "listing_id": 4527046792,
-      "title": "Kawaii Space Coloring Book, Chibi Astronauts, Planets (PDF Download)",
-      "description": "Space coloring book for a calm, cute break with chibi astronauts and planet pals you can color anytime. This printable PDF coloring book is packed with kawaii space scenes made…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4527046792/kawaii-space-coloring-book-chibi",
-      "image": "https://i.etsystatic.com/9660605/r/il/a05715/8300234618/il_570xN.8300234618_8qqp.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "space coloring pages",
-        "cute space pages",
-        "astronaut coloring",
-        "planet coloring",
-        "alien coloring pages",
-        "kids space coloring",
-        "adult space coloring",
-        "space lover gift",
-        "galaxy coloring",
-        "space colouring page",
-        "printable space pdf",
-        "rocket ship art",
-        "star nursery decor"
-      ],
-      "themes": [
-        "animals",
-        "professions",
-        "kids"
-      ],
-      "created": 1782265534
-    },
-    {
-      "listing_id": 4527074854,
-      "title": "Grimoires Spellbooks Coloring Book, Moody Witchy Grimoire Pages (Instant Download)",
-      "description": "Spellbook coloring book for cozy evenings—sink into grimoire coloring scenes filled with candles, botanicals, crystals, and curious cats. This printable coloring book is a whole…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4527074854/grimoires-spellbooks-coloring-book-moody",
-      "image": "https://i.etsystatic.com/9660605/r/il/15b62d/8300287000/il_570xN.8300287000_pw3r.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "grimoire coloring",
-        "witch book coloring",
-        "magic book pages",
-        "apothecary pages",
-        "witchy cat pages",
-        "moon crystal pages",
-        "adult relax pages",
-        "potion shelf art",
-        "altar table art",
-        "colouring book",
-        "digital download",
-        "coloring pages pdf",
-        "book lover gift"
-      ],
-      "themes": [
-        "cozy",
-        "spooky",
-        "fantasy",
-        "animals"
-      ],
-      "created": 1782265534
-    },
-    {
-      "listing_id": 4527056637,
-      "title": "Kawaii Food Coloring Book, 25 Pages, Chibi Snacks & Drinks, Instant Download PDF",
-      "description": "Food coloring book fun with big-eyed snacks and one cozy treat friend per page—perfect for a quick unwind and a foodie gift. Meet a whole crew of cheerful eats and sips: smiling…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4527056637/kawaii-food-coloring-book-25-pages-chibi",
-      "image": "https://i.etsystatic.com/9660605/r/il/3ff863/8300249212/il_570xN.8300249212_lqmn.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "cute food pages",
-        "kawaii food print",
-        "dessert coloring",
-        "drink coloring pages",
-        "kids food coloring",
-        "adult food coloring",
-        "food lover gift",
-        "boba coloring page",
-        "easy food coloring",
-        "food colouring page",
-        "brunch lover gift",
-        "cafe treat pals",
-        "lunchbox buddies"
-      ],
-      "themes": [
-        "cozy",
-        "animals",
-        "kids"
-      ],
-      "created": 1782265534
-    },
-    {
-      "listing_id": 4526786998,
-      "title": "Witchy Crystals Herbs Coloring Book, Cozy Altars, Relaxing Pages (PDF Download)",
-      "description": "Crystal coloring book for calming evenings, featuring witchy coloring scenes filled with herbs, jars, and gentle altar setups. Step into a dark-cottagecore apothecary where every…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4526786998/witchy-crystals-herbs-coloring-book-cozy",
-      "image": "https://i.etsystatic.com/9660605/r/il/4a6b98/8300499934/il_570xN.8300499934_rs2q.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "crystal pages pdf",
-        "healing crystals",
-        "herb coloring pages",
-        "herbal witch gift",
-        "botanical coloring",
-        "witchy coloring",
-        "apothecary pages",
-        "moon crystal art",
-        "adult stress relief",
-        "crystal colouring",
-        "garden witch gift",
-        "potion label art",
-        "tarot vibe pages"
-      ],
-      "themes": [
-        "cozy",
-        "spooky"
-      ],
-      "created": 1782265533
     }
   ]
 }
