@@ -1,9 +1,229 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-27T11:49:13.022Z",
+  "updated": "2026-10-27T17:43:04.634Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4528457125,
+      "title": "Bonsai Coloring Book, Vintage Botanical Studies, Zen Miniature Trees (PDF Download)",
+      "description": "Bonsai coloring book for calm, focused breaks—enjoy zen coloring with detailed miniature trees inspired by classic garden aesthetics. This printable set is designed for adults…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528457125/bonsai-coloring-book-vintage-botanical",
+      "image": "https://i.etsystatic.com/9660605/r/il/ba184c/8348561859/il_570xN.8348561859_acv0.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "printable bonsai",
+        "bonsai pdf",
+        "adult bonsai",
+        "zen coloring",
+        "japanese garden",
+        "mini tree art",
+        "plant lover gift",
+        "relaxing plants",
+        "bonsai colouring",
+        "digital download",
+        "sumi e inspired",
+        "wabi sabi decor",
+        "botanical printable"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1793122399
+    },
+    {
+      "listing_id": 4528417182,
+      "title": "Floral Gardens Coloring Book Bundle, 3 Books, 73 Pages (Instant Download PDF)",
+      "description": "Blooming Floral Gardens: a bundle of 3 printable coloring books (73 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528417182/floral-gardens-coloring-book-bundle-3",
+      "image": "https://i.etsystatic.com/9660605/r/il/40c00f/8181702672/il_570xN.8181702672_tqpl.jpg",
+      "price": {
+        "amount": 9.74,
+        "currency": "USD",
+        "display": "$9.74"
+      },
+      "tags": [
+        "coloring bundle",
+        "coloring book set",
+        "coloring books",
+        "printable coloring",
+        "instant download",
+        "wildflower coloring",
+        "wildflower pages",
+        "flower coloring book",
+        "botanical coloring",
+        "printable",
+        "adult flower book",
+        "floral coloring pdf",
+        "meadow flower pages"
+      ],
+      "themes": [],
+      "created": 1793112783
+    },
+    {
+      "listing_id": 4528357711,
+      "title": "Vintage Rose Bouquets Coloring Book, 25 Printable Pages (Instant Download)",
+      "description": "Rose coloring book for adults who want a calm, focused break with vintage bouquet arrangements you can print at home and color anytime. Inside you’ll find a curated set of…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528357711/vintage-rose-bouquets-coloring-book-25",
+      "image": "https://i.etsystatic.com/9660605/r/il/637726/8299965188/il_570xN.8299965188_nr6f.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "rose coloring pages",
+        "bouquet coloring",
+        "floral coloring book",
+        "botanical roses",
+        "printable rose art",
+        "rose bouquet pdf",
+        "adult flower color",
+        "relaxing flowers",
+        "mothers day gift",
+        "wedding flower art",
+        "rose colouring page",
+        "digital download",
+        "bridal bouquet"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1793104701
+    },
+    {
+      "listing_id": 4528244063,
+      "title": "Birth Flower Coloring Pages, Vintage Botanical Line Art, Printable PDF (Instant Download)",
+      "description": "Celebrate every month with birth flower coloring you can print at home and enjoy anytime. This relaxing floral colouring set is inspired by classic botanical specimen…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528244063/birth-flower-coloring-pages-vintage",
+      "image": "https://i.etsystatic.com/9660605/r/il/231be2/8300690810/il_570xN.8300690810_qifd.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "birth flower art",
+        "birthday month",
+        "zodiac flower pages",
+        "birth month bouquet",
+        "january carnation",
+        "snowdrop coloring",
+        "february violet",
+        "primrose coloring",
+        "march daffodil",
+        "jonquil coloring",
+        "april daisy",
+        "sweet pea vine",
+        "floral colouring"
+      ],
+      "themes": [
+        "seasonal"
+      ],
+      "created": 1793103153
+    },
+    {
+      "listing_id": 4528233346,
+      "title": "Cozy Bookshop Cafe Coloring Book, Whimsical Storybook Scenes (PDF Download)",
+      "description": "Bookshop coloring book for quiet evenings, featuring cozy cafe pages that turn your coloring time into a warm little escape. Step into a storybook world of shelves, pastries…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528233346/cozy-bookshop-cafe-coloring-book",
+      "image": "https://i.etsystatic.com/9660605/r/il/114176/8300582950/il_570xN.8300582950_rxqd.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "bookstore coloring",
+        "cafe coloring book",
+        "reading nook pages",
+        "cozy cafe pages",
+        "book lover gift",
+        "gift for reader",
+        "cat bookstore page",
+        "library cafe art",
+        "tea time coloring",
+        "colouring bookshop",
+        "printable book pdf",
+        "journal nook",
+        "book club gift"
+      ],
+      "themes": [
+        "cozy",
+        "animals"
+      ],
+      "created": 1793103152
+    },
+    {
+      "listing_id": 4528218000,
+      "title": "Cozy Mountain Town Coloring Book, 25 Storybook Scenes, Cottagecore Village Escapes (Instant Download)",
+      "description": "Mountain town coloring book with cozy cabin pages to help you unwind with storybook scenes inspired by a warm little village in the hills. Step into a peaceful mountain town…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528218000/cozy-mountain-town-coloring-book-25",
+      "image": "https://i.etsystatic.com/9660605/r/il/3dd150/8300519058/il_570xN.8300519058_b3tn.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "mountain coloring",
+        "cabin coloring book",
+        "cozy town pages",
+        "cottagecore town",
+        "alpine village art",
+        "cozy cabin pages",
+        "winter town page",
+        "fall town scene",
+        "relaxing coloring",
+        "adult coloring",
+        "teen coloring",
+        "town colouring",
+        "digital download"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal"
+      ],
+      "created": 1793103152
+    },
+    {
+      "listing_id": 4528230999,
+      "title": "Cozy Autumn Town Coloring Book, Storybook Scenes, Small Town Adventures (Printable PDF)",
+      "description": "Autumn coloring book filled with cozy small-town scenes to unwind with after a long day. Step into a storybook fall town where every street corner feels welcoming: a bakery…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528230999/cozy-autumn-town-coloring-book-storybook",
+      "image": "https://i.etsystatic.com/9660605/r/il/faad67/8348494251/il_570xN.8348494251_h61y.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "fall coloring book",
+        "cozy fall coloring",
+        "printable fall art",
+        "autumn town scenes",
+        "cozy village pages",
+        "adult fall coloring",
+        "teen coloring book",
+        "thanksgiving gift",
+        "fall hygge decor",
+        "autumn colouring",
+        "coloring pages pdf",
+        "pumpkin patch",
+        "harvest festival"
+      ],
+      "themes": [
+        "cozy",
+        "spooky",
+        "seasonal"
+      ],
+      "created": 1793103152
+    },
     {
       "listing_id": 4526541561,
       "title": "Vintage Wildflower Botanicals Coloring Book, 24 Botanical Pages (Instant Download)",
@@ -1650,7 +1870,7 @@
       "title": "Samhain Printable Journal: 30-Page Book of Shadows Expansion, Autumn Grimoire PDF",
       "description": "Make space for remembrance, seasonal reflection, and a quieter Samhain with this 30-page printable Book of Shadows expansion. Warm parchment, botanical borders, lanterns, and…",
       "url": "https://blissfoxstudio.etsy.com/listing/4577491550/samhain-printable-journal-30-page-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/1eab11/8539719940/il_570xN.8539719940_k4ds.jpg",
+      "image": "",
       "price": {
         "amount": 7.99,
         "currency": "USD",
@@ -4444,226 +4664,6 @@
         "kids"
       ],
       "created": 1782604723
-    },
-    {
-      "listing_id": 4528457125,
-      "title": "Bonsai Coloring Book, Vintage Botanical Studies, Zen Miniature Trees (PDF Download)",
-      "description": "Bonsai coloring book for calm, focused breaks—enjoy zen coloring with detailed miniature trees inspired by classic garden aesthetics. This printable set is designed for adults…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528457125/bonsai-coloring-book-vintage-botanical",
-      "image": "https://i.etsystatic.com/9660605/r/il/ba184c/8348561859/il_570xN.8348561859_acv0.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "printable bonsai",
-        "bonsai pdf",
-        "adult bonsai",
-        "zen coloring",
-        "japanese garden",
-        "mini tree art",
-        "plant lover gift",
-        "relaxing plants",
-        "bonsai colouring",
-        "digital download",
-        "sumi e inspired",
-        "wabi sabi decor",
-        "botanical printable"
-      ],
-      "themes": [
-        "cozy"
-      ],
-      "created": 1782494094
-    },
-    {
-      "listing_id": 4528417182,
-      "title": "Floral Gardens Coloring Book Bundle, 3 Books, 73 Pages (Instant Download PDF)",
-      "description": "Blooming Floral Gardens: a bundle of 3 printable coloring books (73 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528417182/floral-gardens-coloring-book-bundle-3",
-      "image": "https://i.etsystatic.com/9660605/r/il/40c00f/8181702672/il_570xN.8181702672_tqpl.jpg",
-      "price": {
-        "amount": 9.74,
-        "currency": "USD",
-        "display": "$9.74"
-      },
-      "tags": [
-        "coloring bundle",
-        "coloring book set",
-        "coloring books",
-        "printable coloring",
-        "instant download",
-        "wildflower coloring",
-        "wildflower pages",
-        "flower coloring book",
-        "botanical coloring",
-        "printable",
-        "adult flower book",
-        "floral coloring pdf",
-        "meadow flower pages"
-      ],
-      "themes": [],
-      "created": 1782484563
-    },
-    {
-      "listing_id": 4528357711,
-      "title": "Vintage Rose Bouquets Coloring Book, 25 Printable Pages (Instant Download)",
-      "description": "Rose coloring book for adults who want a calm, focused break with vintage bouquet arrangements you can print at home and color anytime. Inside you’ll find a curated set of…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528357711/vintage-rose-bouquets-coloring-book-25",
-      "image": "https://i.etsystatic.com/9660605/r/il/637726/8299965188/il_570xN.8299965188_nr6f.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "rose coloring pages",
-        "bouquet coloring",
-        "floral coloring book",
-        "botanical roses",
-        "printable rose art",
-        "rose bouquet pdf",
-        "adult flower color",
-        "relaxing flowers",
-        "mothers day gift",
-        "wedding flower art",
-        "rose colouring page",
-        "digital download",
-        "bridal bouquet"
-      ],
-      "themes": [
-        "cozy",
-        "seasonal"
-      ],
-      "created": 1782476551
-    },
-    {
-      "listing_id": 4528233346,
-      "title": "Cozy Bookshop Cafe Coloring Book, Whimsical Storybook Scenes (PDF Download)",
-      "description": "Bookshop coloring book for quiet evenings, featuring cozy cafe pages that turn your coloring time into a warm little escape. Step into a storybook world of shelves, pastries…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528233346/cozy-bookshop-cafe-coloring-book",
-      "image": "https://i.etsystatic.com/9660605/r/il/114176/8300582950/il_570xN.8300582950_rxqd.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "bookstore coloring",
-        "cafe coloring book",
-        "reading nook pages",
-        "cozy cafe pages",
-        "book lover gift",
-        "gift for reader",
-        "cat bookstore page",
-        "library cafe art",
-        "tea time coloring",
-        "colouring bookshop",
-        "printable book pdf",
-        "journal nook",
-        "book club gift"
-      ],
-      "themes": [
-        "cozy",
-        "animals"
-      ],
-      "created": 1782475414
-    },
-    {
-      "listing_id": 4528244063,
-      "title": "Birth Flower Coloring Pages, Vintage Botanical Line Art, Printable PDF (Instant Download)",
-      "description": "Celebrate every month with birth flower coloring you can print at home and enjoy anytime. This relaxing floral colouring set is inspired by classic botanical specimen…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528244063/birth-flower-coloring-pages-vintage",
-      "image": "https://i.etsystatic.com/9660605/r/il/231be2/8300690810/il_570xN.8300690810_qifd.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "birth flower art",
-        "birthday month",
-        "zodiac flower pages",
-        "birth month bouquet",
-        "january carnation",
-        "snowdrop coloring",
-        "february violet",
-        "primrose coloring",
-        "march daffodil",
-        "jonquil coloring",
-        "april daisy",
-        "sweet pea vine",
-        "floral colouring"
-      ],
-      "themes": [
-        "seasonal"
-      ],
-      "created": 1782475414
-    },
-    {
-      "listing_id": 4528218000,
-      "title": "Cozy Mountain Town Coloring Book, 25 Storybook Scenes, Cottagecore Village Escapes (Instant Download)",
-      "description": "Mountain town coloring book with cozy cabin pages to help you unwind with storybook scenes inspired by a warm little village in the hills. Step into a peaceful mountain town…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528218000/cozy-mountain-town-coloring-book-25",
-      "image": "https://i.etsystatic.com/9660605/r/il/3dd150/8300519058/il_570xN.8300519058_b3tn.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "mountain coloring",
-        "cabin coloring book",
-        "cozy town pages",
-        "cottagecore town",
-        "alpine village art",
-        "cozy cabin pages",
-        "winter town page",
-        "fall town scene",
-        "relaxing coloring",
-        "adult coloring",
-        "teen coloring",
-        "town colouring",
-        "digital download"
-      ],
-      "themes": [
-        "cozy",
-        "seasonal"
-      ],
-      "created": 1782475414
-    },
-    {
-      "listing_id": 4528230999,
-      "title": "Cozy Autumn Town Coloring Book, Storybook Scenes, Small Town Adventures (Printable PDF)",
-      "description": "Autumn coloring book filled with cozy small-town scenes to unwind with after a long day. Step into a storybook fall town where every street corner feels welcoming: a bakery…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528230999/cozy-autumn-town-coloring-book-storybook",
-      "image": "https://i.etsystatic.com/9660605/r/il/faad67/8348494251/il_570xN.8348494251_h61y.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "fall coloring book",
-        "cozy fall coloring",
-        "printable fall art",
-        "autumn town scenes",
-        "cozy village pages",
-        "adult fall coloring",
-        "teen coloring book",
-        "thanksgiving gift",
-        "fall hygge decor",
-        "autumn colouring",
-        "coloring pages pdf",
-        "pumpkin patch",
-        "harvest festival"
-      ],
-      "themes": [
-        "cozy",
-        "spooky",
-        "seasonal"
-      ],
-      "created": 1782475414
     }
   ]
 }
