@@ -1,9 +1,41 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-10-28T22:21:34.888Z",
+  "updated": "2026-10-29T04:57:51.663Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4529125266,
+      "title": "Wildlife Adventures Coloring Book Bundle, 75 Animal Pages (Instant Download PDF)",
+      "description": "Wildlife Adventures: a bundle of 3 printable coloring books (75 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4529125266/bold-and-easy-coloring-book-bundle-75",
+      "image": "https://i.etsystatic.com/9660605/r/il/28da0a/8234906881/il_570xN.8234906881_ihx9.jpg",
+      "price": {
+        "amount": 9.74,
+        "currency": "USD",
+        "display": "$9.74"
+      },
+      "tags": [
+        "bold easy coloring",
+        "animal coloring book",
+        "coloring book bundle",
+        "safari coloring book",
+        "woodland coloring",
+        "reptile coloring",
+        "nature coloring",
+        "kids coloring book",
+        "jungle coloring",
+        "instant download",
+        "printable coloring",
+        "forest animals",
+        "coloring book gift"
+      ],
+      "themes": [
+        "animals",
+        "kids"
+      ],
+      "created": 1793232886
+    },
     {
       "listing_id": 4528457125,
       "title": "Bonsai Coloring Book, Vintage Botanical Studies, Zen Miniature Trees (PDF Download)",
@@ -4632,38 +4664,6 @@
         "seasonal"
       ],
       "created": 1782697472
-    },
-    {
-      "listing_id": 4529125266,
-      "title": "Wildlife Adventures Coloring Book Bundle, 75 Animal Pages (Instant Download PDF)",
-      "description": "Wildlife Adventures: a bundle of 3 printable coloring books (75 pages total). Instant download PDF. Print as many copies as you like, at home or your local print shop — your…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4529125266/bold-and-easy-coloring-book-bundle-75",
-      "image": "https://i.etsystatic.com/9660605/r/il/28da0a/8234906881/il_570xN.8234906881_ihx9.jpg",
-      "price": {
-        "amount": 9.74,
-        "currency": "USD",
-        "display": "$9.74"
-      },
-      "tags": [
-        "bold easy coloring",
-        "animal coloring book",
-        "coloring book bundle",
-        "safari coloring book",
-        "woodland coloring",
-        "reptile coloring",
-        "nature coloring",
-        "kids coloring book",
-        "jungle coloring",
-        "instant download",
-        "printable coloring",
-        "forest animals",
-        "coloring book gift"
-      ],
-      "themes": [
-        "animals",
-        "kids"
-      ],
-      "created": 1782604723
     }
   ]
 }
