@@ -1,9 +1,42 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-11-10T01:18:44.123Z",
+  "updated": "2026-11-10T14:33:56.485Z",
   "count": 146,
   "products": [
+    {
+      "listing_id": 4518018058,
+      "title": "Firefighter Coloring Book, Kawaii Animals, Fire Trucks, Kids Activity (Instant Download)",
+      "description": "Meet the bravest little rescue buddies at the friendliest firehouse in town! This kawaii coloring book is packed with adorable chibi animals in firefighter-themed scenes—full of…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4518018058/firefighter-coloring-book-kawaii-animals",
+      "image": "https://i.etsystatic.com/9660605/r/il/e1b00a/8300367046/il_570xN.8300367046_d57o.jpg",
+      "price": {
+        "amount": 5.24,
+        "currency": "USD",
+        "display": "$5.24"
+      },
+      "tags": [
+        "firefighter coloring",
+        "fire truck coloring",
+        "fire engine pages",
+        "community helpers",
+        "kids hero coloring",
+        "preschool activity",
+        "career day activity",
+        "firehouse party",
+        "firefighter gift",
+        "fire safety week",
+        "fire colouring",
+        "classroom activity",
+        "kawaii coloring"
+      ],
+      "themes": [
+        "animals",
+        "professions",
+        "kids"
+      ],
+      "created": 1794278008
+    },
     {
       "listing_id": 4552648203,
       "title": "Printable Book of Shadows: 88-Page Grimoire Journal for Witchcraft",
@@ -4631,39 +4664,6 @@
         "cozy"
       ],
       "created": 1783777171
-    },
-    {
-      "listing_id": 4518018058,
-      "title": "Firefighter Coloring Book, Kawaii Animals, Fire Trucks, Kids Activity (Instant Download)",
-      "description": "Meet the bravest little rescue buddies at the friendliest firehouse in town! This kawaii coloring book is packed with adorable chibi animals in firefighter-themed scenes—full of…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4518018058/firefighter-coloring-book-kawaii-animals",
-      "image": "https://i.etsystatic.com/9660605/r/il/e1b00a/8300367046/il_570xN.8300367046_d57o.jpg",
-      "price": {
-        "amount": 5.24,
-        "currency": "USD",
-        "display": "$5.24"
-      },
-      "tags": [
-        "firefighter coloring",
-        "fire truck coloring",
-        "fire engine pages",
-        "community helpers",
-        "kids hero coloring",
-        "preschool activity",
-        "career day activity",
-        "firehouse party",
-        "firefighter gift",
-        "fire safety week",
-        "fire colouring",
-        "classroom activity",
-        "kawaii coloring"
-      ],
-      "themes": [
-        "animals",
-        "professions",
-        "kids"
-      ],
-      "created": 1783559514
     }
   ]
 }
