@@ -1,9 +1,104 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-11-12T14:51:16.278Z",
-  "count": 146,
+  "updated": "2026-11-12T23:20:59.886Z",
+  "count": 147,
   "products": [
+    {
+      "listing_id": 4615560582,
+      "title": "Christmas Printable Activities for Kids, Christmas Activity Book Ages 4-8, 40-Page Cozy Quiet Time Kit, Letter & A4",
+      "description": "Print tonight, play tonight—and turn holiday downtime into a cozy, screen-free Christmas quest for kids ages 4–8. Join Pip the fox on a warm storybook journey through Mistletoe…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4615560582/christmas-printable-activities-for-kids",
+      "image": "https://i.etsystatic.com/9660605/r/il/d2a77c/8845065198/il_570xN.8845065198_iyxb.jpg",
+      "price": {
+        "amount": 13.95,
+        "currency": "USD",
+        "display": "$13.95"
+      },
+      "tags": [
+        "christmas activities",
+        "kids activity book",
+        "printable quiet time",
+        "holiday puzzle kit",
+        "ages 4 8 printable",
+        "screen free play",
+        "christmas worksheets",
+        "kids christmas games",
+        "holiday travel fun",
+        "christmas eve kit",
+        "classroom christmas",
+        "no prep activities",
+        "instant download pdf"
+      ],
+      "themes": [
+        "cozy",
+        "seasonal",
+        "kids"
+      ],
+      "created": 1794504859
+    },
+    {
+      "listing_id": 4528237721,
+      "title": "Cozy Cottage Garden Flowers Coloring Book, Vintage Botanical Pages (PDF Download)",
+      "description": "Flower coloring book for slow, cozy cottage-garden moments—settle in with relaxing flowers and let your mind wander through blooms and leafy stems. Inside you’ll find a…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4528237721/cozy-cottage-garden-flowers-coloring",
+      "image": "https://i.etsystatic.com/9660605/r/il/c43b97/8300566494/il_570xN.8300566494_4r7m.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "garden coloring book",
+        "botanical coloring",
+        "wildflower pages",
+        "bouquet coloring",
+        "floral pdf",
+        "adult flower book",
+        "relaxing flowers",
+        "printable flowers",
+        "flower lover gift",
+        "flower colouring",
+        "tea time decor",
+        "country home gift",
+        "herb garden love"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1794496192
+    },
+    {
+      "listing_id": 4526548049,
+      "title": "Tropical Flowers Coloring Book, Vintage Botanical Pages, Detailed Blooms (Instant Download)",
+      "description": "Tropical coloring book pages for a calm, plant-filled break—unplug with tropical flowers you can print at home and color anytime. Inside you’ll find a curated set of…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4526548049/tropical-flowers-coloring-book-vintage",
+      "image": "https://i.etsystatic.com/9660605/r/il/327965/8347873837/il_570xN.8347873837_5yk3.jpg",
+      "price": {
+        "amount": 4.49,
+        "currency": "USD",
+        "display": "$4.49"
+      },
+      "tags": [
+        "tropical flowers",
+        "tropical pages",
+        "adult flower book",
+        "flower coloring",
+        "botanical pages",
+        "hibiscus pages",
+        "orchid coloring",
+        "palm leaf art",
+        "relaxing flowers",
+        "floral colouring",
+        "coloring pages pdf",
+        "digital download",
+        "tropical bouquet"
+      ],
+      "themes": [
+        "cozy"
+      ],
+      "created": 1794496191
+    },
     {
       "listing_id": 4518018058,
       "title": "Firefighter Coloring Book, Kawaii Animals, Fire Trucks, Kids Activity (Instant Download)",
@@ -4602,68 +4697,6 @@
       ],
       "themes": [],
       "created": 1784596477
-    },
-    {
-      "listing_id": 4526548049,
-      "title": "Tropical Flowers Coloring Book, Vintage Botanical Pages, Detailed Blooms (Instant Download)",
-      "description": "Tropical coloring book pages for a calm, plant-filled break—unplug with tropical flowers you can print at home and color anytime. Inside you’ll find a curated set of…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4526548049/tropical-flowers-coloring-book-vintage",
-      "image": "https://i.etsystatic.com/9660605/r/il/327965/8347873837/il_570xN.8347873837_5yk3.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "tropical flowers",
-        "tropical pages",
-        "adult flower book",
-        "flower coloring",
-        "botanical pages",
-        "hibiscus pages",
-        "orchid coloring",
-        "palm leaf art",
-        "relaxing flowers",
-        "floral colouring",
-        "coloring pages pdf",
-        "digital download",
-        "tropical bouquet"
-      ],
-      "themes": [
-        "cozy"
-      ],
-      "created": 1783777171
-    },
-    {
-      "listing_id": 4528237721,
-      "title": "Cozy Cottage Garden Flowers Coloring Book, Vintage Botanical Pages (PDF Download)",
-      "description": "Flower coloring book for slow, cozy cottage-garden moments—settle in with relaxing flowers and let your mind wander through blooms and leafy stems. Inside you’ll find a…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4528237721/cozy-cottage-garden-flowers-coloring",
-      "image": "https://i.etsystatic.com/9660605/r/il/c43b97/8300566494/il_570xN.8300566494_4r7m.jpg",
-      "price": {
-        "amount": 4.49,
-        "currency": "USD",
-        "display": "$4.49"
-      },
-      "tags": [
-        "garden coloring book",
-        "botanical coloring",
-        "wildflower pages",
-        "bouquet coloring",
-        "floral pdf",
-        "adult flower book",
-        "relaxing flowers",
-        "printable flowers",
-        "flower lover gift",
-        "flower colouring",
-        "tea time decor",
-        "country home gift",
-        "herb garden love"
-      ],
-      "themes": [
-        "cozy"
-      ],
-      "created": 1783777171
     }
   ]
 }
