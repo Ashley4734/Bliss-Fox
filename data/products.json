@@ -1,9 +1,40 @@
 {
   "shop": "BlissFoxStudio",
   "shop_url": "https://blissfoxstudio.etsy.com/",
-  "updated": "2026-11-14T22:07:40.270Z",
+  "updated": "2026-11-15T05:33:27.969Z",
   "count": 147,
   "products": [
+    {
+      "listing_id": 4572355136,
+      "title": "Book of Shadows Bundle | 176-Page Printable Grimoire & Kitchen Witch Journal (Digital Download)",
+      "description": "Both volumes, 176 illustrated pages — the whole practice in one binder. Digital download only; no physical book is shipped. Includes US Letter, A4, and A5 PDFs, delivered through…",
+      "url": "https://blissfoxstudio.etsy.com/listing/4572355136/book-of-shadows-bundle-2-printable",
+      "image": "https://i.etsystatic.com/9660605/r/il/a57ee8/8549565329/il_570xN.8549565329_15os.jpg",
+      "price": {
+        "amount": 24.99,
+        "currency": "USD",
+        "display": "$24.99"
+      },
+      "tags": [
+        "book of shadows",
+        "grimoire bundle",
+        "printable grimoire",
+        "witch planner",
+        "kitchen witch",
+        "green witch",
+        "spell book pages",
+        "witchcraft journal",
+        "wheel of the year",
+        "herbal apothecary",
+        "witchy printable",
+        "grimoire pages",
+        "baby witch kit"
+      ],
+      "themes": [
+        "spooky"
+      ],
+      "created": 1794712598
+    },
     {
       "listing_id": 4615560582,
       "title": "Christmas Printable Activities for Kids, Christmas Activity Book Ages 4-8, 40-Page Cozy Quiet Time Kit, Letter & A4",
@@ -417,7 +448,7 @@
       "title": "Cozy Mountain Town Coloring Book, 25 Storybook Scenes, Cottagecore Village Escapes (Instant Download)",
       "description": "Mountain town coloring book with cozy cabin pages to help you unwind with storybook scenes inspired by a warm little village in the hills. Step into a peaceful mountain town…",
       "url": "https://blissfoxstudio.etsy.com/listing/4528218000/cozy-mountain-town-coloring-book-25",
-      "image": "",
+      "image": "https://i.etsystatic.com/9660605/r/il/3dd150/8300519058/il_570xN.8300519058_b3tn.jpg",
       "price": {
         "amount": 4.49,
         "currency": "USD",
@@ -1988,37 +2019,6 @@
         "spooky"
       ],
       "created": 1790110631
-    },
-    {
-      "listing_id": 4572355136,
-      "title": "Book of Shadows Bundle | 176-Page Printable Grimoire & Kitchen Witch Journal (Digital Download)",
-      "description": "Both volumes, 176 illustrated pages — the whole practice in one binder. Digital download only; no physical book is shipped. Includes US Letter, A4, and A5 PDFs, delivered through…",
-      "url": "https://blissfoxstudio.etsy.com/listing/4572355136/book-of-shadows-bundle-2-printable",
-      "image": "https://i.etsystatic.com/9660605/r/il/a57ee8/8549565329/il_570xN.8549565329_15os.jpg",
-      "price": {
-        "amount": 24.99,
-        "currency": "USD",
-        "display": "$24.99"
-      },
-      "tags": [
-        "book of shadows",
-        "grimoire bundle",
-        "printable grimoire",
-        "witch planner",
-        "kitchen witch",
-        "green witch",
-        "spell book pages",
-        "witchcraft journal",
-        "wheel of the year",
-        "herbal apothecary",
-        "witchy printable",
-        "grimoire pages",
-        "baby witch kit"
-      ],
-      "themes": [
-        "spooky"
-      ],
-      "created": 1790110630
     },
     {
       "listing_id": 4528206340,
