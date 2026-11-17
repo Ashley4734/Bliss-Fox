@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="1040" height="260" role="img" aria-label="House Dog Living logo">
+<rect width="520" height="130" fill="#FFF9F0"/>
+<g transform="translate(14 5)"><path d="M60 8 L112 52 V106 Q112 112 106 112 H14 Q8 112 8 106 V52 Z" fill="#D9602B" stroke="#D9602B" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="34" cy="70" rx="10" ry="19" fill="#7A3A1A" transform="rotate(14 34 70)"/>
+<ellipse cx="86" cy="70" rx="10" ry="19" fill="#7A3A1A" transform="rotate(-14 86 70)"/>
+<path d="M60 48 C78 48 84 62 84 76 C84 92 74 100 60 100 C46 100 36 92 36 76 C36 62 42 48 60 48 Z" fill="#FFF4E6"/>
+<ellipse cx="60" cy="86" rx="12" ry="9" fill="#F3DCC3"/>
+<circle cx="50" cy="71" r="3.4" fill="#2B1B12"/><circle cx="70" cy="71" r="3.4" fill="#2B1B12"/>
+<path d="M53 80 Q60 76 67 80 Q64 87 60 87 Q56 87 53 80 Z" fill="#2B1B12"/>
+<path d="M60 87 V92 M54 94 Q60 98 66 94" stroke="#2B1B12" stroke-width="2.2" fill="none" stroke-linecap="round"/></g>
+<text x="150" y="52" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="7" fill="#D9602B">HOUSE</text>
+<text x="147" y="95" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#2B1B12">Dog Living</text>
+<text x="150" y="116" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#D9602B">HOUSEDOGLIVING.COM</text>
+</svg>

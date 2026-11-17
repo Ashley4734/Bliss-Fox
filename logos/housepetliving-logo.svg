@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 130" width="1040" height="260" role="img" aria-label="House Pet Living logo">
+<rect width="520" height="130" fill="#FFF9F0"/>
+<g transform="translate(14 5)"><path d="M60 8 L112 52 V106 Q112 112 106 112 H14 Q8 112 8 106 V52 Z" fill="#1F8A8A" stroke="#1F8A8A" stroke-width="4" stroke-linejoin="round"/>
+<g fill="#FFF4E6">
+<path d="M60 68 C74 68 86 80 86 90 C86 99 78 101 70 98 C65 96 55 96 50 98 C42 101 34 99 34 90 C34 80 46 68 60 68 Z"/>
+<ellipse cx="36" cy="66" rx="8" ry="10.5" transform="rotate(-20 36 66)"/>
+<ellipse cx="51" cy="52" rx="8" ry="11" transform="rotate(-6 51 52)"/>
+<ellipse cx="69" cy="52" rx="8" ry="11" transform="rotate(6 69 52)"/>
+<ellipse cx="84" cy="66" rx="8" ry="10.5" transform="rotate(20 84 66)"/></g><path d="M60 92 C56 88 52 85.500 52 82 C52 79.500 54 78 56 78 C58 78 59.300 79 60 80.500 C60.700 79 62 78 64 78 C66 78 68 79.500 68 82 C68 85.500 64 88 60 92 Z" fill="#1F8A8A"/></g>
+<text x="150" y="52" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="7" fill="#1F8A8A">HOUSE</text>
+<text x="147" y="95" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#2B1B12">Pet Living</text>
+<text x="150" y="116" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="3" fill="#1F8A8A">HOUSEPETLIVING.COM</text>
+</svg>
